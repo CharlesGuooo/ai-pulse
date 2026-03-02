@@ -1,12 +1,13 @@
 /*
  * Design: Editorial Warmth
- * Navbar: Clean top navigation with logo, nav links, and status indicator
- * Colors: Cream background with orange accents
+ * Navbar: Clean top navigation with logo, nav links, theme toggle, and user menu
  */
 import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import { cn } from '@/lib/utils';
-import { Menu, X, Bookmark, Zap } from 'lucide-react';
+import { Menu, X, Bookmark, Zap, Sun, Moon, LogOut, User } from 'lucide-react';
+import { useTheme } from '@/contexts/ThemeContext';
+import { useAuth } from '@/_core/hooks/useAuth';
 
 const LOGO_URL = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663393655905/WLAVeVPYGCycWsT7vD3Ng4/logo-icon-TwHKjaXnnFpF9t2eASLKRp.webp';
 
@@ -20,6 +21,8 @@ const navLinks = [
 export default function Navbar() {
   const [location] = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { theme, toggleTheme, switchable } = useTheme();
+  const { user, logout } = useAuth();
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/90 backdrop-blur-md">
@@ -68,20 +71,65 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Status indicator */}
-        <div className="hidden md:flex items-center gap-2 text-xs text-muted-foreground" style={{ fontFamily: 'var(--font-mono)' }}>
-          <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-          每12h自动更新
+        {/* Right side: theme toggle + user */}
+        <div className="hidden md:flex items-center gap-3">
+          {/* Status */}
+          <div className="flex items-center gap-2 text-xs text-muted-foreground" style={{ fontFamily: 'var(--font-mono)' }}>
+            <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+            每12h更新
+          </div>
+
+          {/* Theme toggle */}
+          {switchable && toggleTheme && (
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-md hover:bg-secondary/60 transition-colors text-muted-foreground hover:text-foreground"
+              aria-label="Toggle theme"
+            >
+              {theme === 'light' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
+            </button>
+          )}
+
+          {/* User menu */}
+          {user && (
+            <div className="flex items-center gap-2 pl-2 border-l border-border/60">
+              <div className="w-7 h-7 rounded-full bg-brand-orange/10 flex items-center justify-center">
+                <User className="w-3.5 h-3.5 text-brand-orange" />
+              </div>
+              <span className="text-xs text-muted-foreground max-w-[80px] truncate">
+                {user.name || '用户'}
+              </span>
+              <button
+                onClick={() => logout()}
+                className="p-1.5 rounded-md hover:bg-secondary/60 transition-colors text-muted-foreground hover:text-destructive"
+                aria-label="Logout"
+                title="退出登录"
+              >
+                <LogOut className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Mobile toggle */}
-        <button
-          className="md:hidden p-2 rounded-md hover:bg-secondary/60 transition-colors"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle menu"
-        >
-          {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-        </button>
+        <div className="md:hidden flex items-center gap-2">
+          {switchable && toggleTheme && (
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-md hover:bg-secondary/60 transition-colors text-muted-foreground"
+              aria-label="Toggle theme"
+            >
+              {theme === 'light' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
+            </button>
+          )}
+          <button
+            className="p-2 rounded-md hover:bg-secondary/60 transition-colors"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Nav */}
@@ -107,10 +155,22 @@ export default function Navbar() {
                 </Link>
               );
             })}
-            <div className="flex items-center gap-2 px-3 py-2 text-xs text-muted-foreground" style={{ fontFamily: 'var(--font-mono)' }}>
-              <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-              每12h自动更新
-            </div>
+            {/* Mobile user info */}
+            {user && (
+              <div className="flex items-center justify-between px-3 py-2.5 border-t border-border/40 mt-1">
+                <div className="flex items-center gap-2">
+                  <User className="w-4 h-4 text-brand-orange" />
+                  <span className="text-sm text-muted-foreground">{user.name || '用户'}</span>
+                </div>
+                <button
+                  onClick={() => { logout(); setMobileOpen(false); }}
+                  className="text-xs text-muted-foreground hover:text-destructive flex items-center gap-1"
+                >
+                  <LogOut className="w-3.5 h-3.5" />
+                  退出
+                </button>
+              </div>
+            )}
           </div>
         </nav>
       )}

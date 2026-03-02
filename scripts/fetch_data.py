@@ -177,7 +177,7 @@ def fetch_batch_tweets(batch: list[dict]) -> dict:
   }}
 }}
 
-请为每个人获取最近1-3条最重要的推文。如果某人没有近期推文，也请包含该handle并标注"暂无最新动态"。"""
+请为每个人获取最近5-8条最重要的推文（尽量多获取）。如果某人没有近期推文，也请包含该handle并标注"暂无最新动态"。"""
 
     result = call_grok(prompt, x_handles=handles)
 
@@ -252,7 +252,7 @@ def fetch_batch_tweets(batch: list[dict]) -> dict:
 
 def fetch_academic_projects() -> list:
     """Fetch latest academic AI projects from academic Twitter accounts."""
-    academic_handles = ["_akhaliq", "paperswithcode", "ykilcher", "rasbt"]
+    academic_handles = ["_akhaliq", "paperswithcode", "ykilcher", "rasbt", "arxiv_sanity"]
 
     print("Fetching academic projects...")
 
@@ -276,7 +276,7 @@ def fetch_academic_projects() -> list:
   ]
 }
 
-请尽量获取10-15个最新的重要项目。"""
+请尽量获取20-30个最新的重要项目，覆盖尽可能多的分类领域。"""
 
     result = call_grok(prompt, x_handles=academic_handles)
 
@@ -368,10 +368,18 @@ def main():
     # 2. Fetch tweets for influencers in batches of up to 10 handles
     all_tweets = {}
 
+    # Deduplicate influencers by handle
+    seen_handles = set()
+    unique_influencers = []
+    for inf in INFLUENCERS:
+        if inf["handle"] not in seen_handles:
+            seen_handles.add(inf["handle"])
+            unique_influencers.append(inf)
+
     # Group influencers into batches (max 10 per API call due to handle limit)
     batches = []
     current_batch = []
-    for inf in INFLUENCERS:
+    for inf in unique_influencers:
         current_batch.append(inf)
         if len(current_batch) >= 3:  # Use 3 for better JSON parsing reliability
             batches.append(current_batch)
@@ -413,7 +421,7 @@ def main():
             "meta": {
                 "fetched_at": timestamp,
                 "next_update": (now + timedelta(hours=12)).isoformat(),
-                "total_influencers": len(INFLUENCERS),
+                "total_influencers": len(unique_influencers),
                 "version": "2.0"
             },
             "categories": CATEGORIES,

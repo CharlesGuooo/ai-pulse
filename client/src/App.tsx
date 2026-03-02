@@ -5,6 +5,7 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { ArchiveProvider } from "./contexts/ArchiveContext";
+import AuthGuard from "./components/AuthGuard";
 import Home from "./pages/Home";
 import Voices from "./pages/Voices";
 import Academic from "./pages/Academic";
@@ -28,18 +29,23 @@ function Router() {
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="light">
+      <ThemeProvider
+        defaultTheme="light"
+        switchable
+      >
         <TooltipProvider>
-          <ArchiveProvider>
-            <Toaster />
-            <div className="min-h-screen flex flex-col">
-              <Navbar />
-              <main className="flex-1">
-                <Router />
-              </main>
-              <Footer />
-            </div>
-          </ArchiveProvider>
+          <Toaster />
+          <AuthGuard>
+            <ArchiveProvider>
+              <div className="min-h-screen flex flex-col">
+                <Navbar />
+                <main className="flex-1">
+                  <Router />
+                </main>
+                <Footer />
+              </div>
+            </ArchiveProvider>
+          </AuthGuard>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

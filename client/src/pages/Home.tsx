@@ -3,6 +3,7 @@
  * Hero section with trending summary, featured voices, and latest highlights
  * Color: Cream background, orange accents, warm editorial feel
  */
+import { useAuth } from '@/_core/hooks/useAuth';
 import { Link } from 'wouter';
 import { useTweets, useTrending, useAcademic } from '@/hooks/useData';
 import { formatFullDate } from '@/lib/utils';
@@ -13,6 +14,10 @@ import { ArrowRight, Zap, BookOpen, TrendingUp, Clock, Sparkles, ChevronRight } 
 const HERO_BG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663393655905/WLAVeVPYGCycWsT7vD3Ng4/hero-bg-8Mq7TgD88UihVYytSHUPh6.webp';
 
 export default function Home() {
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  let { user, loading, error, isAuthenticated, logout } = useAuth();
+
   const { data: tweets, loading: tweetsLoading } = useTweets();
   const { data: trending, loading: trendingLoading } = useTrending();
   const { data: academic, loading: academicLoading } = useAcademic();
