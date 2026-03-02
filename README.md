@@ -1,4 +1,4 @@
-# AI Pulse - AI前沿资讯聚合
+# AI Pulse - AI前沿资讯聚合 
 
 <p align="center">
   <strong>追踪AI领域最前沿的声音</strong>
