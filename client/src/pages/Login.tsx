@@ -1,32 +1,64 @@
 /**
  * Login Page - Editorial Warmth Style
- * Full-screen login page with GitHub OAuth
+ * Username + Password authentication
  */
-import { Sparkles, ArrowRight, Zap, BookOpen, Shield, Github } from 'lucide-react';
+import { Sparkles, Zap, BookOpen, Shield, Eye, EyeOff, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useEffect } from 'react';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { useState, useEffect } from 'react';
 import { useLocation } from 'wouter';
 import { trpc } from '@/lib/trpc';
 
 export default function Login() {
-  const [location] = useLocation();
+  const [, navigate] = useLocation();
   const { data: user } = trpc.auth.me.useQuery();
+
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   // If already logged in, redirect to home
   useEffect(() => {
     if (user) {
-      window.location.href = '/';
+      navigate('/');
     }
-  }, [user]);
+  }, [user, navigate]);
 
-  const handleGitHubLogin = () => {
-    const returnPath = new URLSearchParams(window.location.search).get('return') || '/';
-    window.location.href = `/api/auth/github?return=${encodeURIComponent(returnPath)}`;
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!username.trim() || !password.trim()) {
+      setError('请输入用户名和密码');
+      return;
+    }
+
+    setIsLoading(true);
+    setError('');
+
+    try {
+      const res = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        body: JSON.stringify({ username: username.trim(), password }),
+      });
+
+      if (res.ok) {
+        // Redirect to home or return path
+        const returnPath = new URLSearchParams(window.location.search).get('return') || '/';
+        window.location.href = returnPath;
+      } else {
+        const data = await res.json();
+        setError(data.error || '用户名或密码错误');
+      }
+    } catch {
+      setError('网络错误，请重试');
+    } finally {
+      setIsLoading(false);
+    }
   };
-
-  // Check for error in URL
-  const urlParams = new URLSearchParams(window.location.search);
-  const error = urlParams.get('error');
 
   return (
     <div className="min-h-screen bg-background flex">
@@ -118,27 +150,73 @@ export default function Login() {
             欢迎回来
           </h2>
           <p className="text-sm text-muted-foreground mb-8">
-            使用 GitHub 账号登录，访问AI前沿资讯和个人收藏夹
+            输入账号和密码，访问AI前沿资讯
           </p>
 
-          {error && (
-            <div className="mb-4 p-3 rounded-lg bg-red-50 border border-red-200 text-sm text-red-600">
-              登录失败，请重试。
+          <form onSubmit={handleLogin} className="space-y-4">
+            <div className="space-y-2">
+              <Label htmlFor="username" className="text-sm font-medium text-foreground">
+                用户名
+              </Label>
+              <Input
+                id="username"
+                type="text"
+                placeholder="请输入用户名"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                className="h-11 bg-background border-border/60 focus:border-brand-orange focus:ring-brand-orange/20"
+                autoComplete="username"
+                disabled={isLoading}
+              />
             </div>
-          )}
 
-          <Button
-            onClick={handleGitHubLogin}
-            className="w-full h-12 bg-[#24292e] hover:bg-[#1a1e22] text-white font-medium text-sm rounded-lg transition-all duration-200 flex items-center justify-center gap-3"
-          >
-            <Github className="w-5 h-5" />
-            <span>使用 GitHub 登录</span>
-            <ArrowRight className="w-4 h-4 ml-auto" />
-          </Button>
+            <div className="space-y-2">
+              <Label htmlFor="password" className="text-sm font-medium text-foreground">
+                密码
+              </Label>
+              <div className="relative">
+                <Input
+                  id="password"
+                  type={showPassword ? 'text' : 'password'}
+                  placeholder="请输入密码"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="h-11 pr-10 bg-background border-border/60 focus:border-brand-orange focus:ring-brand-orange/20"
+                  autoComplete="current-password"
+                  disabled={isLoading}
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
+                  tabIndex={-1}
+                >
+                  {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                </button>
+              </div>
+            </div>
 
-          <p className="mt-6 text-xs text-center text-muted-foreground">
-            登录即表示您同意我们的服务条款和隐私政策
-          </p>
+            {error && (
+              <div className="p-3 rounded-lg bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800 text-sm text-red-600 dark:text-red-400">
+                {error}
+              </div>
+            )}
+
+            <Button
+              type="submit"
+              disabled={isLoading}
+              className="w-full h-11 bg-brand-orange hover:bg-brand-orange-dark text-white font-medium text-sm rounded-lg transition-all duration-200"
+            >
+              {isLoading ? (
+                <>
+                  <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                  登录中...
+                </>
+              ) : (
+                '登录'
+              )}
+            </Button>
+          </form>
 
           {/* Decorative footer */}
           <div className="mt-16 pt-6 border-t border-border/50">

@@ -1,147 +1,131 @@
 import { COOKIE_NAME, ONE_YEAR_MS } from "@shared/const";
 import type { Express, Request, Response } from "express";
-import axios from "axios";
+import bcrypt from "bcryptjs";
 import * as db from "../db";
 import { getSessionCookieOptions } from "./cookies";
-import { ENV } from "./env";
 import { sdk } from "./sdk";
 
-function getQueryParam(req: Request, key: string): string | undefined {
-  const value = req.query[key];
-  return typeof value === "string" ? value : undefined;
-}
-
-interface GitHubTokenResponse {
-  access_token: string;
-  token_type: string;
-  scope: string;
-}
-
-interface GitHubUser {
-  id: number;
-  login: string;
-  name: string | null;
-  email: string | null;
-  avatar_url: string;
-}
-
-async function exchangeGitHubCode(code: string, redirectUri: string): Promise<GitHubTokenResponse> {
-  const response = await axios.post<GitHubTokenResponse>(
-    "https://github.com/login/oauth/access_token",
-    {
-      client_id: ENV.githubClientId,
-      client_secret: ENV.githubClientSecret,
-      code,
-      redirect_uri: redirectUri,
-    },
-    {
-      headers: { Accept: "application/json" },
-      timeout: 10000,
-    }
-  );
-  return response.data;
-}
-
-async function getGitHubUser(accessToken: string): Promise<GitHubUser> {
-  const response = await axios.get<GitHubUser>("https://api.github.com/user", {
-    headers: {
-      Authorization: `Bearer ${accessToken}`,
-      Accept: "application/vnd.github.v3+json",
-    },
-    timeout: 10000,
-  });
-  return response.data;
-}
+/**
+ * Preset accounts for AI Pulse.
+ * Passwords are bcrypt hashed. To add more accounts, generate new hashes.
+ */
+const PRESET_USERS: Array<{ username: string; hash: string; displayName: string }> = [
+  {
+    username: "admin",
+    hash: "$2b$10$QgSkU.lC4Zi/ifb0D6tiTOe/aLHMevl1uUCqSNNv56EnWGDWYFUQW",
+    displayName: "Admin",
+  },
+  {
+    username: "charles",
+    hash: "$2b$10$sa0ANFe3wSwgvCzVhWMwNuPeqEHOzIfSoIHjETBuVvGjV4pd6rLcW",
+    displayName: "Charles",
+  },
+  {
+    username: "user01",
+    hash: "$2b$10$an4gkWkn8HCLQH8ZAEmimOBPICGRpGOsfoclxZTl2wtZzfCiAXb9G",
+    displayName: "User 01",
+  },
+  {
+    username: "user02",
+    hash: "$2b$10$yd0wPFKtAYF/I77W2XbAPOsc8eLd070292.JxCAm997/BTf.MH92i",
+    displayName: "User 02",
+  },
+  {
+    username: "user03",
+    hash: "$2b$10$y0lcylZUTGS19gaogisNmO6NBYLRQilfQ.FrPi.EaaEy1smiZgfa2",
+    displayName: "User 03",
+  },
+  {
+    username: "user04",
+    hash: "$2b$10$vnF3..7fQQ.jqLcAlsf0Q.Uu0kJAhRBU2gXe76Z/eUbJREDbIUSL.",
+    displayName: "User 04",
+  },
+  {
+    username: "user05",
+    hash: "$2b$10$9RvdXjUlWw6E7SZDnAbh3OGFWR8l2Eig865O8JJtNiB0v557aAmAW",
+    displayName: "User 05",
+  },
+  {
+    username: "reader01",
+    hash: "$2b$10$CYtU44/WJa55riPh3vIQT.hu0jZig4cXM/WDACPYT6mAX/ZVb0zsG",
+    displayName: "Reader 01",
+  },
+  {
+    username: "reader02",
+    hash: "$2b$10$BKJlg6w5tKdkBD.i4p5Kh.xq7mgcwtpg7/2cgMfbK4uP5L2.zs3sK",
+    displayName: "Reader 02",
+  },
+  {
+    username: "reader03",
+    hash: "$2b$10$dwKIeLDq9LHxTRTv3qtx7uUcxtkeMvlv/pwwtHmEikSBktPeoO40.",
+    displayName: "Reader 03",
+  },
+];
 
 export function registerOAuthRoutes(app: Express) {
-  // GitHub OAuth login redirect
-  app.get("/api/auth/github", (req: Request, res: Response) => {
-    const returnPath = getQueryParam(req, "return") || "/";
-    const state = Buffer.from(JSON.stringify({ returnPath })).toString("base64");
+  /**
+   * POST /api/auth/login
+   * Body: { username: string, password: string }
+   * Returns: 200 with user info on success, 401 on failure
+   */
+  app.post("/api/auth/login", async (req: Request, res: Response) => {
+    const { username, password } = req.body as { username?: string; password?: string };
 
-    // Determine redirect URI based on request origin
-    const protocol = req.headers["x-forwarded-proto"] || req.protocol;
-    const host = req.headers["x-forwarded-host"] || req.headers.host;
-    const redirectUri = `${protocol}://${host}/api/auth/callback`;
-
-    const params = new URLSearchParams({
-      client_id: ENV.githubClientId,
-      redirect_uri: redirectUri,
-      scope: "read:user user:email",
-      state,
-    });
-
-    res.redirect(`https://github.com/login/oauth/authorize?${params.toString()}`);
-  });
-
-  // GitHub OAuth callback
-  app.get("/api/auth/callback", async (req: Request, res: Response) => {
-    const code = getQueryParam(req, "code");
-    const state = getQueryParam(req, "state");
-
-    if (!code) {
-      res.status(400).json({ error: "Authorization code is required" });
+    if (!username || !password) {
+      res.status(400).json({ error: "Username and password are required" });
       return;
     }
 
-    try {
-      // Determine redirect URI (must match what was sent in the authorization request)
-      const protocol = req.headers["x-forwarded-proto"] || req.protocol;
-      const host = req.headers["x-forwarded-host"] || req.headers.host;
-      const redirectUri = `${protocol}://${host}/api/auth/callback`;
+    // Find preset user (case-insensitive username)
+    const presetUser = PRESET_USERS.find(
+      (u) => u.username.toLowerCase() === username.toLowerCase()
+    );
 
-      // Exchange code for access token
-      const tokenData = await exchangeGitHubCode(code, redirectUri);
-
-      if (!tokenData.access_token) {
-        console.error("[GitHub OAuth] No access token received:", tokenData);
-        res.status(400).json({ error: "Failed to get access token from GitHub" });
-        return;
-      }
-
-      // Get GitHub user info
-      const githubUser = await getGitHubUser(tokenData.access_token);
-      const openId = `github_${githubUser.id}`;
-
-      // Upsert user in our database
-      await db.upsertUser({
-        openId,
-        name: githubUser.name || githubUser.login,
-        email: githubUser.email,
-        avatarUrl: githubUser.avatar_url,
-        loginMethod: "github",
-        lastSignedIn: new Date(),
-      });
-
-      // Create session JWT
-      const sessionToken = await sdk.createSessionToken(openId, {
-        name: githubUser.name || githubUser.login,
-        expiresInMs: ONE_YEAR_MS,
-      });
-
-      const cookieOptions = getSessionCookieOptions(req);
-      res.cookie(COOKIE_NAME, sessionToken, { ...cookieOptions, maxAge: ONE_YEAR_MS });
-
-      // Redirect to return path
-      let returnPath = "/";
-      if (state) {
-        try {
-          const decoded = JSON.parse(Buffer.from(state, "base64").toString());
-          returnPath = decoded.returnPath || "/";
-        } catch {
-          returnPath = "/";
-        }
-      }
-
-      res.redirect(302, returnPath);
-    } catch (error) {
-      console.error("[GitHub OAuth] Callback failed:", error);
-      res.redirect(302, "/login?error=oauth_failed");
+    if (!presetUser) {
+      // Use constant time to prevent username enumeration
+      await bcrypt.compare(password, "$2b$10$invalidhashtopreventtimingattacks00000000000000000000");
+      res.status(401).json({ error: "Invalid username or password" });
+      return;
     }
+
+    const isValid = await bcrypt.compare(password, presetUser.hash);
+    if (!isValid) {
+      res.status(401).json({ error: "Invalid username or password" });
+      return;
+    }
+
+    // Upsert user in database
+    const openId = `local_${presetUser.username}`;
+    await db.upsertUser({
+      openId,
+      name: presetUser.displayName,
+      email: null,
+      loginMethod: "password",
+      lastSignedIn: new Date(),
+    });
+
+    // Create session JWT
+    const sessionToken = await sdk.createSessionToken(openId, {
+      name: presetUser.displayName,
+      expiresInMs: ONE_YEAR_MS,
+    });
+
+    const cookieOptions = getSessionCookieOptions(req);
+    res.cookie(COOKIE_NAME, sessionToken, { ...cookieOptions, maxAge: ONE_YEAR_MS });
+
+    res.json({ success: true, user: { username: presetUser.username, name: presetUser.displayName } });
   });
 
-  // Keep backward compatibility with old Manus OAuth callback
-  app.get("/api/oauth/callback", (req: Request, res: Response) => {
+  // Keep backward compatibility - redirect old OAuth routes to login
+  app.get("/api/auth/github", (_req: Request, res: Response) => {
+    res.redirect(302, "/login");
+  });
+
+  app.get("/api/auth/callback", (_req: Request, res: Response) => {
+    res.redirect(302, "/login");
+  });
+
+  app.get("/api/oauth/callback", (_req: Request, res: Response) => {
     res.redirect(302, "/login");
   });
 }
