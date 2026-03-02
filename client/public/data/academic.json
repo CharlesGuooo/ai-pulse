@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "fetched_at": "2026-03-02T17:38:47.637231+00:00",
+    "total_projects": 11
+  },
+  "projects": [
+    {
+      "title": "Mode Seeking meets Mean Seeking for Fast Long Video Generation",
+      "summary": "提出了一种结合模式搜索和均值搜索的方法，用于快速生成长视频。该论文通过Hugging Face分享。",
+      "ai_analysis": "该方法解决了传统视频生成模型在长序列生成时速度慢和一致性差的问题。核心创新在于融合模式搜索（增强多样性）和均值搜索（提升连贯性），实现高效的长视频生成。适用于电影预览、虚拟现实内容创作等场景，具有高实用潜力。",
+      "category": "视频生成",
+      "source_url": "https://huggingface.co/papers/2602.24289",
+      "arxiv_url": "https://arxiv.org/abs/2602.24289",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-02",
+      "impact_level": "高",
+      "id": "bae605ea1c1e"
+    },
+    {
+      "title": "Physics-Aware Image Editing with Latent Transition Priors",
+      "summary": "从静态到动态的物理感知图像编辑，使用潜在过渡先验实现真实物理模拟。",
+      "ai_analysis": "针对传统图像编辑忽略物理动态的问题，该工作引入潜在过渡先验，确保编辑后图像符合物理定律。创新点在于将物理知识融入扩散模型的潜在空间，实现从静态到动态的无缝过渡。可应用于AR/VR、电影特效等领域。",
+      "category": "计算机视觉",
+      "source_url": "https://huggingface.co/papers/2602.21778",
+      "arxiv_url": "https://arxiv.org/abs/2602.21778",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-02-27",
+      "impact_level": "中",
+      "id": "a79edc8e949a"
+    },
+    {
+      "title": "The Trinity of Consistency as a Defining Principle for General World Models",
+      "summary": "提出一致性三元组作为通用世界模型的核心原则。",
+      "ai_analysis": "世界模型在模拟复杂环境时易出现不一致，该论文定义了时空、模态和因果一致性三原则。核心创新是通过约束优化提升模型泛化能力。适用于具身智能、自动驾驶等需要长期预测的场景。",
+      "category": "多模态学习",
+      "source_url": "https://huggingface.co/papers/2602.23152",
+      "arxiv_url": "https://arxiv.org/abs/2602.23152",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-02-27",
+      "impact_level": "高",
+      "id": "61e661283f00"
+    },
+    {
+      "title": "VecGlypher: Unified Vector Glyph Generation with Language Models",
+      "summary": "Meta提出的统一矢量字形生成，使用语言模型实现精确控制。",
+      "ai_analysis": "解决矢量图形生成碎片化问题，通过语言模型统一文本到矢量的生成流程。创新在于结合LLM的语义理解与矢量渲染，实现可编辑高质量图形。应用场景包括字体设计、UI生成和矢量艺术。",
+      "category": "图像生成",
+      "source_url": "https://huggingface.co/papers/2602.21461",
+      "arxiv_url": "https://arxiv.org/abs/2602.21461",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-02-26",
+      "impact_level": "中",
+      "id": "258b830b0eb5"
+    },
+    {
+      "title": "SkyReels-V4",
+      "summary": "多模态视频-音频生成、内插和编辑模型。",
+      "ai_analysis": "整合视频、音频生成与编辑功能，解决多模态分离的痛点。核心创新是统一架构支持同步生成和精细编辑，提升创作效率。适用于短视频平台、广告制作等领域。",
+      "category": "视频生成",
+      "source_url": "https://huggingface.co/papers/2602.21818",
+      "arxiv_url": "https://arxiv.org/abs/2602.21818",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-02-26",
+      "impact_level": "高",
+      "id": "c4f6e17c6942"
+    },
+    {
+      "title": "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data",
+      "summary": "使用多样 egocentric 人类数据扩展灵巧操纵能力。",
+      "ai_analysis": "egocentric 数据缺乏是具身智能瓶颈，该工作通过大规模第一人称数据提升机器人手部操作精度。创新点在于数据多样性和尺度化训练，实现真实世界泛化。应用于家用机器人、医疗辅助。",
+      "category": "具身智能",
+      "source_url": "https://huggingface.co/papers/2602.16710",
+      "arxiv_url": "https://arxiv.org/abs/2602.16710",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-02-25",
+      "impact_level": "高",
+      "id": "ba0db5dc1aad"
+    },
+    {
+      "title": "SimToolReal: An Object-Centric Policy for Zero-Shot Dexterous Tool Manipulation",
+      "summary": "物体中心策略实现零样本灵巧工具操纵。",
+      "ai_analysis": "桥接模拟到真实工具使用差距，通过物体中心表示实现零样本转移。核心创新是策略设计聚焦工具几何，提升泛化。适用于工业自动化、家庭助手机器人。",
+      "category": "具身智能",
+      "source_url": "https://huggingface.co/papers/2602.16863",
+      "arxiv_url": "https://arxiv.org/abs/2602.16863",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-02-25",
+      "impact_level": "高",
+      "id": "ca99908b615b"
+    },
+    {
+      "title": "tttLRM: Test-Time Training for Long Context and Autoregressive 3D Reconstruction",
+      "summary": "测试时训练用于长上下文自回归3D重建。",
+      "ai_analysis": "长上下文3D重建计算昂贵，该方法用测试时训练压缩观察，提升效率。创新在于自回归生成Gaussian Splats，实现线性复杂度。应用于AR、游戏3D建模。",
+      "category": "3D视觉",
+      "source_url": "https://huggingface.co/papers/2602.20160",
+      "arxiv_url": "https://arxiv.org/abs/2602.20160",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-02-24",
+      "impact_level": "中",
+      "id": "f3e8a7210d06"
+    },
+    {
+      "title": "Distillate",
+      "summary": "终端研究炼金术士：arXiv论文到笔记工作流工具。",
+      "ai_analysis": "研究者阅读论文流程繁琐，该开源工具自动化从arXiv到Obsidian笔记。创新在于集成Zotero和reMarkable，实现端到端管理。提升学术生产力，适用于AI研究者和学生。",
+      "category": "AI基础设施",
+      "source_url": "https://github.com/rlacombe/distillate",
+      "arxiv_url": "",
+      "github_url": "https://github.com/rlacombe/distillate",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-02-24",
+      "impact_level": "中",
+      "id": "6e431ccaf424"
+    },
+    {
+      "title": "A Very Big Video Reasoning Suite",
+      "summary": "大型视频推理基准套件。",
+      "ai_analysis": "视频理解模型缺乏标准化评估，该套件提供合成数据和评估框架。核心创新是云规模数据工厂和统一EvalKit，推动视频推理进步。适用于多模态模型基准测试。",
+      "category": "多模态学习",
+      "source_url": "https://huggingface.co/papers/2602.20159",
+      "arxiv_url": "https://arxiv.org/abs/2602.20159",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-02-24",
+      "impact_level": "高",
+      "id": "82a6c66cdc2a"
+    },
+    {
+      "title": "Distillation Data Generation Utilities",
+      "summary": "使用OpenRouter和Ollama从开源模型生成蒸馏数据的实用工具。",
+      "ai_analysis": "模型蒸馏需高质量数据，该工具简化从大型开源模型生成Chain-of-Thought数据的流程。创新在于集成多种后端，支持过滤和A/B测试。适用于小模型训练、知识蒸馏场景。",
+      "category": "AI基础设施",
+      "source_url": "https://github.com/rasbt/reasoning-from-scratch/blob/main/ch08/02_generate_distillation_data/README.md",
+      "arxiv_url": "",
+      "github_url": "https://github.com/rasbt/reasoning-from-scratch/blob/main/ch08/02_generate_distillation_data/README.md",
+      "shared_by": "rasbt",
+      "published_at": "2026-02-27",
+      "impact_level": "中",
+      "id": "6a461f092df8"
+    }
+  ]
+}

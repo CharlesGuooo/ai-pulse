@@ -4,35 +4,42 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { ArchiveProvider } from "./contexts/ArchiveContext";
 import Home from "./pages/Home";
-
+import Voices from "./pages/Voices";
+import Academic from "./pages/Academic";
+import Archive from "./pages/Archive";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
+      <Route path="/" component={Home} />
+      <Route path="/voices" component={Voices} />
+      <Route path="/academic" component={Academic} />
+      <Route path="/archive" component={Archive} />
+      <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
+      <ThemeProvider defaultTheme="light">
         <TooltipProvider>
-          <Toaster />
-          <Router />
+          <ArchiveProvider>
+            <Toaster />
+            <div className="min-h-screen flex flex-col">
+              <Navbar />
+              <main className="flex-1">
+                <Router />
+              </main>
+              <Footer />
+            </div>
+          </ArchiveProvider>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

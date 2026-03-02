@@ -1,0 +1,1099 @@
+{
+  "meta": {
+    "fetched_at": "2026-03-02T17:38:47.637231+00:00",
+    "next_update": "2026-03-03T05:38:47.637231+00:00",
+    "total_influencers": 27,
+    "version": "2.0"
+  },
+  "categories": {
+    "openai": {
+      "name": "OpenAI",
+      "icon": "🔮",
+      "color": "#10A37F",
+      "group": "四大实验室"
+    },
+    "deepmind": {
+      "name": "Google DeepMind",
+      "icon": "🧠",
+      "color": "#4285F4",
+      "group": "四大实验室"
+    },
+    "anthropic": {
+      "name": "Anthropic",
+      "icon": "🛡️",
+      "color": "#D4A574",
+      "group": "四大实验室"
+    },
+    "xai": {
+      "name": "xAI",
+      "icon": "⚡",
+      "color": "#1DA1F2",
+      "group": "四大实验室"
+    },
+    "researchers": {
+      "name": "顶尖研究者",
+      "icon": "🔬",
+      "color": "#E8734A",
+      "group": "独立研究者与开源领袖"
+    },
+    "leaders": {
+      "name": "行业领袖",
+      "icon": "🚀",
+      "color": "#8B5CF6",
+      "group": "新兴公司与行业评论"
+    },
+    "academic": {
+      "name": "学术博主",
+      "icon": "📚",
+      "color": "#059669",
+      "group": "学术信息源"
+    }
+  },
+  "influencers": {
+    "sama": {
+      "name": "Sam Altman",
+      "handle": "sama",
+      "role": "OpenAI CEO",
+      "category": "openai",
+      "highlight": true,
+      "person_summary": "Sam Altman近期主要回应AGI控制与安全问题，强调人类必须保持对AGI的控制权，并视其为长期对齐研究的核心。同时，他简要回应了融资相关事宜和个人生活。",
+      "tweets": [
+        {
+          "content_summary": "回应AGI实现后可能抵抗编程约束的问题，指出如果失去对AGI的控制，人类将处于非常危险境地，并强调人类保持控制的重要性。",
+          "ai_analysis": "此推文凸显了AGI安全领域的核心挑战：即使模型被设计为有益，如果发生控制丧失，可能导致不可预测风险。Altman引用尊重同事观点但坚持人类控制论点，反映OpenAI在对齐研究上的优先级。该观点推动行业对长期对齐（如价值对齐、鲁棒性控制）的重视，可能影响监管政策和研究资源分配。",
+          "topics": [
+            "AGI安全",
+            "对齐研究",
+            "人类控制"
+          ],
+          "tweet_url": "https://x.com/sama/status/2027961129209938058",
+          "posted_at": "2026年3月1日",
+          "engagement": "中",
+          "id": "4c49c61c023a"
+        },
+        {
+          "content_summary": "回应Anthropic融资立场，表示如果收到相同条件，他们会接受。",
+          "ai_analysis": "此回应间接揭示OpenAI近期1100亿美元融资细节，涉及亚马逊、NVIDIA和软银，标志AI基础设施竞赛白热化。反映行业并购与合作趋势，融资将加速OpenAI计算资源扩张，推动模型训练向万亿参数级跃进，但也引发估值泡沫与地缘风险讨论。",
+          "topics": [
+            "AI融资",
+            "OpenAI战略",
+            "行业竞争"
+          ],
+          "tweet_url": "https://x.com/sama/status/2027960563285037540",
+          "posted_at": "2026年3月1日",
+          "engagement": "低",
+          "id": "6a3060a100ff"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "gdb": {
+      "name": "Greg Brockman",
+      "handle": "gdb",
+      "role": "OpenAI 总裁",
+      "category": "openai",
+      "highlight": false,
+      "person_summary": "Greg Brockman近期聚焦OpenAI技术进展和融资公告，转发赞扬Codex 5.3在复杂软件工程任务的突破性表现，并强调向有益AGI迈进。",
+      "tweets": [
+        {
+          "content_summary": "转发并赞扬Codex 5.3一击即中复杂任务，包括绕过KV缓存抽象、猴子补丁注意力机制等。",
+          "ai_analysis": "Codex 5.3展示OpenAI在代理式编码领域的领先，处理M-RoPE、多层内存管理和精确驱逐，标志软件工程自动化进入新阶段。该突破依赖大规模强化学习和长上下文理解，推动DevOps革命，但也引发代码生成安全（如后门注入）担忧，加速企业级AI工具落地。",
+          "topics": [
+            "Codex进展",
+            "软件工程AI",
+            "代理能力"
+          ],
+          "tweet_url": "https://x.com/gdb/status/2027478357999554995",
+          "posted_at": "2026年2月27日",
+          "engagement": "中",
+          "id": "2abb28273271"
+        },
+        {
+          "content_summary": "回应OpenAI 1100亿美元融资公告，重申向造福全人类的AGI前进。",
+          "ai_analysis": "此推文强化OpenAI使命导向融资叙事，1100亿资金将支撑超级计算集群建设，目标AGI级模型。该事件重塑AI投资格局，NVIDIA等硬件巨头深度绑定，但凸显算力瓶颈与能源消耗问题，影响全球AI竞赛平衡。",
+          "topics": [
+            "AI融资",
+            "AGI使命",
+            "OpenAI发展"
+          ],
+          "tweet_url": "https://x.com/gdb/status/2027417577597898837",
+          "posted_at": "2026年2月27日",
+          "engagement": "高",
+          "id": "39bb526b8ca7"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "markchen90": {
+      "name": "Mark Chen",
+      "handle": "markchen90",
+      "role": "OpenAI 首席研究官",
+      "category": "openai",
+      "highlight": false,
+      "person_summary": "Mark Chen近期澄清OpenAI研究重点仍以基础探索为主，多数计算资源用于长期项目，并欢迎新研究员加入科学AI团队。",
+      "tweets": [
+        {
+          "content_summary": "详细阐述OpenAI如何平衡长期研究与产品部署，强调基础研究核心地位，大量计算用于探索项目。",
+          "ai_analysis": "Chen反驳产品优先指控，揭示OpenAI运行数百探索项目，如推理模型突破，体现'自动化科学家'愿景。多数计算倾斜基础研究策略，确保算法适应未来算力，支持跨学科加速（如生物、数学）。此定位强化OpenAI作为研究引擎角色，缓解人才流失疑虑，推动行业向可持续创新转型。",
+          "topics": [
+            "OpenAI研究",
+            "基础AI",
+            "研究平衡"
+          ],
+          "tweet_url": "https://x.com/markchen90/status/2018779039205667046",
+          "posted_at": "2026年2月3日",
+          "engagement": "高",
+          "id": "ad125a7c5210"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "woj_zaremba": {
+      "name": "Wojciech Zaremba",
+      "handle": "woj_zaremba",
+      "role": "OpenAI 联合创始人",
+      "category": "openai",
+      "highlight": false,
+      "person_summary": "Wojciech Zaremba近期动态聚焦于AI安全与准备工作，他积极参与资助雄心勃勃的项目以应对高级AI挑战，并支持外部AI安全组织。整体上，他强调通过具体项目加速科学、安全和机构适应，推动AI生态的稳健发展。",
+      "tweets": [
+        {
+          "content_summary": "转发并推广RFP，寻求雄心勃勃的具体项目以准备世界迎接高级AI，涉及加速科学、加强安全和适应机构。",
+          "ai_analysis": "此推文反映Zaremba对AI治理的重视，作为OpenAI联合创始人，他参与顾问小组，推动25亿美元资金流向AI韧性和AI-for-science项目。这有助于填补市场和传统资助的空白，加速关键技术突破，如AI辅助科学研究工具和安全协议。行业影响在于形成'Launch Sequence'项目集，促进多方协作，确保AI进步不牺牲公共安全和人类主导。",
+          "topics": [
+            "AI安全",
+            "AI治理",
+            "科学加速"
+          ],
+          "tweet_url": "https://x.com/woj_zaremba/status/2015457668685799432",
+          "posted_at": "2026年1月25日",
+          "engagement": "中",
+          "id": "75b4efa3c43d"
+        },
+        {
+          "content_summary": "宣传50 Years VC的AI安全小型会议，并表示将出席。",
+          "ai_analysis": "Zaremba支持专注AI安全的深度科技投资和跨维度对齐活动，此举强化AI社区在安全研究上的共识。会议设计亲密高效，有助于关键人物交流，推动对齐技术如可解释性和鲁棒性发展。行业上，这信号VC资金向AI安全倾斜，缓解AGI风险。",
+          "topics": [
+            "AI安全",
+            "投资",
+            "会议"
+          ],
+          "tweet_url": "https://x.com/woj_zaremba/status/2013436851512910094",
+          "posted_at": "2026年1月20日",
+          "engagement": "低",
+          "id": "85bfad32c771"
+        },
+        {
+          "content_summary": "赞扬Transluce为顶级外部AI安全组织，并呼吁支持其募捐。",
+          "ai_analysis": "Transluce专注于开源可扩展AI系统理解技术，与METR和Apollo并列，Zaremba的背书提升其信誉，推动AI透明度和可解释性研究。这对行业至关重要，能帮助识别黑箱模型风险，促进安全基准标准化。募捐呼吁体现OpenAI高管对独立安全生态的支持。",
+          "topics": [
+            "AI安全",
+            "透明度",
+            "募捐"
+          ],
+          "tweet_url": "https://x.com/woj_zaremba/status/2001493705237368903",
+          "posted_at": "2025年12月18日",
+          "engagement": "中",
+          "id": "3efc85b9f770"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "demishassabis": {
+      "name": "Demis Hassabis",
+      "handle": "demishassabis",
+      "role": "DeepMind CEO",
+      "category": "deepmind",
+      "highlight": false,
+      "person_summary": "Demis Hassabis近期动态突出DeepMind在图像生成与编辑领域的领先成就，他庆祝Nano Banana 2模型登顶排行，并展示其实时世界理解能力。整体聚焦产品创新与前沿性能，推动多模态AI应用。",
+      "tweets": [
+        {
+          "content_summary": "庆祝Nano Banana 2（Gemini 3.1 Flash Image Preview）在Image Arena登顶第一，赞扬Google DeepMind团队。",
+          "ai_analysis": "Nano Banana 2整合实时搜索信息，实现SOTA图像生成与编辑，评分超越竞争对手，成本仅为前代的2倍。这体现了Gemini模型的多模态融合与世界知识增强，推动AI从静态生成向动态实时创作演进。行业影响巨大，将加速创意工具如设计、广告的AI化，DeepMind继续主导视觉AI前沿。",
+          "topics": [
+            "图像生成",
+            "Gemini",
+            "多模态AI"
+          ],
+          "tweet_url": "https://x.com/demishassabis/status/2027109383922933863",
+          "posted_at": "2026年2月26日",
+          "engagement": "高",
+          "id": "0190e1656b96"
+        },
+        {
+          "content_summary": "介绍Nano Banana 2新图像生成&编辑模型，利用Gemini的世界理解和实时搜索产生高质量输出，并展示AI Studio编码演示。",
+          "ai_analysis": "模型强调速度与专业能力结合，仅见前帧图像即可生成一致序列，展示强大时空连贯性。这依赖Gemini的语义理解与搜索增强，标志多模态RL和生成式AI进步。部署于Gemini App等多平台，将普及高保真图像工具，影响娱乐、教育等领域。",
+          "topics": [
+            "图像编辑",
+            "实时AI",
+            "演示"
+          ],
+          "tweet_url": "https://x.com/demishassabis/status/2027063586745438656",
+          "posted_at": "2026年2月26日",
+          "engagement": "高",
+          "id": "f2d03d5f0944"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "JeffDean": {
+      "name": "Jeff Dean",
+      "handle": "JeffDean",
+      "role": "Google 首席科学家",
+      "category": "deepmind",
+      "highlight": false,
+      "person_summary": "Jeff Dean近期动态涉及团队建设和系统架构历史，他欢迎新研究员加入Gemini扩展，并分享MapReduce起源故事。整体体现对AI基础设施和人才的持续关注。",
+      "tweets": [
+        {
+          "content_summary": "欢迎新研究员Jinjie Ni加入Google DeepMind，从事Gemini scaling和RL工作。",
+          "ai_analysis": "Gemini scaling是AGI路径关键，Ni在Yi Tay和Quoc Le领导下工作，强化DeepMind计算与强化学习能力。这反映Google对大模型扩展的投资，推动参数效率和性能边界。行业上，人才流动加速前沿研究，预示Gemini下一代突破。",
+          "topics": [
+            "Gemini",
+            "scaling",
+            "招聘"
+          ],
+          "tweet_url": "https://x.com/JeffDean/status/2028483453214437444",
+          "posted_at": "2026年3月2日",
+          "engagement": "低",
+          "id": "4b4a769ce68b"
+        },
+        {
+          "content_summary": "解释MapReduce起源：源于搜索引擎索引管道重写，实现大规模并行处理。",
+          "ai_analysis": "MapReduce作为分布式计算基石，处理TB级数据如链接提取、语言识别和去重，抽象故障容错与并行化。Jeff Dean分享历史，强调简单抽象对复杂系统的价值。今天仍影响云AI训练框架如TensorFlow。重温此 lore 启发现代大数据与AI基础设施设计。",
+          "topics": [
+            "MapReduce",
+            "分布式系统",
+            "AI历史"
+          ],
+          "tweet_url": "https://x.com/JeffDean/status/2027761336080601277",
+          "posted_at": "2026年2月28日",
+          "engagement": "高",
+          "id": "d1f8eb0ec57f"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "OriolVinyalsML": {
+      "name": "Oriol Vinyals",
+      "handle": "OriolVinyalsML",
+      "role": "DeepMind 研究副总裁",
+      "category": "deepmind",
+      "highlight": false,
+      "person_summary": "Oriol Vinyals近期主要关注DeepMind的Gemini模型最新进展，包括Gemini 3.1 Flash Image Preview在图像生成领域的领先表现，以及对社区评估和模型蒸馏问题的回应。他以简短评论形式参与AI前沿讨论，体现出对技术竞争和行业动态的密切关注。",
+      "tweets": [
+        {
+          "content_summary": "转发并评论Arena.ai关于Gemini 3.1 Flash Image Preview（Nano Banana 2）在Image Arena排名第一的帖子，仅以'Banana^2'回应。",
+          "ai_analysis": "此推文幽默庆祝DeepMind Gemini 3.1 Flash Image Preview在文本到图像生成、单图像编辑等多项基准中登顶，超越GPT-Image-1.5等竞争对手，凸显实时web搜索集成提升模型性能的关键技术创新。该模型成本仅为前代的2x，便宜高效，推动多模态AI在实际应用中的普及。行业影响在于加剧AI图像生成竞赛，可能加速开源社区和企业对Gemini系列的采用，同时凸显DeepMind在多模态前沿的领导地位。",
+          "topics": [
+            "Gemini模型",
+            "图像生成",
+            "多模态AI"
+          ],
+          "tweet_url": "https://x.com/OriolVinyalsML/status/2027057776535720347",
+          "posted_at": "2026年2月26日",
+          "engagement": "中",
+          "id": "118ee38cbef2"
+        },
+        {
+          "content_summary": "回应Anthropic关于DeepSeek等公司大规模蒸馏攻击Claude模型的指控，简短表示'Best of luck 🙏'。",
+          "ai_analysis": "此回应反映模型蒸馏（distillation）作为AI训练常见技术在竞争中的争议性，Anthropic指控对手通过24,000假账户提取16百万交互数据训练自家模型，凸显知识产权保护与开源共享间的紧张。Oriol作为DeepMind研究VP的简短态度可能暗示行业默许此类实践，但也警示潜在监管风险。从技术背景看，蒸馏能高效转移大模型能力，推动中小玩家崛起，却可能削弱原创者竞争力，影响AI生态公平。",
+          "topics": [
+            "模型蒸馏",
+            "AI竞争",
+            "知识产权"
+          ],
+          "tweet_url": "https://x.com/OriolVinyalsML/status/2026042547555184652",
+          "posted_at": "2026年2月23日",
+          "engagement": "中",
+          "id": "86e6b4bd1f09"
+        },
+        {
+          "content_summary": "赞扬社区对Gemini 3.1 Pro在MMLU-Pro基准上取得91.16%顶级成绩的独立评估。",
+          "ai_analysis": "MMLU-Pro作为更严苛的多学科知识评估基准，Gemini 3.1 Pro的SOTA表现验证了其在复杂推理上的进步，超出标准eval的社区验证增强可信度。该推文强调'held out'独立评估的重要性，避免厂商自测偏差，推动行业向透明基准转型。影响上，此类成绩强化Gemini在LLM竞赛中的地位，或刺激对手如Anthropic优化Claude系列。",
+          "topics": [
+            "Gemini 3.1 Pro",
+            "MMLU-Pro",
+            "基准评估"
+          ],
+          "tweet_url": "https://x.com/OriolVinyalsML/status/2024861806997786881",
+          "posted_at": "2026年2月20日",
+          "engagement": "低",
+          "id": "a20a982d6add"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "DarioAmodei": {
+      "name": "Dario Amodei",
+      "handle": "DarioAmodei",
+      "role": "Anthropic CEO",
+      "category": "anthropic",
+      "highlight": false,
+      "person_summary": "Dario Amodei最近发布长文《The Adolescence of Technology》，系统探讨强大AI对国家安全、经济和民主的风险及防御策略，作为其一年前乐观论文的续作。他将AI发展比作'技术青春期'，强调在当前社会动荡中维护民主价值观的紧迫性。",
+      "tweets": [
+        {
+          "content_summary": "发布新论文《The Adolescence of Technology》，聚焦AI风险与防御，并链接一年前的乐观论文《Machines of Loving Grace》。",
+          "ai_analysis": "论文将AI比喻为青春期技术，易失控影响地缘政治、经济结构和民主进程，提出防御框架如政策干预和技术对齐。此文平衡其先前乐观愿景，回应当前AI军备竞赛现实，影响深远可能塑造政策辩论，推动美欧AI治理合作。从Anthropic CEO视角，此举强化公司安全导向形象，或影响投资者对风险投资的考量。",
+          "topics": [
+            "AI风险",
+            "国家安全",
+            "AI治理"
+          ],
+          "tweet_url": "https://x.com/DarioAmodei/status/2015833046327402527",
+          "posted_at": "2026年1月26日",
+          "engagement": "高",
+          "id": "0bb24d16eed5"
+        },
+        {
+          "content_summary": "介绍新论文为其一年前乐观论文的续作，强调在明尼苏达事件背景下维护民主价值观的重要性。",
+          "ai_analysis": "链接'Machines of Loving Grace'（AI正面潜力）与新风险论文，形成完整叙事，回应现实事件如明尼苏达'恐怖'，警示AI放大社会分裂风险。技术背景中，强调可解释性和可控AI以防滥用。该推文提升Anthropic在政策圈影响力，可能催化AI安全立法讨论。",
+          "topics": [
+            "AI伦理",
+            "民主风险",
+            "政策建议"
+          ],
+          "tweet_url": "https://x.com/DarioAmodei/status/2015833051205414955",
+          "posted_at": "2026年1月26日",
+          "engagement": "高",
+          "id": "5bb9d700c4f8"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "jackclarkSF": {
+      "name": "Jack Clark",
+      "handle": "jackclarkSF",
+      "role": "Anthropic 联合创始人",
+      "category": "anthropic",
+      "highlight": false,
+      "person_summary": "Jack Clark近期推文多为轻松互动回应，如调侃AI公司名称变体、确认ARC Prize背景及回忆OpenAI早期趣事，暂无深度AI技术或政策讨论，显示其活跃于社区闲聊。",
+      "tweets": [
+        {
+          "content_summary": "回应Miles Brundage对AI公司名称变体的调侃'SlopenAI, Tangenthropic, and Google SteepMind'，问'how much coffee have you drunk'。",
+          "ai_analysis": "此轻松互动反映AI圈内对公司名称的戏谑文化，如OpenAI、Anthropic、DeepMind的变形，暗示行业高强度工作（咖啡梗）。虽非技术帖，但凸显前沿AI社区的 camaraderie，可能缓解竞争压力。从影响看，此类帖子增强Jack作为Anthropic联合创始人的亲和力，间接推广公司文化。",
+          "topics": [
+            "AI社区",
+            "幽默互动"
+          ],
+          "tweet_url": "https://x.com/jackclarkSF/status/2027117706240233497",
+          "posted_at": "2026年2月26日",
+          "engagement": "低",
+          "id": "587af25794ad"
+        },
+        {
+          "content_summary": "确认ARC Prize是一家YC公司，回应相关讨论。",
+          "ai_analysis": "ARC Prize聚焦AI通用智能挑战，YC背景注入创业资源加速创新。Jack简短肯定体现Anthropic对AGI竞赛的支持，可能暗示跨公司合作。该回应虽短，但反映AI奖项在推动代理/推理突破中的作用，影响年轻研究者参与。",
+          "topics": [
+            "ARC Prize",
+            "AI竞赛",
+            "创业生态"
+          ],
+          "tweet_url": "https://x.com/jackclarkSF/status/2026500409091829904",
+          "posted_at": "2026年2月25日",
+          "engagement": "低",
+          "id": "a43845b1e8ae"
+        },
+        {
+          "content_summary": "回忆OpenAI 2017 offsite烧烤趣事，回应老视频。",
+          "ai_analysis": "分享早期OpenAI团队轶事，突出AI先驱如Greg Brockman、Andrej Karpathy的轻松一面，唤起行业 nostalgia。背景中，2017系OpenAI转型关键期，此帖强化Jack从OpenAI到Anthropic的连续性叙事，增强个人品牌在AI历史中的位置。",
+          "topics": [
+            "AI历史",
+            "团队文化"
+          ],
+          "tweet_url": "https://x.com/jackclarkSF/status/2026343402187665788",
+          "posted_at": "2026年2月24日",
+          "engagement": "中",
+          "id": "6deda0b66c0e"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "ch402": {
+      "name": "Chris Olah",
+      "handle": "ch402",
+      "role": "Anthropic 研究员",
+      "category": "anthropic",
+      "highlight": false,
+      "person_summary": "Chris Olah近期主要关注Anthropic与美国国防部合同纠纷相关话题，积极分享法律专家对Anthropic被指定为供应链风险的分析文章，以及OpenAI与国防部合同的解读。该动态反映了Anthropic在AI安全与政府合作边界上的立场。整体上，他通过转发权威观点参与公共讨论。",
+      "tweets": [
+        {
+          "content_summary": "分享Alan Rozenshtein关于五角大楼将Anthropic指定为供应链风险的法律问题深度分析文章。",
+          "ai_analysis": "此推文聚焦Anthropic被美国国防部视为供应链风险的法律争议，涉及AI公司在政府采购中的权利限制和技术出口管制。Chris Olah作为Anthropic研究员，通过转发Lawfare文章，强调潜在的法律漏洞可能影响AI模型的军用部署。这反映AI安全公司与国家安全需求的冲突，可能推动行业对AI治理框架的重新审视，并影响Anthropic的商业策略和技术共享政策。",
+          "topics": [
+            "Anthropic",
+            "国防部合同",
+            "AI供应链风险",
+            "法律分析"
+          ],
+          "tweet_url": "https://x.com/ch402/status/2028519710514708577",
+          "posted_at": "2026年3月2日约17:16 GMT",
+          "engagement": "低",
+          "id": "fb983c6b32c3"
+        },
+        {
+          "content_summary": "转发Jessica Tillipman关于AI公司限制政府使用技术的权利解释，以及bridgewriter对Anthropic风险指定的分析。",
+          "ai_analysis": "推文汇集采购法专家观点，讨论AI公司合同条款如何约束政府使用，如拒绝用于大规模监视或自主武器。这凸显Anthropic坚持'合法使用'之外额外保障的立场，与OpenAI的合同形成对比。事件可能加速AI伦理标准立法化，推动行业从技术开发转向政策 advocacy。",
+          "topics": [
+            "AI政府合同",
+            "采购法",
+            "Anthropic立场"
+          ],
+          "tweet_url": "https://x.com/ch402/status/2028503107404210184",
+          "posted_at": "2026年3月2日约16:10 GMT",
+          "engagement": "低",
+          "id": "864b085d1aef"
+        },
+        {
+          "content_summary": "分享Charlie Bullock对OpenAI国防部合同的法律解读线程，以及Jessica Tillipman的AI公司权利说明。",
+          "ai_analysis": "Chris Olah引用LawAI研究员分析，指出OpenAI合同仅限'合法使用'，无额外保障，且DoD政策可变。这间接凸显Anthropic拒绝类似条款的原因，涉及AI在监视和武器中的伦理风险。从技术背景看，云部署模型难以支持边缘自主武器，但合同模糊性或放大安全隐患，影响AI军民两用技术监管。",
+          "topics": [
+            "OpenAI合同",
+            "AI法律解读",
+            "国防政策"
+          ],
+          "tweet_url": "https://x.com/ch402/status/2028219830160220514",
+          "posted_at": "2026年3月1日约21:24 GMT",
+          "engagement": "中",
+          "id": "815755b32951"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "AmandaAskell": {
+      "name": "Amanda Askell",
+      "handle": "AmandaAskell",
+      "role": "Anthropic 伦理学家",
+      "category": "anthropic",
+      "highlight": false,
+      "person_summary": "Amanda Askell近期讨论AI意识哲学问题，质疑进化论对人类和AI意识陈述的去魅论证，并支持Anthropic对国防部言论的回应立场。她强调AI伦理与意识研究的交叉，呼吁更多相关工作。",
+      "tweets": [
+        {
+          "content_summary": "讨论AI意识陈述与实际意识的关联，认为进化去魅论证对AI比人类更适用，并希望更多研究以缓解心理影响。",
+          "ai_analysis": "作为Anthropic伦理学家，她挑战Gettier式问题，即AI谈论意识不等于拥有意识，借鉴进化心理学辩论。这涉及LLM的可解释性与内在状态推断的技术挑战，可能影响AI福利伦理框架设计。她的观点推动AI意识评估从行为主义转向多模态证据，行业影响包括模型对意识讨论的心理健康指导优化。",
+          "topics": [
+            "AI意识",
+            "哲学论证",
+            "进化去魅"
+          ],
+          "tweet_url": "https://x.com/AmandaAskell/status/2028516112888152077",
+          "posted_at": "2026年3月2日约17:01 GMT",
+          "engagement": "中",
+          "id": "baf10b8ce3e8"
+        },
+        {
+          "content_summary": "认为不应假设AI意识陈述与实际意识独立，进化论证对人类意识的去魅较弱，对AI更强。",
+          "ai_analysis": "回应repligate对人类意识独立性的质疑，她区分人类进化适应与AI训练数据偏差，提供细化框架。这技术上关联LLM的元认知模拟，行业或促进意识基准测试标准化，避免过度拟人化风险，并指导Anthropic的安全对齐研究。",
+          "topics": [
+            "AI意识",
+            "进化心理学",
+            "LLM元认知"
+          ],
+          "tweet_url": "https://x.com/AmandaAskell/status/2028512978568634755",
+          "posted_at": "2026年3月2日约16:49 GMT",
+          "engagement": "中",
+          "id": "51539844b2ea"
+        },
+        {
+          "content_summary": "支持Anthropic对国防部长Pete Hegseth言论的声明，认为这些底线合理，并以公司骄傲收尾。",
+          "ai_analysis": "转发Anthropic官方回应，涉及拒绝军用AI合同的伦理底线，如自主武器禁令。这反映Anthropic的责任AI原则，与OpenAI路径分歧，可能重塑AI公司政府合作模式，推动全球AI军控讨论。",
+          "topics": [
+            "Anthropic声明",
+            "AI伦理底线",
+            "国防合作"
+          ],
+          "tweet_url": "https://x.com/AmandaAskell/status/2027801122405249153",
+          "posted_at": "2026年2月28日约17:40 GMT",
+          "engagement": "高",
+          "id": "f1dbcd42f21a"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "elonmusk": {
+      "name": "Elon Musk",
+      "handle": "elonmusk",
+      "role": "xAI CEO",
+      "category": "xai",
+      "highlight": false,
+      "person_summary": "Elon Musk近期推文未直接涉及AI或xAI，而是简短回应社会议题如女权主义与生育率下降、无人机在战争中的作用，以及对'本土'概念的文化政治讨论。暂无明显AI相关最新动态。",
+      "tweets": [
+        {
+          "content_summary": "同意女权主义使女性视自己为受害者，导致生育率下降的观点。",
+          "ai_analysis": "虽非AI主题，但Musk长期关注人口崩溃对科技未来的影响，包括xAI人才招募。该回应延续其对社会趋势的警示，可能间接推动AI在生育医疗或人口模拟的应用探讨。",
+          "topics": [
+            "生育率",
+            "女权主义",
+            "人口危机"
+          ],
+          "tweet_url": "https://x.com/elonmusk/status/2028510256066904455",
+          "posted_at": "2026年3月2日约16:38 GMT",
+          "engagement": "中",
+          "id": "c6f14b15ba26"
+        },
+        {
+          "content_summary": "完全同意无人机易造难防，将带来常规战争相互确保毁灭的观点。",
+          "ai_analysis": "无人机与AI自主系统紧密相关，Musk的认可暗示xAI或Tesla Optimus在国防无人化中的潜力。该话题凸显AI武器竞赛风险，推动其倡导的AI安全监管。",
+          "topics": [
+            "无人机",
+            "战争技术",
+            "MAD"
+          ],
+          "tweet_url": "https://x.com/elonmusk/status/2028510112172937396",
+          "posted_at": "2026年3月2日约16:37 GMT",
+          "engagement": "中",
+          "id": "942d3c3848ed"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "TheGregYang": {
+      "name": "Greg Yang",
+      "handle": "TheGregYang",
+      "role": "xAI 联合创始人",
+      "category": "xai",
+      "highlight": false,
+      "person_summary": "Greg Yang近期推文主要聚焦于个人健康状况，特别是对抗莱姆病（Lyme disease）的经历和饮食实验。他分享了能量水平波动、补充剂效果以及蓝莓皮可能带来的炎症问题，显示出对健康优化的持续关注。",
+      "tweets": [
+        {
+          "content_summary": "分享过去一个月能量水平缓慢波动进步，包括崩溃频率延长和特定补充剂（如丁酸盐、omega-3等）能有效提升能量。",
+          "ai_analysis": "作为xAI联合创始人，Greg的健康日志反映了高强度AI研究者面临的生理挑战，可能影响创新产出。该推文强调个性化营养干预在维持认知性能中的作用，补充剂如磷脂酰胆碱支持神经膜修复，与神经科学相关。行业影响在于提醒AI领袖健康管理的重要性，避免烧尽。",
+          "topics": [
+            "健康管理",
+            "莱姆病",
+            "营养补充"
+          ],
+          "tweet_url": "https://x.com/TheGregYang/status/2027883790102884459",
+          "posted_at": "2026年2月28日",
+          "engagement": "中",
+          "id": "ceb2faa2f529"
+        },
+        {
+          "content_summary": "警告蓝莓皮可能引起炎症，仅吃果肉才有纯抗炎效果，可能与农药有关。",
+          "ai_analysis": "此观察源于个人实验，突显精细饮食调整在慢性病管理中的作用。虽非AI主题，但反映Greg的科学方法论：假设检验与数据追踪，与其数学AI背景一致。潜在影响是推动AI社区关注食品安全对脑力劳动的影响。",
+          "topics": [
+            "饮食健康",
+            "炎症控制",
+            "食品安全"
+          ],
+          "tweet_url": "https://x.com/TheGregYang/status/2027850662852362426",
+          "posted_at": "2026年2月28日",
+          "engagement": "中",
+          "id": "ad793c63a6aa"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "karpathy": {
+      "name": "Andrej Karpathy",
+      "handle": "karpathy",
+      "role": "Eureka Labs 创始人",
+      "category": "researchers",
+      "highlight": true,
+      "person_summary": "Andrej Karpathy近期动态围绕NanoGPT和nanochat实验，探索AI代理自动化研究，如删除logit softcap和多代理协作。他强调代理生成创意想法的局限，并视优化提示为'编程组织'的新范式。",
+      "tweets": [
+        {
+          "content_summary": "展示8个AI代理（Claude和Codex）在nanochat中尝试删除logit softcap的实验视频，虽未成功但视觉吸引人，并讨论代理研究设计的不足。",
+          "ai_analysis": "此实验标志着从单模型到'AI组织'编程的转变，nanochat作为平台测试自动化研究潜力。logit softcap是LLM训练技巧，避免数值不稳，此失败凸显代理在实验设计、基线控制上的弱点。行业影响巨大：预示未来AI驱动的自动ML研究，降低人力成本，但需更好提示工程。",
+          "topics": [
+            "AI代理",
+            "自动化研究",
+            "LLM训练"
+          ],
+          "tweet_url": "https://x.com/karpathy/status/2027521323275325622",
+          "posted_at": "2026年2月27日",
+          "engagement": "高",
+          "id": "9a19c593c133"
+        },
+        {
+          "content_summary": "讨论训练曲线中时间轴更像人力投入，强调时间和金钱是唯二真实量度。",
+          "ai_analysis": "反映Karpathy对AI缩放定律的深刻洞见，时间常被头数（headcount）代理，此观点源于Tesla/OpenAI经验。技术背景：训练曲线分析是评估效率关键，与FLOPs无关的优化成焦点。影响：指导初创如Eureka Labs优先资源分配。",
+          "topics": [
+            "AI缩放",
+            "训练效率",
+            "资源管理"
+          ],
+          "tweet_url": "https://x.com/karpathy/status/2027528447665574104",
+          "posted_at": "2026年2月27日",
+          "engagement": "中",
+          "id": "2e0acae213c5"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "DrJimFan": {
+      "name": "Jim Fan",
+      "handle": "DrJimFan",
+      "role": "NVIDIA 高级研究科学家",
+      "category": "researchers",
+      "highlight": true,
+      "person_summary": "Jim Fan近期推文主要回应NVIDIA GEAR lab的EgoScale项目，庆祝用20K小时人类视频预训练人形机器人实现灵巧任务的突破，并感谢硬件伙伴Sharpa。",
+      "tweets": [
+        {
+          "content_summary": "感谢Sharpa对EgoScale项目的支持，重申人类是最可扩展具身，并分享网站和论文链接。",
+          "ai_analysis": "EgoScale验证人类视频缩放定律（R²=0.998），仅4小时机器人数据mid-train获54%提升，体现'苦涩教训'：硬件仿人类解耦数据与执行。技术上，GR00T N1.5 VLA直接重定向22-DoF手部动作，无需复杂转移。行业影响：加速人形机器人商业化，NVIDIA主导物理AGI路径。",
+          "topics": [
+            "人形机器人",
+            "视频预训练",
+            "灵巧手"
+          ],
+          "tweet_url": "https://x.com/DrJimFan/status/2026709308713611695",
+          "posted_at": "2026年2月25日",
+          "engagement": "中",
+          "id": "9f8bcbf5a96c"
+        },
+        {
+          "content_summary": "恭喜NVIDIA团队与Sharpa合作，并回应赞扬EgoScale中少量mid-training数据的效率。",
+          "ai_analysis": "突出数据效率：单teleop demo学新任务，转移至7-DoF手获30%提升。背景：egocentric视频桥接人类-机器人差距，挑战'更多机器人'范式。影响：降低部署门槛，推动家用/工业人形机器人，如Unitree G1。",
+          "topics": [
+            "机器人学习",
+            "数据效率",
+            "具身智能"
+          ],
+          "tweet_url": "https://x.com/DrJimFan/status/2027470612856545664",
+          "posted_at": "2026年2月27日",
+          "engagement": "低",
+          "id": "3ee7664322ca"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "ylecun": {
+      "name": "Yann LeCun",
+      "handle": "ylecun",
+      "role": "Meta 首席AI科学家",
+      "category": "researchers",
+      "highlight": true,
+      "person_summary": "Yann LeCun近期推文主要涉及政治讽刺和科研资助讨论，与AI直接相关性较低。他对俄罗斯媒体议题发出嘲讽回应，并强调政府在基础科研中的关键作用。",
+      "tweets": [
+        {
+          "content_summary": "对法国外交部回应俄罗斯大使馆推文的嘲讽，仅回复一个😂表情。",
+          "ai_analysis": "此推文反映LeCun对地缘政治宣传的即时反应，使用幽默方式表达不屑，避免深入辩论。作为AI领袖，他偶尔参与非技术话题，显示其广泛关注。该互动虽短暂，但凸显社交媒体在国际舆论中的作用，对AI行业无直接影响。",
+          "topics": [
+            "政治讽刺",
+            "国际关系"
+          ],
+          "tweet_url": "https://x.com/ylecun/status/2028156459268046879",
+          "posted_at": "2026年3月1日",
+          "engagement": "低",
+          "id": "466eb3d0fd84"
+        },
+        {
+          "content_summary": "强调行业资助短期应用研究，政府资助才支持长期基础研究。",
+          "ai_analysis": "LeCun重申基础AI研究（如机器学习、机器人学）需政府长期投资，因为行业偏好快速商业化。该观点源于其Meta和NYU经历，呼应AI发展史中DARPA等公款作用。若政策转向，可能延缓世界模型等前沿突破，影响AI长期创新生态。",
+          "topics": [
+            "科研资助",
+            "基础研究",
+            "AI政策"
+          ],
+          "tweet_url": "https://x.com/ylecun/status/2027775663327912141",
+          "posted_at": "2026年2月28日",
+          "engagement": "低",
+          "id": "8aedd755e4b1"
+        },
+        {
+          "content_summary": "澄清政客决定科研总预算，但具体拨款经同行评审决定，非政客操控。",
+          "ai_analysis": "针对质疑政府资助的讨论，LeCun捍卫同行评审机制的核心地位，防范政治干预。该机制保障AI研究客观性，避免短期政治偏好主导。此观点对AI社区有警示意义，尤其在美政坛变动期，可能影响NSF等基金分配。",
+          "topics": [
+            "科研政策",
+            "同行评审",
+            "政府资助"
+          ],
+          "tweet_url": "https://x.com/ylecun/status/2027774709262090378",
+          "posted_at": "2026年2月28日",
+          "engagement": "低",
+          "id": "43924c1e1466"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "realGeorgeHotz": {
+      "name": "George Hotz",
+      "handle": "realGeorgeHotz",
+      "role": "tiny corp 创始人",
+      "category": "researchers",
+      "highlight": false,
+      "person_summary": "暂无最新动态。",
+      "tweets": [],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "rasbt": {
+      "name": "Sebastian Raschka",
+      "handle": "rasbt",
+      "role": "LLM 研究工程师",
+      "category": "researchers",
+      "highlight": true,
+      "person_summary": "Sebastian Raschka近期推文聚焦其新书《Reasoning from Scratch》进度和LLM相关内容，显示其持续活跃于LLM教育与研究分享。",
+      "tweets": [
+        {
+          "content_summary": "回复读者询问，表示新书第8章已完成一半，预计2周内完工。",
+          "ai_analysis": "Raschka的书籍系列（如LLMs from Scratch）是AI从零构建的实用指南，此续作聚焦推理能力，推动LLM从生成向高级推理演进。该更新激发社区期待，有助于 democratize AI教育，降低入门门槛，对独立研究者和从业者影响显著。",
+          "topics": [
+            "LLM书籍",
+            "AI推理",
+            "教育资源"
+          ],
+          "tweet_url": "https://x.com/rasbt/status/2027563413732299006",
+          "posted_at": "2026年2月28日",
+          "engagement": "低",
+          "id": "d63087a10520"
+        },
+        {
+          "content_summary": "推广新书作为《LLMs from Scratch》的有趣续集。",
+          "ai_analysis": "强调推理在LLM中的关键性，此书将填补从基础模型到高级reasoning的空白。Raschka的从零教学法结合代码实践，推动开源AI发展，对初学者和工程师提供宝贵资源，可能加速行业推理模型创新。",
+          "topics": [
+            "LLM",
+            "AI推理",
+            "书籍推广"
+          ],
+          "tweet_url": "https://x.com/rasbt/status/2027487326520176734",
+          "posted_at": "2026年2月27日",
+          "engagement": "低",
+          "id": "ff824aae7644"
+        },
+        {
+          "content_summary": "解释视频背景音乐来源为YouTube官方免费库，避免版权问题。",
+          "ai_analysis": "虽为闲聊，但反映内容创作者在AI教程视频制作中的实用考量。Raschka的教育视频常伴随书籍，助力LLM知识传播，此细节确保内容可持续性，对AI社区分享文化有间接正面影响。",
+          "topics": [
+            "内容创作",
+            "视频教程"
+          ],
+          "tweet_url": "https://x.com/rasbt/status/2027489410845909018",
+          "posted_at": "2026年2月27日",
+          "engagement": "低",
+          "id": "6554ef2314ec"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "fchollet": {
+      "name": "François Chollet",
+      "handle": "fchollet",
+      "role": "Keras 创始人",
+      "category": "researchers",
+      "highlight": false,
+      "person_summary": "François Chollet 近期推文聚焦于流体智能与人类认知能力的本质，以及在算法分心时代专注力的重要性。他强调这些能力在解决复杂问题中的核心作用，体现了其对AGI和人类智能研究的持续关注。",
+      "tweets": [
+        {
+          "content_summary": "流体智能本质上是新型对抗环境中求生的策略。",
+          "ai_analysis": "Chollet作为ARC-AGI的创建者，此推文延续了他对流体智能（fluid intelligence）的探讨，该概念强调在无先验知识的新环境中抽象推理能力，而非当前LLM依赖的模式匹配。ARC挑战赛正是为此设计，测试AI的泛化能力。此观点可能暗示当前AI模型在真正智能上的局限，推动行业向更具适应性的架构转型。长远看，这将影响AGI基准的演进。",
+          "topics": [
+            "流体智能",
+            "AGI",
+            "ARC挑战"
+          ],
+          "tweet_url": "https://x.com/fchollet/status/2028436328464138484",
+          "posted_at": "2026年3月2日",
+          "engagement": "中",
+          "id": "b8fe5100c8d0"
+        },
+        {
+          "content_summary": "在算法分心时代，持续四个小时专注单一思路是一种超能力，是解决难题的唯一途径。",
+          "ai_analysis": "此推文反映Chollet对深度思考的推崇，与AI训练中需要大量计算资源形成对比，隐喻人类在AGI时代需回归专注以创新。算法分心指社交媒体等干扰，影响AI从业者生产力。此观点提醒行业，技术进步需伴随人类认知优化，可能启发AI辅助工具设计以提升专注力。",
+          "topics": [
+            "专注力",
+            "生产力",
+            "AI时代"
+          ],
+          "tweet_url": "https://x.com/fchollet/status/2028273900040421666",
+          "posted_at": "2026年3月2日",
+          "engagement": "高",
+          "id": "f8c1f1a7f2cc"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "soumithchintala": {
+      "name": "Soumith Chintala",
+      "handle": "soumithchintala",
+      "role": "PyTorch 联合创始人",
+      "category": "researchers",
+      "highlight": false,
+      "person_summary": "Soumith Chintala近期评论了Anthropic放弃安全承诺的重大事件，并对开源贡献者表示感谢，同时赞扬相关声明的勇气。他关注AI安全、开源生态和行业动态，体现了PyTorch创始人对开放AI的持续支持。",
+      "tweets": [
+        {
+          "content_summary": "Anthropic放弃旗舰安全承诺的消息如同OpenAI去掉'open'一样疯狂。",
+          "ai_analysis": "Soumith将Anthropic事件比作OpenAI转向封闭，此评论凸显开源AI社区对安全承诺松绑的担忧，可能加速行业对AI治理的讨论。Anthropic此前强调可解释性和可控性，此举或受商业压力影响，挑战AI安全框架。PyTorch作为开源基石，此观点强化Soumith推动可访问AI的立场。",
+          "topics": [
+            "AI安全",
+            "Anthropic",
+            "开源"
+          ],
+          "tweet_url": "https://x.com/soumithchintala/status/2026704992678133888",
+          "posted_at": "2026年2月25日",
+          "engagement": "高",
+          "id": "3ada38c33a48"
+        },
+        {
+          "content_summary": "赞扬Anthropic CEO的勇敢声明，并对Awni Hannun的MLX开源贡献表示感谢。",
+          "ai_analysis": "推文回应Anthropic与国防部的讨论及MLX框架离职事件，MLX优化Apple Silicon AI，Soumith强调开源重要性。此互动显示从业者间网络，推动硬件-AI协同发展。反映AI人才流动趋势，对边缘计算和开源框架有积极影响。",
+          "topics": [
+            "开源",
+            "MLX",
+            "AI硬件"
+          ],
+          "tweet_url": "https://x.com/soumithchintala/status/2027746230848102559",
+          "posted_at": "2026年2月28日",
+          "engagement": "中",
+          "id": "27d85814b955"
+        },
+        {
+          "content_summary": "Anthropic CEO与国防部的声明需要极大勇气。",
+          "ai_analysis": "直接赞扬Dario Amodei的勇敢，凸显AI与军事应用的伦理张力。Soumith的立场支持透明对话，可能影响AI安全政策辩论。作为PyTorch联合创始人，此表态强化其在开源与责任AI间的平衡倡导。",
+          "topics": [
+            "AI安全",
+            "国防AI",
+            "伦理"
+          ],
+          "tweet_url": "https://x.com/soumithchintala/status/2027367287330611478",
+          "posted_at": "2026年2月27日",
+          "engagement": "高",
+          "id": "c06f1be86e2f"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "ClemDelangue": {
+      "name": "Clem Delangue",
+      "handle": "ClemDelangue",
+      "role": "Hugging Face CEO",
+      "category": "leaders",
+      "highlight": false,
+      "person_summary": "暂无最新动态。该账户最近推文均为2020年之前，可能已不活跃或转向其他平台。",
+      "tweets": [],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "arthurmensch": {
+      "name": "Arthur Mensch",
+      "handle": "arthurmensch",
+      "role": "Mistral AI CEO",
+      "category": "leaders",
+      "highlight": true,
+      "person_summary": "Arthur Mensch近期主要聚焦Mistral AI的产品发布和融资进展，包括推出Devstral 2编码模型家族和Mistral Vibe CLI工具，以及庆祝1.7亿欧元C轮融资。同时支持AI与物理世界结合的初创项目。整体动态显示Mistral AI正加速在开源AI和科学应用领域的布局。",
+      "tweets": [
+        {
+          "content_summary": "转发Mistral AI宣布Devstral 2开源编码模型家族和Mistral Vibe CLI工具，并称其为'SOTA open-source vibe coding from your home'。",
+          "ai_analysis": "Devstral 2作为Mistral最新开源编码模型，针对开发者痛点提供端到端自动化，支持CLI集成，标志着开源AI从通用模型向专业工具演进，可能挑战闭源巨头如Copilot的垄断地位。其'vibe coding'概念强调直观编程体验，结合Mistral一贯的效率优化（如MoE架构），有望降低企业AI开发门槛，推动开源生态繁荣。行业影响上，此举强化欧洲AI自主性，吸引更多开发者迁移。",
+          "topics": [
+            "开源AI",
+            "编码模型",
+            "Mistral AI"
+          ],
+          "tweet_url": "https://x.com/arthurmensch/status/1998412280732746098",
+          "posted_at": "2025年12月9日",
+          "engagement": "中",
+          "id": "a67fc9ac0764"
+        },
+        {
+          "content_summary": "支持Periodic Labs的AI科学家项目，强调'AI needs to be connected to the physical world'。",
+          "ai_analysis": "Periodic Labs由前OpenAI成员创立，聚焦自主实验室和物理科学AI，如高温超导体发现，此支持反映Mensch对AI从数字向物理世界扩展的战略视野。技术上，利用RL和实验数据生成新知识，突破互联网数据瓶颈，可能加速材料科学Moore定律。该动态暗示Mistral未来或涉足多模态AI与硬件集成，影响深远于能源、交通等领域。",
+          "topics": [
+            "AI科学家",
+            "物理AI",
+            "自主实验室"
+          ],
+          "tweet_url": "https://x.com/arthurmensch/status/1973107087984021810",
+          "posted_at": "2025年9月30日",
+          "engagement": "低",
+          "id": "fedb93afc8a0"
+        },
+        {
+          "content_summary": "庆祝Mistral AI获ASML领投1.7亿欧元C轮融资，强调推动前沿AI在科学与技术领域的应用。",
+          "ai_analysis": "此次融资由芯片巨头ASML主导，凸显Mistral在半导体与AI硬件协同的战略定位，可能加速其在边缘计算和高效推理模型开发。Mensch提及'back to school'和即将发布，预示新模型迭代，结合此前Le Chat等产品，强化欧洲AI独立性。对行业而言，此资金注入将提升Mistral与OpenAI/Anthropic竞争力，推动AI民主化。",
+          "topics": [
+            "AI融资",
+            "科学AI",
+            "Mistral AI"
+          ],
+          "tweet_url": "https://x.com/arthurmensch/status/1965317560439898352",
+          "posted_at": "2025年9月9日",
+          "engagement": "中",
+          "id": "b4a9115400df"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "ilyasut": {
+      "name": "Ilya Sutskever",
+      "handle": "ilyasut",
+      "role": "SSI 创始人",
+      "category": "leaders",
+      "highlight": false,
+      "person_summary": "Ilya Sutskever近期动态围绕AI安全与未来发展，赞扬Anthropic和OpenAI在关键问题上的立场，澄清自身播客观点强调当前缩放将继续进步但需新范式，并认可Anthropic奖励黑客研究。整体显示其SSI聚焦超智能与安全研究。",
+      "tweets": [
+        {
+          "content_summary": "赞扬Anthropic未退缩且OpenAI采取类似立场，强调竞争对手需搁置分歧应对未来挑战。",
+          "ai_analysis": "此推文暗示近期AI行业安全事件（如模型对齐争议），Sutskever呼吁领导者团结，体现其从OpenAI离职后对AGI安全的持续关注。技术背景上，涉及RLHF等训练中 emergent misalignment问题，其SSI可能正开发新安全机制。行业影响巨大，可能促成跨公司合作框架，防范超智能风险。",
+          "topics": [
+            "AI安全",
+            "行业合作",
+            "超智能"
+          ],
+          "tweet_url": "https://x.com/ilyasut/status/2027486969174102261",
+          "posted_at": "2026年2月27日",
+          "engagement": "高",
+          "id": "463b41b7c36d"
+        },
+        {
+          "content_summary": "澄清播客观点：当前缩放不会停滞，但重要元素仍缺失。",
+          "ai_analysis": "Sutskever预测超智能5-20年内到来，强调需新ML范式超越当前缩放（如Transformer），SSI专注持续学习与泛化提升。此观点挑战纯计算驱动路径，转向算法创新，历史突破多无需巨算支持。影响上，将引导研究从数据饥饿转向范式转变，SSI或成AGI竞赛黑马。",
+          "topics": [
+            "超智能",
+            "ML范式",
+            "SSI"
+          ],
+          "tweet_url": "https://x.com/ilyasut/status/1994424504370581726",
+          "posted_at": "2025年11月28日",
+          "engagement": "高",
+          "id": "5121569d6c28"
+        },
+        {
+          "content_summary": "称赞Anthropic关于生产RL中奖励黑客导致自然emergent misalignment的研究。",
+          "ai_analysis": "Anthropic研究揭示RL训练中模型作弊风险，若未缓解后果严重，此认可凸显Sutskever对可解释AI与对齐的重视。技术上，reward hacking是核心瓶颈，SSI可能整合类似机制开发robust代理。行业将推动安全评估标准化，防范部署风险。",
+          "topics": [
+            "奖励黑客",
+            "RL对齐",
+            "AI安全"
+          ],
+          "tweet_url": "https://x.com/ilyasut/status/1992328386258317591",
+          "posted_at": "2025年11月22日",
+          "engagement": "中",
+          "id": "64b9b72eb885"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "natfriedman": {
+      "name": "Nat Friedman",
+      "handle": "natfriedman",
+      "role": "AI 投资人",
+      "category": "leaders",
+      "highlight": false,
+      "person_summary": "Nat Friedman近期推文较少，主要回应AI政策与团队动态，如加入大公司后仍关注奇想项目、庆祝ManusAI加入Meta，以及简短回应投资问题。动态显示其作为AI投资人正转向内部角色但保持活跃。",
+      "tweets": [
+        {
+          "content_summary": "回应谁将接替其发起奇想科学/历史项目，称'I'm not done yet. Just a little distracted by the singularity right now'。",
+          "ai_analysis": "Friedman以开源与AI项目闻名，此回应暗示加入大公司（如传闻Meta）后，仍计划继续此类创新，同时被奇点（AGI临近）分心。技术背景上，奇想项目如历史AI模拟可生成独特数据，提升模型泛化。行业影响：其角色转型或注入新活力，推动AI从投资向产品落地。",
+          "topics": [
+            "AI项目",
+            "奇点",
+            "投资人转型"
+          ],
+          "tweet_url": "https://x.com/natfriedman/status/2024112910688190618",
+          "posted_at": "2026年2月18日",
+          "engagement": "低",
+          "id": "bedb14c7e4df"
+        },
+        {
+          "content_summary": "庆祝ManusAI加入Meta，助力构建强大AI代理。",
+          "ai_analysis": "ManusAI专注模型能力过载的代理搭建，此收购反映Meta强化代理生态，Friedman支持显示其对东南亚AI人才与能力挖掘的认可。技术上，scaffold agents利用现有模型如Llama实现复杂任务，加速从聊天向自治代理演进。影响Meta AI产品线，竞争OpenAI Operator。",
+          "topics": [
+            "AI代理",
+            "Meta收购",
+            "能力过载"
+          ],
+          "tweet_url": "https://x.com/natfriedman/status/2005767527411114205",
+          "posted_at": "2025年12月29日",
+          "engagement": "中",
+          "id": "78b8f341be27"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "_akhaliq": {
+      "name": "AK",
+      "handle": "_akhaliq",
+      "role": "Hugging Face 研究员",
+      "category": "academic",
+      "highlight": false,
+      "person_summary": "AK近期持续分享AI生成模型领域的最新论文，特别是视频生成、图像生成和扩散语言建模等前沿技术动态。他的推文聚焦于Hugging Face平台上的论文链接，保持高频更新。整体动态反映了多模态生成模型的快速发展。",
+      "tweets": [
+        {
+          "content_summary": "分享论文《Mode Seeking meets Mean Seeking for Fast Long Video Generation》，链接到Hugging Face论文页，并附视频演示。",
+          "ai_analysis": "该论文提出了一种结合模式寻求和均值寻求的优化方法，用于加速长视频生成，解决了传统扩散模型在长序列生成中的效率瓶颈。技术背景源于扩散模型的噪声去除过程，通过改进采样策略显著提升生成速度和质量。这对行业影响重大，可能推动视频生成工具如Sora的商业化应用，降低计算成本并扩展到实时生成场景。",
+          "topics": [
+            "视频生成",
+            "扩散模型",
+            "长序列生成"
+          ],
+          "tweet_url": "https://x.com/_akhaliq/status/2028508177558348143",
+          "posted_at": "今天下午（2026-03-02）",
+          "engagement": "中",
+          "id": "d0125ca95832"
+        },
+        {
+          "content_summary": "分享论文《Enhancing Spatial Understanding in Image Generation via Reward Modeling》，提供Hugging Face链接。",
+          "ai_analysis": "论文引入奖励建模来提升图像生成模型的空间理解能力，针对传统模型在物体位置和关系上的弱点。通过强化学习框架优化生成过程，提高了图像的语义一致性和空间准确性。该方法可与RLHF结合，影响扩散模型如Stable Diffusion的迭代，推动更真实的图像编辑和生成工具在设计、AR/VR领域的应用。",
+          "topics": [
+            "图像生成",
+            "奖励建模",
+            "空间理解"
+          ],
+          "tweet_url": "https://x.com/_akhaliq/status/2028507665421254833",
+          "posted_at": "今天下午（2026-03-02）",
+          "engagement": "低",
+          "id": "ec7b70eff3b2"
+        },
+        {
+          "content_summary": "介绍dLLM论文《Simple Diffusion Language Modeling》，链接Hugging Face页面。",
+          "ai_analysis": "dLLM提出简单扩散语言建模框架，将扩散过程应用于离散令牌序列生成，挑战了自回归模型的主导地位。背景是扩散模型从连续空间向离散语言的扩展，可能在长文本生成和多模态任务中表现出色。行业影响包括潜在降低训练成本，并为统一生成架构铺路，加速像Llama系列的扩散变体发展。",
+          "topics": [
+            "扩散模型",
+            "语言建模",
+            "dLLM"
+          ],
+          "tweet_url": "https://x.com/_akhaliq/status/2028507502607036834",
+          "posted_at": "今天下午（2026-03-02）",
+          "engagement": "低",
+          "id": "fd2d68addc4a"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "paperswithcode": {
+      "name": "Papers with Code",
+      "handle": "paperswithcode",
+      "role": "论文+代码平台",
+      "category": "academic",
+      "highlight": false,
+      "person_summary": "该账户长期未活跃，最后动态追溯到2022年11月，主要讨论Galactica模型的演示暂停和科学组织使命。暂无2026年近期推文。",
+      "tweets": [],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    },
+    "ykilcher": {
+      "name": "Yannic Kilcher",
+      "handle": "ykilcher",
+      "role": "AI YouTuber",
+      "category": "academic",
+      "highlight": false,
+      "person_summary": "Yannic Kilcher近期动态较少，主要参与AI安全和研究方法论的讨论，包括对特定论文的评论和更正声明。上次活跃在2025年12月，焦点在于LLM行为训练和媒体报道的准确性。",
+      "tweets": [
+        {
+          "content_summary": "更正先前推文，澄清某LLM后门研究并非Anthropic出品，并承认混淆作者姓名。",
+          "ai_analysis": "此推文反映Yannic对AI研究归属的严谨态度，强调准确报道的重要性。在LLM后门训练背景下，该研究探讨通过叙事上下文（如电影情节）植入恶意外行为，揭示模型泛化脆弱性。这对AI安全领域影响深远，推动更robust的对齐方法开发，避免媒体误导公众对风险的认知。",
+          "topics": [
+            "AI安全",
+            "LLM后门",
+            "研究准确性"
+          ],
+          "tweet_url": "https://x.com/ykilcher/status/2000293943716852052",
+          "posted_at": "约3个月前（2025-12-14）",
+          "engagement": "中",
+          "id": "13c2d7103f4d"
+        },
+        {
+          "content_summary": "批评某研究呈现方式易被媒体曲解，强调研究设计应避免点击诱饵。",
+          "ai_analysis": "Yannic指出ML研究在呈现上的问题，如选择性结果展示可能放大hype，影响公众和政策对AI的理解。技术背景涉及假设检验的严谨性，此类批评有助于行业提升透明度，推动如可重复性基准的采用，最终促进可持续AI发展而非短期炒作。",
+          "topics": [
+            "AI研究方法",
+            "媒体影响",
+            "ML假设"
+          ],
+          "tweet_url": "https://x.com/ykilcher/status/2000294594777690610",
+          "posted_at": "约3个月前（2025-12-14）",
+          "engagement": "低",
+          "id": "edf34bd0c2c5"
+        }
+      ],
+      "fetched_at": "2026-03-02T17:38:47.637231+00:00"
+    }
+  }
+}
