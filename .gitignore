@@ -111,3 +111,6 @@ temp/
 
 # Manus debug logs
 .manus-logs/
+
+# Vercel serverless function build output
+api/server.js
