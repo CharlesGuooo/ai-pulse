@@ -1,25 +1,24 @@
-import { int, mysqlEnum, mysqlTable, text, timestamp, varchar } from "drizzle-orm/mysql-core";
+import { integer, pgEnum, pgTable, serial, text, timestamp, varchar } from "drizzle-orm/pg-core";
 
 /**
  * Core user table backing auth flow.
- * Extend this file with additional tables as your product grows.
- * Columns use camelCase to match both database fields and generated types.
+ * Uses GitHub OAuth - openId stores GitHub user ID.
  */
-export const users = mysqlTable("users", {
-  /**
-   * Surrogate primary key. Auto-incremented numeric value managed by the database.
-   * Use this for relations between tables.
-   */
-  id: int("id").autoincrement().primaryKey(),
-  /** Manus OAuth identifier (openId) returned from the OAuth callback. Unique per user. */
-  openId: varchar("openId", { length: 64 }).notNull().unique(),
+export const roleEnum = pgEnum("role", ["user", "admin"]);
+export const itemTypeEnum = pgEnum("item_type", ["tweet", "academic"]);
+
+export const users = pgTable("users", {
+  id: serial("id").primaryKey(),
+  /** GitHub OAuth user ID */
+  openId: varchar("open_id", { length: 64 }).notNull().unique(),
   name: text("name"),
   email: varchar("email", { length: 320 }),
-  loginMethod: varchar("loginMethod", { length: 64 }),
-  role: mysqlEnum("role", ["user", "admin"]).default("user").notNull(),
-  createdAt: timestamp("createdAt").defaultNow().notNull(),
-  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
-  lastSignedIn: timestamp("lastSignedIn").defaultNow().notNull(),
+  avatarUrl: text("avatar_url"),
+  loginMethod: varchar("login_method", { length: 64 }),
+  role: roleEnum("role").default("user").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+  lastSignedIn: timestamp("last_signed_in").defaultNow().notNull(),
 });
 
 export type User = typeof users.$inferSelect;
@@ -28,14 +27,14 @@ export type InsertUser = typeof users.$inferInsert;
 /**
  * User archives - stores saved tweets and academic projects per user.
  */
-export const userArchives = mysqlTable("user_archives", {
-  id: int("id").autoincrement().primaryKey(),
-  userId: int("userId").notNull(),
-  itemType: mysqlEnum("itemType", ["tweet", "academic"]).notNull(),
-  itemId: varchar("itemId", { length: 128 }).notNull(),
-  itemData: text("itemData").notNull(),
+export const userArchives = pgTable("user_archives", {
+  id: serial("id").primaryKey(),
+  userId: integer("user_id").notNull(),
+  itemType: itemTypeEnum("item_type").notNull(),
+  itemId: varchar("item_id", { length: 128 }).notNull(),
+  itemData: text("item_data").notNull(),
   metadata: text("metadata"),
-  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
 export type UserArchive = typeof userArchives.$inferSelect;

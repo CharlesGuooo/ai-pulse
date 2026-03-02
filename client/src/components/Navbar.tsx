@@ -93,9 +93,17 @@ export default function Navbar() {
           {/* User menu */}
           {user && (
             <div className="flex items-center gap-2 pl-2 border-l border-border/60">
-              <div className="w-7 h-7 rounded-full bg-brand-orange/10 flex items-center justify-center">
-                <User className="w-3.5 h-3.5 text-brand-orange" />
-              </div>
+              {(user as any).avatarUrl ? (
+                <img
+                  src={(user as any).avatarUrl}
+                  alt={user.name || '用户'}
+                  className="w-7 h-7 rounded-full object-cover"
+                />
+              ) : (
+                <div className="w-7 h-7 rounded-full bg-brand-orange/10 flex items-center justify-center">
+                  <User className="w-3.5 h-3.5 text-brand-orange" />
+                </div>
+              )}
               <span className="text-xs text-muted-foreground max-w-[80px] truncate">
                 {user.name || '用户'}
               </span>

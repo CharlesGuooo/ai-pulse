@@ -1,24 +1,41 @@
 /**
  * Login Page - Editorial Warmth Style
- * Full-screen login page with brand identity
+ * Full-screen login page with GitHub OAuth
  */
-import { getLoginUrl } from '@/const';
-import { Sparkles, ArrowRight, Zap, BookOpen, Shield } from 'lucide-react';
+import { Sparkles, ArrowRight, Zap, BookOpen, Shield, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useEffect } from 'react';
+import { useLocation } from 'wouter';
+import { trpc } from '@/lib/trpc';
 
 export default function Login() {
-  const handleLogin = () => {
-    window.location.href = getLoginUrl();
+  const [location] = useLocation();
+  const { data: user } = trpc.auth.me.useQuery();
+
+  // If already logged in, redirect to home
+  useEffect(() => {
+    if (user) {
+      window.location.href = '/';
+    }
+  }, [user]);
+
+  const handleGitHubLogin = () => {
+    const returnPath = new URLSearchParams(window.location.search).get('return') || '/';
+    window.location.href = `/api/auth/github?return=${encodeURIComponent(returnPath)}`;
   };
+
+  // Check for error in URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const error = urlParams.get('error');
 
   return (
     <div className="min-h-screen bg-background flex">
       {/* Left: Brand Panel */}
       <div className="hidden lg:flex lg:w-1/2 relative overflow-hidden bg-brand-orange">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-white/20 blur-3xl" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-white/10 blur-3xl" />
-          <div className="absolute top-1/2 left-1/3 w-48 h-48 rounded-full bg-white/15 blur-2xl" />
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-white/10 blur-3xl" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-white/5 blur-3xl" />
+          <div className="absolute top-1/2 left-1/3 w-48 h-48 rounded-full bg-white/8 blur-2xl" />
         </div>
 
         <div className="relative z-10 flex flex-col justify-center px-12 xl:px-16">
@@ -101,15 +118,22 @@ export default function Login() {
             欢迎回来
           </h2>
           <p className="text-sm text-muted-foreground mb-8">
-            登录以访问AI前沿资讯和个人收藏夹
+            使用 GitHub 账号登录，访问AI前沿资讯和个人收藏夹
           </p>
 
+          {error && (
+            <div className="mb-4 p-3 rounded-lg bg-red-50 border border-red-200 text-sm text-red-600">
+              登录失败，请重试。
+            </div>
+          )}
+
           <Button
-            onClick={handleLogin}
-            className="w-full h-12 bg-brand-orange hover:bg-brand-orange-dark text-white font-medium text-sm rounded-lg shadow-warm transition-all duration-200 flex items-center justify-center gap-2"
+            onClick={handleGitHubLogin}
+            className="w-full h-12 bg-[#24292e] hover:bg-[#1a1e22] text-white font-medium text-sm rounded-lg transition-all duration-200 flex items-center justify-center gap-3"
           >
-            <span>使用 Manus 账号登录</span>
-            <ArrowRight className="w-4 h-4" />
+            <Github className="w-5 h-5" />
+            <span>使用 GitHub 登录</span>
+            <ArrowRight className="w-4 h-4 ml-auto" />
           </Button>
 
           <p className="mt-6 text-xs text-center text-muted-foreground">
