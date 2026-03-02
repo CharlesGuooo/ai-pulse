@@ -37,3 +37,12 @@
 - [x] 全面测试登录流程
 - [x] 测试收藏夹功能
 - [x] 保存 checkpoint
+
+## 7. 迁移到独立基础设施
+- [ ] 推送代码到GitHub仓库
+- [ ] 适配代码支持Vercel部署（Serverless Functions）
+- [ ] 适配代码支持PlanetScale数据库（MySQL）
+- [ ] 配置PlanetScale数据库并创建表
+- [ ] 配置Vercel部署并绑定环境变量
+- [ ] 配置GitHub Actions每12小时自动刷新数据
+- [ ] 端到端验证所有功能
