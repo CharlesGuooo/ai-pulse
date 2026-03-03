@@ -282,9 +282,16 @@ export default function Voices() {
 
                     {activePosts.length === 0 && (
                       <div className="px-4 pb-4">
-                        <p className="text-xs text-muted-foreground italic">
-                          {activeTab === 'recent' ? '暂无最新推文数据' : '暂无半年内热门推文数据'}
-                        </p>
+                        {activeTab === 'top' ? (
+                          <div className="flex items-start gap-2 py-2">
+                            <Flame className="w-3.5 h-3.5 text-amber-400/60 mt-0.5 shrink-0" />
+                            <p className="text-xs text-muted-foreground italic">
+                              半年最火数据正在获取中，将于今日早上7点自动更新。
+                            </p>
+                          </div>
+                        ) : (
+                          <p className="text-xs text-muted-foreground italic">暂无最新推文数据</p>
+                        )}
                       </div>
                     )}
                   </div>
