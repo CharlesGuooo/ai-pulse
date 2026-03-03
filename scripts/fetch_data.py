@@ -3,7 +3,7 @@
 AI Pulse - Data Fetcher
 Calls Grok API (Responses API) with X Search to fetch and analyze tweets from AI influencers.
 Outputs JSON data files for the static frontend.
-Runs every 12 hours via GitHub Actions.
+Runs once daily at 07:00 Beijing time via GitHub Actions.
 """
 
 import json
@@ -148,22 +148,37 @@ def parse_json_response(text: str) -> dict | list | None:
         return None
 
 
+def make_tweet_id(handle: str, content: str, index: int) -> str:
+    """Generate a stable ID for a tweet."""
+    return hashlib.md5(f"{handle}_{content}_{index}".encode()).hexdigest()[:12]
+
+
 def fetch_batch_tweets(batch: list[dict]) -> dict:
-    """Fetch tweets for a batch of influencers (up to 10) in one API call."""
+    """Fetch tweets for a batch of influencers in one API call.
+    
+    Returns for each person:
+      - recent_posts: 最近6篇帖子
+      - top_posts: 半年内最重要最火的3篇帖子（由Grok判断）
+      - person_summary: 近期动态概述
+    """
     handles = [inf["handle"] for inf in batch]
     names_info = ", ".join([f"@{inf['handle']} ({inf['name']}, {inf['role']})" for inf in batch])
 
     print(f"  Fetching batch: {', '.join(handles)}...")
 
-    prompt = f"""请搜索以下AI领域关键人物在X/Twitter上的最新推文动态：
+    prompt = f"""请搜索以下AI领域关键人物在X/Twitter上的推文动态：
 {names_info}
+
+对每个人，请分别获取两类内容：
+1. **最近6篇帖子**（recent_posts）：按时间倒序，最新的6条推文
+2. **半年内最重要最火的3篇帖子**（top_posts）：过去6个月内，综合考虑转发量、点赞数、引用数、话题影响力，选出最具代表性、传播最广的3篇推文
 
 请按以下JSON格式返回结果（直接返回JSON，不要加markdown代码块标记）：
 {{
   "people": {{
     "<handle>": {{
       "person_summary": "该人物近期动态的整体概述（2-3句话）",
-      "tweets": [
+      "recent_posts": [
         {{
           "content_summary": "推文核心内容的简要概述（1-2句话）",
           "ai_analysis": "对该推文的深度解读（3-5句话，包含技术背景、行业影响等）",
@@ -172,12 +187,28 @@ def fetch_batch_tweets(batch: list[dict]) -> dict:
           "posted_at": "发布时间描述",
           "engagement": "互动情况（高/中/低）"
         }}
+      ],
+      "top_posts": [
+        {{
+          "content_summary": "推文核心内容的简要概述（1-2句话）",
+          "ai_analysis": "对该推文的深度解读（3-5句话，包含为何重要、传播原因、行业影响等）",
+          "topics": ["相关话题标签1", "话题标签2"],
+          "tweet_url": "推文链接",
+          "posted_at": "发布时间描述",
+          "engagement": "互动情况（高/中/低）",
+          "why_top": "为什么这篇是半年内最重要最火的（1-2句话说明理由）"
+        }}
       ]
     }}
   }}
 }}
 
-请为每个人获取最近5-8条最重要的推文（尽量多获取）。如果某人没有近期推文，也请包含该handle并标注"暂无最新动态"。"""
+要求：
+- recent_posts 必须恰好6条（最新的6条），如不足6条则尽量多获取
+- top_posts 必须恰好3条（半年内最火的3条），按影响力从高到低排序
+- top_posts 中的帖子可以与 recent_posts 重叠（如果最近的帖子也是最火的）
+- 如果某人没有近期推文，也请包含该handle并标注"暂无最新动态"
+- 每条帖子都需要包含 tweet_url"""
 
     result = call_grok(prompt, x_handles=handles)
 
@@ -188,20 +219,25 @@ def fetch_batch_tweets(batch: list[dict]) -> dict:
     parsed = parse_json_response(result)
     if parsed and isinstance(parsed, dict) and "people" in parsed:
         people = parsed["people"]
-        # Normalize handles - API may return @handle or handle
         normalized = {}
         for key, data in people.items():
             clean_key = key.lstrip("@")
-            for i, tweet in enumerate(data.get("tweets", [])):
+            # Assign IDs to recent_posts
+            for i, tweet in enumerate(data.get("recent_posts", [])):
                 if not tweet.get("id"):
-                    tweet["id"] = hashlib.md5(
-                        f"{clean_key}_{tweet.get('content_summary', '')}_{i}".encode()
-                    ).hexdigest()[:12]
+                    tweet["id"] = make_tweet_id(clean_key, tweet.get("content_summary", ""), i)
+            # Assign IDs to top_posts
+            for i, tweet in enumerate(data.get("top_posts", [])):
+                if not tweet.get("id"):
+                    tweet["id"] = make_tweet_id(clean_key, tweet.get("content_summary", "") + "_top", i)
+            # Backward compatibility: keep 'tweets' as alias for recent_posts
+            if "recent_posts" in data and "tweets" not in data:
+                data["tweets"] = data["recent_posts"]
             normalized[clean_key] = data
         return normalized
 
     # If structured parse fails, try to use grok-3-mini to structure the raw text
-    print("  Attempting to structure raw response...")
+    print("  Attempting to structure raw response with grok-3-mini...")
     structure_prompt = f"""请将以下关于AI领域人物推文动态的文本信息，整理成JSON格式。
 涉及的人物handles: {', '.join(handles)}
 
@@ -213,7 +249,7 @@ def fetch_batch_tweets(batch: list[dict]) -> dict:
   "people": {{
     "<handle>": {{
       "person_summary": "该人物近期动态概述",
-      "tweets": [
+      "recent_posts": [
         {{
           "content_summary": "推文内容概述",
           "ai_analysis": "深度解读",
@@ -221,6 +257,17 @@ def fetch_batch_tweets(batch: list[dict]) -> dict:
           "tweet_url": "链接",
           "posted_at": "时间",
           "engagement": "高/中/低"
+        }}
+      ],
+      "top_posts": [
+        {{
+          "content_summary": "推文内容概述",
+          "ai_analysis": "深度解读",
+          "topics": ["话题1"],
+          "tweet_url": "链接",
+          "posted_at": "时间",
+          "engagement": "高/中/低",
+          "why_top": "为什么重要"
         }}
       ]
     }}
@@ -232,11 +279,14 @@ def fetch_batch_tweets(batch: list[dict]) -> dict:
     if parsed2 and isinstance(parsed2, dict) and "people" in parsed2:
         people = parsed2["people"]
         for handle, data in people.items():
-            for i, tweet in enumerate(data.get("tweets", [])):
+            for i, tweet in enumerate(data.get("recent_posts", [])):
                 if not tweet.get("id"):
-                    tweet["id"] = hashlib.md5(
-                        f"{handle}_{tweet.get('content_summary', '')}_{i}".encode()
-                    ).hexdigest()[:12]
+                    tweet["id"] = make_tweet_id(handle, tweet.get("content_summary", ""), i)
+            for i, tweet in enumerate(data.get("top_posts", [])):
+                if not tweet.get("id"):
+                    tweet["id"] = make_tweet_id(handle, tweet.get("content_summary", "") + "_top", i)
+            if "recent_posts" in data and "tweets" not in data:
+                data["tweets"] = data["recent_posts"]
         return people
 
     # Last resort: create basic entries from raw text
@@ -245,6 +295,8 @@ def fetch_batch_tweets(batch: list[dict]) -> dict:
         handle = inf["handle"]
         result_dict[handle] = {
             "person_summary": "数据解析中，请稍后刷新",
+            "recent_posts": [],
+            "top_posts": [],
             "tweets": []
         }
     return result_dict
@@ -365,7 +417,7 @@ def main():
         json.dump(trending, f, ensure_ascii=False, indent=2)
     print("Wrote trending.json\n")
 
-    # 2. Fetch tweets for influencers in batches of up to 10 handles
+    # 2. Fetch tweets for influencers in batches
     all_tweets = {}
 
     # Deduplicate influencers by handle
@@ -376,12 +428,12 @@ def main():
             seen_handles.add(inf["handle"])
             unique_influencers.append(inf)
 
-    # Group influencers into batches (max 10 per API call due to handle limit)
+    # Group influencers into batches (3 per batch for reliable JSON parsing)
     batches = []
     current_batch = []
     for inf in unique_influencers:
         current_batch.append(inf)
-        if len(current_batch) >= 3:  # Use 3 for better JSON parsing reliability
+        if len(current_batch) >= 3:
             batches.append(current_batch)
             current_batch = []
     if current_batch:
@@ -402,6 +454,8 @@ def main():
                 else:
                     all_tweets[handle] = {
                         **inf,
+                        "recent_posts": [],
+                        "top_posts": [],
                         "tweets": [],
                         "person_summary": "暂无最新动态",
                         "fetched_at": timestamp
@@ -411,6 +465,8 @@ def main():
             for inf in batch:
                 all_tweets[inf["handle"]] = {
                     **inf,
+                    "recent_posts": [],
+                    "top_posts": [],
                     "tweets": [],
                     "person_summary": "数据获取失败，将在下次刷新时重试",
                     "fetched_at": timestamp
@@ -420,9 +476,9 @@ def main():
         tweets_output = {
             "meta": {
                 "fetched_at": timestamp,
-                "next_update": (now + timedelta(hours=12)).isoformat(),
+                "next_update": (now + timedelta(hours=24)).isoformat(),
                 "total_influencers": len(unique_influencers),
-                "version": "2.0"
+                "version": "3.0"
             },
             "categories": CATEGORIES,
             "influencers": all_tweets

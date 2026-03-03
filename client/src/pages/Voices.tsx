@@ -2,18 +2,28 @@
  * Design: Editorial Warmth - Voices Page
  * Magazine-style layout: Left main content (wide), right sidebar (narrow)
  * Category filtering, influencer list with tweet cards
+ * Each influencer shows: recent 6 posts + top 3 viral posts (last 6 months)
  */
 import { useState, useMemo } from 'react';
 import { useTweets } from '@/hooks/useData';
 import TweetCard from '@/components/TweetCard';
 import { cn } from '@/lib/utils';
-import { Search, Users, ChevronDown, ChevronUp, Filter } from 'lucide-react';
+import { Search, Users, ChevronDown, ChevronUp, Filter, Clock, Flame } from 'lucide-react';
+
+type PostTab = 'recent' | 'top';
 
 export default function Voices() {
   const { data, loading } = useTweets();
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [expandedInfluencer, setExpandedInfluencer] = useState<string | null>(null);
+  // Per-influencer tab state: 'recent' (default) or 'top'
+  const [activeTabs, setActiveTabs] = useState<Record<string, PostTab>>({});
+
+  const getTab = (handle: string): PostTab => activeTabs[handle] ?? 'recent';
+  const setTab = (handle: string, tab: PostTab) => {
+    setActiveTabs(prev => ({ ...prev, [handle]: tab }));
+  };
 
   const categories = useMemo(() => {
     if (!data) return [];
@@ -146,7 +156,14 @@ export default function Voices() {
             <div className="space-y-4">
               {influencers.map(inf => {
                 const isExpanded = expandedInfluencer === inf.handle;
-                const displayTweets = isExpanded ? inf.tweets : inf.tweets.slice(0, 1);
+                const activeTab = getTab(inf.handle);
+
+                // Resolve posts for each tab
+                const recentPosts = inf.recent_posts ?? inf.tweets ?? [];
+                const topPosts = inf.top_posts ?? [];
+
+                const activePosts = activeTab === 'recent' ? recentPosts : topPosts;
+                const displayPosts = isExpanded ? activePosts : activePosts.slice(0, 1);
 
                 return (
                   <div key={inf.handle} className="bg-card/50 rounded-xl border border-border/30 overflow-hidden">
@@ -183,12 +200,12 @@ export default function Voices() {
                         </div>
                       </div>
 
-                      {inf.tweets.length > 1 && (
+                      {activePosts.length > 1 && (
                         <button
                           onClick={() => setExpandedInfluencer(isExpanded ? null : inf.handle)}
                           className="flex items-center gap-1 text-xs text-muted-foreground hover:text-brand-orange transition-colors"
                         >
-                          {isExpanded ? '收起' : `展开 ${inf.tweets.length} 条`}
+                          {isExpanded ? '收起' : `展开 ${activePosts.length} 条`}
                           {isExpanded ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
                         </button>
                       )}
@@ -203,25 +220,71 @@ export default function Voices() {
                       </div>
                     )}
 
-                    {/* Tweets */}
-                    {displayTweets.length > 0 && (
+                    {/* Tab Switcher: 最近动态 / 半年最火 */}
+                    <div className="px-4 pb-2 flex items-center gap-1">
+                      <button
+                        onClick={() => setTab(inf.handle, 'recent')}
+                        className={cn(
+                          'flex items-center gap-1 px-3 py-1 text-xs font-medium rounded-md transition-colors',
+                          activeTab === 'recent'
+                            ? 'bg-brand-orange/10 text-brand-orange border border-brand-orange/30'
+                            : 'text-muted-foreground hover:text-foreground border border-transparent hover:border-border/60'
+                        )}
+                      >
+                        <Clock className="w-3 h-3" />
+                        最近动态
+                        {recentPosts.length > 0 && (
+                          <span className="ml-0.5 text-[10px] opacity-70">({recentPosts.length})</span>
+                        )}
+                      </button>
+                      <button
+                        onClick={() => setTab(inf.handle, 'top')}
+                        className={cn(
+                          'flex items-center gap-1 px-3 py-1 text-xs font-medium rounded-md transition-colors',
+                          activeTab === 'top'
+                            ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/30'
+                            : 'text-muted-foreground hover:text-foreground border border-transparent hover:border-border/60'
+                        )}
+                      >
+                        <Flame className="w-3 h-3" />
+                        半年最火
+                        {topPosts.length > 0 && (
+                          <span className="ml-0.5 text-[10px] opacity-70">({topPosts.length})</span>
+                        )}
+                      </button>
+                    </div>
+
+                    {/* Posts */}
+                    {displayPosts.length > 0 && (
                       <div className="px-4 pb-4 space-y-3">
-                        {displayTweets.map(tweet => (
-                          <TweetCard
-                            key={tweet.id}
-                            tweet={tweet}
-                            influencerName={inf.name}
-                            influencerHandle={inf.handle}
-                            showInfluencer={false}
-                            compact
-                          />
+                        {displayPosts.map((tweet, idx) => (
+                          <div key={tweet.id}>
+                            {/* "半年最火" badge for top posts */}
+                            {activeTab === 'top' && tweet.why_top && (
+                              <div className="flex items-start gap-1.5 mb-1.5 px-1">
+                                <Flame className="w-3 h-3 text-amber-500 mt-0.5 shrink-0" />
+                                <p className="text-[11px] text-amber-600 dark:text-amber-400 leading-relaxed">
+                                  <span className="font-semibold">#{idx + 1} 爆款原因：</span>{tweet.why_top}
+                                </p>
+                              </div>
+                            )}
+                            <TweetCard
+                              tweet={tweet}
+                              influencerName={inf.name}
+                              influencerHandle={inf.handle}
+                              showInfluencer={false}
+                              compact
+                            />
+                          </div>
                         ))}
                       </div>
                     )}
 
-                    {inf.tweets.length === 0 && (
+                    {activePosts.length === 0 && (
                       <div className="px-4 pb-4">
-                        <p className="text-xs text-muted-foreground italic">暂无最新推文数据</p>
+                        <p className="text-xs text-muted-foreground italic">
+                          {activeTab === 'recent' ? '暂无最新推文数据' : '暂无半年内热门推文数据'}
+                        </p>
                       </div>
                     )}
                   </div>

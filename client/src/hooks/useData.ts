@@ -43,6 +43,7 @@ export interface TweetData {
   tweet_url: string;
   posted_at: string;
   engagement: string;
+  why_top?: string; // Only present in top_posts
 }
 
 export interface InfluencerData {
@@ -51,7 +52,9 @@ export interface InfluencerData {
   role: string;
   category: string;
   highlight: boolean;
-  tweets: TweetData[];
+  tweets: TweetData[];        // Alias for recent_posts (backward compat)
+  recent_posts?: TweetData[]; // Latest 6 posts
+  top_posts?: TweetData[];    // Top 3 most viral posts in last 6 months
   person_summary: string;
   fetched_at: string;
 }
