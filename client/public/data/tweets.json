@@ -3543,8 +3543,8 @@
     "janleike": {
       "name": "Jan Leike",
       "handle": "janleike",
-      "role": "Anthropic 对齐团队负责人",
-      "category": "anthropic",
+      "role": "Anthropic 对齐团队负责人 (前OpenAI超级对齐)",
+      "category": "ai_safety",
       "highlight": false,
       "person_summary": "Jan Leike作为Anthropic对齐团队负责人，近期帖子聚焦政府监控担忧、公司立场支持及对齐研究进展，体现对AI安全与社会影响的警惕。互动强劲，尤其讽刺帖引发广泛转发，凸显其在对齐社区影响力。",
       "recent_posts": [
