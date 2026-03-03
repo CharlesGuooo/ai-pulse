@@ -29,11 +29,22 @@ jobs:
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
         run: python scripts/fetch_data.py
 
-      - name: Commit and push data
+      - name: Commit and push data (with retry)
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add client/public/data/
           git diff --staged --quiet || git commit -m "chore: update AI Pulse data [$(date -u +%Y-%m-%dT%H:%M:%SZ)]"
-          git pull --rebase origin main
-          git push
+          
+          # Retry push up to 5 times with exponential backoff to handle GitHub server errors
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main
+            if git push; then
+              echo "Push succeeded on attempt $i"
+              exit 0
+            fi
+            echo "Push failed on attempt $i, waiting before retry..."
+            sleep $((i * 30))
+          done
+          echo "All push attempts failed"
+          exit 1
