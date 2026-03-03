@@ -1,31 +1,32 @@
 {
-  "headline": "OpenAI推出GPT-5.3 Instant，提升ChatGPT准确性和用户体验",
-  "summary": "过去24小时AI领域动态聚焦模型迭代与政策调整，OpenAI快速推送GPT-5.3 Instant版本，强调更准确、更少尴尬输出，已向所有用户 rollout。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">35</argument></grok:render> Anthropic的Claude登顶App Store，并卷入国防合作争议，而xAI发布Grok Beta 2。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">0</argument></grok:render> 中国大模型如Qwen 3.5在开源领域强势推进，全球AI基础设施与代理趋势持续升温。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">5</argument></grok:render>",
+  "headline": "美国最高法院裁定AI生成艺术品不可获版权保护",
+  "summary": "过去24小时AI领域焦点在于OpenAI发布GPT-5.3 Instant模型，提升准确性和上下文理解，同时暗示GPT-5.4即将到来，引发广泛期待。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">30</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">34</argument></grok:render> 美国最高法院拒绝审理AI艺术版权上诉，确认需人类创作者方可获版权，打击生成式AI内容创作者。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">32</argument></grok:render> X平台更新规则，严禁未披露AI生成的战争视频，否则暂停变现，凸显AI内容监管趋势。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">33</argument></grok:render> 此外，脑机接口创新如活体脑细胞连接LLM玩游戏，以及Claude登顶App Store，显示AI向生物融合与应用普及加速。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">39</argument></grok:render>",
   "hot_topics": [
     {
       "topic": "GPT-5.3 Instant发布",
-      "description": "OpenAI在ChatGPT中推出新版模型，改进准确性和响应质量，已全面 rollout。",
+      "description": "OpenAI推出新模型，优化搜索上下文、减少拒绝响应，提升实用性，并预告5.4版本。",
       "related_people": [
         "@OpenAI"
       ]
     },
     {
-      "topic": "Claude登顶App Store",
-      "description": "Anthropic Claude超越ChatGPT成为App Store第一，同时面临国防供应风险争议。",
+      "topic": "AI艺术版权禁令",
+      "description": "美最高法院裁定AI生成作品无版权，需人类参与，影响生成式AI生态。",
       "related_people": [
-        "@AnthropicAI"
+        "@ToonHive",
+        "@TheMG3D"
       ]
     },
     {
-      "topic": "Grok Beta 2更新",
-      "description": "xAI发布Grok Beta 2，附带发布说明，回应用户对新功能期待。",
+      "topic": "AI内容监管加强",
+      "description": "X平台禁止未标明AI的战争视频，违规暂停变现90天，重罚永久移除。",
       "related_people": [
-        "@elonmusk"
+        "@cb_doge"
       ]
     },
     {
-      "topic": "脑机接口与LLM融合",
-      "description": "实验室培养的人类脑细胞连接LLM，实现神经元驱动的token生成，玩Pong和DOOM。",
+      "topic": "脑细胞+LLM融合",
+      "description": "实验室将活体人类神经元连接LLM，实现生物-AI混合决策，玩Pong和DOOM。",
       "related_people": [
         "@chiefofautism"
       ]
@@ -33,30 +34,30 @@
   ],
   "key_developments": [
     {
-      "title": "OpenAI GPT-5.3 Instant rollout",
-      "description": "OpenAI官方宣布GPT-5.3 Instant已在ChatGPT中向所有人推出，承诺更准确、少cringe输出。链接指向官方页面。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">35</argument></grok:render>",
-      "source_url": "https://openai.com/index/gpt-5-3-instant/"
-    },
-    {
-      "title": "xAI Grok Beta 2发布",
-      "description": "Elon Musk确认Grok Beta 2今日推出，附带发布笔记，标志xAI重大更新。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">0</argument></grok:render>",
+      "title": "OpenAI GPT-5.3 Instant上线",
+      "description": "新模型提供更准确答案、更好子文本理解和一致语气，尤其在web搜索中表现优异。减少不必要拒绝和说教，提升用户体验。预告5.4版本'比想象中早'。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">34</argument></grok:render>",
       "source_url": ""
     },
     {
-      "title": "Anthropic Claude App Store第一",
-      "description": "Claude免费用户增长60%，付费订阅翻倍，登顶App Store，但遭DoD供应链风险审查。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">9</argument></grok:render>",
+      "title": "美最高法院：AI艺术无版权",
+      "description": "法院拒绝上诉，确认AI生成艺术需人类创作者方可版权保护。打击AI艺术商业化，引发艺术家与AI社区热议。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">32</argument></grok:render>",
+      "source_url": "https://www.reuters.com/legal/government/us-supreme-court-declines-hear-dispute-over-copyrights-ai-generated-material-2026-03-02/"
+    },
+    {
+      "title": "X平台AI战争视频新规",
+      "description": "未明确披露AI生成的战争视频，将面临90天变现暂停，重复违规永久移除。旨在遏制AI假新闻传播。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">33</argument></grok:render>",
       "source_url": ""
     },
     {
-      "title": "人类神经元驱动LLM",
-      "description": "Cortical Labs将20万人类脑细胞与LLM连接，神经元选择token，展示脑机融合新进展。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">41</argument></grok:render>",
+      "title": "Claude登顶App Store",
+      "description": "Anthropic的Claude超越ChatGPT成为免费用户榜首，付费订阅翻倍，但遭特朗普政府供应链风险审查。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">17</argument></grok:render>",
       "source_url": ""
     },
     {
-      "title": "Qwen 3.5开源成功",
-      "description": "阿里云Qwen 3.5在Hugging Face大获成功，中国大模型在全球开源和消费市场快速推进。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">5</argument></grok:render>",
+      "title": "活脑细胞驱动LLM",
+      "description": "Cortical Labs将20万人类神经元芯片化，连接LLM控制token生成，已玩Pong和DOOM，开启生物AI新时代。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">40</argument></grok:render>",
       "source_url": ""
     }
   ],
-  "fetched_at": "2026-03-03T18:50:44.469898+00:00"
+  "fetched_at": "2026-03-03T23:06:56.918697+00:00"
 }
