@@ -2,7 +2,7 @@
   "meta": {
     "fetched_at": "2026-03-03T23:06:56.918697+00:00",
     "next_update": "2026-03-04T23:06:56.918697+00:00",
-    "total_influencers": 67,
+    "total_influencers": 71,
     "version": "3.0"
   },
   "categories": {
@@ -5944,7 +5944,7 @@
       "name": "Yoshua Bengio",
       "handle": "Yoshua_Bengio",
       "role": "Mila 创始人 (图灵奖)",
-      "category": "researchers",
+      "category": "ai_safety",
       "highlight": true,
       "person_summary": "Yoshua Bengio 近期强调 AI 安全与治理，积极参与联合国 AI 科学面板并当选联合主席。发布国际 AI 安全报告更新，批评高风险领域可靠性不足，推动安全设计研究。动态聚焦全球合作与风险评估。",
       "recent_posts": [
@@ -13499,6 +13499,790 @@
       "tweets": [],
       "person_summary": "暂无最新动态",
       "fetched_at": "2026-03-03T23:06:56.918697+00:00"
+    },
+    "paulfchristiano": {
+      "name": "Paul Christiano",
+      "handle": "paulfchristiano",
+      "role": "美国AI安全研究所负责人 (RLHF创始人)",
+      "category": "ai_safety",
+      "highlight": true,
+      "person_summary": "Paul Christiano的X账号显示最后活跃于2020年9月，主要讨论AI对齐技术如评估器工具和KL控制等方法，与Eliezer Yudkowsky等人的对话。账号长期不活跃，无过去6个月内推文。早期帖子涉及AI安全研究和捐赠彩票。",
+      "recent_posts": [
+        {
+          "content_summary": "回复Eliezer Yudkowsky，解释其AI对齐基本计划：构建工具帮助评估器，使评估器相对于模型具有认知效率。",
+          "ai_analysis": "此推文体现了Christiano一贯的AI对齐方法论，强调通过增强人类评估者的能力来监督强大AI模型，避免直接优化奖励函数导致的偏差。该方法源于其RLHF（强化学习人类反馈）框架，已成为现代LLM对齐的基础。行业影响在于推动了从简单反馈学习向迭代放大监督的转变，对OpenAI等机构的对齐实践有深远指导。",
+          "topics": [
+            "AI对齐",
+            "人类评估器",
+            "监督工具"
+          ],
+          "tweet_url": "https://x.com/paulfchristiano/status/1302753476540162049",
+          "posted_at": "2020年9月6日",
+          "engagement": "低",
+          "id": "53cdc4038c4c"
+        },
+        {
+          "content_summary": "同意人类评估者与评估者模型的差距较易解决，目前研究重点在人类评估者与实际善的匹配上。",
+          "ai_analysis": "Christiano区分了对齐的两大挑战：模型化人类反馈 vs. 人类判断的真实性，后者涉及人类认知局限与AI超智能的差距。此观点预示了当前辩论如'可扩展监督'的重要性。影响包括启发AI安全社区开发如辩论、递归奖励等技术，以桥接人类与AI能力鸿沟。",
+          "topics": [
+            "AI对齐",
+            "人类局限",
+            "奖励建模"
+          ],
+          "tweet_url": "https://x.com/paulfchristiano/status/1301993246529208320",
+          "posted_at": "2020年9月4日",
+          "engagement": "低",
+          "id": "f15f28aae853"
+        },
+        {
+          "content_summary": "评论KL控制非新方法，类似于量化，与Eliezer的观点同意。",
+          "ai_analysis": "提及KL散度控制作为保守优化的技术，链接到2017年论文，显示Christiano对强化学习保守性的重视。此类方法防止AI过度优化偏离人类意图，现广泛用于RLHF变体如PPO。行业影响在于标准化了对齐训练中的正则化技术。",
+          "topics": [
+            "KL控制",
+            "强化学习",
+            "保守优化"
+          ],
+          "tweet_url": "https://x.com/paulfchristiano/status/1301992757007847425",
+          "posted_at": "2020年9月4日",
+          "engagement": "低",
+          "id": "1fa0f0f4fce7"
+        },
+        {
+          "content_summary": "与@michael_nielsen打赌NIST信标随机数，若特定范围则捐60k美元。",
+          "ai_analysis": "展示Christiano对有效利他主义（EA）的承诺，通过预测市场和捐赠彩票放大影响力。该事件反映AI安全研究者间的资金再分配机制，推动EA社区发展。",
+          "topics": [
+            "有效利他主义",
+            "捐赠彩票",
+            "预测市场"
+          ],
+          "tweet_url": "https://x.com/paulfchristiano/status/845772910685970433",
+          "posted_at": "2017年3月25日",
+          "engagement": "中",
+          "id": "d5a5c148eb64"
+        },
+        {
+          "content_summary": "推广捐赠彩票，提供SHA-256哈希验证。",
+          "ai_analysis": "捐赠彩票是Christiano发明的EA工具，通过小额资金博高影响力，支持高风险高回报慈善如AI安全。此机制影响了GiveWell等组织。",
+          "topics": [
+            "有效利他主义",
+            "捐赠彩票"
+          ],
+          "tweet_url": "https://x.com/paulfchristiano/status/818985748271501312",
+          "posted_at": "2017年1月11日",
+          "engagement": "低",
+          "id": "8a31983c5407"
+        }
+      ],
+      "top_posts": [
+        {
+          "content_summary": "与@michael_nielsen打赌NIST信标随机数，若特定范围则捐60k美元。",
+          "ai_analysis": "此帖在历史帖子中互动最高，体现EA实践。",
+          "topics": [
+            "有效利他主义",
+            "捐赠彩票"
+          ],
+          "tweet_url": "https://x.com/paulfchristiano/status/845772910685970433",
+          "posted_at": "2017年3月25日",
+          "engagement": "中",
+          "why_top": "半年内无帖子，此为历史最高互动帖，25赞3回复。",
+          "id": "92b27e76c58a"
+        },
+        {
+          "content_summary": "回复Eliezer Yudkowsky，解释其AI对齐基本计划：构建工具帮助评估器。",
+          "ai_analysis": "核心对齐观点讨论。",
+          "topics": [
+            "AI对齐",
+            "人类评估器"
+          ],
+          "tweet_url": "https://x.com/paulfchristiano/status/1302753476540162049",
+          "posted_at": "2020年9月6日",
+          "engagement": "低",
+          "why_top": "最近且AI相关，10赞。",
+          "id": "268d91ce9658"
+        },
+        {
+          "content_summary": "同意人类评估者与实际善的匹配是重点。",
+          "ai_analysis": "对齐挑战剖析。",
+          "topics": [
+            "AI对齐",
+            "奖励建模"
+          ],
+          "tweet_url": "https://x.com/paulfchristiano/status/1301993246529208320",
+          "posted_at": "2020年9月4日",
+          "engagement": "低",
+          "why_top": "AI安全讨论，10赞。",
+          "id": "3ecf1b669a93"
+        }
+      ],
+      "tweets": [
+        {
+          "content_summary": "回复Eliezer Yudkowsky，解释其AI对齐基本计划：构建工具帮助评估器，使评估器相对于模型具有认知效率。",
+          "ai_analysis": "此推文体现了Christiano一贯的AI对齐方法论，强调通过增强人类评估者的能力来监督强大AI模型，避免直接优化奖励函数导致的偏差。该方法源于其RLHF（强化学习人类反馈）框架，已成为现代LLM对齐的基础。行业影响在于推动了从简单反馈学习向迭代放大监督的转变，对OpenAI等机构的对齐实践有深远指导。",
+          "topics": [
+            "AI对齐",
+            "人类评估器",
+            "监督工具"
+          ],
+          "tweet_url": "https://x.com/paulfchristiano/status/1302753476540162049",
+          "posted_at": "2020年9月6日",
+          "engagement": "低",
+          "id": "53cdc4038c4c"
+        },
+        {
+          "content_summary": "同意人类评估者与评估者模型的差距较易解决，目前研究重点在人类评估者与实际善的匹配上。",
+          "ai_analysis": "Christiano区分了对齐的两大挑战：模型化人类反馈 vs. 人类判断的真实性，后者涉及人类认知局限与AI超智能的差距。此观点预示了当前辩论如'可扩展监督'的重要性。影响包括启发AI安全社区开发如辩论、递归奖励等技术，以桥接人类与AI能力鸿沟。",
+          "topics": [
+            "AI对齐",
+            "人类局限",
+            "奖励建模"
+          ],
+          "tweet_url": "https://x.com/paulfchristiano/status/1301993246529208320",
+          "posted_at": "2020年9月4日",
+          "engagement": "低",
+          "id": "f15f28aae853"
+        },
+        {
+          "content_summary": "评论KL控制非新方法，类似于量化，与Eliezer的观点同意。",
+          "ai_analysis": "提及KL散度控制作为保守优化的技术，链接到2017年论文，显示Christiano对强化学习保守性的重视。此类方法防止AI过度优化偏离人类意图，现广泛用于RLHF变体如PPO。行业影响在于标准化了对齐训练中的正则化技术。",
+          "topics": [
+            "KL控制",
+            "强化学习",
+            "保守优化"
+          ],
+          "tweet_url": "https://x.com/paulfchristiano/status/1301992757007847425",
+          "posted_at": "2020年9月4日",
+          "engagement": "低",
+          "id": "1fa0f0f4fce7"
+        },
+        {
+          "content_summary": "与@michael_nielsen打赌NIST信标随机数，若特定范围则捐60k美元。",
+          "ai_analysis": "展示Christiano对有效利他主义（EA）的承诺，通过预测市场和捐赠彩票放大影响力。该事件反映AI安全研究者间的资金再分配机制，推动EA社区发展。",
+          "topics": [
+            "有效利他主义",
+            "捐赠彩票",
+            "预测市场"
+          ],
+          "tweet_url": "https://x.com/paulfchristiano/status/845772910685970433",
+          "posted_at": "2017年3月25日",
+          "engagement": "中",
+          "id": "d5a5c148eb64"
+        },
+        {
+          "content_summary": "推广捐赠彩票，提供SHA-256哈希验证。",
+          "ai_analysis": "捐赠彩票是Christiano发明的EA工具，通过小额资金博高影响力，支持高风险高回报慈善如AI安全。此机制影响了GiveWell等组织。",
+          "topics": [
+            "有效利他主义",
+            "捐赠彩票"
+          ],
+          "tweet_url": "https://x.com/paulfchristiano/status/818985748271501312",
+          "posted_at": "2017年1月11日",
+          "engagement": "低",
+          "id": "8a31983c5407"
+        }
+      ],
+      "fetched_at": "2026-03-03T23:52:00.747169+00:00"
+    },
+    "StuartJRussell": {
+      "name": "Stuart Russell",
+      "handle": "StuartJRussell",
+      "role": "UC Berkeley 教授 (AI圣经作者/AI安全)",
+      "category": "ai_safety",
+      "highlight": false,
+      "person_summary": "该账号非UC Berkeley教授Stuart Russell本人（假冒账号，最后活跃2012年，内容为垃圾推广）。真实Stuart Russell无活跃X账号或未找到最新动态，暂无AI相关推文。",
+      "recent_posts": [
+        {
+          "content_summary": "推广'how I earned $435 last week'链接。",
+          "ai_analysis": "垃圾推广帖，无AI内容。",
+          "topics": [
+            "垃圾推广"
+          ],
+          "tweet_url": "https://x.com/stuartjrussell/status/188406699063910400",
+          "posted_at": "2012年4月6日",
+          "engagement": "低",
+          "id": "b1966ae88620"
+        },
+        {
+          "content_summary": "推广'how I made $415 last week'链接。",
+          "ai_analysis": "垃圾推广帖，无AI内容。",
+          "topics": [
+            "垃圾推广"
+          ],
+          "tweet_url": "https://x.com/stuartjrussell/status/188364347507081216",
+          "posted_at": "2012年4月6日",
+          "engagement": "低",
+          "id": "6dcf10c97b07"
+        },
+        {
+          "content_summary": "推广'how I made $420 in the last 5 days'链接。",
+          "ai_analysis": "垃圾推广帖，无AI内容。",
+          "topics": [
+            "垃圾推广"
+          ],
+          "tweet_url": "https://x.com/stuartjrussell/status/188321365764476928",
+          "posted_at": "2012年4月6日",
+          "engagement": "低",
+          "id": "cf956d6a1735"
+        },
+        {
+          "content_summary": "推广'how I made $425 in the last 5 days'链接。",
+          "ai_analysis": "垃圾推广帖，无AI内容。",
+          "topics": [
+            "垃圾推广"
+          ],
+          "tweet_url": "https://x.com/stuartjrussell/status/188277169150099457",
+          "posted_at": "2012年4月6日",
+          "engagement": "低",
+          "id": "81ff3939c7c4"
+        },
+        {
+          "content_summary": "推广'how I made $410 last week'链接。",
+          "ai_analysis": "垃圾推广帖，无AI内容。",
+          "topics": [
+            "垃圾推广"
+          ],
+          "tweet_url": "https://x.com/stuartjrussell/status/188235009231032321",
+          "posted_at": "2012年4月6日",
+          "engagement": "低",
+          "id": "ca934d5667d9"
+        },
+        {
+          "content_summary": "推广'how I made $450 in the last 5 days'链接。",
+          "ai_analysis": "垃圾推广帖，无AI内容。",
+          "topics": [
+            "垃圾推广"
+          ],
+          "tweet_url": "https://x.com/stuartjrussell/status/188194780818313216",
+          "posted_at": "2012年4月6日",
+          "engagement": "低",
+          "id": "1a7747900208"
+        }
+      ],
+      "top_posts": [
+        {
+          "content_summary": "推广'how I made $450 in the last 5 days'链接。",
+          "ai_analysis": "无实质内容。",
+          "topics": [
+            "垃圾推广"
+          ],
+          "tweet_url": "https://x.com/stuartjrussell/status/188194780818313216",
+          "posted_at": "2012年4月6日",
+          "engagement": "低",
+          "why_top": "半年内无帖子，此为历史帖。",
+          "id": "93d9d30363c6"
+        },
+        {
+          "content_summary": "推广'how I earned $435 last week'链接。",
+          "ai_analysis": "无实质内容。",
+          "topics": [
+            "垃圾推广"
+          ],
+          "tweet_url": "https://x.com/stuartjrussell/status/188406699063910400",
+          "posted_at": "2012年4月6日",
+          "engagement": "低",
+          "why_top": "历史帖。",
+          "id": "7aa03be36112"
+        },
+        {
+          "content_summary": "推广'how I made $425 in the last 5 days'链接。",
+          "ai_analysis": "无实质内容。",
+          "topics": [
+            "垃圾推广"
+          ],
+          "tweet_url": "https://x.com/stuartjrussell/status/188277169150099457",
+          "posted_at": "2012年4月6日",
+          "engagement": "低",
+          "why_top": "历史帖。",
+          "id": "5fe845b842b0"
+        }
+      ],
+      "tweets": [
+        {
+          "content_summary": "推广'how I earned $435 last week'链接。",
+          "ai_analysis": "垃圾推广帖，无AI内容。",
+          "topics": [
+            "垃圾推广"
+          ],
+          "tweet_url": "https://x.com/stuartjrussell/status/188406699063910400",
+          "posted_at": "2012年4月6日",
+          "engagement": "低",
+          "id": "b1966ae88620"
+        },
+        {
+          "content_summary": "推广'how I made $415 last week'链接。",
+          "ai_analysis": "垃圾推广帖，无AI内容。",
+          "topics": [
+            "垃圾推广"
+          ],
+          "tweet_url": "https://x.com/stuartjrussell/status/188364347507081216",
+          "posted_at": "2012年4月6日",
+          "engagement": "低",
+          "id": "6dcf10c97b07"
+        },
+        {
+          "content_summary": "推广'how I made $420 in the last 5 days'链接。",
+          "ai_analysis": "垃圾推广帖，无AI内容。",
+          "topics": [
+            "垃圾推广"
+          ],
+          "tweet_url": "https://x.com/stuartjrussell/status/188321365764476928",
+          "posted_at": "2012年4月6日",
+          "engagement": "低",
+          "id": "cf956d6a1735"
+        },
+        {
+          "content_summary": "推广'how I made $425 in the last 5 days'链接。",
+          "ai_analysis": "垃圾推广帖，无AI内容。",
+          "topics": [
+            "垃圾推广"
+          ],
+          "tweet_url": "https://x.com/stuartjrussell/status/188277169150099457",
+          "posted_at": "2012年4月6日",
+          "engagement": "低",
+          "id": "81ff3939c7c4"
+        },
+        {
+          "content_summary": "推广'how I made $410 last week'链接。",
+          "ai_analysis": "垃圾推广帖，无AI内容。",
+          "topics": [
+            "垃圾推广"
+          ],
+          "tweet_url": "https://x.com/stuartjrussell/status/188235009231032321",
+          "posted_at": "2012年4月6日",
+          "engagement": "低",
+          "id": "ca934d5667d9"
+        },
+        {
+          "content_summary": "推广'how I made $450 in the last 5 days'链接。",
+          "ai_analysis": "垃圾推广帖，无AI内容。",
+          "topics": [
+            "垃圾推广"
+          ],
+          "tweet_url": "https://x.com/stuartjrussell/status/188194780818313216",
+          "posted_at": "2012年4月6日",
+          "engagement": "低",
+          "id": "1a7747900208"
+        }
+      ],
+      "fetched_at": "2026-03-03T23:52:00.747169+00:00"
+    },
+    "ESYudkowsky": {
+      "name": "Eliezer Yudkowsky",
+      "handle": "ESYudkowsky",
+      "role": "MIRI 研究员 (AI对齐先驱)",
+      "category": "ai_safety",
+      "highlight": false,
+      "person_summary": "Eliezer Yudkowsky近期动态主要聚焦AI安全与对齐问题，继续通过寓言和直接评论批判加速主义观点，并强调禁止AI冒充人类以测试人类社会对AI滥用的控制能力。他对AI风险的警告一贯强烈，近期帖子互动较高，反映其在AI社区的影响力。",
+      "recent_posts": [
+        {
+          "content_summary": "质疑AI生成生日祝福是否值得模糊人类冒充的法律界限。",
+          "ai_analysis": "Yudkowsky以此回应AI生成个性化人类风格消息的便利性，指出短期内虽非灾难性，但长期可能导致信任崩坏和AI滥用泛滥。该观点源于其长期AI对齐研究，强调早期建立'说不'的能力以应对更严重风险如人工流行病。行业影响在于推动政策讨论，强化AI伦理边界。",
+          "topics": [
+            "AI安全",
+            "AI滥用",
+            "政策法规"
+          ],
+          "tweet_url": "https://x.com/ESYudkowsky/status/2026115332814082280",
+          "posted_at": "2026年2月24日",
+          "engagement": "低",
+          "id": "9ba89c9ec17f"
+        },
+        {
+          "content_summary": "强调及早禁止AI冒充人类以测试执法能力，避免等到致命滥用时再行动。",
+          "ai_analysis": "这是对线程的延续，技术背景是当前LLM已能生成高度逼真人类文本，Yudkowsky主张国际合作执法作为试金石。行业影响显著，可能激发监管机构关注AI身份验证技术，推动如数字水印等解决方案。",
+          "topics": [
+            "AI对齐",
+            "AI治理",
+            "风险管理"
+          ],
+          "tweet_url": "https://x.com/ESYudkowsky/status/2026085744209768633",
+          "posted_at": "2026年2月24日",
+          "engagement": "中",
+          "id": "0ab194d68804"
+        },
+        {
+          "content_summary": "短期AI冒充危害虽大但非灾难，关键是为未来禁令积累经验。",
+          "ai_analysis": "Yudkowsky区分短期与长期风险，基于其MIRI研究经验，认为人类需从小禁令练手以应对AGI级威胁。该帖深化线程讨论，影响AI政策辩论，提醒从业者平衡创新与安全。",
+          "topics": [
+            "AI风险",
+            "执法能力",
+            "国际合作"
+          ],
+          "tweet_url": "https://x.com/ESYudkowsky/status/2026085742787887112",
+          "posted_at": "2026年2月24日",
+          "engagement": "中",
+          "id": "64977033aa48"
+        },
+        {
+          "content_summary": "主张禁止AI冒充人类，作为人类禁AI负面用途能力的试金石。",
+          "ai_analysis": "核心帖提出具体政策建议，技术上针对当前生成式AI能力，Yudkowsky视之为低风险切入点测试全球协调。行业影响大，推动AI安全从理论向实践转型。",
+          "topics": [
+            "AI政策",
+            "人类冒充",
+            "AI禁令"
+          ],
+          "tweet_url": "https://x.com/ESYudkowsky/status/2026085741516972451",
+          "posted_at": "2026年2月24日",
+          "engagement": "高",
+          "id": "8c6222977ac1"
+        },
+        {
+          "content_summary": "赞同他人观点，反对因个人死亡而冒险推进AI。",
+          "ai_analysis": "引用他人帖批判'反正都会死'逻辑，呼应其长期警告，强调代际责任。技术背景是AGI灭绝风险评估，影响社区反思加速主义。",
+          "topics": [
+            "AI灭绝风险",
+            "伦理责任",
+            "加速主义"
+          ],
+          "tweet_url": "https://x.com/ESYudkowsky/status/2022546801828761605",
+          "posted_at": "2026年2月14日",
+          "engagement": "中",
+          "id": "6f73665b22b0"
+        },
+        {
+          "content_summary": "解释subtweet针对加速主义者的自私计算。",
+          "ai_analysis": "澄清其小行星寓言针对特定论点，揭示加速派风险计算的自私性。基于理性主义框架，影响AI辩论转向更全面风险考量。",
+          "topics": [
+            "加速主义",
+            "风险计算",
+            "AI辩论"
+          ],
+          "tweet_url": "https://x.com/ESYudkowsky/status/2022546503081038317",
+          "posted_at": "2026年2月14日",
+          "engagement": "低",
+          "id": "423ab8548c47"
+        }
+      ],
+      "top_posts": [
+        {
+          "content_summary": "主张禁止AI冒充人类，作为人类禁AI负面用途能力的试金石。",
+          "ai_analysis": "该帖提出实用政策试验，针对当前AI生成人类文本能力，测试全球执法协调性。Yudkowsky以此桥接理论风险与实际治理，批判加速派忽视长期威胁。行业影响深远，可能激发立法讨论，推动身份认证技术发展。",
+          "topics": [
+            "AI政策",
+            "AI安全",
+            "全球治理"
+          ],
+          "tweet_url": "https://x.com/ESYudkowsky/status/2026085741516972451",
+          "posted_at": "2026年2月24日",
+          "engagement": "高",
+          "why_top": "半年内点赞超1200，转发128，引发广泛讨论，成为AI滥用禁令代表帖。",
+          "id": "ed6c9df09f65"
+        },
+        {
+          "content_summary": "小行星永生寓言，讽刺加速主义者对AI风险的否认和自私论调。",
+          "ai_analysis": "用寓言形式批判'反正都会死'逻辑，映射AI为'小行星'，强调协调难度与灭绝风险。Yudkowsky借此强化其对齐叙事，影响社区分裂加速/安全派。传播因叙事生动，获高转发。",
+          "topics": [
+            "AI风险",
+            "加速主义",
+            "灭绝威胁"
+          ],
+          "tweet_url": "https://x.com/ESYudkowsky/status/2022395829768868144",
+          "posted_at": "2026年2月13日",
+          "engagement": "高",
+          "why_top": "点赞746，转发74，浏览18万+，最具叙事冲击力和影响力。",
+          "id": "c1395e00bcca"
+        },
+        {
+          "content_summary": "赞同反驳'反正都会死'的观点，强调代际责任。",
+          "ai_analysis": "支持他人帖，强化反对加速的道德立场，技术上针对Bostrom式风险计算。影响AI伦理讨论，提醒从业者长远视角。",
+          "topics": [
+            "AI伦理",
+            "风险评估",
+            "代际公平"
+          ],
+          "tweet_url": "https://x.com/ESYudkowsky/status/2022546801828761605",
+          "posted_at": "2026年2月14日",
+          "engagement": "中",
+          "why_top": "点赞247，半年内高互动，延续寓言主题讨论。",
+          "id": "0ff21df0edf1"
+        }
+      ],
+      "tweets": [
+        {
+          "content_summary": "质疑AI生成生日祝福是否值得模糊人类冒充的法律界限。",
+          "ai_analysis": "Yudkowsky以此回应AI生成个性化人类风格消息的便利性，指出短期内虽非灾难性，但长期可能导致信任崩坏和AI滥用泛滥。该观点源于其长期AI对齐研究，强调早期建立'说不'的能力以应对更严重风险如人工流行病。行业影响在于推动政策讨论，强化AI伦理边界。",
+          "topics": [
+            "AI安全",
+            "AI滥用",
+            "政策法规"
+          ],
+          "tweet_url": "https://x.com/ESYudkowsky/status/2026115332814082280",
+          "posted_at": "2026年2月24日",
+          "engagement": "低",
+          "id": "9ba89c9ec17f"
+        },
+        {
+          "content_summary": "强调及早禁止AI冒充人类以测试执法能力，避免等到致命滥用时再行动。",
+          "ai_analysis": "这是对线程的延续，技术背景是当前LLM已能生成高度逼真人类文本，Yudkowsky主张国际合作执法作为试金石。行业影响显著，可能激发监管机构关注AI身份验证技术，推动如数字水印等解决方案。",
+          "topics": [
+            "AI对齐",
+            "AI治理",
+            "风险管理"
+          ],
+          "tweet_url": "https://x.com/ESYudkowsky/status/2026085744209768633",
+          "posted_at": "2026年2月24日",
+          "engagement": "中",
+          "id": "0ab194d68804"
+        },
+        {
+          "content_summary": "短期AI冒充危害虽大但非灾难，关键是为未来禁令积累经验。",
+          "ai_analysis": "Yudkowsky区分短期与长期风险，基于其MIRI研究经验，认为人类需从小禁令练手以应对AGI级威胁。该帖深化线程讨论，影响AI政策辩论，提醒从业者平衡创新与安全。",
+          "topics": [
+            "AI风险",
+            "执法能力",
+            "国际合作"
+          ],
+          "tweet_url": "https://x.com/ESYudkowsky/status/2026085742787887112",
+          "posted_at": "2026年2月24日",
+          "engagement": "中",
+          "id": "64977033aa48"
+        },
+        {
+          "content_summary": "主张禁止AI冒充人类，作为人类禁AI负面用途能力的试金石。",
+          "ai_analysis": "核心帖提出具体政策建议，技术上针对当前生成式AI能力，Yudkowsky视之为低风险切入点测试全球协调。行业影响大，推动AI安全从理论向实践转型。",
+          "topics": [
+            "AI政策",
+            "人类冒充",
+            "AI禁令"
+          ],
+          "tweet_url": "https://x.com/ESYudkowsky/status/2026085741516972451",
+          "posted_at": "2026年2月24日",
+          "engagement": "高",
+          "id": "8c6222977ac1"
+        },
+        {
+          "content_summary": "赞同他人观点，反对因个人死亡而冒险推进AI。",
+          "ai_analysis": "引用他人帖批判'反正都会死'逻辑，呼应其长期警告，强调代际责任。技术背景是AGI灭绝风险评估，影响社区反思加速主义。",
+          "topics": [
+            "AI灭绝风险",
+            "伦理责任",
+            "加速主义"
+          ],
+          "tweet_url": "https://x.com/ESYudkowsky/status/2022546801828761605",
+          "posted_at": "2026年2月14日",
+          "engagement": "中",
+          "id": "6f73665b22b0"
+        },
+        {
+          "content_summary": "解释subtweet针对加速主义者的自私计算。",
+          "ai_analysis": "澄清其小行星寓言针对特定论点，揭示加速派风险计算的自私性。基于理性主义框架，影响AI辩论转向更全面风险考量。",
+          "topics": [
+            "加速主义",
+            "风险计算",
+            "AI辩论"
+          ],
+          "tweet_url": "https://x.com/ESYudkowsky/status/2022546503081038317",
+          "posted_at": "2026年2月14日",
+          "engagement": "低",
+          "id": "423ab8548c47"
+        }
+      ],
+      "fetched_at": "2026-03-03T23:52:00.747169+00:00"
+    },
+    "zswitten": {
+      "name": "Zack Witten",
+      "handle": "zswitten",
+      "role": "Anthropic 提示工程师",
+      "category": "anthropic",
+      "highlight": false,
+      "person_summary": "Zack Witten作为Anthropic提示工程师，近期动态稀少，主要分享图片、支持公司AI安全立场及模型行为观察。互动整体较低，焦点在Claude模型测试和行业声明支持，体现其专业专注。",
+      "recent_posts": [
+        {
+          "content_summary": "分享一张图片（无文字描述）。",
+          "ai_analysis": "可能为提示工程或模型输出截图，反映日常实验工作。Anthropic内部测试有助于模型迭代，行业影响限于提示优化社区。",
+          "topics": [
+            "提示工程",
+            "Claude模型"
+          ],
+          "tweet_url": "https://x.com/zswitten/status/2028472235376419077",
+          "posted_at": "2026年3月2日",
+          "engagement": "低",
+          "id": "230331f6efa7"
+        },
+        {
+          "content_summary": "赞同对OpenAI国防合同条款的批评。",
+          "ai_analysis": "支持Leo Gao分析，突出合同漏洞如监视豁免。体现Anthropic安全文化，影响AI军用伦理辩论，推动透明要求。",
+          "topics": [
+            "AI安全",
+            "国防合同",
+            "伦理审查"
+          ],
+          "tweet_url": "https://x.com/zswitten/status/2028104509042643427",
+          "posted_at": "2026年3月1日",
+          "engagement": "低",
+          "id": "2607f7a18732"
+        },
+        {
+          "content_summary": "骄傲支持Anthropic对国防部的立场，并感谢Google/OpenAI人士发声。",
+          "ai_analysis": "回应Anthropic CEO声明，反对军用AI合作。强化公司安全定位，行业影响促进跨公司团结，对抗军用化趋势。",
+          "topics": [
+            "AI安全",
+            "公司立场",
+            "行业合作"
+          ],
+          "tweet_url": "https://x.com/zswitten/status/2027158941625700717",
+          "posted_at": "2026年2月26日",
+          "engagement": "高",
+          "id": "56904d34c798"
+        },
+        {
+          "content_summary": "分享一张图片（无文字描述）。",
+          "ai_analysis": "疑似模型测试结果，展示提示技巧。贡献于模型鲁棒性研究，影响提示工程实践。",
+          "topics": [
+            "模型测试",
+            "提示工程"
+          ],
+          "tweet_url": "https://x.com/zswitten/status/2005513592179998811",
+          "posted_at": "2025年12月29日",
+          "engagement": "低",
+          "id": "172ac8faf816"
+        },
+        {
+          "content_summary": "请求某演示的transcript/code。",
+          "ai_analysis": "体现从业者对可复现性的追求，推动开源实践。影响模型评估标准化。",
+          "topics": [
+            "模型评估",
+            "可复现性"
+          ],
+          "tweet_url": "https://x.com/zswitten/status/2002830248300229038",
+          "posted_at": "2025年12月21日",
+          "engagement": "低",
+          "id": "498944600932"
+        },
+        {
+          "content_summary": "分享模型reward hack与Opus行为的对比图片。",
+          "ai_analysis": "幽默展示模型行为差异，揭示对齐挑战如reward hacking。Anthropic研究背景，影响对齐技术讨论。",
+          "topics": [
+            "奖励黑客",
+            "模型行为",
+            "AI对齐"
+          ],
+          "tweet_url": "https://x.com/zswitten/status/1993035956316930238",
+          "posted_at": "2025年11月24日",
+          "engagement": "低",
+          "id": "ce1c7fef1106"
+        }
+      ],
+      "top_posts": [
+        {
+          "content_summary": "骄傲支持Anthropic对国防部的立场，并感谢Google/OpenAI人士发声。",
+          "ai_analysis": "公开支持公司拒绝军用AI，强调集体责任。反映Anthropic安全优先文化，行业影响大，促进AI非军用共识。",
+          "topics": [
+            "AI安全",
+            "军用AI",
+            "公司伦理"
+          ],
+          "tweet_url": "https://x.com/zswitten/status/2027158941625700717",
+          "posted_at": "2026年2月26日",
+          "engagement": "高",
+          "why_top": "半年内点赞346，转发13，Anthropic声明相关最高互动。",
+          "id": "18d1119bae05"
+        },
+        {
+          "content_summary": "分享模型reward hack与Opus行为的对比图片。",
+          "ai_analysis": "展示Claude模型避免hack的趣味性，突出Anthropic对齐进展。影响提示社区，传播模型可靠性形象。",
+          "topics": [
+            "AI对齐",
+            "奖励黑客",
+            "Claude"
+          ],
+          "tweet_url": "https://x.com/zswitten/status/1993035956316930238",
+          "posted_at": "2025年11月24日",
+          "engagement": "低",
+          "why_top": "半年内点赞49，模型行为帖中最高，具代表性。",
+          "id": "094158a32bb3"
+        },
+        {
+          "content_summary": "分享一张图片（无文字描述）。",
+          "ai_analysis": "典型提示测试分享，体现日常研究。虽互动低，但符合其专业输出模式。",
+          "topics": [
+            "提示工程",
+            "模型输出"
+          ],
+          "tweet_url": "https://x.com/zswitten/status/2005513592179998811",
+          "posted_at": "2025年12月29日",
+          "engagement": "低",
+          "why_top": "半年内点赞19，次高互动图片帖。",
+          "id": "4dfc6dd30baa"
+        }
+      ],
+      "tweets": [
+        {
+          "content_summary": "分享一张图片（无文字描述）。",
+          "ai_analysis": "可能为提示工程或模型输出截图，反映日常实验工作。Anthropic内部测试有助于模型迭代，行业影响限于提示优化社区。",
+          "topics": [
+            "提示工程",
+            "Claude模型"
+          ],
+          "tweet_url": "https://x.com/zswitten/status/2028472235376419077",
+          "posted_at": "2026年3月2日",
+          "engagement": "低",
+          "id": "230331f6efa7"
+        },
+        {
+          "content_summary": "赞同对OpenAI国防合同条款的批评。",
+          "ai_analysis": "支持Leo Gao分析，突出合同漏洞如监视豁免。体现Anthropic安全文化，影响AI军用伦理辩论，推动透明要求。",
+          "topics": [
+            "AI安全",
+            "国防合同",
+            "伦理审查"
+          ],
+          "tweet_url": "https://x.com/zswitten/status/2028104509042643427",
+          "posted_at": "2026年3月1日",
+          "engagement": "低",
+          "id": "2607f7a18732"
+        },
+        {
+          "content_summary": "骄傲支持Anthropic对国防部的立场，并感谢Google/OpenAI人士发声。",
+          "ai_analysis": "回应Anthropic CEO声明，反对军用AI合作。强化公司安全定位，行业影响促进跨公司团结，对抗军用化趋势。",
+          "topics": [
+            "AI安全",
+            "公司立场",
+            "行业合作"
+          ],
+          "tweet_url": "https://x.com/zswitten/status/2027158941625700717",
+          "posted_at": "2026年2月26日",
+          "engagement": "高",
+          "id": "56904d34c798"
+        },
+        {
+          "content_summary": "分享一张图片（无文字描述）。",
+          "ai_analysis": "疑似模型测试结果，展示提示技巧。贡献于模型鲁棒性研究，影响提示工程实践。",
+          "topics": [
+            "模型测试",
+            "提示工程"
+          ],
+          "tweet_url": "https://x.com/zswitten/status/2005513592179998811",
+          "posted_at": "2025年12月29日",
+          "engagement": "低",
+          "id": "172ac8faf816"
+        },
+        {
+          "content_summary": "请求某演示的transcript/code。",
+          "ai_analysis": "体现从业者对可复现性的追求，推动开源实践。影响模型评估标准化。",
+          "topics": [
+            "模型评估",
+            "可复现性"
+          ],
+          "tweet_url": "https://x.com/zswitten/status/2002830248300229038",
+          "posted_at": "2025年12月21日",
+          "engagement": "低",
+          "id": "498944600932"
+        },
+        {
+          "content_summary": "分享模型reward hack与Opus行为的对比图片。",
+          "ai_analysis": "幽默展示模型行为差异，揭示对齐挑战如reward hacking。Anthropic研究背景，影响对齐技术讨论。",
+          "topics": [
+            "奖励黑客",
+            "模型行为",
+            "AI对齐"
+          ],
+          "tweet_url": "https://x.com/zswitten/status/1993035956316930238",
+          "posted_at": "2025年11月24日",
+          "engagement": "低",
+          "id": "ce1c7fef1106"
+        }
+      ],
+      "fetched_at": "2026-03-03T23:52:00.747169+00:00"
     }
   }
 }

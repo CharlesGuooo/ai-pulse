@@ -87,7 +87,7 @@
     {"name": "Chris Olah", "handle": "ch402", "role": "Anthropic 可解释性研究", "category": "anthropic", "highlight": false},
     {"name": "Jared Kaplan", "handle": "JaredKaplan", "role": "Anthropic 首席科学官", "category": "anthropic", "highlight": false},
     {"name": "Amanda Askell", "handle": "AmandaAskell", "role": "Anthropic 伦理学家", "category": "anthropic", "highlight": false},
-    {"name": "Jan Leike", "handle": "janleike", "role": "Anthropic 对齐团队负责人", "category": "anthropic", "highlight": false},
+    {"name": "Zack Witten", "handle": "zswitten", "role": "Anthropic 提示工程师", "category": "anthropic", "highlight": false},
 
     {"name": "Elon Musk", "handle": "elonmusk", "role": "xAI CEO & 创始人", "category": "xai", "highlight": false},
     {"name": "Greg Yang", "handle": "TheGregYang", "role": "xAI 联合创始人 (muP)", "category": "xai", "highlight": false},
@@ -101,7 +101,6 @@
     {"name": "Soumith Chintala", "handle": "soumithchintala", "role": "PyTorch 联合创始人", "category": "researchers", "highlight": false},
     {"name": "Fei-Fei Li", "handle": "drfeifei", "role": "Stanford 教授 & World Labs CEO (空间智能)", "category": "researchers", "highlight": true},
     {"name": "Andrew Ng", "handle": "AndrewYNg", "role": "DeepLearning.AI 创始人 (图灵奖)", "category": "researchers", "highlight": true},
-    {"name": "Yoshua Bengio", "handle": "Yoshua_Bengio", "role": "Mila 创始人 (图灵奖)", "category": "researchers", "highlight": true},
     {"name": "Jeremy Howard", "handle": "jeremyphoward", "role": "fast.ai & Answer.AI 联合创始人", "category": "researchers", "highlight": false},
 
     {"name": "Arthur Mensch", "handle": "arthurmensch", "role": "Mistral AI CEO", "category": "leaders", "highlight": true},
@@ -143,7 +142,13 @@
     {"name": "Pieter Abbeel", "handle": "pabbeel", "role": "UC Berkeley 教授 & Covariant CEO", "category": "robotics", "highlight": false},
     {"name": "Deepak Pathak", "handle": "pathak2206", "role": "CMU 教授 & Skild AI CEO (好奇心驱动RL)", "category": "robotics", "highlight": false},
     {"name": "Lerrel Pinto", "handle": "LerrelPinto", "role": "NYU 教授 (家用机器人)", "category": "robotics", "highlight": false},
-    {"name": "Karol Hausman", "handle": "hausman_k", "role": "Physical Intelligence 联合创始人 (具身AI)", "category": "robotics", "highlight": false}
+    {"name": "Karol Hausman", "handle": "hausman_k", "role": "Physical Intelligence 联合创始人 (具身AI)", "category": "robotics", "highlight": false},
+
+    {"name": "Jan Leike", "handle": "janleike", "role": "Anthropic 对齐团队负责人 (前OpenAI超级对齐)", "category": "ai_safety", "highlight": true},
+    {"name": "Paul Christiano", "handle": "paulfchristiano", "role": "美国AI安全研究所负责人 (RLHF创始人)", "category": "ai_safety", "highlight": true},
+    {"name": "Yoshua Bengio", "handle": "Yoshua_Bengio", "role": "Mila 创始人 & LawZero AI安全组织 (图灵奖)", "category": "ai_safety", "highlight": true},
+    {"name": "Stuart Russell", "handle": "StuartJRussell", "role": "UC Berkeley 教授 (AI圣经作者/AI安全)", "category": "ai_safety", "highlight": false},
+    {"name": "Eliezer Yudkowsky", "handle": "ESYudkowsky", "role": "MIRI 研究员 (AI对齐先驱)", "category": "ai_safety", "highlight": false}
   ],
   "academic_categories": [
     "大语言模型 (LLM & NLP)",
