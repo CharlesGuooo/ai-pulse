@@ -1,52 +1,62 @@
 {
-  "headline": "Cursor AI编码助手年收入突破20亿美元",
-  "summary": "过去24小时AI领域焦点在于商业化爆发与基础设施挑战，Cursor的ARR飙升至20亿美元凸显AI工具市场火热。日本和中国分别讨论AI对劳动力市场的冲击及技术竞赛路线图。xAI的临时发电厂引发社区噪音争议，数据中心能源需求持续推高基础设施压力。",
+  "headline": "OpenAI推出GPT-5.3 Instant，提升ChatGPT准确性和用户体验",
+  "summary": "过去24小时AI领域动态聚焦模型迭代与政策调整，OpenAI快速推送GPT-5.3 Instant版本，强调更准确、更少尴尬输出，已向所有用户 rollout。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">35</argument></grok:render> Anthropic的Claude登顶App Store，并卷入国防合作争议，而xAI发布Grok Beta 2。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">0</argument></grok:render> 中国大模型如Qwen 3.5在开源领域强势推进，全球AI基础设施与代理趋势持续升温。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">5</argument></grok:render>",
   "hot_topics": [
     {
-      "topic": "AI编码工具商业化",
-      "description": "Cursor年收入达20亿美元，展示AI生产力工具的爆炸式增长。",
+      "topic": "GPT-5.3 Instant发布",
+      "description": "OpenAI在ChatGPT中推出新版模型，改进准确性和响应质量，已全面 rollout。",
       "related_people": [
-        "@business"
+        "@OpenAI"
       ]
     },
     {
-      "topic": "AI数据中心能源危机",
-      "description": "xAI在密西西比使用燃气涡轮机供电引发居民不满，数据中心北上寻求廉价能源。",
+      "topic": "Claude登顶App Store",
+      "description": "Anthropic Claude超越ChatGPT成为App Store第一，同时面临国防供应风险争议。",
       "related_people": [
-        "@elonmusk",
-        "@shrugdeaIer"
+        "@AnthropicAI"
       ]
     },
     {
-      "topic": "地缘AI竞赛",
-      "description": "中国即将公布AI、太空和机器人产业化路线图，日本担忧AI加剧低收入群体。",
+      "topic": "Grok Beta 2更新",
+      "description": "xAI发布Grok Beta 2，附带发布说明，回应用户对新功能期待。",
       "related_people": [
-        "@ReutersTech",
-        "@business"
+        "@elonmusk"
+      ]
+    },
+    {
+      "topic": "脑机接口与LLM融合",
+      "description": "实验室培养的人类脑细胞连接LLM，实现神经元驱动的token生成，玩Pong和DOOM。",
+      "related_people": [
+        "@chiefofautism"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "Cursor ARR达20亿美元",
-      "description": "据Bloomberg报道，AI编码助手Cursor的年度经常性收入在二月超过20亿美元，仅三个月翻倍，凸显开发者工具市场的快速扩张。该增长反映AI在编程领域的渗透加速。",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-03-02/cursor-recurring-revenue-doubles-in-three-months-to-2-billion"
+      "title": "OpenAI GPT-5.3 Instant rollout",
+      "description": "OpenAI官方宣布GPT-5.3 Instant已在ChatGPT中向所有人推出，承诺更准确、少cringe输出。链接指向官方页面。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">35</argument></grok:render>",
+      "source_url": "https://openai.com/index/gpt-5-3-instant/"
     },
     {
-      "title": "xAI发电厂噪音扰民",
-      "description": "Elon Musk的xAI在南哈芬使用27台临时燃气涡轮机为数据中心供电，居民投诉噪音如喷气机般导致失眠。该事件暴露AI训练对能源的高需求。",
-      "source_url": "https://www.nbcnews.com/news/us-news/musks-ai-power-plant-generates-sound-fury-mississippi-rcna258594"
+      "title": "xAI Grok Beta 2发布",
+      "description": "Elon Musk确认Grok Beta 2今日推出，附带发布笔记，标志xAI重大更新。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">0</argument></grok:render>",
+      "source_url": ""
     },
     {
-      "title": "中国AI产业化路线图",
-      "description": "中国全国人大会议将公布AI、太空和机器人领域的下一阶段计划，推动突破向产业规模转化，并注入资本市场动力。",
-      "source_url": "https://www.reuters.com/business/autos-transportation/chinas-annual-parliament-meet-unveil-roadmap-tech-race-with-west-2026-03-02/"
+      "title": "Anthropic Claude App Store第一",
+      "description": "Claude免费用户增长60%，付费订阅翻倍，登顶App Store，但遭DoD供应链风险审查。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">9</argument></grok:render>",
+      "source_url": ""
     },
     {
-      "title": "Stripe优化AI成本",
-      "description": "Stripe推出服务将企业AI成本转化为利润中心，帮助公司管理高额计算支出。",
-      "source_url": "https://techcrunch.com/2026/03/02/stripe-wants-to-turn-your-ai-costs-into-a-profit-center/"
+      "title": "人类神经元驱动LLM",
+      "description": "Cortical Labs将20万人类脑细胞与LLM连接，神经元选择token，展示脑机融合新进展。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">41</argument></grok:render>",
+      "source_url": ""
+    },
+    {
+      "title": "Qwen 3.5开源成功",
+      "description": "阿里云Qwen 3.5在Hugging Face大获成功，中国大模型在全球开源和消费市场快速推进。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">5</argument></grok:render>",
+      "source_url": ""
     }
   ],
-  "fetched_at": "2026-03-03T01:08:46.322808+00:00"
+  "fetched_at": "2026-03-03T18:50:44.469898+00:00"
 }
