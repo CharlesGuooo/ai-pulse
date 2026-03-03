@@ -1,26 +1,26 @@
 {
   "meta": {
-    "fetched_at": "2026-03-02T17:38:47.637231+00:00",
-    "total_projects": 11
+    "fetched_at": "2026-03-03T01:08:46.322808+00:00",
+    "total_projects": 18
   },
   "projects": [
     {
       "title": "Mode Seeking meets Mean Seeking for Fast Long Video Generation",
-      "summary": "提出了一种结合模式搜索和均值搜索的方法，用于快速生成长视频。该论文通过Hugging Face分享。",
-      "ai_analysis": "该方法解决了传统视频生成模型在长序列生成时速度慢和一致性差的问题。核心创新在于融合模式搜索（增强多样性）和均值搜索（提升连贯性），实现高效的长视频生成。适用于电影预览、虚拟现实内容创作等场景，具有高实用潜力。",
+      "summary": "该论文提出了一种结合模式寻求和均值寻求的方法，用于加速长视频生成。",
+      "ai_analysis": "传统视频生成模型在长序列生成时面临速度和质量挑战，此方法通过优化扩散过程的核心机制，结合模式匹配和均值回归，提升生成效率和一致性。核心创新在于融合两种采样策略，减少迭代步数，同时保持高保真度。适用于实时视频编辑、内容创作等领域，具有显著的计算效率提升。",
       "category": "视频生成",
       "source_url": "https://huggingface.co/papers/2602.24289",
       "arxiv_url": "https://arxiv.org/abs/2602.24289",
       "github_url": "",
       "shared_by": "_akhaliq",
       "published_at": "2026-03-02",
-      "impact_level": "高",
+      "impact_level": "中",
       "id": "bae605ea1c1e"
     },
     {
-      "title": "Physics-Aware Image Editing with Latent Transition Priors",
-      "summary": "从静态到动态的物理感知图像编辑，使用潜在过渡先验实现真实物理模拟。",
-      "ai_analysis": "针对传统图像编辑忽略物理动态的问题，该工作引入潜在过渡先验，确保编辑后图像符合物理定律。创新点在于将物理知识融入扩散模型的潜在空间，实现从静态到动态的无缝过渡。可应用于AR/VR、电影特效等领域。",
+      "title": "From Statics to Dynamics: Physics-Aware Image Editing with Latent Transition Priors",
+      "summary": "引入物理感知的图像编辑方法，利用潜在过渡先验从静态图像生成动态效果。",
+      "ai_analysis": "解决图像编辑中物理真实性不足的问题，通过学习潜在空间中的动态过渡，实现从静态到动态的自然转换。创新点在于融入物理先验指导扩散模型，避免不合理变形。适用于AR/VR内容生成、电影特效等场景。",
       "category": "计算机视觉",
       "source_url": "https://huggingface.co/papers/2602.21778",
       "arxiv_url": "https://arxiv.org/abs/2602.21778",
@@ -28,12 +28,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-02-27",
       "impact_level": "中",
-      "id": "a79edc8e949a"
+      "id": "5b4832088c8b"
     },
     {
       "title": "The Trinity of Consistency as a Defining Principle for General World Models",
-      "summary": "提出一致性三元组作为通用世界模型的核心原则。",
-      "ai_analysis": "世界模型在模拟复杂环境时易出现不一致，该论文定义了时空、模态和因果一致性三原则。核心创新是通过约束优化提升模型泛化能力。适用于具身智能、自动驾驶等需要长期预测的场景。",
+      "summary": "探讨一致性三元组作为通用世界模型的核心原则。",
+      "ai_analysis": "针对世界模型在多模态数据上的不一致性，提出空间、时间和模态一致性的三元框架，提升模型泛化能力。核心创新是统一的训练范式，整合多源监督信号。适用于具身智能、模拟环境等领域。",
       "category": "多模态学习",
       "source_url": "https://huggingface.co/papers/2602.23152",
       "arxiv_url": "https://arxiv.org/abs/2602.23152",
@@ -45,8 +45,8 @@
     },
     {
       "title": "VecGlypher: Unified Vector Glyph Generation with Language Models",
-      "summary": "Meta提出的统一矢量字形生成，使用语言模型实现精确控制。",
-      "ai_analysis": "解决矢量图形生成碎片化问题，通过语言模型统一文本到矢量的生成流程。创新在于结合LLM的语义理解与矢量渲染，实现可编辑高质量图形。应用场景包括字体设计、UI生成和矢量艺术。",
+      "summary": "Meta提出的使用语言模型统一生成矢量字形的框架。",
+      "ai_analysis": "解决矢量图形生成碎片化问题，通过LLM驱动的多模态统一模型，实现文本到矢量字形的精确生成。创新在于离散化表示与自回归生成结合，支持可编辑输出。应用于字体设计、UI生成等矢量图形场景。",
       "category": "图像生成",
       "source_url": "https://huggingface.co/papers/2602.21461",
       "arxiv_url": "https://arxiv.org/abs/2602.21461",
@@ -57,22 +57,22 @@
       "id": "258b830b0eb5"
     },
     {
-      "title": "SkyReels-V4",
-      "summary": "多模态视频-音频生成、内插和编辑模型。",
-      "ai_analysis": "整合视频、音频生成与编辑功能，解决多模态分离的痛点。核心创新是统一架构支持同步生成和精细编辑，提升创作效率。适用于短视频平台、广告制作等领域。",
+      "title": "SkyReels-V4: Multi-modal Video-Audio Generation, Inpainting and Editing model",
+      "summary": "多模态视频-音频生成、内插和编辑模型的V4版本。",
+      "ai_analysis": "针对视频生成中的音视频同步难题，提供端到端多模态框架，支持生成、修复和编辑。核心创新是联合扩散架构，确保跨模态一致性。适用于短视频创作、影视后期制作。",
       "category": "视频生成",
       "source_url": "https://huggingface.co/papers/2602.21818",
       "arxiv_url": "https://arxiv.org/abs/2602.21818",
       "github_url": "",
       "shared_by": "_akhaliq",
       "published_at": "2026-02-26",
-      "impact_level": "高",
-      "id": "c4f6e17c6942"
+      "impact_level": "中",
+      "id": "86d4a72b4ec3"
     },
     {
       "title": "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data",
       "summary": "使用多样 egocentric 人类数据扩展灵巧操纵能力。",
-      "ai_analysis": "egocentric 数据缺乏是具身智能瓶颈，该工作通过大规模第一人称数据提升机器人手部操作精度。创新点在于数据多样性和尺度化训练，实现真实世界泛化。应用于家用机器人、医疗辅助。",
+      "ai_analysis": "解决机器人操纵数据稀缺问题，通过大规模第一人称视频数据训练策略，提升零样本泛化。创新点在于数据 curation 和自监督预训练。适用于家用机器人、工业自动化。",
       "category": "具身智能",
       "source_url": "https://huggingface.co/papers/2602.16710",
       "arxiv_url": "https://arxiv.org/abs/2602.16710",
@@ -85,7 +85,7 @@
     {
       "title": "SimToolReal: An Object-Centric Policy for Zero-Shot Dexterous Tool Manipulation",
       "summary": "物体中心策略实现零样本灵巧工具操纵。",
-      "ai_analysis": "桥接模拟到真实工具使用差距，通过物体中心表示实现零样本转移。核心创新是策略设计聚焦工具几何，提升泛化。适用于工业自动化、家庭助手机器人。",
+      "ai_analysis": "桥接模拟与现实差距，通过物体中心表示实现跨域零样本转移。核心创新是分层策略学习，提升工具使用泛化。应用于机器人工具交互、家庭助理。",
       "category": "具身智能",
       "source_url": "https://huggingface.co/papers/2602.16863",
       "arxiv_url": "https://arxiv.org/abs/2602.16863",
@@ -98,7 +98,7 @@
     {
       "title": "tttLRM: Test-Time Training for Long Context and Autoregressive 3D Reconstruction",
       "summary": "测试时训练用于长上下文自回归3D重建。",
-      "ai_analysis": "长上下文3D重建计算昂贵，该方法用测试时训练压缩观察，提升效率。创新在于自回归生成Gaussian Splats，实现线性复杂度。应用于AR、游戏3D建模。",
+      "ai_analysis": "针对长序列3D重建的内存和准确性挑战，引入测试时适应机制。创新在于自回归潜在优化，提升细节恢复。适用于AR、3D建模、自动驾驶地图。",
       "category": "3D视觉",
       "source_url": "https://huggingface.co/papers/2602.20160",
       "arxiv_url": "https://arxiv.org/abs/2602.20160",
@@ -110,8 +110,8 @@
     },
     {
       "title": "Distillate",
-      "summary": "终端研究炼金术士：arXiv论文到笔记工作流工具。",
-      "ai_analysis": "研究者阅读论文流程繁琐，该开源工具自动化从arXiv到Obsidian笔记。创新在于集成Zotero和reMarkable，实现端到端管理。提升学术生产力，适用于AI研究者和学生。",
+      "summary": "终端研究炼金术工具：arXiv论文到笔记的自动化管道。",
+      "ai_analysis": "解决研究文献管理痛点，自动化从论文下载到高亮笔记生成的全流程。核心创新是集成Zotero、reMarkable和Obsidian的无缝链路，提升研究效率。适用于学术研究者、AI从业者日常文献处理。",
       "category": "AI基础设施",
       "source_url": "https://github.com/rlacombe/distillate",
       "arxiv_url": "",
@@ -123,8 +123,8 @@
     },
     {
       "title": "A Very Big Video Reasoning Suite",
-      "summary": "大型视频推理基准套件。",
-      "ai_analysis": "视频理解模型缺乏标准化评估，该套件提供合成数据和评估框架。核心创新是云规模数据工厂和统一EvalKit，推动视频推理进步。适用于多模态模型基准测试。",
+      "summary": "大规模视频推理基准套件。",
+      "ai_analysis": "填补视频理解基准空白，提供多样任务评估多模态模型推理能力。创新在于规模化和任务多样性，推动视频AI进步。适用于模型评估、视频分析系统。",
       "category": "多模态学习",
       "source_url": "https://huggingface.co/papers/2602.20159",
       "arxiv_url": "https://arxiv.org/abs/2602.20159",
@@ -135,17 +135,108 @@
       "id": "82a6c66cdc2a"
     },
     {
-      "title": "Distillation Data Generation Utilities",
-      "summary": "使用OpenRouter和Ollama从开源模型生成蒸馏数据的实用工具。",
-      "ai_analysis": "模型蒸馏需高质量数据，该工具简化从大型开源模型生成Chain-of-Thought数据的流程。创新在于集成多种后端，支持过滤和A/B测试。适用于小模型训练、知识蒸馏场景。",
-      "category": "AI基础设施",
+      "title": "Claude Distillation Utilities",
+      "summary": "使用OpenRouter和Ollama生成蒸馏数据的实用工具。",
+      "ai_analysis": "针对Claude等闭源模型蒸馏，提供开源替代数据生成管道，支持多教师模型。核心创新是高效过滤和集成，降低蒸馏成本。适用于小模型训练、知识转移。",
+      "category": "LLM与NLP",
       "source_url": "https://github.com/rasbt/reasoning-from-scratch/blob/main/ch08/02_generate_distillation_data/README.md",
       "arxiv_url": "",
       "github_url": "https://github.com/rasbt/reasoning-from-scratch/blob/main/ch08/02_generate_distillation_data/README.md",
       "shared_by": "rasbt",
       "published_at": "2026-02-27",
       "impact_level": "中",
-      "id": "6a461f092df8"
+      "id": "b6da1a8f882d"
+    },
+    {
+      "title": "Tiny Aya From Scratch Implementation",
+      "summary": "3.35B多语言LLM Tiny Aya的从零实现，支持滑动窗口注意力等特性。",
+      "ai_analysis": "复现Tiny Aya架构，突出并行块、滑动窗口和LayerNorm变体，提升多语言性能。创新在于透明实现，促进社区复现和修改。适用于边缘设备翻译、从头训练研究。",
+      "category": "LLM与NLP",
+      "source_url": "https://github.com/rasbt/reasoning-from-scratch",
+      "arxiv_url": "",
+      "github_url": "https://github.com/rasbt/reasoning-from-scratch",
+      "shared_by": "rasbt",
+      "published_at": "2026-02-19",
+      "impact_level": "中",
+      "id": "4a8a0e75a5a6"
+    },
+    {
+      "title": "PhyCritic: Multimodal Critic Models for Physical AI",
+      "summary": "多模态评论家模型用于物理AI。",
+      "ai_analysis": "提升物理AI决策，通过多模态评论家提供实时反馈。核心是融合视觉-语言批评机制，提高策略优化。适用于机器人学习、模拟训练。",
+      "category": "AI Agent",
+      "source_url": "https://huggingface.co/papers/2602.11124",
+      "arxiv_url": "https://arxiv.org/abs/2602.11124",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-02-12",
+      "impact_level": "中",
+      "id": "96d0e30dfb73"
+    },
+    {
+      "title": "LatentLens: Revealing Highly Interpretable Visual Tokens in LLMs",
+      "summary": "揭示LLM中高度可解释的视觉令牌。",
+      "ai_analysis": "解决多模态LLM黑箱问题，通过潜在透镜可视化视觉表示。创新可视化技术，提升解释性。应用于模型调试、安全审计。",
+      "category": "多模态学习",
+      "source_url": "https://huggingface.co/papers/2602.00462",
+      "arxiv_url": "https://arxiv.org/abs/2602.00462",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-02-11",
+      "impact_level": "中",
+      "id": "e472b36df1b7"
+    },
+    {
+      "title": "Unified Latents (UL): How to train your latents",
+      "summary": "Google统一潜在表示训练方法。",
+      "ai_analysis": "统一多模态潜在空间训练，提升跨域转移。核心是自监督潜在对齐。适用于通用多模态基础模型。",
+      "category": "多模态学习",
+      "source_url": "https://huggingface.co/papers/2602.17270",
+      "arxiv_url": "https://arxiv.org/abs/2602.17270",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-02-20",
+      "impact_level": "高",
+      "id": "d3d0561544fe"
+    },
+    {
+      "title": "AnchorWeave: World-Consistent Video Generation with Retrieved Local Spatial Memories",
+      "summary": "使用检索局部空间记忆的世界一致视频生成。",
+      "ai_analysis": "改善长视频时空一致性，通过记忆检索增强生成。创新锚点织构机制。适用于动态场景模拟。",
+      "category": "视频生成",
+      "source_url": "https://huggingface.co/papers/2602.14941",
+      "arxiv_url": "https://arxiv.org/abs/2602.14941",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-02-18",
+      "impact_level": "中",
+      "id": "663da9fae5f3"
+    },
+    {
+      "title": "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks",
+      "summary": "代理技能跨任务基准测试。",
+      "ai_analysis": "评估AI代理技能泛化，提供标准化基准。推动代理开发标准化。适用于代理训练评估。",
+      "category": "AI Agent",
+      "source_url": "https://huggingface.co/papers/2602.12670",
+      "arxiv_url": "https://arxiv.org/abs/2602.12670",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-02-18",
+      "impact_level": "高",
+      "id": "90ca915043b6"
+    },
+    {
+      "title": "Empty Shelves or Lost Keys? Recall Is the Bottleneck for Parametric Factuality",
+      "summary": "Google研究参数事实性的召回瓶颈。",
+      "ai_analysis": "揭示LLM事实性问题根源在于召回而非推理。提出优化策略提升检索。适用于知识密集任务。",
+      "category": "LLM与NLP",
+      "source_url": "https://huggingface.co/papers/2602.14080",
+      "arxiv_url": "https://arxiv.org/abs/2602.14080",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-02-19",
+      "impact_level": "中",
+      "id": "e0a8e40a84fa"
     }
   ]
 }
