@@ -1,52 +1,65 @@
 {
   "meta": {
-    "fetched_at": "2026-03-05T23:49:31.430915+00:00",
-    "total_projects": 18
+    "fetched_at": "2026-03-06T23:26:03.342582+00:00",
+    "total_projects": 13
   },
   "projects": [
     {
-      "title": "CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation",
-      "summary": "使用大规模代理强化学习生成高性能CUDA内核的论文。",
-      "ai_analysis": "该论文解决AI生成高效GPU代码的问题，通过代理RL训练模型自动优化CUDA内核，核心创新在于大规模代理训练和内核生成框架，能显著提升AI在高性能计算领域的应用，如加速深度学习训练。适用于AI基础设施优化和科学计算加速，具有高实用价值。",
-      "category": "AI基础设施",
-      "source_url": "https://huggingface.co/papers/2602.24286",
-      "arxiv_url": "https://arxiv.org/abs/2602.24286",
+      "title": "DARE: Aligning LLM Agents with the R Statistical Ecosystem via Distribution-Aware Retrieval",
+      "summary": "提出了一种分布感知检索方法，用于将LLM代理与R统计生态系统对齐。",
+      "ai_analysis": "该论文解决LLM代理在统计分析中与R语言工具集成的问题，通过分布感知检索提升代理对R函数和数据的调用准确性。核心创新在于引入分布匹配机制，避免传统检索的偏差，提高代理在复杂统计任务中的鲁棒性。适用于数据科学、统计建模和科研计算场景，可能推动AI在专业软件生态中的应用。",
+      "category": "AI Agent",
+      "source_url": "https://huggingface.co/papers/2603.04743",
+      "arxiv_url": "https://arxiv.org/abs/2603.04743",
       "github_url": "",
       "shared_by": "_akhaliq",
-      "published_at": "2026-03-03",
-      "impact_level": "高",
-      "id": "9915ef03f6bc"
+      "published_at": "2026-03-06",
+      "impact_level": "中",
+      "id": "91b1ab8d4917"
     },
     {
-      "title": "HY-WU: An Extensible Functional Neural Memory Framework",
-      "summary": "腾讯发布的可扩展功能神经记忆框架，用于文本引导图像编辑，已在Hugging Face开源模型。",
-      "ai_analysis": "解决神经网络记忆机制的扩展性和功能性问题，核心创新是功能化神经记忆模块，支持文本引导图像编辑等任务。适用于多模态生成和编辑场景，推动AI在创意设计领域的突破。",
+      "title": "SkillNet: Create, Evaluate, and Connect AI Skills",
+      "summary": "一个框架，用于创建、评估和连接AI技能。",
+      "ai_analysis": "针对AI代理技能模块化管理的问题，提供了一个端到端的技能生命周期管理框架。创新点在于技能评估的自动化基准和连接机制，支持动态组合技能以适应复杂任务。适用于AI代理开发、多任务学习和技能库构建，推动代理向更通用智能演进。",
+      "category": "AI Agent",
+      "source_url": "https://huggingface.co/papers/2603.04448",
+      "arxiv_url": "https://arxiv.org/abs/2603.04448",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-06",
+      "impact_level": "中",
+      "id": "2bae9f6b127f"
+    },
+    {
+      "title": "HY-WU: An Extensible Functional Neural Memory Framework for Text-Guided Image Editing",
+      "summary": "腾讯发布的可扩展功能神经记忆框架，用于文本引导图像编辑。",
+      "ai_analysis": "解决图像编辑中记忆模块的扩展性和功能性问题，提出功能化神经记忆架构，支持复杂编辑指令。核心创新是模块化记忆设计，便于插件式扩展，提升编辑精度和泛化能力。适用于创意设计、照片修复和多模态内容生成。",
       "category": "图像生成",
       "source_url": "https://huggingface.co/tencent/HY-WU",
       "arxiv_url": "",
       "github_url": "",
       "shared_by": "_akhaliq",
       "published_at": "2026-03-05",
-      "impact_level": "中",
-      "id": "42aafe2364e2"
+      "impact_level": "高",
+      "id": "c59e6aae9267"
     },
     {
       "title": "LTX-2.3",
-      "summary": "Lightricks发布的最新图像模型，已在Hugging Face上线。",
-      "ai_analysis": "迭代升级的图像生成模型，解决高分辨率和细节生成问题，核心创新在于优化架构提升生成质量。适用于专业图像编辑和内容创作，具有商业潜力。",
+      "summary": "Lightricks发布的图像模型新版本。",
+      "ai_analysis": "迭代优化文本到图像生成模型，提升分辨率和细节一致性。创新在于训练策略改进，减少幻觉并增强提示遵循。适用于专业图像合成、广告设计和艺术创作。",
       "category": "图像生成",
       "source_url": "https://huggingface.co/Lightricks/LTX-2.3",
       "arxiv_url": "",
       "github_url": "",
       "shared_by": "_akhaliq",
       "published_at": "2026-03-05",
-      "impact_level": "中",
-      "id": "af5e534f4cc3"
+      "impact_level": "高",
+      "id": "e79cdf73722c"
     },
     {
-      "title": "CubeComposer: Spatio-Temporal Autoregressive 4K 360° Video Generation",
-      "summary": "从透视视频生成时空自回归4K 360°视频的论文。",
-      "ai_analysis": "针对全景视频生成难题，引入时空自回归机制，核心创新是高分辨率360°视频合成，支持沉浸式应用。解决传统视频生成分辨率和视角限制，适用于VR/AR和虚拟现实场景。",
+      "title": "CubeComposer: Spatio-Temporal Autoregressive 4K 360° Video Generation from Perspective Video",
+      "summary": "从透视视频生成时空自回归4K 360°视频。",
+      "ai_analysis": "针对360°视频生成的高分辨率和时空一致性挑战，使用自回归建模捕捉动态。核心创新是立方体表示结合时空预测，提升沉浸式内容质量。适用于VR/AR内容创作、虚拟旅游和电影特效。",
       "category": "视频生成",
       "source_url": "https://huggingface.co/papers/2603.04291",
       "arxiv_url": "https://arxiv.org/abs/2603.04291",
@@ -54,12 +67,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-05",
       "impact_level": "高",
-      "id": "33f20a07ac92"
+      "id": "e8d1519723fd"
     },
     {
       "title": "Helios: Real Real-Time Long Video Generation Model",
-      "summary": "实时长视频生成模型论文。",
-      "ai_analysis": "突破长视频实时生成瓶颈，核心创新是高效架构设计，实现真正实时长序列视频合成。解决计算资源消耗大问题，适用于直播、游戏和实时内容生成。",
+      "summary": "实时长视频生成模型。",
+      "ai_analysis": "解决长序列视频生成中的实时性和连贯性问题，通过高效架构实现毫秒级推理。创新点是分层生成和动态压缩，平衡质量与速度。适用于直播、游戏和实时视频编辑。",
       "category": "视频生成",
       "source_url": "https://huggingface.co/papers/2603.04379",
       "arxiv_url": "https://arxiv.org/abs/2603.04379",
@@ -67,12 +80,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-05",
       "impact_level": "高",
-      "id": "faeddd388686"
+      "id": "8a95ee036e5c"
     },
     {
-      "title": "BBQ-to-Image: Numeric Bounding Box and Qolor Control",
-      "summary": "在大规模文本到图像模型中引入数值边界框和颜色控制的论文。",
-      "ai_analysis": "提升文本到图像精确控制能力，核心创新是数值边界框和颜色参数化，解决生成精确布局问题。适用于广告设计和精确图像合成场景。",
+      "title": "BBQ-to-Image: Numeric Bounding Box and Qolor Control in Large-Scale Text-to-Image Models",
+      "summary": "在大规模文本到图像模型中引入数值边界框和颜色控制。",
+      "ai_analysis": "提升文本到图像模型的空间和颜色精确控制，解决模糊提示问题。核心创新是量化边界框和颜色嵌入集成，支持精确布局生成。适用于UI设计、产品可视化和精确艺术创作。",
       "category": "图像生成",
       "source_url": "https://huggingface.co/papers/2602.20672",
       "arxiv_url": "https://arxiv.org/abs/2602.20672",
@@ -80,12 +93,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-04",
       "impact_level": "中",
-      "id": "1c3ebb8ce5ae"
+      "id": "475c3fbc84f8"
     },
     {
       "title": "Beyond Language Modeling: An Exploration of Multimodal Pretraining",
-      "summary": "多模态预训练探索论文。",
-      "ai_analysis": "超越纯语言建模，探索多模态联合预训练，核心创新是统一框架整合文本图像等模态。解决模态融合难题，适用于多模态AI代理和内容理解。",
+      "summary": "多模态预训练探索，超越纯语言建模。",
+      "ai_analysis": "探讨多模态预训练范式，融合文本、图像和视频提升泛化。创新在于统一预训练目标，减少模态间冲突。适用于多模态AI系统、跨域迁移学习。",
       "category": "多模态学习",
       "source_url": "https://huggingface.co/papers/2603.03276",
       "arxiv_url": "https://arxiv.org/abs/2603.03276",
@@ -93,12 +106,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-04",
       "impact_level": "高",
-      "id": "5f3641d9c905"
+      "id": "bd8cfa4e0423"
     },
     {
       "title": "BeyondSWE: Can Current Code Agent Survive Beyond Single-Repo Bug Fixing?",
-      "summary": "评估代码代理超出单仓库bug修复能力的论文。",
-      "ai_analysis": "测试代码代理在复杂软件工程任务的表现，核心创新是新基准BeyondSWE，推动AI软件工程进步。解决代码代理泛化问题，适用于大型软件开发。",
+      "summary": "评估代码代理在多仓库bug修复外的表现。",
+      "ai_analysis": "揭示当前代码代理在复杂软件工程任务中的局限，通过基准测试多仓库协作。创新是BeyondSWE基准，推动代理向全栈开发演进。适用于软件工程自动化、DevOps。",
       "category": "AI Agent",
       "source_url": "https://huggingface.co/papers/2603.03194",
       "arxiv_url": "https://arxiv.org/abs/2603.03194",
@@ -106,12 +119,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-04",
       "impact_level": "中",
-      "id": "97cdd81da400"
+      "id": "fee9827fd1ae"
     },
     {
       "title": "Utonia: Toward One Encoder for All Point Clouds",
-      "summary": "统一点云编码器论文。",
-      "ai_analysis": "实现单一编码器处理所有点云数据，核心创新是通用点云表示学习。解决3D视觉多样性问题，适用于自动驾驶和机器人感知。",
+      "summary": "统一点云编码器，适用于所有点云任务。",
+      "ai_analysis": "解决点云处理中编码器多样性问题，提出单一通用编码器架构。核心创新是自适应特征融合，提升跨任务性能。适用于3D感知、自动驾驶和机器人视觉。",
       "category": "3D视觉",
       "source_url": "https://huggingface.co/papers/2603.03283",
       "arxiv_url": "https://arxiv.org/abs/2603.03283",
@@ -119,124 +132,46 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-04",
       "impact_level": "高",
-      "id": "5d3277e94f90"
+      "id": "7b7a1ff00f17"
     },
     {
       "title": "OmniLottie: Generating Vector Animations via Parameterized Lottie Tokens",
-      "summary": "通过参数化Lottie令牌生成矢量动画的论文。",
-      "ai_analysis": "将矢量动画生成参数化为Lottie令牌，核心创新是可控矢量动画合成，支持高质量缩放。解决传统动画生成矢量化问题，适用于UI设计和动画制作。",
-      "category": "图像生成",
+      "summary": "通过参数化Lottie令牌生成矢量动画。",
+      "ai_analysis": "针对矢量动画生成的矢量化和可控性，使用Lottie令牌化表示。创新在于参数化生成，支持精确编辑和缩放无损。适用于UI动画、图标设计和交互媒体。",
+      "category": "视频生成",
       "source_url": "https://huggingface.co/papers/2603.02138",
       "arxiv_url": "https://arxiv.org/abs/2603.02138",
       "github_url": "",
       "shared_by": "_akhaliq",
       "published_at": "2026-03-03",
       "impact_level": "中",
-      "id": "5bc21e4a9d08"
+      "id": "859a868dd7b0"
     },
     {
-      "title": "From Scale to Speed: Adaptive Test-Time Scaling for Image Editing",
-      "summary": "自适应测试时缩放用于图像编辑的论文。",
-      "ai_analysis": "从规模转向速度，引入自适应测试时计算缩放，核心创新是动态调整计算资源优化编辑速度。解决图像编辑效率问题，适用于实时应用。",
-      "category": "图像生成",
-      "source_url": "https://huggingface.co/papers/2603.00141",
-      "arxiv_url": "https://arxiv.org/abs/2603.00141",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-03",
-      "impact_level": "中",
-      "id": "8a92f79fc31b"
-    },
-    {
-      "title": "OK-Robot: What Really Matters in Integrating Open-Knowledge Models for Robotics",
-      "summary": "集成开放知识模型用于机器人的框架，支持零样本语言条件拾取放置任务。",
-      "ai_analysis": "探索机器人中开放知识模型的关键因素，核心创新是模块化框架实现家庭机器人任务。解决具身智能知识整合问题，适用于家用机器人。",
-      "category": "具身智能",
-      "source_url": "https://ok-robot.github.io",
-      "arxiv_url": "",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2024-01-23",
-      "impact_level": "高",
-      "id": "9c594c4b2428"
-    },
-    {
-      "title": "Distillate",
-      "summary": "终端研究炼金术士，将arXiv论文转换为Zotero库、reMarkable高亮和Obsidian笔记的开源工具。",
-      "ai_analysis": "自动化AI论文处理流程，核心创新是端到端管道整合多种工具，提升研究效率。解决学术文献管理痛点，适用于AI研究者和学者。",
-      "category": "AI基础设施",
-      "source_url": "https://github.com/rlacombe/distillate",
-      "arxiv_url": "",
-      "github_url": "https://github.com/rlacombe/distillate",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-02-24",
-      "impact_level": "中",
-      "id": "ee151ac5d9db"
-    },
-    {
-      "title": "SpargeAttention2: Trainable Sparse Attention via Hybrid Top-k+Top-p Masking",
-      "summary": "可训练稀疏注意力机制，使用混合Top-k+Top-p掩码和蒸馏微调。",
-      "ai_analysis": "优化Transformer注意力计算效率，核心创新是混合掩码稀疏化，支持训练时学习。解决长序列LLM效率问题，适用于大模型部署。",
+      "title": "Mixtral, Llama 3, Phi-3, OpenELM LLM Releases",
+      "summary": "总结最新开源LLM发布：Mixtral、Llama 3、Phi-3和OpenELM。",
+      "ai_analysis": "回顾四大开源LLM的性能和特性，比较其在基准上的表现。创新在于对RLHF方法如PPO和DPO的分析，提供对齐策略洞见。适用于模型选择、微调和部署决策。",
       "category": "LLM与NLP",
-      "source_url": "https://huggingface.co/papers/2602.13515",
-      "arxiv_url": "https://arxiv.org/abs/2602.13515",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-02-20",
-      "impact_level": "高",
-      "id": "ce8901b1ed07"
-    },
-    {
-      "title": "VecGlypher: Unified Vector Glyph Generation with Language Models",
-      "summary": "Meta的统一矢量字形生成，使用语言模型。",
-      "ai_analysis": "语言驱动矢量字形生成，核心创新是统一框架生成可缩放图形。解决字体和图标设计自动化，适用于图形设计。",
-      "category": "图像生成",
-      "source_url": "https://huggingface.co/papers/2602.21461",
-      "arxiv_url": "https://arxiv.org/abs/2602.21461",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-02-26",
-      "impact_level": "中",
-      "id": "03489f97f856"
-    },
-    {
-      "title": "SimToolReal: An Object-Centric Policy for Zero-Shot Dexterous Tool Manipulation",
-      "summary": "零样本灵巧工具操纵的对象中心策略。",
-      "ai_analysis": "从模拟到真实零样本工具使用，核心创新是对象中心策略提升泛化。解决机器人工具学习难题，适用于工业机器人。",
-      "category": "具身智能",
-      "source_url": "https://huggingface.co/papers/2602.16863",
-      "arxiv_url": "https://arxiv.org/abs/2602.16863",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-02-25",
-      "impact_level": "高",
-      "id": "aa74aa9ca811"
-    },
-    {
-      "title": "A Very Big Video Reasoning Suite",
-      "summary": "大型视频推理基准套件。",
-      "ai_analysis": "提供视频推理全面评估，核心创新是大规模视频任务集，推动多模态推理发展。解决视频理解基准不足，适用于AI视频分析。",
-      "category": "多模态学习",
-      "source_url": "https://huggingface.co/papers/2602.20159",
-      "arxiv_url": "https://arxiv.org/abs/2602.20159",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-02-24",
-      "impact_level": "中",
-      "id": "5b2b986a5e50"
-    },
-    {
-      "title": "Generate Distillation Data Utilities",
-      "summary": "从开放权重模型生成蒸馏数据的实用工具，支持OpenRouter和Ollama。",
-      "ai_analysis": "简化模型蒸馏数据生成，核心创新是集成多种开源模型生成高质量数据。解决蒸馏数据集获取难题，适用于小模型训练。",
-      "category": "AI基础设施",
-      "source_url": "https://github.com/rasbt/reasoning-from-scratch/blob/main/ch08/02_generate_distillation_data/README.md",
+      "source_url": "https://magazine.sebastianraschka.com/p/how-good-are-the-latest-open-llms",
       "arxiv_url": "",
-      "github_url": "https://github.com/rasbt/reasoning-from-scratch",
+      "github_url": "",
       "shared_by": "rasbt",
-      "published_at": "2026-02-27",
-      "impact_level": "中",
-      "id": "5f7584098fa0"
+      "published_at": "2024-05-12",
+      "impact_level": "高",
+      "id": "d34a20c89aba"
+    },
+    {
+      "title": "OLMo and Gemma LLMs",
+      "summary": "完全开源OLMo和高效Gemma LLM。",
+      "ai_analysis": "OLMo提供全开源训练数据和代码，Gemma在同规模下SOTA性能。创新在于透明训练和高效微调技术如LoRA继任者。适用于开源AI研究和小模型部署。",
+      "category": "LLM与NLP",
+      "source_url": "https://magazine.sebastianraschka.com/p/research-papers-in-february-2024",
+      "arxiv_url": "",
+      "github_url": "",
+      "shared_by": "rasbt",
+      "published_at": "2024-03-03",
+      "impact_level": "高",
+      "id": "121a4c765e41"
     }
   ]
 }
