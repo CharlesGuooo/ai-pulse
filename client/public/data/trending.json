@@ -1,53 +1,47 @@
 {
-  "headline": "Anthropic拒绝五角大楼减少AI安全保障要求引发争议",
-  "summary": "过去24小时AI领域焦点在于Anthropic与五角大楼的伦理对峙，拒绝放松安全措施，成为本周最大头条。美国最高法院回避AI版权案，影响生成式AI规则。Anthropic推出ChatGPT记忆导入工具，提升用户切换便利性，同时硬件如Micron高容量AI内存模块和NVIDIA投资推进基础设施。企业如SBI利用AI大幅削减招聘，凸显AI对职场的冲击。",
+  "headline": "Elon Musk宣称Tesla将率先实现AGI并应用于人形机器人Optimus",
+  "summary": "过去24小时，AI领域焦点集中在模型发布与AGI竞赛上。Elon Musk引发热议，声称Tesla将成为首家实现AGI的公司，并整合到人形机器人中，Yann LeCun等专家回应质疑。Google DeepMind推出高效Gemini 3.1 Flash-Lite模型，同时OpenAI等公司加速小模型迭代，推动AI向高效部署方向发展。监管与应用趋势并存，如纽约拟禁AI涉专业咨询。",
   "hot_topics": [
     {
-      "topic": "AI军事伦理争议",
-      "description": "Anthropic拒绝Pentagon减少安全保障的提议，OpenAI五角大楼协议引发'Cancel ChatGPT'浪潮，Sam Altman承认协议'机会主义且草率'。",
+      "topic": "Tesla AGI与Optimus",
+      "description": "Elon Musk预测Tesla率先实现AGI并用于人形机器人，引发Yann LeCun等质疑Tesla自动驾驶数据效率。",
       "related_people": [
-        "@sama",
-        "@PeterDiamandis"
+        "elonmusk",
+        "ylecun"
       ]
     },
     {
-      "topic": "AI模型记忆迁移",
-      "description": "Anthropic允许导入ChatGPT记忆，降低用户切换AI服务的摩擦；最高法院回避AI版权问题。",
+      "topic": "Gemini 3.1 Flash-Lite发布",
+      "description": "DeepMind推出高效低成本模型，强调速度与性能平衡，适用于大规模部署。",
       "related_people": [
-        "@TheRundownAI",
-        "@Forbes"
+        "demishassabis",
+        "GoogleDeepMind"
       ]
     },
     {
-      "topic": "AI硬件基础设施",
-      "description": "Micron发布全球首款超高容量AI数据中心内存，NVIDIA投资20亿美元提升光学和推理速度。",
+      "topic": "小模型与高效AI浪潮",
+      "description": "多家公司发布小参数模型如GPT-5.3 Instant、Qwen 3.5 Small，推动AI本地化和成本优化。",
       "related_people": [
-        "@minchoi",
-        "@ohdearitsmandy"
+        "sama"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "Anthropic收入超OpenAI，年增长10倍",
-      "description": "Anthropic营收超越OpenAI，增长迅猛，同时推出记忆导入功能。印度AI峰会签署2500亿美元AI建设协议，涉及88国。这标志AI商业化加速。",
+      "title": "Elon Musk：Tesla将率先制造AGI人形机器人",
+      "description": "Musk表示Tesla将成为AGI先锋，并调整生产为Optimus工厂让路。Yann LeCun讽刺回应，并质疑Tesla FSD仅达L2水平。该帖获超13万点赞，引发AGI竞赛讨论。",
       "source_url": ""
     },
     {
-      "title": "美国最高法院回避AI版权案",
-      "description": "最高法院拒绝审理重大AI版权纠纷，影响生成式AI训练数据使用规则。Anthropic和OpenAI等公司面临持续法律不确定性。",
+      "title": "Google DeepMind发布Gemini 3.1 Flash-Lite",
+      "description": "Demis Hassabis称其'small but mighty'，成本高效、速度快，支持大规模智能应用。该模型为Gemini 3系列最新成员。",
       "source_url": ""
     },
     {
-      "title": "SBI利用AI大幅削减招聘",
-      "description": "SBI控股总裁宣布AI活用将大幅抑制招聘，仅招'极优秀'人才。日本企业加速AI取代人力。",
-      "source_url": "https://www.asahi.com/articles/ASV3331XCV33ULFA01DM.html"
-    },
-    {
-      "title": "X平台修订创作者分成政策防AI滥用",
-      "description": "X要求武装冲突AI生成视频须披露，否则暂停分成90天。旨在战争时期维护信息真实性。",
+      "title": "纽约拟立法禁AI涉医学法律等专业咨询",
+      "description": "法案要求AI聊天机器人避免实质回应专业领域，否则公司担责。反映AI监管加强趋势。",
       "source_url": ""
     }
   ],
-  "fetched_at": "2026-03-04T23:28:40.617491+00:00"
+  "fetched_at": "2026-03-05T23:49:31.430915+00:00"
 }
