@@ -1,63 +1,52 @@
 {
-  "headline": "OpenAI推出GPT-5.3 Instant及Codex重大更新，1M上下文与原生计算机使用能力震惊AI圈",
-  "summary": "过去24小时，AI领域模型迭代加速，OpenAI快速推送GPT-5.3 Instant，提升对话稳定性和推理能力，同时Codex登陆Windows并支持百万上下文。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">8</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">13</argument></grok:render> Google发布Gemini 3.1 Flash-Lite轻量版，阿里巴巴Qwen团队震荡但开源Qwen3.5。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">1</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render> 同时，Anthropic与OpenAI在军方合作上互指谎言，引发安全与伦理热议；Broadcom预测2027年AI芯片需求超1000亿美元。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">2</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">6</argument></grok:render>",
+  "headline": "美国国防部正式将Anthropic列为供应链风险，切断其与五角大楼合作伙伴的联系",
+  "summary": "过去24小时，AI领域焦点集中在基础设施扩张受阻、地缘政治风险和企业应用落地。美国国防部将Anthropic标记为供应链风险，引发行业震动；Oracle与OpenAI取消德州AI数据中心扩建计划，凸显融资与需求变动挑战。同时，Cerebras选定摩根士丹利领衔IPO，AI芯片领域竞争加剧；Google Cloud与CVS Health合作推出Health100 AI健康平台，推动医疗AI落地。",
   "hot_topics": [
     {
-      "topic": "模型快速迭代",
-      "description": "OpenAI GPT-5.3/5.4、Google Gemini 3.1 Flash-Lite、Alibaba Qwen3.5等新模型发布，焦点在长上下文、速度和本地部署。",
+      "topic": "Anthropic供应链风险争议",
+      "description": "五角大楼正式认定Anthropic为供应链风险，将禁止其与国防合作伙伴合作，此举加剧OpenAI与Anthropic间的公开对峙。",
       "related_people": [
-        "@karpathy",
+        "@darioamodei",
         "@sama"
       ]
     },
     {
-      "topic": "AI安全与军方争议",
-      "description": "Anthropic CEO指责OpenAI对五角大楼谎言，员工联名反对AI监控与自主武器，Pentagon视Anthropic为供应链风险。",
+      "topic": "AI数据中心建设瓶颈",
+      "description": "Oracle-OpenAI项目取消凸显融资拖延和需求变化问题，同时AI数据中心热潮催生‘工人营地’住房需求。",
       "related_people": [
-        "@sama"
+        "@business",
+        "@OpenAI"
       ]
     },
     {
-      "topic": "物理AI与机器人",
-      "description": "BMW首次部署人形机器人于工厂，Google Intrinsic推进工业机器人，Amazon调整机器人部门。",
+      "topic": "AI芯片与IPO动态",
+      "description": "Cerebras聘请摩根士丹利准备IPO，中国游戏大佬投资脑机接口‘发现性AI’。",
       "related_people": [
-        "@Google"
-      ]
-    },
-    {
-      "topic": "AI基础设施扩张",
-      "description": "Broadcom预测AI芯片百亿需求，大科技公司承诺自建电厂避免转嫁电费成本。",
-      "related_people": [
-        "@nvidia"
+        "@business"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "OpenAI GPT-5.3 Instant全量推送与Codex Windows版",
-      "description": "GPT-5.3提升对话稳定性、减少幻觉，支持更快响应；Codex支持1M上下文、原生计算机使用和精英编码能力，每周活跃用户超160万。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">8</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">16</argument></grok:render>",
-      "source_url": "https://x.com/cgtwts/status/2029629349339791365"
+      "title": "国防部切断Anthropic国防合作",
+      "description": "华尔街日报报道，美国国防部正式通知Anthropic其为供应链风险，将被排除在与五角大楼合作的伙伴之外。此举源于安全担忧，可能重塑AI公司与政府关系。Anthropic CEO Dario Amodei此前指责OpenAI在国防合作上的‘谎言’。",
+      "source_url": "https://www.wsj.com/tech/ai/pentagon-formally-labels-anthropic-supply-chain-risk-escalating-conflict-ebdf0523"
     },
     {
-      "title": "Alibaba Qwen团队关键领导离职",
-      "description": "Qwen开源团队负责人林俊旸等离职，正值Qwen3.5发布后，引发开源生态不确定性讨论。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">10</argument></grok:render>",
-      "source_url": "https://x.com/Tahir_Yamin_/status/2029487864996909204"
+      "title": "Oracle与OpenAI取消德州AI数据中心扩建",
+      "description": "彭博社报道，由于融资谈判拖延和OpenAI需求变化，双方放弃扩展德州旗舰AI数据中心计划。此事件反映AI基础设施投资的不确定性。",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-03-06/oracle-and-openai-end-plans-to-expand-flagship-data-center"
     },
     {
-      "title": "Google Gemini 3.1 Flash-Lite预览版发布",
-      "description": "响应速度提升2.5倍、定价低廉，支持100万token上下文，针对高并发开发者场景。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">1</argument></grok:render>",
-      "source_url": "https://x.com/zapped_ai/status/2029426210871124076"
+      "title": "Cerebras选摩根士丹利领衔IPO",
+      "description": "AI芯片初创Cerebras选择摩根士丹利领导其IPO回归，标志着AI硬件领域融资热潮持续。",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-03-06/ai-chipmaker-cerebras-said-to-tap-morgan-stanley-for-ipo-return"
     },
     {
-      "title": "Anthropic与OpenAI军方合作互撕",
-      "description": "Dario Amodei指OpenAI对Pentagon谎言，OpenAI探索NATO部署；Google/OpenAI员工联名反对AI武器化。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">6</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">32</argument></grok:render>",
-      "source_url": "https://x.com/CNBCTV18News/status/2029477636016336989"
-    },
-    {
-      "title": "Broadcom预测2027年AI芯片需求超1000亿美元",
-      "description": " hyperscalers激进扩张基础设施，NVIDIA可能减少对OpenAI/Anthropic投资。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">2</argument></grok:render>",
-      "source_url": "https://x.com/ohdearitsmandy/status/2029436808036041042"
+      "title": "Google Cloud与CVS推出Health100 AI平台",
+      "description": "Google Cloud携手CVS Health发布Health100，首个AI消费者健康互动平台，旨在提升医疗参与度和成果。",
+      "source_url": "https://www.reuters.com/business/healthcare-pharmaceuticals/cvs-taps-google-cloud-roll-out-ai-powered-health-platform-2026-03-05/"
     }
   ],
-  "fetched_at": "2026-03-06T23:26:03.342582+00:00"
+  "fetched_at": "2026-03-07T23:20:51.583007+00:00"
 }
