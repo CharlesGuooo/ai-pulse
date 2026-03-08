@@ -1,26 +1,39 @@
 {
   "meta": {
-    "fetched_at": "2026-03-07T23:20:51.583007+00:00",
-    "total_projects": 13
+    "fetched_at": "2026-03-08T23:22:14.861318+00:00",
+    "total_projects": 12
   },
   "projects": [
     {
-      "title": "RealWonder",
-      "summary": "Real-Time Physical Action-Conditioned Video Generation，实现实时基于物理动作条件控制的视频生成。",
-      "ai_analysis": "该项目解决了实时视频生成中物理真实性和动作控制的难题，通过引入物理模拟模块提升生成视频的动态一致性。核心创新在于动作条件嵌入与扩散模型的融合，支持低延迟交互式生成。适用于虚拟现实、游戏动画和机器人模拟等领域，具有高实时性潜力。",
+      "title": "RealWonder: Real-Time Physical Action-Conditioned Video Generation",
+      "summary": "实时物理动作条件视频生成模型，支持基于动作输入的即时视频合成。",
+      "ai_analysis": "该模型解决了实时视频生成中物理真实性和动作条件控制的难题，通过创新的动作编码和物理模拟模块实现高保真视频输出。核心创新在于融合物理先验知识与扩散模型，提升生成速度和一致性。适用于AR/VR互动、机器人模拟和影视预览等场景。",
       "category": "视频生成",
       "source_url": "https://huggingface.co/papers/2603.05449",
       "arxiv_url": "https://arxiv.org/abs/2603.05449",
       "github_url": "",
       "shared_by": "_akhaliq",
       "published_at": "2026-03-07",
-      "impact_level": "中",
-      "id": "56749b783614"
+      "impact_level": "高",
+      "id": "23160da88133"
     },
     {
-      "title": "SkillNet",
-      "summary": "Create, Evaluate, and Connect AI Skills，一个创建、评估和连接AI技能的框架。",
-      "ai_analysis": "针对AI代理技能碎片化问题，提供模块化技能构建和评估系统。创新点是技能图谱连接机制，实现技能复用和迁移学习。适用于AI Agent开发，提升代理在复杂任务中的适应性。",
+      "title": "Sarvam 30B & 105B Models",
+      "summary": "印度Sarvam AI开源的30B和105B参数大型语言模型，在全球基准和印度语言上表现出色。",
+      "ai_analysis": "针对印度多语言场景优化，解决了现有模型在低资源语言上的token效率和性能问题。核心创新包括从零训练tokenizer、MLA注意力机制（105B）和内核优化，提升推理速度20-40%。适用于多语言聊天、代理任务和本地化AI应用。",
+      "category": "LLM与NLP",
+      "source_url": "https://sarvam.ai/blog/sarvam-30b-105b",
+      "arxiv_url": "",
+      "github_url": "https://huggingface.co/sarvam-ai",
+      "shared_by": "rasbt",
+      "published_at": "2026-03-06",
+      "impact_level": "高",
+      "id": "2702df42bf63"
+    },
+    {
+      "title": "SkillNet: Create, Evaluate, and Connect AI Skills",
+      "summary": "一个创建、评估和连接AI技能的框架，支持模块化技能构建。",
+      "ai_analysis": "解决了AI代理技能碎片化和评估难题，通过技能图谱和自动化评估实现技能复用与组合。核心创新是技能连接机制和动态评估，提升代理泛化能力。适用于AI Agent开发和复杂任务分解。",
       "category": "AI Agent",
       "source_url": "https://huggingface.co/papers/2603.04448",
       "arxiv_url": "https://arxiv.org/abs/2603.04448",
@@ -28,38 +41,38 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-06",
       "impact_level": "中",
-      "id": "e1858c5ae3b1"
+      "id": "b078d83cde16"
     },
     {
-      "title": "HY-WU",
-      "summary": "Tencent发布的可扩展功能神经记忆框架，用于文本引导图像编辑。",
-      "ai_analysis": "解决传统图像编辑中记忆效率低的问题，引入功能性神经记忆模块支持动态信息存储与检索。核心创新是模块化记忆设计，便于扩展到多模态任务。适用于图像编辑工具和创意设计软件。",
+      "title": "HY-WU: Extensible Functional Neural Memory Framework",
+      "summary": "腾讯开源的可扩展函数神经记忆框架，用于文本引导图像编辑。",
+      "ai_analysis": "针对图像编辑中记忆持久性和函数化控制问题，提供模块化神经记忆模块。创新点在于函数式记忆设计，支持复杂编辑序列。应用于创意设计、照片修复和交互式编辑工具。",
       "category": "图像生成",
       "source_url": "https://huggingface.co/tencent/HY-WU",
       "arxiv_url": "",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-05",
-      "impact_level": "高",
-      "id": "4d37a81b3734"
-    },
-    {
-      "title": "LTX-2.3",
-      "summary": "Lightricks发布的最新图像生成模型。",
-      "ai_analysis": "提升文本到图像生成质量，优化了扩散过程以提高细节保真度。创新在于高效的噪声调度机制，减少生成步数。广泛应用于数字艺术和广告设计。",
-      "category": "图像生成",
-      "source_url": "https://huggingface.co/Lightricks/LTX-2.3",
-      "arxiv_url": "",
-      "github_url": "",
+      "github_url": "https://huggingface.co/tencent/HY-WU",
       "shared_by": "_akhaliq",
       "published_at": "2026-03-05",
       "impact_level": "中",
-      "id": "e79cdf73722c"
+      "id": "6f3027b9fd5a"
     },
     {
-      "title": "CubeComposer",
-      "summary": "时空自回归4K 360°视频生成，从透视视频生成。",
-      "ai_analysis": "针对360°视频生成挑战，提出时空自回归框架处理高分辨率全景视频。核心创新是立方体投影表示，提升几何一致性。适用于VR内容创作和沉浸式媒体。",
+      "title": "LTX-2.3",
+      "summary": "Lightricks发布的图像生成模型LTX系列最新版本。",
+      "ai_analysis": "提升了文本到图像生成的细节和一致性，优化了高分辨率输出。核心改进包括架构微调和训练数据增强。适用于广告设计、艺术创作和内容生成。",
+      "category": "图像生成",
+      "source_url": "https://huggingface.co/Lightricks/LTX-2.3",
+      "arxiv_url": "",
+      "github_url": "https://huggingface.co/Lightricks/LTX-2.3",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-05",
+      "impact_level": "中",
+      "id": "211610ab25ee"
+    },
+    {
+      "title": "CubeComposer: Spatio-Temporal Autoregressive 4K 360° Video Generation",
+      "summary": "从透视视频生成时空自回归4K 360°视频。",
+      "ai_analysis": "解决了360°视频生成中的时空一致性和高分辨率挑战，使用自回归建模捕捉动态。创新在于立方体投影和多视图融合。适用于VR内容创作和全景模拟。",
       "category": "视频生成",
       "source_url": "https://huggingface.co/papers/2603.04291",
       "arxiv_url": "https://arxiv.org/abs/2603.04291",
@@ -67,12 +80,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-05",
       "impact_level": "高",
-      "id": "5b2fb28fccd2"
+      "id": "6ecbc54f22ad"
     },
     {
-      "title": "Helios",
+      "title": "Helios: Real-Time Long Video Generation Model",
       "summary": "真正实时的长视频生成模型。",
-      "ai_analysis": "突破长视频生成时长限制，实现实时流式输出。创新点是分层生成架构，结合预测编码减少计算开销。适用于直播特效和交互视频应用。",
+      "ai_analysis": "突破长视频生成延迟瓶颈，通过高效扩散和时序建模实现实时输出。核心创新是分层生成和内存优化。应用于实时视频编辑和直播特效。",
       "category": "视频生成",
       "source_url": "https://huggingface.co/papers/2603.04379",
       "arxiv_url": "https://arxiv.org/abs/2603.04379",
@@ -80,12 +93,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-05",
       "impact_level": "高",
-      "id": "e2c17735bea1"
+      "id": "340d4f54ac6c"
     },
     {
-      "title": "BBQ-to-Image",
+      "title": "BBQ-to-Image: Numeric Bounding Box and Qolor Control",
       "summary": "在大规模文本到图像模型中引入数值边界框和颜色控制。",
-      "ai_analysis": "解决精确物体定位和颜色指定难题，通过边界框提示提升生成控制精度。核心是条件注入机制，兼容现有扩散模型。适用于产品可视化和精确设计生成。",
+      "ai_analysis": "精确控制图像中对象位置和颜色，解决生成模型的空间精确性问题。创新点是数值条件注入和颜色调制模块。适用于精确设计和UI生成。",
       "category": "图像生成",
       "source_url": "https://huggingface.co/papers/2602.20672",
       "arxiv_url": "https://arxiv.org/abs/2602.20672",
@@ -93,12 +106,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-04",
       "impact_level": "中",
-      "id": "0ff3c48ad517"
+      "id": "9c37c33d695b"
     },
     {
-      "title": "Beyond Language Modeling",
-      "summary": "多模态预训练探索。",
-      "ai_analysis": "超越纯语言建模，融合视觉和文本预训练提升多模态理解。创新在于统一编码器设计，支持跨模态对齐。适用于视觉问答和多模态检索系统。",
+      "title": "Beyond Language Modeling: An Exploration of Multimodal Pretraining",
+      "summary": "多模态预训练的探索，超越纯语言建模。",
+      "ai_analysis": "扩展预训练范式到多模态数据，提升跨模态理解。核心创新是统一预训练目标和模态融合。适用于多模态检索和生成任务。",
       "category": "多模态学习",
       "source_url": "https://huggingface.co/papers/2603.03276",
       "arxiv_url": "https://arxiv.org/abs/2603.03276",
@@ -106,12 +119,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-04",
       "impact_level": "中",
-      "id": "d0535513df41"
+      "id": "aff5044aa0c3"
     },
     {
-      "title": "BeyondSWE",
-      "summary": "当前代码代理能否超越单仓库bug修复？",
-      "ai_analysis": "评估代码代理在多仓库复杂场景下的能力，揭示当前局限性。创新是基准测试框架，模拟真实软件工程环境。指导AI编程工具向企业级发展。",
+      "title": "BeyondSWE: Can Current Code Agent Survive Beyond Single-Repo Bug Fixing?",
+      "summary": "评估代码代理在多仓库bug修复外的生存能力。",
+      "ai_analysis": "揭示代码代理在复杂软件生态中的局限，推动更鲁棒代理开发。创新在于多仓库基准和评估框架。应用于软件工程自动化。",
       "category": "AI Agent",
       "source_url": "https://huggingface.co/papers/2603.03194",
       "arxiv_url": "https://arxiv.org/abs/2603.03194",
@@ -119,25 +132,25 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-04",
       "impact_level": "中",
-      "id": "64dca1da6836"
+      "id": "dd24cb2af3d8"
     },
     {
-      "title": "Utonia",
-      "summary": "迈向所有点云的统一编码器。",
-      "ai_analysis": "统一不同点云表示的学习，解决格式不一致问题。核心是自适应特征提取模块，提升泛化能力。适用于3D重建、自动驾驶感知。",
+      "title": "Utonia: Toward One Encoder for All Point Clouds",
+      "summary": "统一点云编码器，适用于所有点云任务。",
+      "ai_analysis": "解决点云处理中任务特定编码器多样性问题，提供通用编码框架。核心创新是自适应特征提取和任务条件。适用于3D感知和自动驾驶。",
       "category": "3D视觉",
       "source_url": "https://huggingface.co/papers/2603.03283",
       "arxiv_url": "https://arxiv.org/abs/2603.03283",
       "github_url": "",
       "shared_by": "_akhaliq",
       "published_at": "2026-03-04",
-      "impact_level": "中",
-      "id": "ded6913279b6"
+      "impact_level": "高",
+      "id": "4e3e4707bff8"
     },
     {
-      "title": "CUDA Agent",
-      "summary": "大规模代理强化学习用于高性能CUDA内核生成。",
-      "ai_analysis": "利用代理RL自动生成优化CUDA内核，解决手动调优瓶颈。创新在于大规模代理训练，提升内核性能至SOTA。适用于高性能计算和AI加速器优化。",
+      "title": "CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation",
+      "summary": "大规模代理强化学习生成高性能CUDA内核。",
+      "ai_analysis": "自动化CUDA内核优化，解决手动编写的高成本问题。通过代理RL探索搜索空间。适用于AI基础设施和高性能计算。",
       "category": "AI基础设施",
       "source_url": "https://huggingface.co/papers/2602.24286",
       "arxiv_url": "https://arxiv.org/abs/2602.24286",
@@ -145,33 +158,7 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-03",
       "impact_level": "高",
-      "id": "9c8f1bb3a079"
-    },
-    {
-      "title": "Sarvam 105B",
-      "summary": "Sarvam AI开源的105B参数推理模型，擅长印度语言。",
-      "ai_analysis": "从零训练，支持MLA注意力机制，在全球基准中表现优秀，尤其印度语言胜出90%。创新包括自定义分词器提升token效率4倍。适用于多语言AI应用和区域化部署。",
-      "category": "LLM与NLP",
-      "source_url": "https://huggingface.co/sarvam-ai",
-      "arxiv_url": "",
-      "github_url": "",
-      "shared_by": "rasbt",
-      "published_at": "2026-03-06",
-      "impact_level": "高",
-      "id": "49c968bd532b"
-    },
-    {
-      "title": "OK-Robot",
-      "summary": "NYU和Meta的开放知识机器人框架，用于零样本拾取放置任务。",
-      "ai_analysis": "集成开放知识模型提升机器人通用性，支持任意家居环境零样本操作。核心是模块化框架，便于扩展新任务。推动家用机器人商业化。",
-      "category": "具身智能",
-      "source_url": "https://ok-robot.github.io",
-      "arxiv_url": "",
-      "github_url": "https://github.com/ok-robot",
-      "shared_by": "_akhaliq",
-      "published_at": "2024-01-23",
-      "impact_level": "高",
-      "id": "dd3f227d2abb"
+      "id": "c8d715a0568d"
     }
   ]
 }

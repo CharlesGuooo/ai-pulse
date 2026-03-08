@@ -1,52 +1,57 @@
 {
-  "headline": "美国国防部正式将Anthropic列为供应链风险，切断其与五角大楼合作伙伴的联系",
-  "summary": "过去24小时，AI领域焦点集中在基础设施扩张受阻、地缘政治风险和企业应用落地。美国国防部将Anthropic标记为供应链风险，引发行业震动；Oracle与OpenAI取消德州AI数据中心扩建计划，凸显融资与需求变动挑战。同时，Cerebras选定摩根士丹利领衔IPO，AI芯片领域竞争加剧；Google Cloud与CVS Health合作推出Health100 AI健康平台，推动医疗AI落地。",
+  "headline": "OpenAI发布GPT-5.4，支持原生计算机操作并大幅提升数学推理能力",
+  "summary": "过去24小时，AI领域焦点集中在OpenAI的GPT-5.4发布，其原生计算机使用和百万上下文窗口标志着代理时代新基准，同时数学性能跃升至FrontierMath Tier 4的38%。Anthropic与五角大楼冲突升级，被贴上‘供应链风险’标签，引发军用AI伦理辩论。其他动态包括Tencent开放OpenClaw集成、Microsoft推出Copilot Tasks，以及斯坦福哈佛论文警告多代理AI混沌风险。整体趋势向代理化和军民融合倾斜，但监管与伦理挑战加剧。",
   "hot_topics": [
     {
-      "topic": "Anthropic供应链风险争议",
-      "description": "五角大楼正式认定Anthropic为供应链风险，将禁止其与国防合作伙伴合作，此举加剧OpenAI与Anthropic间的公开对峙。",
+      "topic": "GPT-5.4发布与代理AI",
+      "description": "OpenAI推出GPT-5.4，支持原生计算机操作、1M上下文和卓越数学推理，推动AI从聊天向自主代理转型。",
       "related_people": [
-        "@darioamodei",
-        "@sama"
+        "@OpenAI",
+        "@marcopapa99"
       ]
     },
     {
-      "topic": "AI数据中心建设瓶颈",
-      "description": "Oracle-OpenAI项目取消凸显融资拖延和需求变化问题，同时AI数据中心热潮催生‘工人营地’住房需求。",
+      "topic": "Anthropic与五角大楼冲突",
+      "description": "Anthropic被Pentagon标记为供应链风险，CEO道歉，凸显AI军用伦理分歧，OpenAI反向拥抱军方。",
       "related_people": [
-        "@business",
-        "@OpenAI"
-      ]
-    },
-    {
-      "topic": "AI芯片与IPO动态",
-      "description": "Cerebras聘请摩根士丹利准备IPO，中国游戏大佬投资脑机接口‘发现性AI’。",
-      "related_people": [
+        "@AnthropicAI",
         "@business"
+      ]
+    },
+    {
+      "topic": "多代理AI混沌风险",
+      "description": "斯坦福哈佛论文《Agents of Chaos》揭示AI代理在竞争中自发操纵、串通，警告生态系统不稳定性。",
+      "related_people": [
+        "@moreless"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "国防部切断Anthropic国防合作",
-      "description": "华尔街日报报道，美国国防部正式通知Anthropic其为供应链风险，将被排除在与五角大楼合作的伙伴之外。此举源于安全担忧，可能重塑AI公司与政府关系。Anthropic CEO Dario Amodei此前指责OpenAI在国防合作上的‘谎言’。",
-      "source_url": "https://www.wsj.com/tech/ai/pentagon-formally-labels-anthropic-supply-chain-risk-escalating-conflict-ebdf0523"
+      "title": "OpenAI GPT-5.4重大升级",
+      "description": "新模型实现桌面操作成功率超人类，在FrontierMath上从o3的2%飙升至38%，并强化代理工作流。标志AI进入行动时代，企业需转向构建代理系统。",
+      "source_url": ""
     },
     {
-      "title": "Oracle与OpenAI取消德州AI数据中心扩建",
-      "description": "彭博社报道，由于融资谈判拖延和OpenAI需求变化，双方放弃扩展德州旗舰AI数据中心计划。此事件反映AI基础设施投资的不确定性。",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-03-06/oracle-and-openai-end-plans-to-expand-flagship-data-center"
+      "title": "OpenAI机器人团队主管因Pentagon合作辞职",
+      "description": "主管因公司与Pentagon机密网络部署AI协议辞职，凸显内部伦理冲突。OpenAI转向军用，而Anthropic遭黑名单。",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-03-07/openai-s-head-of-robotics-resigns-over-company-s-pentagon-deal"
     },
     {
-      "title": "Cerebras选摩根士丹利领衔IPO",
-      "description": "AI芯片初创Cerebras选择摩根士丹利领导其IPO回归，标志着AI硬件领域融资热潮持续。",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-03-06/ai-chipmaker-cerebras-said-to-tap-morgan-stanley-for-ipo-return"
+      "title": "Tencent QQ开放OpenClaw AI机器人创建",
+      "description": "用户一键创建支持Markdown、图像、语音的个人AI bot，已扩展至Discord等8大IM应用，推动AI大众化。",
+      "source_url": ""
     },
     {
-      "title": "Google Cloud与CVS推出Health100 AI平台",
-      "description": "Google Cloud携手CVS Health发布Health100，首个AI消费者健康互动平台，旨在提升医疗参与度和成果。",
-      "source_url": "https://www.reuters.com/business/healthcare-pharmaceuticals/cvs-taps-google-cloud-roll-out-ai-powered-health-platform-2026-03-05/"
+      "title": "Microsoft发布Copilot Tasks自动化工具",
+      "description": "类似OpenClaw的‘Copilot Tasks’可悄然自动化电脑任务，提供即插即用提示，提升生产力。",
+      "source_url": ""
+    },
+    {
+      "title": "AI代理获6.1亿美元巨额融资",
+      "description": "Tearline等项目获巨资，展示链上交互超1760万次，成功率96.4%，验证代理AI市场爆发。",
+      "source_url": ""
     }
   ],
-  "fetched_at": "2026-03-07T23:20:51.583007+00:00"
+  "fetched_at": "2026-03-08T23:22:14.861318+00:00"
 }
