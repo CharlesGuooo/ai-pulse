@@ -1,59 +1,53 @@
 {
-  "headline": "NVIDIA GTC大会发布NemoClaw和Mistral Small 4，AI代理基础设施加速工业化",
-  "summary": "过去24小时AI领域焦点集中在NVIDIA GTC大会上，黄仁勋强调AI推理市场规模达1万亿美元，并推出NemoClaw支持OpenClaw的企业级代理栈，同时Mistral发布119B参数开源模型Small 4，统一聊天、推理和代理能力。xAI发布Grok 4.20脱离Beta，Elon Musk征求用户反馈；Anthropic完成81k用户访谈并宣布Code with Claude开发者大会。代理栈、开源模型和推理基础设施成为主流趋势，中国AI调用量首次超美。",
+  "headline": "OpenAI推出GPT-5.4 mini/nano模型与Parameter Golf挑战赛",
+  "summary": "过去24小时AI领域动态聚焦于模型轻量化和代理工具创新，OpenAI发布更廉价、更快的GPT-5.4 mini/nano变体，并推出Parameter Golf竞赛激发社区优化。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">44</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">10</argument></grok:render> Anthropic推出Dispatch工具，实现手机远程控制桌面Claude代理，同时宣布Code with Claude开发者大会。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">47</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">45</argument></grok:render> 其他亮点包括OpenArt Worlds 3D环境生成和NVIDIA相关开源动态，整体趋势向高效代理与多模态工具倾斜。",
   "hot_topics": [
     {
-      "topic": "AI代理基础设施",
-      "description": "NVIDIA NemoClaw、Microsoft Foundry Agent Service和LangChain与NVIDIA合作，推动代理从实验到生产部署，强调安全、观测和规模化。",
+      "topic": "AI代理工具爆发",
+      "description": "Anthropic Dispatch允许手机控制桌面Claude执行任务，OpenAI Codex支持子代理并行编码，标志代理从概念向实用转型。",
       "related_people": [
-        "@nvidia",
-        "@NVIDIAAIDev",
-        "@BowTiedCrocodil"
+        "@AnthropicAI",
+        "@OpenAI",
+        "@claudeai"
       ]
     },
     {
-      "topic": "开源模型竞赛",
-      "description": "Mistral Small 4（119B参数Apache 2.0）和Unsloth Studio等开源工具爆发，降低部署门槛，支持多模态和本地训练。",
+      "topic": "模型轻量化与优化竞赛",
+      "description": "OpenAI GPT-5.4 mini/nano 70%更便宜更快，Parameter Golf挑战鼓励参数高效模型开发，NVIDIA Nemotron Nano聚焦边缘部署。",
       "related_people": [
-        "@MistralAI",
-        "@UnslothAI",
-        "@altryne"
+        "@OpenAI"
       ]
     },
     {
-      "topic": "Grok 4.20发布",
-      "description": "xAI Grok 4.20正式脱离Beta，提供Auto/Fast/Expert/Heavy模式，Elon Musk询问用户印象，持续每周升级。",
+      "topic": "开发者生态与开源",
+      "description": "Anthropic Code with Claude大会、OpenClaw竞争、Hugging Face开源报告，推动AI工具链开源与社区协作。",
       "related_people": [
-        "@elonmusk"
+        "@AnthropicAI",
+        "@huggingface"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "NVIDIA推出NemoClaw和Agent Toolkit",
-      "description": "NVIDIA在GTC发布完整代理栈，包括NemoClaw支持OpenClaw，扩展Nemotron模型家族，与Mistral、LangChain等合作，形成企业级代理平台。黄仁勋预测AI芯片收入达1万亿美元，焦点转向推理经济。",
-      "source_url": "https://blogs.nvidia.com/blog/gtc-2026-news/"
+      "title": "Anthropic发布Dispatch：手机远程AI桌面代理",
+      "description": "Dispatch将手机与桌面Claude配对，支持任务下发、代码执行和文件访问，所有操作本地安全，用户获批后执行。适用于Max订阅用户，Pro即将跟进。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">47</argument></grok:render>",
+      "source_url": "https://x.com/DataChaz/status/2034373172825592095"
     },
     {
-      "title": "Mistral AI发布Mistral Small 4",
-      "description": "119B参数MoE模型，6B活跃参数，256k上下文，支持聊天、推理、多模态和代理任务，即日可用Apache 2.0许可，简化企业部署。",
-      "source_url": "https://mistral.ai/news/mistral-small-4/"
+      "title": "OpenAI GPT-5.4 mini/nano上线与Parameter Golf",
+      "description": "新模型轻量高速，集成ChatGPT、Codex和API；Parameter Golf挑战赛邀请社区优化模型参数效率。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">10</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">44</argument></grok:render>",
+      "source_url": "https://openai.com/index/parameter-golf/"
     },
     {
-      "title": "xAI Grok 4.20正式发布",
-      "description": "脱离Beta，支持多种模式，每周重大升级，Elon Musk征求初始印象，标志xAI加速模型迭代。",
-      "source_url": ""
+      "title": "OpenArt推出Worlds：单提示生成可导航3D环境",
+      "description": "用户从提示或图像创建一致3D世界，支持自由移动、添加元素和生产级截图，解决场景不一致问题。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">49</argument></grok:render>",
+      "source_url": "https://x.com/openart_ai/status/2034384539435626981"
     },
     {
-      "title": "Anthropic 81k用户访谈与开发者大会",
-      "description": "完成史上最大AI用户质性研究，揭示使用、梦想与担忧；宣布Code with Claude大会在三地举办，提供工作坊和一对一指导。",
+      "title": "Anthropic发布81,000用户Claude使用调研",
+      "description": "最大规模定性研究，收集用户使用方式、梦想与担忧，为Claude迭代提供数据支撑。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">51</argument></grok:render>",
       "source_url": "https://www.anthropic.com/features/81k-interviews"
-    },
-    {
-      "title": "Meta与Nebius签署270亿美元AI算力协议",
-      "description": "Meta采购120亿至270亿美元计算容量，锁定GPU和电力，凸显 hyperscaler 对外采购战略护城河。",
-      "source_url": ""
     }
   ],
-  "fetched_at": "2026-03-18T23:29:18.744030+00:00"
+  "fetched_at": "2026-03-19T23:28:13.547363+00:00"
 }
