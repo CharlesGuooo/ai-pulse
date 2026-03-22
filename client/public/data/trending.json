@@ -1,55 +1,61 @@
 {
-  "headline": "中国发布100%本地运行的开源AI员工，能独立完成研究、编码、建站和视频生成",
-  "summary": "过去24小时，AI领域焦点在于中国开源AI员工的发布，支持完全本地运行的多模态任务，标志着本地AI代理的重大进步。美国与日本加强AI新兴技术合作，推动供应链和军事应用。企业中AI工具使用激增，但教育界担忧研究生过度依赖AI可能削弱核心技能。同时，Anthropic CEO强调AI在国防中的作用需设限避免滥用。",
+  "headline": "五角大楼将Palantir AI采纳为核心美军系统",
+  "summary": "过去24小时，AI领域焦点集中在军事应用、计算资源竞赛和中国AI进展上。五角大楼决定采用Palantir的Maven AI作为核心系统，凸显AI在国防中的战略重要性。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">39</argument></grok:render> Elon Musk评论Google大规模AI计算上线，引发行业关注。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render> 同时，中国开源本地AI员工和DeepMind高管任命等动态显示全球AI竞争加剧。",
   "hot_topics": [
     {
-      "topic": "本地AI代理与开源模型",
-      "description": "中国推出全开源AI员工，支持本地运行的研究、编码、网站构建和视频生成，附带专用电脑，挑战云端AI霸权。",
+      "topic": "AI军事应用",
+      "description": "Pentagon采纳Palantir AI为核心系统，美日加强AI合作，Anthropic CEO强调AI国防作用。",
       "related_people": [
-        "dr_cintas"
+        "@Reuters",
+        "@WhiteHouse",
+        "@unusual_whales"
       ]
     },
     {
-      "topic": "AI在教育与军事的应用争议",
-      "description": "研究生广泛使用AI工具起草、编码，但担心技能退化；Anthropic CEO讨论AI国防重要性，同时呼吁防范监视和自主武器。",
+      "topic": "计算资源竞赛",
+      "description": "Elon Musk惊叹Google AI计算规模，DeepMind任命首席战略官。",
       "related_people": [
-        "unusual_whales"
+        "@elonmusk",
+        "@demishassabis"
       ]
     },
     {
-      "topic": "游戏与娱乐AI整合",
-      "description": "Square Enix在龙珠10中集成Google Gemini，实现AI角色自然对话；AI生成假影响者引发伦理讨论。",
+      "topic": "Claude AI代理能力",
+      "description": "Claude更新助力学生通过Polymarket机器人获巨额利润，Karpathy讨论代理代码质量。",
       "related_people": [
-        "nikkei"
+        "@karpathy",
+        "@RoundtableSpace"
+      ]
+    },
+    {
+      "topic": "中国AI进展",
+      "description": "中国发布100%本地开源AI员工，可独立完成研究、编码等多任务。",
+      "related_people": [
+        "@dr_cintas"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "中国开源AI员工发布",
-      "description": "一款100%本地运行的AI员工，能自主进行研究、编写代码、构建网站、制作幻灯片和生成视频，完全开源并配备专用电脑。这标志着AI代理向独立多任务执行迈进，可能重塑企业工作流程。",
+      "title": "五角大楼采纳Palantir AI为核心军事系统",
+      "description": "据备忘录，五角大楼将Palantir的Maven AI作为核心美军系统，推动AI在国防领域的深度整合。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">39</argument></grok:render> 这标志着AI军事化进程加速。",
+      "source_url": "https://www.reuters.com/technology/pentagon-adopt-palantir-ai-as-core-us-military-system-memo-says-2026-03-20/"
+    },
+    {
+      "title": "Google DeepMind任命Jas Sekhon为首席战略官",
+      "description": "Demis Hassabis宣布前Bridgewater AI负责人Jas Sekhon加入DeepMind，助力AGI使命。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">1</argument></grok:render>",
       "source_url": ""
     },
     {
-      "title": "美日签署AI与新兴技术合作协议",
-      "description": "美国与日本加强联盟，包括AI合作、供应链安全和军事威慑。该协议旨在提升印太地区技术竞争力，对抗地缘挑战。",
+      "title": "中国开源本地AI员工发布",
+      "description": "一款100%本地运行的AI员工可独立研究、编码、建站等，附带专用电脑，完全开源。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">43</argument></grok:render>",
       "source_url": ""
     },
     {
-      "title": "Square Enix龙珠10集成Google Gemini AI",
-      "description": "游戏中搭载Gemini实现AI角色自然对话，提升互动体验。这是AI在娱乐产业深度融合的典型案例。",
-      "source_url": "https://www.nikkei.com/article/DGXZQOUC212HX0R20C26A3000000/"
-    },
-    {
-      "title": "Nature报道研究生AI工具使用担忧",
-      "description": "越来越多研究生用AI起草、编码和搜索，但专家担心这会侵蚀博士所需的核心技能，如批判性思维。",
-      "source_url": "https://www.nature.com/articles/d41586-026-00843-y"
-    },
-    {
-      "title": "AI假影响者Jessica Foster爆红",
-      "description": "AI生成的虚拟女性在Instagram获百万粉丝，用于政治宣传，引发深度假新闻伦理讨论。",
-      "source_url": "https://www.washingtonpost.com/technology/2026/03/20/jessica-foster-maga-dream-girl-ai-fake/"
+      "title": "Elon Musk：Google AI计算规模惊人",
+      "description": "Musk强调几乎无人理解Google上线的AI计算量之巨，凸显计算资源竞争。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render>",
+      "source_url": ""
     }
   ],
-  "fetched_at": "2026-03-21T23:23:12.495892+00:00"
+  "fetched_at": "2026-03-22T23:25:57.891734+00:00"
 }
