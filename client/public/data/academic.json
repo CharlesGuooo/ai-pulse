@@ -1,13 +1,39 @@
 {
   "meta": {
-    "fetched_at": "2026-03-22T23:25:57.891734+00:00",
-    "total_projects": 13
+    "fetched_at": "2026-03-23T23:30:43.716845+00:00",
+    "total_projects": 21
   },
   "projects": [
     {
-      "title": "Loc3R-VLM",
-      "summary": "Language-based Localization and 3D Reasoning with Vision-Language Models。利用视觉语言模型进行基于语言的定位和3D推理。",
-      "ai_analysis": "该论文解决VLMs在3D空间定位和推理中的精度问题，通过整合语言指令提升模型对复杂场景的理解能力。核心创新在于提出新型定位机制，结合视觉和语言先验，实现零样本3D推理。适用于机器人导航、AR/VR和自动驾驶等场景，具有高泛化潜力。",
+      "title": "Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models",
+      "summary": "提出了一种针对蒸馏自回归视频模型的前向过程强化学习方法Astrolabe，提升视频生成质量。",
+      "ai_analysis": "该方法解决视频生成模型在蒸馏过程中质量下降的问题，通过前向过程强化学习引导模型生成更连贯的视频序列。核心创新在于将强化学习与自回归生成结合，利用过程监督提升采样效率。适用于实时视频编辑和生成场景，具有高效推理潜力。",
+      "category": "视频生成",
+      "source_url": "https://huggingface.co/papers/2603.17051",
+      "arxiv_url": "https://arxiv.org/abs/2603.17051",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-23",
+      "impact_level": "中",
+      "id": "66476b735e5d"
+    },
+    {
+      "title": "HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning",
+      "summary": "HopChain通过多跳数据合成提升视觉语言推理的泛化能力。",
+      "ai_analysis": "针对视觉语言模型在复杂推理任务上的泛化不足，引入多跳合成数据生成机制，模拟真实多步推理过程。创新点在于链式数据生成框架，提高模型对未见场景的适应性。适用于多模态问答和视觉推理应用。",
+      "category": "多模态学习",
+      "source_url": "https://huggingface.co/papers/2603.17024",
+      "arxiv_url": "https://arxiv.org/abs/2603.17024",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-23",
+      "impact_level": "中",
+      "id": "ceee498044b0"
+    },
+    {
+      "title": "Loc3R-VLM: Language-based Localization and 3D Reasoning with Vision-Language Models",
+      "summary": "Loc3R-VLM利用视觉语言模型实现基于语言的定位和3D推理。",
+      "ai_analysis": "解决传统3D定位依赖标注数据的痛点，通过VLM自然语言指导实现零样本定位和推理。核心创新是融合语言先验与视觉特征的模块化设计，提升室内外场景鲁棒性。适用于机器人导航和AR应用。",
       "category": "3D视觉",
       "source_url": "https://huggingface.co/papers/2603.18002",
       "arxiv_url": "https://arxiv.org/abs/2603.18002",
@@ -15,25 +41,25 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-20",
       "impact_level": "中",
-      "id": "8673376b22bb"
+      "id": "42e0ca45f465"
     },
     {
-      "title": "FASTER",
-      "summary": "Rethinking Real-Time Flow VLAs。重新思考实时流视觉语言动作模型。",
-      "ai_analysis": "针对实时视频语言代理的计算效率问题，该工作优化流匹配机制，显著降低延迟同时保持高准确率。创新点包括高效流对齐算法和动态注意力机制。适用于实时视频分析、交互式AI系统和边缘设备部署。",
-      "category": "视频生成",
+      "title": "FASTER: Rethinking Real-Time Flow VLAs",
+      "summary": "FASTER重新思考实时流视觉语言动作模型的设计。",
+      "ai_analysis": "针对实时视频语言代理的延迟问题，提出高效流处理架构，优化计算路径。创新在于动态流聚合机制，平衡速度与准确性。适用于视频理解和交互代理。",
+      "category": "多模态学习",
       "source_url": "https://huggingface.co/papers/2603.19199",
       "arxiv_url": "https://arxiv.org/abs/2603.19199",
       "github_url": "",
       "shared_by": "_akhaliq",
       "published_at": "2026-03-20",
       "impact_level": "高",
-      "id": "e800eece9e80"
+      "id": "e6f91637014a"
     },
     {
-      "title": "SAMA",
-      "summary": "Factorized Semantic Anchoring and Motion Alignment for Instruction-Guided Video Editing。因式分解语义锚定和运动对齐，用于指令引导的视频编辑。",
-      "ai_analysis": "解决指令视频编辑中语义与运动不一致的问题，通过分解锚定和对齐模块实现精确编辑。核心创新是因式分解框架，提升编辑保真度和灵活性。可应用于短视频生成、电影后期和个性化内容创作。",
+      "title": "SAMA: Factorized Semantic Anchoring and Motion Alignment for Instruction-Guided Video Editing",
+      "summary": "SAMA通过语义锚定和运动对齐实现指令引导视频编辑。",
+      "ai_analysis": "解决指令视频编辑中语义与运动脱节问题，分解为独立因子建模。核心创新是因子化框架，提高编辑精确度和一致性。适用于专业视频后期和内容创作。",
       "category": "视频生成",
       "source_url": "https://huggingface.co/papers/2603.19228",
       "arxiv_url": "https://arxiv.org/abs/2603.19228",
@@ -41,25 +67,25 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-20",
       "impact_level": "中",
-      "id": "3dfed0839560"
+      "id": "af5d4b45cad9"
     },
     {
       "title": "Nemotron-Cascade 2",
-      "summary": "Nvidia发布的多模态模型集合，用于高级视觉语言任务。",
-      "ai_analysis": "Nvidia最新开源模型，针对多模态理解和生成优化，Cascade架构提升级联推理能力。创新在于高效的多阶段处理，超越单一模态模型。广泛应用于图像描述、视觉问答和多模态代理。",
-      "category": "多模态学习",
+      "summary": "Nvidia发布Nemotron-Cascade 2系列模型，支持高效多模态生成。",
+      "ai_analysis": "针对级联生成模型的效率瓶颈，引入Cascade 2架构优化多阶段生成。创新点在于参数共享和蒸馏技术，实现高保真图像/视频生成。适用于实时多模态内容创建。",
+      "category": "图像生成",
       "source_url": "https://huggingface.co/papers/2603.19220",
       "arxiv_url": "https://arxiv.org/abs/2603.19220",
       "github_url": "https://huggingface.co/collections/nvidia/nemotron-cascade-2",
       "shared_by": "_akhaliq",
       "published_at": "2026-03-20",
       "impact_level": "高",
-      "id": "944111bf26d1"
+      "id": "0b8ece0e428f"
     },
     {
-      "title": "Generation Models Know Space",
-      "summary": "Unleashing Implicit 3D Priors for Scene Understanding。释放生成模型中的隐式3D先验用于场景理解。",
-      "ai_analysis": "挖掘生成模型的隐式3D知识，解决2D到3D转换的表示学习难题。核心是通过蒸馏先验提升场景重建精度。适用于3D重建、虚拟现实和自动驾驶场景解析。",
+      "title": "Generation Models Know Space: Unleashing Implicit 3D Priors for Scene Understanding",
+      "summary": "利用生成模型隐式3D先验提升场景理解。",
+      "ai_analysis": "挖掘生成模型中未利用的3D空间知识，解决场景解析的几何不一致问题。核心创新是先验蒸馏模块，无需额外3D数据训练。适用于自动驾驶和虚拟现实。",
       "category": "3D视觉",
       "source_url": "https://huggingface.co/papers/2603.19235",
       "arxiv_url": "https://arxiv.org/abs/2603.19235",
@@ -67,12 +93,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-20",
       "impact_level": "中",
-      "id": "aa043db69369"
+      "id": "d4e781b9e7b8"
     },
     {
-      "title": "V-JEPA 2.1",
-      "summary": "Unlocking Dense Features in Video Self-Supervised Learning。解锁视频自监督学习中的密集特征。",
-      "ai_analysis": "Meta的视频自监督模型升级版，针对密集时空特征提取优化，提升下游任务性能。创新点是改进的预测头和预训练策略。适用于视频理解、动作识别和长序列建模。",
+      "title": "V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning",
+      "summary": "V-JEPA 2.1解锁视频自监督学习中的密集特征。",
+      "ai_analysis": "改进JEPA框架，提取更丰富的时空密集特征，提升视频表征质量。创新在于预测器设计优化，减少信息瓶颈。适用于视频检索和动作识别。",
       "category": "计算机视觉",
       "source_url": "https://huggingface.co/papers/2603.14482",
       "arxiv_url": "https://arxiv.org/abs/2603.14482",
@@ -80,25 +106,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-19",
       "impact_level": "高",
-      "id": "de1697e0f275"
+      "id": "a40c84faafaa"
     },
     {
-      "title": "Efficient Exploration at Scale",
-      "summary": "大规模高效探索算法。",
-      "ai_analysis": "针对强化学习中探索效率问题，提出可扩展探索策略，适用于大型环境。核心创新是分层探索和自适应采样。应用于游戏AI、机器人和大规模模拟。",
-      "category": "AI Agent",
-      "source_url": "https://huggingface.co/papers/2603.17378",
-      "arxiv_url": "https://arxiv.org/abs/2603.17378",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-19",
-      "impact_level": "中",
-      "id": "519fee73cfad"
-    },
-    {
-      "title": "MetaClaw",
-      "summary": "Just Talk: An Agent That Meta-Learns and Evolves in the Wild。元学习代理，在野外环境演化。",
-      "ai_analysis": "构建自适应代理，通过元学习快速适应新任务，并在真实环境中演化。创新在于在线元学习循环和进化机制。适用于具身智能、自主机器人和动态环境交互。",
+      "title": "MetaClaw: Just Talk - An Agent That Meta-Learns and Evolves in the Wild",
+      "summary": "MetaClaw是一个元学习并在野外进化的代理，仅需对话即可。",
+      "ai_analysis": "解决代理适应动态环境的挑战，通过元学习快速适应新任务。核心创新是对话驱动进化机制，无需显式奖励。适用于开放世界AI代理。",
       "category": "AI Agent",
       "source_url": "https://huggingface.co/papers/2603.17187",
       "arxiv_url": "https://arxiv.org/abs/2603.17187",
@@ -106,64 +119,25 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-19",
       "impact_level": "高",
-      "id": "1d02b71ce45e"
+      "id": "f9dd4307527d"
     },
     {
-      "title": "Video-CoE",
-      "summary": "Reinforcing Video Event Prediction via Chain of Events。通过事件链强化视频事件预测。",
-      "ai_analysis": "引入事件链推理提升视频预测准确性，解决长时序依赖问题。核心是链式强化学习框架。应用于视频预测、安防监控和行为分析。",
-      "category": "视频生成",
-      "source_url": "https://huggingface.co/papers/2603.14935",
-      "arxiv_url": "https://arxiv.org/abs/2603.14935",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-19",
-      "impact_level": "中",
-      "id": "844ef29f4671"
-    },
-    {
-      "title": "MolmoPoint",
-      "summary": "Better Pointing for VLMs with Grounding Tokens。使用 grounding tokens 提升VLMs指向精度。",
-      "ai_analysis": "改进VLMs的空间 grounding，通过专用tokens实现精确指向。创新点是 grounding token 训练，提升GUI交互和视觉定位。适用于人机交互、GUI自动化和视觉代理。",
-      "category": "多模态学习",
-      "source_url": "https://huggingface.co/datasets/allenai/MolmoPoint-GUISyn/blob/main/molmopoint.pdf",
-      "arxiv_url": "",
-      "github_url": "https://huggingface.co/allenai/MolmoPoint-GUI-8B",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-19",
-      "impact_level": "高",
-      "id": "9bf00d2b60cc"
-    },
-    {
-      "title": "Qianfan-OCR",
-      "summary": "A Unified End-to-End Model for Document Intelligence。统一端到端文档智能模型。",
-      "ai_analysis": "百度推出的OCR模型，统一处理文档布局、文本识别和理解。核心创新是端到端架构，超越传统pipeline。适用于文档数字化、表单解析和企业自动化。",
-      "category": "LLM与NLP",
+      "title": "Qianfan-OCR: A Unified End-to-End Model for Document Intelligence",
+      "summary": "Qianfan-OCR统一端到端文档智能模型。",
+      "ai_analysis": "整合OCR、布局分析和理解于一体的统一模型，解决多任务文档处理的碎片化。创新在于端到端训练框架，提升准确率和速度。适用于数字化文档处理和企业AI。",
+      "category": "计算机视觉",
       "source_url": "https://huggingface.co/papers/2603.13398",
       "arxiv_url": "https://arxiv.org/abs/2603.13398",
-      "github_url": "https://huggingface.co/spaces/baidu/Qianfan-OCR-Demo",
+      "github_url": "",
       "shared_by": "_akhaliq",
       "published_at": "2026-03-18",
       "impact_level": "中",
-      "id": "a16c0c5ccd61"
-    },
-    {
-      "title": "OK-Robot",
-      "summary": "What Really Matters in Integrating Open-Knowledge Models for Robotics。机器人中集成开放知识模型的关键因素。",
-      "ai_analysis": "NYU和Meta的开源机器人框架，支持零样本语言条件拾取放置任务。创新在于模块化知识集成，提升泛化。适用于家庭机器人和服务机器人。",
-      "category": "具身智能",
-      "source_url": "https://okrobot.github.io",
-      "arxiv_url": "",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2024-01-23",
-      "impact_level": "高",
-      "id": "7504de20f604"
+      "id": "1b00c232508e"
     },
     {
       "title": "Nemotron 3 Super 120B-A12B",
-      "summary": "Nvidia高性能开源LLM，基准媲美Qwen3.5。",
-      "ai_analysis": "rasbt分享的Nvidia新模型，架构优化带来高吞吐量和推理性能。创新包括混合专家和高效注意力。适用于本地部署、高吞吐聊天和企业AI。",
+      "summary": "Nvidia Nemotron 3 Super 120B-A12B开源大模型，基准性能媲美Qwen3.5。",
+      "ai_analysis": "采用MoE架构优化推理吞吐量，解决大模型部署效率问题。核心创新是混合专家路由，提升多语言和推理能力。适用于企业级AI应用和代理系统。",
       "category": "LLM与NLP",
       "source_url": "",
       "arxiv_url": "",
@@ -171,7 +145,137 @@
       "shared_by": "rasbt",
       "published_at": "2026-03-12",
       "impact_level": "高",
-      "id": "3e69ac8f1116"
+      "id": "eb33d1751004"
+    },
+    {
+      "title": "Sarvam 30B and 105B",
+      "summary": "Sarvam开源30B和105B模型，在印度语言上卓越表现。",
+      "ai_analysis": "从零训练，支持MLA注意力机制，针对低资源语言优化tokenizer。创新在于本土数据高效利用，基准媲美同规模模型。适用于多语言AI和区域应用。",
+      "category": "LLM与NLP",
+      "source_url": "https://sarvam.ai/blog/sarvam-30b-105b",
+      "arxiv_url": "",
+      "github_url": "https://huggingface.co/sarvam",
+      "shared_by": "rasbt",
+      "published_at": "2026-03-07",
+      "impact_level": "高",
+      "id": "7055451dd21d"
+    },
+    {
+      "title": "Distilling LLMs Notebook",
+      "summary": "Rasbt分享LLM蒸馏笔记本代码，支持任意模型硬蒸馏。",
+      "ai_analysis": "提供实用工具生成蒸馏数据，解决知识蒸馏数据获取难题。核心是兼容OpenRouter和Ollama的框架，便于小模型训练。适用于模型压缩和边缘部署。",
+      "category": "AI基础设施",
+      "source_url": "https://github.com/rasbt/reasoning-from-scratch/blob/main/ch08/01_main-chapter-code/ch08_main.ipynb",
+      "arxiv_url": "",
+      "github_url": "https://github.com/rasbt/reasoning-from-scratch",
+      "shared_by": "rasbt",
+      "published_at": "2026-03-11",
+      "impact_level": "中",
+      "id": "2e2347041109"
+    },
+    {
+      "title": "Tiny Aya Reimplementation",
+      "summary": "Rasbt从零实现Tiny Aya 3.35B多语言模型。",
+      "ai_analysis": "重现并分析并行Transformer和滑动窗口注意力，支持设备端翻译。创新验证架构修改如LayerNorm变体效果。适用于移动多语言任务。",
+      "category": "LLM与NLP",
+      "source_url": "",
+      "arxiv_url": "",
+      "github_url": "https://github.com/rasbt/tiny-aya",
+      "shared_by": "rasbt",
+      "published_at": "2026-02-19",
+      "impact_level": "中",
+      "id": "69f70c2b8e4e"
+    },
+    {
+      "title": "Arcee AI Trinity Large",
+      "summary": "Arcee Trinity Large 400B MoE模型，基准媲美GLM 4.5。",
+      "ai_analysis": "采用交替局部全局注意力和QK-Norm，提升长上下文效率。核心是粗粒度MoE路由优化推理。适用于大规模推理任务。",
+      "category": "LLM与NLP",
+      "source_url": "",
+      "arxiv_url": "",
+      "github_url": "",
+      "shared_by": "rasbt",
+      "published_at": "2026-01-29",
+      "impact_level": "高",
+      "id": "e72ae60dd3df"
+    },
+    {
+      "title": "Nemotron 3 Nano 30B-A3B",
+      "summary": "Nvidia Nemotron 3 Nano混合Mamba-Transformer架构开源模型。",
+      "ai_analysis": "交替Mamba-2和MoE层，仅少量注意力层，实现高吞吐量。解决Transformer扩展性问题，性能超纯Transformer同规模模型。适用于高效长序列处理。",
+      "category": "AI基础设施",
+      "source_url": "",
+      "arxiv_url": "",
+      "github_url": "",
+      "shared_by": "rasbt",
+      "published_at": "2025-12-20",
+      "impact_level": "高",
+      "id": "dbdf6624487d"
+    },
+    {
+      "title": "Mixture-of-Depths Attention",
+      "summary": "混合深度注意力机制。",
+      "ai_analysis": "动态调整注意力深度，优化计算分配，提高模型效率。核心创新是深度混合策略，适用于资源受限场景。",
+      "category": "AI基础设施",
+      "source_url": "https://huggingface.co/papers/2603.15619",
+      "arxiv_url": "https://arxiv.org/abs/2603.15619",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-17",
+      "impact_level": "中",
+      "id": "6f87f2e3292b"
+    },
+    {
+      "title": "Omni-Diffusion: Unified Multimodal Understanding and Generation with Masked Discrete Diffusion",
+      "summary": "Omni-Diffusion统一多模态理解与生成。",
+      "ai_analysis": "使用掩码离散扩散统一处理多模态任务，解决模态间不一致。创新在于离散扩散框架，支持图像文本视频。",
+      "category": "多模态学习",
+      "source_url": "https://huggingface.co/papers/2603.06577",
+      "arxiv_url": "https://arxiv.org/abs/2603.06577",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-11",
+      "impact_level": "中",
+      "id": "d19acddbaa34"
+    },
+    {
+      "title": "Believe Your Model: Distribution-Guided Confidence Calibration",
+      "summary": "分布引导置信校准方法。",
+      "ai_analysis": "提升模型不确定性估计准确性，通过分布指导校准。解决过自信问题，提高可靠性。",
+      "category": "其他",
+      "source_url": "https://huggingface.co/papers/2603.03872",
+      "arxiv_url": "https://arxiv.org/abs/2603.03872",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-10",
+      "impact_level": "低",
+      "id": "242edc93508e"
+    },
+    {
+      "title": "Grounding World Simulation Models in a Real-World Metropolis",
+      "summary": "将世界模拟模型 grounding 到真实大都市。",
+      "ai_analysis": "桥接模拟与真实世界，提升世界模型泛化。创新在于真实数据对齐机制。",
+      "category": "具身智能",
+      "source_url": "https://huggingface.co/papers/2603.15583",
+      "arxiv_url": "https://arxiv.org/abs/2603.15583",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-17",
+      "impact_level": "中",
+      "id": "d9224792ce48"
+    },
+    {
+      "title": "Can Vision-Language Models Solve the Shell Game?",
+      "summary": "测试VLM是否能解决壳游戏。",
+      "ai_analysis": "评估VLM在物体跟踪和推理任务的表现，揭示时空推理局限。",
+      "category": "多模态学习",
+      "source_url": "https://huggingface.co/papers/2603.08436",
+      "arxiv_url": "https://arxiv.org/abs/2603.08436",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-16",
+      "impact_level": "低",
+      "id": "847071f56db6"
     }
   ]
 }
