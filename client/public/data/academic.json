@@ -1,13 +1,65 @@
 {
   "meta": {
-    "fetched_at": "2026-03-24T23:30:53.197541+00:00",
+    "fetched_at": "2026-03-25T23:32:59.690157+00:00",
     "total_projects": 13
   },
   "projects": [
     {
-      "title": "Perception Enhanced Vision Language Models via Spatial Token Generation",
-      "summary": "通过空间令牌生成增强视觉语言模型的感知能力。该论文提出了一种新方法来提升VLM在空间理解上的表现。",
-      "ai_analysis": "该工作解决了传统VLM在精细空间感知上的不足，通过生成空间令牌来增强模型对图像细节的理解。核心创新在于将空间信息直接融入token生成过程，提高了定位和描述精度。适用于机器人导航、AR/VR和医疗图像分析等场景，具有显著的实际部署潜力。",
+      "title": "Ego2Web: A Web Agent Benchmark Grounded in Egocentric Videos",
+      "summary": "提出一个基于第一人称视频的Web代理基准，用于评估AI代理在真实世界Web交互中的性能。",
+      "ai_analysis": "该基准解决了现有Web代理基准脱离真实用户视角的问题，通过egocentric视频提供更真实的交互场景。核心创新在于将视频 grounding 到Web任务，提升代理的泛化能力。适用于Web自动化、具身代理开发等领域，具有高实际应用价值。",
+      "category": "AI Agent",
+      "source_url": "https://huggingface.co/papers/2603.22529",
+      "arxiv_url": "https://arxiv.org/abs/2603.22529",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-25",
+      "impact_level": "中",
+      "id": "5aa326a75f57"
+    },
+    {
+      "title": "SpecEyes: Accelerating Agentic Multimodal LLMs via Speculative Perception and Planning",
+      "summary": "通过推测性感知和规划加速代理式多模态大语言模型。",
+      "ai_analysis": "针对多模态LLM在代理任务中推理速度慢的问题，引入speculative机制提前预测感知和规划步骤。核心创新是结合感知与规划的推测解码，提高推理效率2-5倍。适用于实时多模态代理，如机器人视觉决策。",
+      "category": "多模态学习",
+      "source_url": "https://huggingface.co/papers/2603.23483",
+      "arxiv_url": "https://arxiv.org/abs/2603.23483",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-25",
+      "impact_level": "高",
+      "id": "f049695318de"
+    },
+    {
+      "title": "WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG",
+      "summary": "一个大规模数据集，用于带动作和显式状态的动态世界建模，支持生成式ARPG。",
+      "ai_analysis": "解决世界模型缺乏动作交互和状态显式表示的问题，提供亿级帧数据支持动态模拟。创新点在于整合动作-状态-视觉的多模态数据，促进生成式游戏AI发展。应用场景包括ARPG游戏生成、具身智能模拟。",
+      "category": "具身智能",
+      "source_url": "https://huggingface.co/papers/2603.23497",
+      "arxiv_url": "https://arxiv.org/abs/2603.23497",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-25",
+      "impact_level": "高",
+      "id": "187aa7f338b7"
+    },
+    {
+      "title": "MinerU-Diffusion: Rethinking Document OCR as Inverse Rendering via Diffusion Decoding",
+      "summary": "将文档OCR重新定义为逆渲染问题，使用扩散解码提升准确率。",
+      "ai_analysis": "传统OCR忽略文档布局和渲染过程，该方法通过扩散模型模拟逆渲染过程，显著提升复杂文档识别。核心创新是扩散-based解码，处理噪声和变形。适用于数字化档案、发票处理等场景。",
+      "category": "计算机视觉",
+      "source_url": "https://huggingface.co/papers/2603.22458",
+      "arxiv_url": "https://arxiv.org/abs/2603.22458",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-25",
+      "impact_level": "中",
+      "id": "791e39ce29b4"
+    },
+    {
+      "title": "Perceptio: Perception Enhanced Vision Language Models via Spatial Token Generation",
+      "summary": "通过空间令牌生成增强视觉语言模型的感知能力。",
+      "ai_analysis": "VLM感知分辨率低的问题，通过生成高分辨空间令牌提升细节捕捉。创新在于动态空间token化，平衡计算与性能。应用在精细视觉问答、医疗图像分析。",
       "category": "多模态学习",
       "source_url": "https://huggingface.co/papers/2603.18795",
       "arxiv_url": "https://arxiv.org/abs/2603.18795",
@@ -15,25 +67,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-24",
       "impact_level": "中",
-      "id": "66b5044091cb"
-    },
-    {
-      "title": "Generalized Discrete Diffusion from Snapshots",
-      "summary": "从快照中泛化离散扩散模型，提供了一种新型生成框架。",
-      "ai_analysis": "针对离散数据生成难题，该方法利用快照数据训练扩散模型，实现高效泛化。创新点在于快照采样机制，减少计算开销并提升生成质量。可应用于序列数据生成如文本或分子设计，在资源受限环境下表现出色。",
-      "category": "其他",
-      "source_url": "https://huggingface.co/papers/2603.21342",
-      "arxiv_url": "https://arxiv.org/abs/2603.21342",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-24",
-      "impact_level": "中",
-      "id": "c4484ab6f033"
+      "id": "95f08426ee29"
     },
     {
       "title": "Group3D: MLLM-Driven Semantic Grouping for Open-Vocabulary 3D Object Detection",
-      "summary": "利用多模态大语言模型驱动的语义分组，实现开放词汇3D物体检测。",
-      "ai_analysis": "解决3D检测中语义分组的挑战，通过MLLM进行开放词汇识别和分组。核心创新是语义驱动的分组模块，提升了泛化能力至未见类别。适用于自动驾驶、机器人抓取和3D场景理解。",
+      "summary": "利用多模态LLM驱动的语义分组实现开放词汇3D物体检测。",
+      "ai_analysis": "3D检测词汇限制问题，通过MLLM进行语义聚类，支持任意类别。核心是零样本分组机制，提升泛化。适用于自动驾驶、AR/VR场景理解。",
       "category": "3D视觉",
       "source_url": "https://huggingface.co/papers/2603.21944",
       "arxiv_url": "https://arxiv.org/abs/2603.21944",
@@ -41,51 +80,25 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-24",
       "impact_level": "高",
-      "id": "4ede9a222c57"
+      "id": "37096ed6aecf"
     },
     {
       "title": "LongCat-Flash-Prover: Advancing Native Formal Reasoning via Agentic Tool-Integrated Reinforcement Learning",
-      "summary": "通过代理工具集成的强化学习推进原生形式推理。",
-      "ai_analysis": "针对形式证明的复杂性，引入代理工具和RL框架提升LLM推理能力。创新在于工具集成RL，加速证明生成并提高准确率。适用于数学证明、代码验证和逻辑推理系统。",
-      "category": "AI Agent",
+      "summary": "通过代理工具集成强化学习推进原生形式推理。",
+      "ai_analysis": "LLM形式推理弱，通过工具增强RL训练，提升定理证明能力。创新点是flash-like快速证明器，结合代理工具。应用数学证明、代码验证。",
+      "category": "LLM与NLP",
       "source_url": "https://huggingface.co/papers/2603.21065",
       "arxiv_url": "https://arxiv.org/abs/2603.21065",
       "github_url": "",
       "shared_by": "_akhaliq",
       "published_at": "2026-03-24",
       "impact_level": "中",
-      "id": "4df589aa047e"
+      "id": "0d02da60cc48"
     },
     {
-      "title": "Omni-WorldBench: Towards a Comprehensive Interaction-Centric Evaluation for World Models",
-      "summary": "提出全面交互中心的世界模型评估基准Omni-WorldBench。",
-      "ai_analysis": "当前世界模型评估缺乏交互性，该基准聚焦真实交互场景，提供标准化测试。创新是多维度交互指标，推动世界模型向具身智能发展。适用于世界模型训练和比较基准。",
-      "category": "具身智能",
-      "source_url": "https://huggingface.co/papers/2603.22212",
-      "arxiv_url": "https://arxiv.org/abs/2603.22212",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-24",
-      "impact_level": "高",
-      "id": "3996ba0ab342"
-    },
-    {
-      "title": "hf-mount",
-      "summary": "Hugging Face新工具，将Hub上的存储桶、模型或数据集挂载为本地文件系统。",
-      "ai_analysis": "解决本地存储限制问题，支持100x更大远程存储挂载，读写支持存储桶。创新在于无缝FUSE集成，完美适配代理存储需求。适用于大规模AI训练、Agent开发和数据处理管道。",
-      "category": "AI基础设施",
-      "source_url": "https://github.com/huggingface/hf-mount",
-      "arxiv_url": "",
-      "github_url": "https://github.com/huggingface/hf-mount",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-24",
-      "impact_level": "高",
-      "id": "cb15e7c0edb8"
-    },
-    {
-      "title": "daVinci-MagiHuman: Speed by Simplicity - A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model",
-      "summary": "单一流架构的快速音视频生成基础模型daVinci-MagiHuman。",
-      "ai_analysis": "多模态生成计算昂贵，该模型用单流简化架构大幅提升速度。核心创新是统一音视频token流，保持高质量。适用于实时视频编辑、虚拟人类和多媒体内容生成。",
+      "title": "Speed by Simplicity: A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model (daVinci-MagiHuman)",
+      "summary": "单流架构实现快速音视频生成基础模型。",
+      "ai_analysis": "多模态生成计算复杂，通过单流设计简化并加速。核心创新统一音视处理，提升实时性。有开源模型和demo，适用于视频编辑、虚拟人类。",
       "category": "视频生成",
       "source_url": "https://huggingface.co/papers/2603.21986",
       "arxiv_url": "https://arxiv.org/abs/2603.21986",
@@ -93,12 +106,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-24",
       "impact_level": "高",
-      "id": "608d2cc63691"
+      "id": "f3504d6f1916"
     },
     {
       "title": "Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models",
-      "summary": "用于蒸馏自回归视频模型的前向过程强化学习指导。",
-      "ai_analysis": "视频模型蒸馏质量不稳，该方法用前向RL指导提升一致性。创新在于过程级RL奖励，优化生成轨迹。适用于高效视频生成和模型压缩。",
+      "summary": "前向过程RL指导蒸馏自回归视频模型。",
+      "ai_analysis": "视频扩散模型蒸馏困难，通过前向RL引导生成质量。创新steering机制，提升小模型性能。应用高效视频生成。",
       "category": "视频生成",
       "source_url": "https://huggingface.co/papers/2603.17051",
       "arxiv_url": "https://arxiv.org/abs/2603.17051",
@@ -106,25 +119,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-23",
       "impact_level": "中",
-      "id": "fa34c3718133"
-    },
-    {
-      "title": "HopChain: Multi-Hop Data Synthesis for Generalizable Vision-Language Reasoning",
-      "summary": "多跳数据合成提升视觉语言推理泛化。",
-      "ai_analysis": "VLM推理泛化差，该方法合成多跳数据增强训练。核心是链式合成机制，模拟复杂推理路径。适用于问答、视觉推理和多模态代理。",
-      "category": "多模态学习",
-      "source_url": "https://huggingface.co/papers/2603.17024",
-      "arxiv_url": "https://arxiv.org/abs/2603.17024",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-23",
-      "impact_level": "中",
-      "id": "7e2834f7046c"
+      "id": "015a89e9b019"
     },
     {
       "title": "Loc3R-VLM: Language-based Localization and 3D Reasoning with Vision-Language Models",
-      "summary": "基于语言的定位和3D推理，使用视觉语言模型。",
-      "ai_analysis": "3D定位依赖几何，该工作用VLM实现语言驱动定位与推理。创新在于语言-3D对齐，提升自然交互。适用于室内导航、AR和机器人任务。",
+      "summary": "基于语言的定位和3D推理，使用VLM。",
+      "ai_analysis": "室内定位依赖几何，该方法用自然语言指导VLM实现3D推理。核心是语言 grounding，提升鲁棒性。适用于导航、机器人。",
       "category": "3D视觉",
       "source_url": "https://huggingface.co/papers/2603.18002",
       "arxiv_url": "https://arxiv.org/abs/2603.18002",
@@ -135,43 +135,43 @@
       "id": "a15db951f063"
     },
     {
-      "title": "Nemotron 3 Super 120B-A12B",
-      "summary": "Nvidia新开源权重LLM，基准与Qwen3.5相当，吞吐量优秀。",
-      "ai_analysis": "大模型推理效率低，该模型优化架构实现高吞吐。创新MoE-like设计，平衡性能与效率。适用于本地部署、聊天机器人和企业AI应用。",
-      "category": "LLM与NLP",
-      "source_url": "https://huggingface.co/nvidia/Nemotron-3-Super-120B-A12B",
+      "title": "HF Papers CLI",
+      "summary": "Hugging Face Papers CLI工具，支持AI代理对arXiv论文的语义搜索和Markdown检索。",
+      "ai_analysis": "AI研究中论文检索效率低，该CLI提供语义搜索和阅读功能，极大便利autoresearch代理。创新在于集成HF Papers infra，支持自动化文献调研。适用于AI开发者和研究者日常工作流。",
+      "category": "AI基础设施",
+      "source_url": "https://huggingface.co/papers",
       "arxiv_url": "",
       "github_url": "",
-      "shared_by": "rasbt",
-      "published_at": "2026-03-12",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-25",
       "impact_level": "高",
-      "id": "eb33d1751004"
+      "id": "834f2a73ea48"
     },
     {
-      "title": "LLM Distillation Notebook (Ch08)",
-      "summary": "Sebastian Raschka书籍配套硬蒸馏LLM笔记本，支持任意LLM。",
-      "ai_analysis": "知识蒸馏复杂，该笔记本提供实用硬蒸馏实现。核心是响应式KL散度，高效转移教师知识。适用于模型压缩和边缘部署。",
+      "title": "OK-Robot: What Really Matters in Integrating Open-Knowledge Models for Robotics",
+      "summary": "开源模块化框架，支持零样本语言条件拾取和放置任务。",
+      "ai_analysis": "机器人知识整合难题，通过OK模型提升泛化。创新模块化设计，适用于任意家居环境。推动家用机器人发展。",
+      "category": "具身智能",
+      "source_url": "https://okrobot.github.io",
+      "arxiv_url": "",
+      "github_url": "https://okrobot.github.io",
+      "shared_by": "_akhaliq",
+      "published_at": "2024-01-23",
+      "impact_level": "高",
+      "id": "9c594c4b2428"
+    },
+    {
+      "title": "Let’s Verify Step by Step",
+      "summary": "OpenAI发布论文和数据集，使用过程监督训练数学问题求解模型。",
+      "ai_analysis": "结局监督忽略中间步骤，该方法奖励每个正确推理步，提升性能和对齐。创新过程监督，产生人类认可的思考链。适用于数学教育、复杂推理任务。",
       "category": "LLM与NLP",
-      "source_url": "https://github.com/rasbt/reasoning-from-scratch/blob/main/ch08/01_main-chapter-code/ch08_main.ipynb",
-      "arxiv_url": "",
-      "github_url": "https://github.com/rasbt/reasoning-from-scratch",
-      "shared_by": "rasbt",
-      "published_at": "2026-03-11",
-      "impact_level": "中",
-      "id": "6deb910905e5"
-    },
-    {
-      "title": "PyTorch 2.11",
-      "summary": "PyTorch最新发布，聚焦分布式训练和硬件优化。",
-      "ai_analysis": "训练规模化瓶颈，该版本引入FlashAttention-4和可微集体，提升多GPU效率。创新XPU图优化，支持Apple MPS扩展。适用于大规模训练和边缘AI。",
-      "category": "AI基础设施",
-      "source_url": "https://pytorch.org/blog/pytorch2.11/",
-      "arxiv_url": "",
-      "github_url": "https://github.com/pytorch/pytorch",
-      "shared_by": "rasbt",
-      "published_at": "2026-03-23",
+      "source_url": "https://openai.com/research/lets-verify-step-by-step",
+      "arxiv_url": "https://arxiv.org/abs/2212.10003",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2023-05-31",
       "impact_level": "高",
-      "id": "08d031b45121"
+      "id": "2f436887faa9"
     }
   ]
 }

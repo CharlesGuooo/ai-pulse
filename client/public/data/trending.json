@@ -1,55 +1,58 @@
 {
-  "headline": "Nvidia CEO Jensen Huang宣称“我们已经实现了AGI”",
-  "summary": "过去24小时AI领域动态加速，Nvidia CEO Jensen Huang大胆宣称已实现AGI，引发广泛热议；Luma Labs发布Uni-1新型像素生成模型，Anthropic推出科学博客加速科研；中国AI模型调用量持续领跑全球，智谱AI成为首家上市大模型公司，Tesla/SpaceX计划建AI芯片厂。整体趋势从模型竞赛转向代理和具身AI应用，企业强调教育与采用。",
+  "headline": "Anthropic Claude推出电脑控制功能，标志AI代理时代加速到来",
+  "summary": "过去24小时，AI领域焦点集中在代理系统（Agentic AI）的突破上，Anthropic的Claude获得远程电脑使用能力，能打开应用、浏览和处理任务，引发广泛讨论。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">6</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">7</argument></grok:render> Google发布Lyria 3 Pro音乐模型，ARC Prize推出新AGI基准测试，Bernie Sanders提议暂停新数据中心建设以保护就业。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">32</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">33</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">35</argument></grok:render> 同时，人形机器人Figure 03亮相白宫，凸显AI与物理世界的融合。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">31</argument></grok:render>",
   "hot_topics": [
     {
-      "topic": "AGI实现争议",
-      "description": "Nvidia CEO Jensen Huang表示已达成AGI，并呼吁大学生学习AI；同时Epoch AI报告AI解决前沿数学难题。",
-      "related_people": [
-        "@nvidia",
-        "@TheChiefNerd",
-        "@EpochAIResearch"
-      ]
-    },
-    {
-      "topic": "中国AI崛起",
-      "description": "中国大模型周调用量超美包揽全球前三，智谱AI港交所上市，机器人应用大规模部署。",
+      "topic": "Claude电脑使用能力",
+      "description": "Anthropic Claude进入macOS研究预览版，能自主控制电脑完成任务，如打开应用和处理表格，推动AI从聊天向行动代理转型。",
       "related_people": [
         "@AnthropicAI",
-        "@rohanpaul_ai"
+        "@claudeai"
       ]
     },
     {
-      "topic": "AI代理与芯片",
-      "description": "从聊天机器人转向桌面代理和本地推理，Tesla/SpaceX建芯片厂支持AI数据中心。",
+      "topic": "AI就业与监管担忧",
+      "description": "Bernie Sanders提议暂停新AI数据中心建设，警告AI对就业的灾难性影响；Mark Warner预测大学毕业生失业率将升至30-35%。",
       "related_people": [
-        "@OpenAI",
-        "@LumaLabsAI",
-        "@Reuters"
+        "@SenSanders",
+        "@BernieSanders"
+      ]
+    },
+    {
+      "topic": "代理AI与OpenClaw升级",
+      "description": "OpenClaw重大更新包括插件市场和新模型支持，腾讯微信集成ClawBot，标志代理生态加速开放和实用化。",
+      "related_people": [
+        "@TheRundownAI",
+        "@AnalyticsVidhya"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "Luma Labs发布Uni-1模型",
-      "description": "Uni-1是一种同时思考和生成像素的新型模型，更智能少人工痕迹。视频演示获数千点赞，标志多模态生成新进展。",
-      "source_url": ""
+      "title": "Anthropic Claude获远程电脑控制",
+      "description": "Claude现在能在macOS上自主使用电脑，包括打开应用、浏览网页和完成电子表格任务，这是从聊天机器人向自主代理的关键一步。 该功能已在研究预览中上线，引发代理时代讨论。",
+      "source_url": "https://twitter.com/claudeai/status/2036850783526719610"
     },
     {
-      "title": "Anthropic推出科学博客",
-      "description": "Anthropic启动科学博客，分享AI加速科研研究和新故事，强调使命中加快科学进步。",
-      "source_url": "https://www.anthropic.com/research/introducing-anthropic-science"
+      "title": "Google推出Lyria 3 Pro音乐模型",
+      "description": "Google DeepMind发布最先进音乐生成模型，支持创建长达3分钟的轨道，并扩展到更多Google产品，提升AI创意控制。",
+      "source_url": "https://twitter.com/Google/status/2036836307612119488"
     },
     {
-      "title": "OpenAI优化ChatGPT文件管理",
-      "description": "ChatGPT新增文件库标签，便于查找、重用上传文件，支持Plus/Pro/企业用户全球 rollout。",
-      "source_url": ""
+      "title": "ARC Prize发布ARC-AGI-3基准",
+      "description": "全新代理智能基准测试，人类得分100%，AI不足1%，强调AI学习能力差距，定位为开放AGI北极星。",
+      "source_url": "https://twitter.com/arcprize/status/2036860080541589529"
     },
     {
-      "title": "Tesla/SpaceX在Austin建先进芯片厂",
-      "description": "Elon Musk宣布建两座芯片厂，一座用于汽车/人形机器人，另一座针对太空AI数据中心。",
-      "source_url": "https://www.reuters.com/business/autos-transportation/musk-says-spacex-tesla-build-advanced-chip-factories-austin-2026-03-22/"
+      "title": "Bernie Sanders提议AI数据中心禁令",
+      "description": "为保护就业，Sanders引入暂停新数据中心建设的暂停令，与AOC共同举行新闻发布会，呼吁AI为大众服务。",
+      "source_url": "https://twitter.com/SenSanders/status/2036879590480613884"
+    },
+    {
+      "title": "Figure 03机器人亮相白宫",
+      "description": "人形AI机器人Figure 03陪同第一夫人Melania Trump出席白宫教育科技峰会，展示AI机器人进入公共领域的进展。",
+      "source_url": "https://twitter.com/cspan/status/2036828647798276301"
     }
   ],
-  "fetched_at": "2026-03-24T23:30:53.197541+00:00"
+  "fetched_at": "2026-03-25T23:32:59.690157+00:00"
 }
