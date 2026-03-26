@@ -1,13 +1,65 @@
 {
   "meta": {
-    "fetched_at": "2026-03-25T23:32:59.690157+00:00",
-    "total_projects": 13
+    "fetched_at": "2026-03-26T23:30:48.202475+00:00",
+    "total_projects": 12
   },
   "projects": [
     {
+      "title": "The Pulse of Motion: Measuring Physical Frame Rate from Visual Dynamics",
+      "summary": "该论文提出了一种从视觉动态中测量物理帧率的方法，用于评估视频序列中的运动真实性。",
+      "ai_analysis": "解决了视频生成和动态建模中帧率感知不准确的问题，通过分析视觉动态来量化物理帧率，提升了视频质量评估的客观性。核心创新在于利用神经网络从像素级动态中提取帧率指标，可应用于视频生成模型的优化和真实性验证。在AR/VR和自动驾驶等领域具有潜力，能改善动态场景的渲染和模拟。",
+      "category": "计算机视觉",
+      "source_url": "https://huggingface.co/papers/2603.14375",
+      "arxiv_url": "https://arxiv.org/abs/2603.14375",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-26",
+      "impact_level": "中",
+      "id": "36522921c654"
+    },
+    {
+      "title": "CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents",
+      "summary": "CUA-Suite是一个大规模人类标注的视频演示数据集，专为计算机使用代理设计。",
+      "ai_analysis": "针对AI代理在计算机交互任务中的数据不足问题，提供海量高质量视频演示数据，促进代理学习复杂操作序列。创新点在于人类标注确保演示的精确性和多样性，支持端到端训练。适用于AI Agent开发，提升代理在办公自动化和软件交互场景的性能。",
+      "category": "AI Agent",
+      "source_url": "https://huggingface.co/papers/2603.24440",
+      "arxiv_url": "https://arxiv.org/abs/2603.24440",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-26",
+      "impact_level": "高",
+      "id": "fa8aefd1879a"
+    },
+    {
+      "title": "Qworld: Question-Specific Evaluation Criteria for LLMs",
+      "summary": "Qworld提出了一种针对特定问题的LLM评估标准框架。",
+      "ai_analysis": "解决了传统LLM评估基准泛化性差的问题，通过问题特定标准实现更精确的性能衡量。核心创新是动态生成评估准则，提升了LLM在多样任务上的可靠性评估。适用于LLM基准测试和模型迭代优化，推动更公平的模型比较。",
+      "category": "LLM与NLP",
+      "source_url": "https://huggingface.co/papers/2603.23522",
+      "arxiv_url": "https://arxiv.org/abs/2603.23522",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-26",
+      "impact_level": "中",
+      "id": "e41391ba31c8"
+    },
+    {
+      "title": "LagerNVS: Latent Geometry for Fully Neural Real-time Novel View Synthesis",
+      "summary": "LagerNVS利用潜在几何实现全神经实时新型视图合成。",
+      "ai_analysis": "针对新型视图合成（NVS）计算效率低的问题，在潜在空间中建模几何关系，实现实时渲染。创新点是全神经架构避免了传统几何先验，提高了泛化性和速度。适用于3D重建、VR/AR内容生成等领域。",
+      "category": "3D视觉",
+      "source_url": "https://huggingface.co/papers/2603.20176",
+      "arxiv_url": "https://arxiv.org/abs/2603.20176",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-26",
+      "impact_level": "高",
+      "id": "e3ed2ae2901c"
+    },
+    {
       "title": "Ego2Web: A Web Agent Benchmark Grounded in Egocentric Videos",
-      "summary": "提出一个基于第一人称视频的Web代理基准，用于评估AI代理在真实世界Web交互中的性能。",
-      "ai_analysis": "该基准解决了现有Web代理基准脱离真实用户视角的问题，通过egocentric视频提供更真实的交互场景。核心创新在于将视频 grounding 到Web任务，提升代理的泛化能力。适用于Web自动化、具身代理开发等领域，具有高实际应用价值。",
+      "summary": "Ego2Web是一个基于第一人称视频的Web代理基准测试集。",
+      "ai_analysis": "解决了Web代理基准脱离真实用户交互的问题，通过egocentric视频 grounding 提升真实性。核心创新是视频-网页对齐机制，支持代理学习复杂导航任务。适用于AI Agent在浏览器自动化和用户模拟场景。",
       "category": "AI Agent",
       "source_url": "https://huggingface.co/papers/2603.22529",
       "arxiv_url": "https://arxiv.org/abs/2603.22529",
@@ -15,12 +67,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-25",
       "impact_level": "中",
-      "id": "5aa326a75f57"
+      "id": "5b1885dff955"
     },
     {
       "title": "SpecEyes: Accelerating Agentic Multimodal LLMs via Speculative Perception and Planning",
-      "summary": "通过推测性感知和规划加速代理式多模态大语言模型。",
-      "ai_analysis": "针对多模态LLM在代理任务中推理速度慢的问题，引入speculative机制提前预测感知和规划步骤。核心创新是结合感知与规划的推测解码，提高推理效率2-5倍。适用于实时多模态代理，如机器人视觉决策。",
+      "summary": "SpecEyes通过推测性感知和规划加速代理式多模态LLM。",
+      "ai_analysis": "针对多模态LLM推理延迟高的问题，引入推测机制并行处理感知和规划阶段。创新点是动态推测减少计算冗余，提升代理响应速度。适用于实时多模态Agent，如机器人视觉交互。",
       "category": "多模态学习",
       "source_url": "https://huggingface.co/papers/2603.23483",
       "arxiv_url": "https://arxiv.org/abs/2603.23483",
@@ -28,12 +80,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-25",
       "impact_level": "高",
-      "id": "f049695318de"
+      "id": "b707b97fa45d"
     },
     {
       "title": "WildWorld: A Large-Scale Dataset for Dynamic World Modeling with Actions and Explicit State toward Generative ARPG",
-      "summary": "一个大规模数据集，用于带动作和显式状态的动态世界建模，支持生成式ARPG。",
-      "ai_analysis": "解决世界模型缺乏动作交互和状态显式表示的问题，提供亿级帧数据支持动态模拟。创新点在于整合动作-状态-视觉的多模态数据，促进生成式游戏AI发展。应用场景包括ARPG游戏生成、具身智能模拟。",
+      "summary": "WildWorld是一个大规模数据集，用于带动作和显式状态的动态世界建模，支持生成式ARPG。",
+      "ai_analysis": "解决了动态世界建模数据稀缺的问题，提供动作-状态对齐的大规模数据集。核心创新是显式状态表示，促进生成模型学习因果关系。适用于具身智能和游戏AI开发。",
       "category": "具身智能",
       "source_url": "https://huggingface.co/papers/2603.23497",
       "arxiv_url": "https://arxiv.org/abs/2603.23497",
@@ -41,25 +93,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-25",
       "impact_level": "高",
-      "id": "187aa7f338b7"
-    },
-    {
-      "title": "MinerU-Diffusion: Rethinking Document OCR as Inverse Rendering via Diffusion Decoding",
-      "summary": "将文档OCR重新定义为逆渲染问题，使用扩散解码提升准确率。",
-      "ai_analysis": "传统OCR忽略文档布局和渲染过程，该方法通过扩散模型模拟逆渲染过程，显著提升复杂文档识别。核心创新是扩散-based解码，处理噪声和变形。适用于数字化档案、发票处理等场景。",
-      "category": "计算机视觉",
-      "source_url": "https://huggingface.co/papers/2603.22458",
-      "arxiv_url": "https://arxiv.org/abs/2603.22458",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-25",
-      "impact_level": "中",
-      "id": "791e39ce29b4"
+      "id": "3030d0d33b4e"
     },
     {
       "title": "Perceptio: Perception Enhanced Vision Language Models via Spatial Token Generation",
-      "summary": "通过空间令牌生成增强视觉语言模型的感知能力。",
-      "ai_analysis": "VLM感知分辨率低的问题，通过生成高分辨空间令牌提升细节捕捉。创新在于动态空间token化，平衡计算与性能。应用在精细视觉问答、医疗图像分析。",
+      "summary": "Perceptio通过空间令牌生成增强视觉语言模型的感知能力。",
+      "ai_analysis": "针对VLM空间感知弱的问题，引入空间令牌生成机制提升细粒度理解。创新点是动态令牌化适应不同分辨率输入，提高了定位精度。适用于图像描述和视觉问答任务。",
       "category": "多模态学习",
       "source_url": "https://huggingface.co/papers/2603.18795",
       "arxiv_url": "https://arxiv.org/abs/2603.18795",
@@ -67,103 +106,25 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-24",
       "impact_level": "中",
-      "id": "95f08426ee29"
-    },
-    {
-      "title": "Group3D: MLLM-Driven Semantic Grouping for Open-Vocabulary 3D Object Detection",
-      "summary": "利用多模态LLM驱动的语义分组实现开放词汇3D物体检测。",
-      "ai_analysis": "3D检测词汇限制问题，通过MLLM进行语义聚类，支持任意类别。核心是零样本分组机制，提升泛化。适用于自动驾驶、AR/VR场景理解。",
-      "category": "3D视觉",
-      "source_url": "https://huggingface.co/papers/2603.21944",
-      "arxiv_url": "https://arxiv.org/abs/2603.21944",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-24",
-      "impact_level": "高",
-      "id": "37096ed6aecf"
-    },
-    {
-      "title": "LongCat-Flash-Prover: Advancing Native Formal Reasoning via Agentic Tool-Integrated Reinforcement Learning",
-      "summary": "通过代理工具集成强化学习推进原生形式推理。",
-      "ai_analysis": "LLM形式推理弱，通过工具增强RL训练，提升定理证明能力。创新点是flash-like快速证明器，结合代理工具。应用数学证明、代码验证。",
-      "category": "LLM与NLP",
-      "source_url": "https://huggingface.co/papers/2603.21065",
-      "arxiv_url": "https://arxiv.org/abs/2603.21065",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-24",
-      "impact_level": "中",
-      "id": "0d02da60cc48"
-    },
-    {
-      "title": "Speed by Simplicity: A Single-Stream Architecture for Fast Audio-Video Generative Foundation Model (daVinci-MagiHuman)",
-      "summary": "单流架构实现快速音视频生成基础模型。",
-      "ai_analysis": "多模态生成计算复杂，通过单流设计简化并加速。核心创新统一音视处理，提升实时性。有开源模型和demo，适用于视频编辑、虚拟人类。",
-      "category": "视频生成",
-      "source_url": "https://huggingface.co/papers/2603.21986",
-      "arxiv_url": "https://arxiv.org/abs/2603.21986",
-      "github_url": "https://huggingface.co/GAIR/daVinci-MagiHuman",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-24",
-      "impact_level": "高",
-      "id": "f3504d6f1916"
-    },
-    {
-      "title": "Astrolabe: Steering Forward-Process Reinforcement Learning for Distilled Autoregressive Video Models",
-      "summary": "前向过程RL指导蒸馏自回归视频模型。",
-      "ai_analysis": "视频扩散模型蒸馏困难，通过前向RL引导生成质量。创新steering机制，提升小模型性能。应用高效视频生成。",
-      "category": "视频生成",
-      "source_url": "https://huggingface.co/papers/2603.17051",
-      "arxiv_url": "https://arxiv.org/abs/2603.17051",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-23",
-      "impact_level": "中",
-      "id": "015a89e9b019"
-    },
-    {
-      "title": "Loc3R-VLM: Language-based Localization and 3D Reasoning with Vision-Language Models",
-      "summary": "基于语言的定位和3D推理，使用VLM。",
-      "ai_analysis": "室内定位依赖几何，该方法用自然语言指导VLM实现3D推理。核心是语言 grounding，提升鲁棒性。适用于导航、机器人。",
-      "category": "3D视觉",
-      "source_url": "https://huggingface.co/papers/2603.18002",
-      "arxiv_url": "https://arxiv.org/abs/2603.18002",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-20",
-      "impact_level": "中",
-      "id": "a15db951f063"
-    },
-    {
-      "title": "HF Papers CLI",
-      "summary": "Hugging Face Papers CLI工具，支持AI代理对arXiv论文的语义搜索和Markdown检索。",
-      "ai_analysis": "AI研究中论文检索效率低，该CLI提供语义搜索和阅读功能，极大便利autoresearch代理。创新在于集成HF Papers infra，支持自动化文献调研。适用于AI开发者和研究者日常工作流。",
-      "category": "AI基础设施",
-      "source_url": "https://huggingface.co/papers",
-      "arxiv_url": "",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-25",
-      "impact_level": "高",
-      "id": "834f2a73ea48"
+      "id": "ceb76e9972dc"
     },
     {
       "title": "OK-Robot: What Really Matters in Integrating Open-Knowledge Models for Robotics",
-      "summary": "开源模块化框架，支持零样本语言条件拾取和放置任务。",
-      "ai_analysis": "机器人知识整合难题，通过OK模型提升泛化。创新模块化设计，适用于任意家居环境。推动家用机器人发展。",
+      "summary": "OK-Robot探讨了开放知识模型在机器人集成中的关键因素，提供零样本语言条件拾取-放置框架。",
+      "ai_analysis": "解决了机器人任务中知识整合不充分的问题，通过模块化框架实现任意家居环境零样本操作。核心创新是开放知识注入，提升泛化能力。适用于家用机器人和具身AI。",
       "category": "具身智能",
-      "source_url": "https://okrobot.github.io",
+      "source_url": "https://ok-robot.github.io/",
       "arxiv_url": "",
-      "github_url": "https://okrobot.github.io",
+      "github_url": "https://ok-robot.github.io/",
       "shared_by": "_akhaliq",
       "published_at": "2024-01-23",
       "impact_level": "高",
-      "id": "9c594c4b2428"
+      "id": "67da6e600075"
     },
     {
       "title": "Let’s Verify Step by Step",
-      "summary": "OpenAI发布论文和数据集，使用过程监督训练数学问题求解模型。",
-      "ai_analysis": "结局监督忽略中间步骤，该方法奖励每个正确推理步，提升性能和对齐。创新过程监督，产生人类认可的思考链。适用于数学教育、复杂推理任务。",
+      "summary": "OpenAI发布论文和数据集，通过过程监督训练数学问题求解模型，实现SOTA性能。",
+      "ai_analysis": "针对数学推理仅奖励最终答案的不足，引入过程监督奖励每个正确推理步骤，提升性能和人类对齐。创新点是链式思考训练，减少幻觉。适用于教育AI和复杂推理任务。",
       "category": "LLM与NLP",
       "source_url": "https://openai.com/research/lets-verify-step-by-step",
       "arxiv_url": "https://arxiv.org/abs/2212.10003",
@@ -171,7 +132,33 @@
       "shared_by": "_akhaliq",
       "published_at": "2023-05-31",
       "impact_level": "高",
-      "id": "2f436887faa9"
+      "id": "5717607635d8"
+    },
+    {
+      "title": "LLM Architecture Gallery",
+      "summary": "Sebastian Raschka的LLM架构图库，新增差异比较工具。",
+      "ai_analysis": "解决了比较不同LLM架构复杂的问题，提供可视化图库和diff工具，便于研究者快速理解变体。创新点是交互式diff，支持按日期/大小排序。适用于AI基础设施研究和模型设计。",
+      "category": "AI基础设施",
+      "source_url": "https://sebastianraschka.com/llm-architecture-gallery/",
+      "arxiv_url": "",
+      "github_url": "",
+      "shared_by": "rasbt",
+      "published_at": "2026-03-26",
+      "impact_level": "中",
+      "id": "ad0c34afaba8"
+    },
+    {
+      "title": "HF Papers CLI",
+      "summary": "Hugging Face推出hf papers CLI，支持AI代理对arXiv论文的语义搜索和Markdown检索。",
+      "ai_analysis": "针对AI研究自动化检索需求，提供CLI工具集成Hugging Face论文基础设施。创新点是语义搜索+Markdown解析，加速autoresearch。适用于AI Agent和文献综述工具。",
+      "category": "AI基础设施",
+      "source_url": "https://huggingface.co/papers",
+      "arxiv_url": "",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-25",
+      "impact_level": "中",
+      "id": "fa87c8142e10"
     }
   ]
 }

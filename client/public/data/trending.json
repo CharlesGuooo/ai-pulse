@@ -1,58 +1,56 @@
 {
-  "headline": "Anthropic Claude推出电脑控制功能，标志AI代理时代加速到来",
-  "summary": "过去24小时，AI领域焦点集中在代理系统（Agentic AI）的突破上，Anthropic的Claude获得远程电脑使用能力，能打开应用、浏览和处理任务，引发广泛讨论。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">6</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">7</argument></grok:render> Google发布Lyria 3 Pro音乐模型，ARC Prize推出新AGI基准测试，Bernie Sanders提议暂停新数据中心建设以保护就业。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">32</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">33</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">35</argument></grok:render> 同时，人形机器人Figure 03亮相白宫，凸显AI与物理世界的融合。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">31</argument></grok:render>",
+  "headline": "ARC Prize发布ARC-AGI-3基准：人类得分100%，AI不足1%，凸显AGI差距",
+  "summary": "过去24小时，AI领域焦点在于新基准与模型发布。ARC Prize推出ARC-AGI-3，这是唯一未饱和的代理智能基准，测试AI学习能力而非记忆，当前顶级模型得分极低。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">0</argument></grok:render> Mistral AI发布Voxtral TTS开源文本转语音模型，支持9种语言、情感表达和超低延迟。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">5</argument></grok:render> Meta推出TRIBE v2脑编码模型，能零样本预测人类大脑对视听刺激的反应；NVIDIA发布Nemotron Nano 12B v2 VL视频理解模型，效率领先。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">8</argument></grok:render>",
   "hot_topics": [
     {
-      "topic": "Claude电脑使用能力",
-      "description": "Anthropic Claude进入macOS研究预览版，能自主控制电脑完成任务，如打开应用和处理表格，推动AI从聊天向行动代理转型。",
+      "topic": "ARC-AGI-3基准",
+      "description": "新代理智能基准强调AI学习与泛化能力不足，人类轻松解决而AI接近零分，推动AGI竞赛。",
       "related_people": [
-        "@AnthropicAI",
-        "@claudeai"
+        "@arcprize",
+        "@fchollet"
       ]
     },
     {
-      "topic": "AI就业与监管担忧",
-      "description": "Bernie Sanders提议暂停新AI数据中心建设，警告AI对就业的灾难性影响；Mark Warner预测大学毕业生失业率将升至30-35%。",
+      "topic": "Voxtral TTS模型",
+      "description": "Mistral开源前沿TTS模型，情感丰富、多语言支持、低延迟，优于ElevenLabs。",
       "related_people": [
-        "@SenSanders",
-        "@BernieSanders"
+        "@MistralAI"
       ]
     },
     {
-      "topic": "代理AI与OpenClaw升级",
-      "description": "OpenClaw重大更新包括插件市场和新模型支持，腾讯微信集成ClawBot，标志代理生态加速开放和实用化。",
+      "topic": "TRIBE v2脑编码器",
+      "description": "Meta发布预测人类大脑反应的基础模型，使用fMRI数据训练，支持零样本泛化。",
       "related_people": [
-        "@TheRundownAI",
-        "@AnalyticsVidhya"
+        "@AIatMeta"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "Anthropic Claude获远程电脑控制",
-      "description": "Claude现在能在macOS上自主使用电脑，包括打开应用、浏览网页和完成电子表格任务，这是从聊天机器人向自主代理的关键一步。 该功能已在研究预览中上线，引发代理时代讨论。",
-      "source_url": "https://twitter.com/claudeai/status/2036850783526719610"
+      "title": "ARC Prize开启2026竞赛并发布ARC-AGI-3",
+      "description": "ARC-AGI-3测试AI在新型任务上的学习效率，揭示当前模型关键失败模式如假设固着和未来预测弱。所有环境由人类轻松解决，AI得分<1%。竞赛现已开放。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">0</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">21</argument></grok:render>",
+      "source_url": "https://arcprize.org/"
     },
     {
-      "title": "Google推出Lyria 3 Pro音乐模型",
-      "description": "Google DeepMind发布最先进音乐生成模型，支持创建长达3分钟的轨道，并扩展到更多Google产品，提升AI创意控制。",
-      "source_url": "https://twitter.com/Google/status/2036836307612119488"
+      "title": "Mistral AI推出Voxtral TTS",
+      "description": "4B参数开源模型，实现自然情感语音、9语言支持和超快首音频延迟。可轻松适配新声音，已在Mistral Playground可用。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">5</argument></grok:render>",
+      "source_url": "https://mistral.ai/news/voxtral-tts"
     },
     {
-      "title": "ARC Prize发布ARC-AGI-3基准",
-      "description": "全新代理智能基准测试，人类得分100%，AI不足1%，强调AI学习能力差距，定位为开放AGI北极星。",
-      "source_url": "https://twitter.com/arcprize/status/2036860080541589529"
+      "title": "Meta开源TRIBE v2 Trimodal Brain Encoder",
+      "description": "基于500+小时fMRI数据训练，能预测未见个体对视听内容的脑反应，性能提升2-3倍。释放模型、代码和demo，推动神经科学与AI融合。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">8</argument></grok:render>",
+      "source_url": "https://ai.meta.com/blog/tribe-v2-trimodal-brain-encoder/"
     },
     {
-      "title": "Bernie Sanders提议AI数据中心禁令",
-      "description": "为保护就业，Sanders引入暂停新数据中心建设的暂停令，与AOC共同举行新闻发布会，呼吁AI为大众服务。",
-      "source_url": "https://twitter.com/SenSanders/status/2036879590480613884"
+      "title": "NVIDIA Nemotron Nano 12B v2 VL视频模型",
+      "description": "自托管视频理解模型，在MediaPerf基准上媲美30B模型，成本最低、吞吐最高、F1分数0.299。强调透明度和主权。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render>",
+      "source_url": "https://developer.nvidia.com/nemotron-nano"
     },
     {
-      "title": "Figure 03机器人亮相白宫",
-      "description": "人形AI机器人Figure 03陪同第一夫人Melania Trump出席白宫教育科技峰会，展示AI机器人进入公共领域的进展。",
-      "source_url": "https://twitter.com/cspan/status/2036828647798276301"
+      "title": "OpenAI无限期搁置色情聊天机器人计划",
+      "description": "Financial Times报道OpenAI暂停开发成人内容聊天机器人，引发安全与伦理讨论。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">6</argument></grok:render>",
+      "source_url": "https://www.ft.com/content/de9bf0af-b241-424f-8229-5870b1c0d93d"
     }
   ],
-  "fetched_at": "2026-03-25T23:32:59.690157+00:00"
+  "fetched_at": "2026-03-26T23:30:48.202475+00:00"
 }
