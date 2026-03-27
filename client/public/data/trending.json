@@ -1,56 +1,53 @@
 {
-  "headline": "ARC Prize发布ARC-AGI-3基准：人类得分100%，AI不足1%，凸显AGI差距",
-  "summary": "过去24小时，AI领域焦点在于新基准与模型发布。ARC Prize推出ARC-AGI-3，这是唯一未饱和的代理智能基准，测试AI学习能力而非记忆，当前顶级模型得分极低。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">0</argument></grok:render> Mistral AI发布Voxtral TTS开源文本转语音模型，支持9种语言、情感表达和超低延迟。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">5</argument></grok:render> Meta推出TRIBE v2脑编码模型，能零样本预测人类大脑对视听刺激的反应；NVIDIA发布Nemotron Nano 12B v2 VL视频理解模型，效率领先。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">8</argument></grok:render>",
+  "headline": "OpenAI 关闭 Sora 平台，转向 AGI 和机器人研发",
+  "summary": "过去24小时，AI领域焦点在于资源重配与模型升级：OpenAI 突然关闭视频生成工具 Sora 以节省计算资源，转攻机器人和 AGI 项目 'Spud'。Google 发布 TurboQuant 内存压缩技术，提升 H100 硬件效率6倍，并升级 Gemini 3.1 Flash Live 语音能力。Anthropic 的 Claude 获电脑控制和 Auto Mode 更新，Apple 计划开放 Siri 支持第三方 AI 服务。整体趋势显示行业从生成媒体转向代理式推理和企业应用。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">0</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">4</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">38</argument></grok:render>",
   "hot_topics": [
     {
-      "topic": "ARC-AGI-3基准",
-      "description": "新代理智能基准强调AI学习与泛化能力不足，人类轻松解决而AI接近零分，推动AGI竞赛。",
+      "topic": "OpenAI Sora 关闭",
+      "description": "OpenAI 终止 Sora 独立平台，每天烧钱1500万美元，转资源至机器人和 AGI 'Spud' 项目，标志生成媒体向工业推理转型。",
       "related_people": [
-        "@arcprize",
-        "@fchollet"
+        "@OpenAI",
+        "@pmainardi"
       ]
     },
     {
-      "topic": "Voxtral TTS模型",
-      "description": "Mistral开源前沿TTS模型，情感丰富、多语言支持、低延迟，优于ElevenLabs。",
+      "topic": "代理式 AI (Agentic AI)",
+      "description": "Claude Code 获电脑使用 Auto Mode，Linear 等加入代理竞赛，行业转向从思考到执行的闭环系统。",
       "related_people": [
-        "@MistralAI"
+        "@AnthropicAI",
+        "@trq212"
       ]
     },
     {
-      "topic": "TRIBE v2脑编码器",
-      "description": "Meta发布预测人类大脑反应的基础模型，使用fMRI数据训练，支持零样本泛化。",
+      "topic": "硬件与效率优化",
+      "description": "Google TurboQuant 压缩内存6倍，Arm 推 AGI CPU 挑战 NVIDIA，计算稀缺推动效率创新。",
       "related_people": [
-        "@AIatMeta"
+        "@Google",
+        "@marcopapa99"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "ARC Prize开启2026竞赛并发布ARC-AGI-3",
-      "description": "ARC-AGI-3测试AI在新型任务上的学习效率，揭示当前模型关键失败模式如假设固着和未来预测弱。所有环境由人类轻松解决，AI得分<1%。竞赛现已开放。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">0</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">21</argument></grok:render>",
-      "source_url": "https://arcprize.org/"
+      "title": "Google 发布 TurboQuant 内存压缩算法",
+      "description": "TurboQuant 实现 H100 硬件6倍效率提升，缓解数据中心内存瓶颈。制药巨头视 GPU 为核心资产，加速药物发现。该技术标志 AI 基础设施优化新阶段。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">6</argument></grok:render>",
+      "source_url": ""
     },
     {
-      "title": "Mistral AI推出Voxtral TTS",
-      "description": "4B参数开源模型，实现自然情感语音、9语言支持和超快首音频延迟。可轻松适配新声音，已在Mistral Playground可用。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">5</argument></grok:render>",
-      "source_url": "https://mistral.ai/news/voxtral-tts"
+      "title": "Apple 开放 Siri 支持第三方 AI 服务",
+      "description": "iOS 27 将允许 Siri 通过 App Store 运行任意 AI 服务，放弃 ChatGPT 独家合作。开发者生态将大幅扩展，推动 AI 助手竞争。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">38</argument></grok:render>",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-03-26/apple-plans-to-open-up-siri-to-rival-ai-assistants-beyond-chatgpt-in-ios-27"
     },
     {
-      "title": "Meta开源TRIBE v2 Trimodal Brain Encoder",
-      "description": "基于500+小时fMRI数据训练，能预测未见个体对视听内容的脑反应，性能提升2-3倍。释放模型、代码和demo，推动神经科学与AI融合。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">8</argument></grok:render>",
-      "source_url": "https://ai.meta.com/blog/tribe-v2-trimodal-brain-encoder/"
+      "title": "Meta 发布 TRIBE v2 三模态脑编码器",
+      "description": "基于500+小时 fMRI 数据训练，支持零样本预测脑活动反应。创建神经活动数字孪生，推动脑机接口和多模态 AI 发展。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">29</argument></grok:render>",
+      "source_url": ""
     },
     {
-      "title": "NVIDIA Nemotron Nano 12B v2 VL视频模型",
-      "description": "自托管视频理解模型，在MediaPerf基准上媲美30B模型，成本最低、吞吐最高、F1分数0.299。强调透明度和主权。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render>",
-      "source_url": "https://developer.nvidia.com/nemotron-nano"
-    },
-    {
-      "title": "OpenAI无限期搁置色情聊天机器人计划",
-      "description": "Financial Times报道OpenAI暂停开发成人内容聊天机器人，引发安全与伦理讨论。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">6</argument></grok:render>",
-      "source_url": "https://www.ft.com/content/de9bf0af-b241-424f-8229-5870b1c0d93d"
+      "title": "Gemini 3.1 Flash Live 语音升级",
+      "description": "响应更快、自然对话，支持2倍长对话记忆，多语言覆盖200+国家和地区。提升实时交互体验。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">34</argument></grok:render>",
+      "source_url": ""
     }
   ],
-  "fetched_at": "2026-03-26T23:30:48.202475+00:00"
+  "fetched_at": "2026-03-27T23:30:45.818391+00:00"
 }
