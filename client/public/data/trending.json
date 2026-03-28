@@ -1,53 +1,51 @@
 {
-  "headline": "OpenAI 关闭 Sora 平台，转向 AGI 和机器人研发",
-  "summary": "过去24小时，AI领域焦点在于资源重配与模型升级：OpenAI 突然关闭视频生成工具 Sora 以节省计算资源，转攻机器人和 AGI 项目 'Spud'。Google 发布 TurboQuant 内存压缩技术，提升 H100 硬件效率6倍，并升级 Gemini 3.1 Flash Live 语音能力。Anthropic 的 Claude 获电脑控制和 Auto Mode 更新，Apple 计划开放 Siri 支持第三方 AI 服务。整体趋势显示行业从生成媒体转向代理式推理和企业应用。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">0</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">4</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">38</argument></grok:render>",
+  "headline": "Anthropic下一代模型Claude Mythos意外泄露，网络安全能力远超现有AI",
+  "summary": "过去24小时AI领域动态聚焦于模型能力突破与实际应用落地，包括Anthropic新模型泄露带来的安全担忧、Meta大脑活动映射模型TRIBE v2超越fMRI扫描、Apple开放Siri集成第三方AI，以及Grok在企业客服中的加速优化。开源AI基础设施加速部署，Claude等模型展示自主编码与交易系统构建能力，推动从编码到AI指令的时代转变。同时，监管与基准测试如ARC-AGI-3凸显当前模型在高级推理上的局限性。",
   "hot_topics": [
     {
-      "topic": "OpenAI Sora 关闭",
-      "description": "OpenAI 终止 Sora 独立平台，每天烧钱1500万美元，转资源至机器人和 AGI 'Spud' 项目，标志生成媒体向工业推理转型。",
+      "topic": "Claude Mythos与AI安全风险",
+      "description": "Anthropic下一代模型Mythos泄露，具备超强网络安全能力但带来重大风险，Claude已能自主构建交易系统。",
       "related_people": [
-        "@OpenAI",
-        "@pmainardi"
+        "@AnthropicAI"
       ]
     },
     {
-      "topic": "代理式 AI (Agentic AI)",
-      "description": "Claude Code 获电脑使用 Auto Mode，Linear 等加入代理竞赛，行业转向从思考到执行的闭环系统。",
+      "topic": "Grok加速优化与企业应用",
+      "description": "Elon Musk强调Grok每周变快更智能，已在SpaceX和Tesla客服中表现出色，支持粗鲁互动。",
       "related_people": [
-        "@AnthropicAI",
-        "@trq212"
+        "@elonmusk",
+        "@xai"
       ]
     },
     {
-      "topic": "硬件与效率优化",
-      "description": "Google TurboQuant 压缩内存6倍，Arm 推 AGI CPU 挑战 NVIDIA，计算稀缺推动效率创新。",
+      "topic": "Meta大脑映射与Apple Siri开放",
+      "description": "Meta TRIBE v2模型解码脑活动优于fMRI，Apple转向开放平台允许第三方AI集成Siri。",
       "related_people": [
-        "@Google",
-        "@marcopapa99"
+        "@TheRundownAI"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "Google 发布 TurboQuant 内存压缩算法",
-      "description": "TurboQuant 实现 H100 硬件6倍效率提升，缓解数据中心内存瓶颈。制药巨头视 GPU 为核心资产，加速药物发现。该技术标志 AI 基础设施优化新阶段。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">6</argument></grok:render>",
+      "title": "Anthropic Claude模型获电脑控制并泄露Mythos",
+      "description": "Anthropic赋予Claude电脑控制能力，并意外泄露新模型Mythos，其网络安全能力远超现有AI，可能在3-6个月内主导代码生成。开发者报告100%代码由Claude编写，推动AI代理经济。",
       "source_url": ""
     },
     {
-      "title": "Apple 开放 Siri 支持第三方 AI 服务",
-      "description": "iOS 27 将允许 Siri 通过 App Store 运行任意 AI 服务，放弃 ChatGPT 独家合作。开发者生态将大幅扩展，推动 AI 助手竞争。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">38</argument></grok:render>",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-03-26/apple-plans-to-open-up-siri-to-rival-ai-assistants-beyond-chatgpt-in-ios-27"
-    },
-    {
-      "title": "Meta 发布 TRIBE v2 三模态脑编码器",
-      "description": "基于500+小时 fMRI 数据训练，支持零样本预测脑活动反应。创建神经活动数字孪生，推动脑机接口和多模态 AI 发展。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">29</argument></grok:render>",
+      "title": "Google Gemini升级与Lyria 3 Pro音乐生成",
+      "description": "Google推出Gemini 3.1 Flash Live实时语音和记忆导入，提升AI效率；DeepMind发布Lyria 3 Pro，实现高保真完整音乐生成。",
       "source_url": ""
     },
     {
-      "title": "Gemini 3.1 Flash Live 语音升级",
-      "description": "响应更快、自然对话，支持2倍长对话记忆，多语言覆盖200+国家和地区。提升实时交互体验。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">34</argument></grok:render>",
+      "title": "ARC-AGI-3基准测试暴露模型局限",
+      "description": "前沿模型在ARC-AGI-3上表现不足1%，证明当前架构缺乏流畅推理能力；Symbolica首日达36%，凸显AGI挑战。",
+      "source_url": ""
+    },
+    {
+      "title": "Elon Musk：Grok每周更快更智能",
+      "description": "Grok在客服等领域表现出色，支持无拘束模式；xAI推进半导体厂建设。",
       "source_url": ""
     }
   ],
-  "fetched_at": "2026-03-27T23:30:45.818391+00:00"
+  "fetched_at": "2026-03-28T23:29:41.124659+00:00"
 }
