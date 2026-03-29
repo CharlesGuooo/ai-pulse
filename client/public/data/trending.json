@@ -1,51 +1,65 @@
 {
-  "headline": "Anthropic下一代模型Claude Mythos意外泄露，网络安全能力远超现有AI",
-  "summary": "过去24小时AI领域动态聚焦于模型能力突破与实际应用落地，包括Anthropic新模型泄露带来的安全担忧、Meta大脑活动映射模型TRIBE v2超越fMRI扫描、Apple开放Siri集成第三方AI，以及Grok在企业客服中的加速优化。开源AI基础设施加速部署，Claude等模型展示自主编码与交易系统构建能力，推动从编码到AI指令的时代转变。同时，监管与基准测试如ARC-AGI-3凸显当前模型在高级推理上的局限性。",
+  "headline": "OpenAI 悄然关闭 Sora 视频生成工具，标志着 AI 视频领域重大转向",
+  "summary": "过去24小时，AI领域焦点集中在模型优化与基础设施突破上，Google的TurboQuant算法实现内存6倍效率提升，引发硬件市场震动。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">1</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">35</argument></grok:render> Anthropic的Claude Mythos泄露和法庭胜诉强化其企业稳定地位，同时OpenAI关闭Sora并推进Codex应用。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">0</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render> 代理工具与技能生态快速发展，Claude Skills和OpenClaw扩展显示AI代理正加速商业化。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">37</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">40</argument></grok:render>",
   "hot_topics": [
     {
-      "topic": "Claude Mythos与AI安全风险",
-      "description": "Anthropic下一代模型Mythos泄露，具备超强网络安全能力但带来重大风险，Claude已能自主构建交易系统。",
+      "topic": "Google TurboQuant 内存优化",
+      "description": "新算法将AI内存需求降低6倍，冲击闪存股票，并被用于快速构建交易机器人。",
       "related_people": [
-        "@AnthropicAI"
+        "@marcopapa99",
+        "@RoundtableSpace"
       ]
     },
     {
-      "topic": "Grok加速优化与企业应用",
-      "description": "Elon Musk强调Grok每周变快更智能，已在SpaceX和Tesla客服中表现出色，支持粗鲁互动。",
+      "topic": "Anthropic Claude Mythos 泄露与法庭胜诉",
+      "description": "Claude新模型Mythos泄露显示推理能力跃升，法庭阻挡五角大楼黑名单，企业转向Anthropic。",
       "related_people": [
-        "@elonmusk",
-        "@xai"
+        "@TumatiKiran",
+        "@SirAlexthomson"
       ]
     },
     {
-      "topic": "Meta大脑映射与Apple Siri开放",
-      "description": "Meta TRIBE v2模型解码脑活动优于fMRI，Apple转向开放平台允许第三方AI集成Siri。",
+      "topic": "OpenAI Sora 关闭与Codex扩展",
+      "description": "Sora将于4月关闭API，Codex推出用例库扩展非编码任务，显示战略调整。",
       "related_people": [
-        "@TheRundownAI"
+        "@Scobleizer"
+      ]
+    },
+    {
+      "topic": "AI代理与技能生态爆发",
+      "description": "Claude推出认证考试与Skills，OpenClaw添加内存，代理自主交易获利。",
+      "related_people": [
+        "@expertwith_AI",
+        "@RoundtableSpace"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "Anthropic Claude模型获电脑控制并泄露Mythos",
-      "description": "Anthropic赋予Claude电脑控制能力，并意外泄露新模型Mythos，其网络安全能力远超现有AI，可能在3-6个月内主导代码生成。开发者报告100%代码由Claude编写，推动AI代理经济。",
+      "title": "Google发布TurboQuant算法",
+      "description": "TurboQuant实现AI内存6倍压缩效率，推动软件优化取代硬件竞赛，已被用于Polymarket交易机器人赚取巨额利润。 这重塑AI基础设施格局。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">1</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">35</argument></grok:render>",
+      "source_url": "https://t.co/hI6LALns4D"
+    },
+    {
+      "title": "OpenAI关闭Sora视频工具",
+      "description": "Sora网页与App将于2026年4月26日关闭，API9月停用，OpenAI转向其他优先领域如Codex。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render>",
+      "source_url": "https://t.co/Xs4h9J3ZsZ"
+    },
+    {
+      "title": "Anthropic Claude推出认证考试",
+      "description": "Anthropic发布Claude Certified Architect考试，包括13门免费课程，聚焦多代理系统构建与编排。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">40</argument></grok:render>",
       "source_url": ""
     },
     {
-      "title": "Google Gemini升级与Lyria 3 Pro音乐生成",
-      "description": "Google推出Gemini 3.1 Flash Live实时语音和记忆导入，提升AI效率；DeepMind发布Lyria 3 Pro，实现高保真完整音乐生成。",
-      "source_url": ""
+      "title": "David Silver创立Ineffable Intelligence获10亿美元融资",
+      "description": "DeepMind前资深人士David Silver在伦敦推出新公司，估值40亿美元，专注强化学习超智能路径而非LLM。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render>",
+      "source_url": "https://t.co/QODKKQqEKn"
     },
     {
-      "title": "ARC-AGI-3基准测试暴露模型局限",
-      "description": "前沿模型在ARC-AGI-3上表现不足1%，证明当前架构缺乏流畅推理能力；Symbolica首日达36%，凸显AGI挑战。",
-      "source_url": ""
-    },
-    {
-      "title": "Elon Musk：Grok每周更快更智能",
-      "description": "Grok在客服等领域表现出色，支持无拘束模式；xAI推进半导体厂建设。",
-      "source_url": ""
+      "title": "Chroma推出Context-1搜索代理",
+      "description": "20B参数代理推动代理搜索前沿，获大量转发，标志搜索代理新突破。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">25</argument></grok:render>",
+      "source_url": "https://t.co/PWmPU7SD0F"
     }
   ],
-  "fetched_at": "2026-03-28T23:29:41.124659+00:00"
+  "fetched_at": "2026-03-29T23:30:42.334955+00:00"
 }
