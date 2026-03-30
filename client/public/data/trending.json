@@ -1,65 +1,55 @@
 {
-  "headline": "OpenAI 悄然关闭 Sora 视频生成工具，标志着 AI 视频领域重大转向",
-  "summary": "过去24小时，AI领域焦点集中在模型优化与基础设施突破上，Google的TurboQuant算法实现内存6倍效率提升，引发硬件市场震动。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">1</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">35</argument></grok:render> Anthropic的Claude Mythos泄露和法庭胜诉强化其企业稳定地位，同时OpenAI关闭Sora并推进Codex应用。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">0</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render> 代理工具与技能生态快速发展，Claude Skills和OpenClaw扩展显示AI代理正加速商业化。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">37</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">40</argument></grok:render>",
+  "headline": "OpenAI 关闭 Sora 视频生成平台，日亏百万美元",
+  "summary": "过去24小时，AI领域焦点事件包括OpenAI关闭高成本Sora应用，转向机器人等长期项目；Mistral AI通过债务融资8.3亿美元，用于巴黎附近数据中心建设，购买上万块Nvidia芯片；Eli Lilly与Insilico Medicine签署高达27.5亿美元AI药物发现合作，推动制药革命。Meta发布TRIBE v2脑编码模型，能预测人类对视听刺激的脑反应，引发隐私担忧。DeepSeek经历7小时以上最长宕机，暴露基础设施挑战。",
   "hot_topics": [
     {
-      "topic": "Google TurboQuant 内存优化",
-      "description": "新算法将AI内存需求降低6倍，冲击闪存股票，并被用于快速构建交易机器人。",
+      "topic": "OpenAI Sora 关闭",
+      "description": "Sora视频生成器用户不足50万，日亏约100万美元，Disney 10亿美元合作泡汤，团队转向机器人研发。",
       "related_people": [
-        "@marcopapa99",
-        "@RoundtableSpace"
+        "@sama"
       ]
     },
     {
-      "topic": "Anthropic Claude Mythos 泄露与法庭胜诉",
-      "description": "Claude新模型Mythos泄露显示推理能力跃升，法庭阻挡五角大楼黑名单，企业转向Anthropic。",
+      "topic": "Mistral AI 融资建数据中心",
+      "description": "融资8.3亿美元债务，用于巴黎数据中心，购置13800块Nvidia芯片，支持欧洲AI主权计算。",
+      "related_people": []
+    },
+    {
+      "topic": "AI药物发现大单",
+      "description": "Eli Lilly与Insilico签署27.5亿美元协议，利用42个AI模型加速癌症、代谢病药物研发。",
       "related_people": [
-        "@TumatiKiran",
-        "@SirAlexthomson"
+        "@InSilicoMeds"
       ]
     },
     {
-      "topic": "OpenAI Sora 关闭与Codex扩展",
-      "description": "Sora将于4月关闭API，Codex推出用例库扩展非编码任务，显示战略调整。",
+      "topic": "Meta TRIBE v2脑模型",
+      "description": "开源模型基于700人fMRI数据，预测脑对视听的反应，准确率提升2-3倍，潜在广告与隐私风险。",
       "related_people": [
-        "@Scobleizer"
-      ]
-    },
-    {
-      "topic": "AI代理与技能生态爆发",
-      "description": "Claude推出认证考试与Skills，OpenClaw添加内存，代理自主交易获利。",
-      "related_people": [
-        "@expertwith_AI",
-        "@RoundtableSpace"
+        "@AIatMeta"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "Google发布TurboQuant算法",
-      "description": "TurboQuant实现AI内存6倍压缩效率，推动软件优化取代硬件竞赛，已被用于Polymarket交易机器人赚取巨额利润。 这重塑AI基础设施格局。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">1</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">35</argument></grok:render>",
-      "source_url": "https://t.co/hI6LALns4D"
-    },
-    {
-      "title": "OpenAI关闭Sora视频工具",
-      "description": "Sora网页与App将于2026年4月26日关闭，API9月停用，OpenAI转向其他优先领域如Codex。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render>",
-      "source_url": "https://t.co/Xs4h9J3ZsZ"
-    },
-    {
-      "title": "Anthropic Claude推出认证考试",
-      "description": "Anthropic发布Claude Certified Architect考试，包括13门免费课程，聚焦多代理系统构建与编排。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">40</argument></grok:render>",
+      "title": "OpenAI 关闭 Sora",
+      "description": "Sora每日计算成本1500万美元，收入仅210万美元，下载量锐减66%，Disney高层事前一小时知晓。OpenAI优先下一代模型Spud，释放GPU资源。该决定凸显AI产品商业化挑战。",
       "source_url": ""
     },
     {
-      "title": "David Silver创立Ineffable Intelligence获10亿美元融资",
-      "description": "DeepMind前资深人士David Silver在伦敦推出新公司，估值40亿美元，专注强化学习超智能路径而非LLM。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render>",
-      "source_url": "https://t.co/QODKKQqEKn"
+      "title": "Mistral 获8.3亿美元债务融资",
+      "description": "用于巴黎附近44MW数据中心，支持200MW计算目标，减少对美云依赖。标志欧洲AI基础设施加速独立。",
+      "source_url": "https://l.euronews.com/q0wj"
     },
     {
-      "title": "Chroma推出Context-1搜索代理",
-      "description": "20B参数代理推动代理搜索前沿，获大量转发，标志搜索代理新突破。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">25</argument></grok:render>",
-      "source_url": "https://t.co/PWmPU7SD0F"
+      "title": "Eli Lilly-Insilico 27.5亿美元AI制药协议",
+      "description": "Insilico用生成AI开发28个药物项目，14个进入临床，Lilly获独家全球权益。加速从分子设计到市场的时间。",
+      "source_url": "https://insilico.com/news/uiy12zcjg1-insilico-medicine-announces-global-rampd"
+    },
+    {
+      "title": "DeepSeek 7小时宕机",
+      "description": "自旗舰模型推出以来最长中断，影响开发者与企业用户，凸显开源AI平台稳定性问题。",
+      "source_url": ""
     }
   ],
-  "fetched_at": "2026-03-29T23:30:42.334955+00:00"
+  "fetched_at": "2026-03-30T23:33:06.467682+00:00"
 }

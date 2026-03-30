@@ -1,13 +1,39 @@
 {
   "meta": {
-    "fetched_at": "2026-03-29T23:30:42.334955+00:00",
-    "total_projects": 17
+    "fetched_at": "2026-03-30T23:33:06.467682+00:00",
+    "total_projects": 12
   },
   "projects": [
     {
+      "title": "PackForcing: Short Video Training Suffices for Long Video Sampling and Long Context Inference",
+      "summary": "提出一种方法，使用短视频训练实现长视频采样和长上下文推理。",
+      "ai_analysis": "该方法解决了长视频生成中训练数据和计算资源需求巨大的问题，通过PackForcing技术在短视频上训练模型，却能生成高质量长视频序列。核心创新在于强制打包短片段以模拟长序列动态，提升了模型的长上下文理解能力。适用于视频生成、动态内容创作等领域，具有高效训练的潜力。",
+      "category": "视频生成",
+      "source_url": "https://huggingface.co/papers/2603.25730",
+      "arxiv_url": "https://arxiv.org/abs/2603.25730",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-30",
+      "impact_level": "中",
+      "id": "6a8cb53593bf"
+    },
+    {
+      "title": "Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models",
+      "summary": "引入混合记忆机制用于动态视频世界模型，提升对隐藏对象的建模。",
+      "ai_analysis": "针对视频世界模型中对视界外对象记忆不足的问题，该论文提出混合记忆系统，结合短期和长期记忆来维持动态场景一致性。创新点在于自适应记忆更新策略，避免信息遗忘并降低计算开销。可应用于机器人导航、AR/VR模拟等需要持久世界理解的场景。",
+      "category": "视频生成",
+      "source_url": "https://huggingface.co/papers/2603.25716",
+      "arxiv_url": "https://arxiv.org/abs/2603.25716",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-30",
+      "impact_level": "中",
+      "id": "1f10fd0bcbf8"
+    },
+    {
       "title": "Intern-S1-Pro: Scientific Multimodal Foundation Model at Trillion Scale",
-      "summary": "一个万亿规模的科学多模态基础模型，支持图像、文本和科学数据的处理。",
-      "ai_analysis": "该模型解决了科学领域多模态数据处理的规模和精度问题，通过万亿参数训练实现跨模态理解的核心创新在于高效的预训练策略和科学特定数据增强，提升了在分子模拟、实验图像分析等场景的应用潜力。未来可应用于AI for Science，推动药物发现和材料科学突破。",
+      "summary": "万亿规模的科学多模态基础模型，用于跨模态科学数据处理。",
+      "ai_analysis": "解决科学领域多模态数据（如图像、文本、分子结构）融合难题，通过万亿参数预训练实现统一表示。核心创新是科学特定模态对齐和知识注入，提升了分子预测、材料发现准确率。适用于AI for Science，如药物设计、物理模拟，具有变革性潜力。",
       "category": "AI for Science",
       "source_url": "https://huggingface.co/papers/2603.25040",
       "arxiv_url": "https://arxiv.org/abs/2603.25040",
@@ -15,12 +41,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-29",
       "impact_level": "高",
-      "id": "86e169ff64c7"
+      "id": "8a67efb95d1d"
     },
     {
       "title": "AVO: Agentic Variation Operators for Autonomous Evolutionary Search",
-      "summary": "代理式变异算子用于自主进化搜索的论文。",
-      "ai_analysis": "针对传统进化算法效率低的问题，引入代理驱动的变异操作，实现自主优化搜索路径。核心创新是结合LLM代理与进化策略，提升复杂优化问题的收敛速度。适用于AI Agent设计、超参数优化和自动机器学习场景。",
+      "summary": "代理式变异算子用于自主进化搜索算法。",
+      "ai_analysis": "传统进化算法依赖手工变异，该工作引入AI代理生成自适应变异，提升搜索效率和鲁棒性。创新在于代理驱动的变异生成，支持黑盒优化。适用于超参数优化、神经架构搜索等高维问题。",
       "category": "AI Agent",
       "source_url": "https://huggingface.co/papers/2603.24517",
       "arxiv_url": "https://arxiv.org/abs/2603.24517",
@@ -28,12 +54,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-27",
       "impact_level": "中",
-      "id": "fdc9b040b1e0"
+      "id": "649c0c991f01"
     },
     {
       "title": "The Pulse of Motion: Measuring Physical Frame Rate from Visual Dynamics",
-      "summary": "从视觉动态中测量物理帧率的技术。",
-      "ai_analysis": "解决视频分析中帧率感知不准的问题，通过动态建模估计真实物理帧率。创新点在于无监督学习视觉线索，实现实时帧率预测。广泛应用于视频生成、计算机视觉和自动驾驶视频处理。",
+      "summary": "从视觉动态中测量物理帧率的新方法。",
+      "ai_analysis": "解决了视频中真实运动帧率估计的挑战，通过分析像素动态推断物理帧率。核心是神经网络建模运动脉冲，提升视频质量评估精度。应用场景包括视频压缩、运动分析、游戏开发。",
       "category": "计算机视觉",
       "source_url": "https://huggingface.co/papers/2603.14375",
       "arxiv_url": "https://arxiv.org/abs/2603.14375",
@@ -41,12 +67,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-26",
       "impact_level": "中",
-      "id": "9cbeabcc4016"
+      "id": "f5f3a6457903"
     },
     {
       "title": "CUA-Suite: Massive Human-annotated Video Demonstrations for Computer-Use Agents",
       "summary": "大规模人类标注视频演示数据集，用于计算机使用代理。",
-      "ai_analysis": "针对AI Agent在计算机交互学习不足，提供海量视频演示数据。核心是高质量人类标注，支持模仿学习和强化学习。适用于具身智能和办公自动化代理训练。",
+      "ai_analysis": "为AI代理学习计算机交互提供海量视频数据，解决模拟数据不足问题。创新在于精细人类标注，支持细粒度动作模仿。适用于桌面代理、自动化任务执行，推动具身智能发展。",
       "category": "AI Agent",
       "source_url": "https://huggingface.co/papers/2603.24440",
       "arxiv_url": "https://arxiv.org/abs/2603.24440",
@@ -54,12 +80,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-26",
       "impact_level": "高",
-      "id": "d15b553c01d6"
+      "id": "489b1fbdba23"
     },
     {
       "title": "Qworld: Question-Specific Evaluation Criteria for LLMs",
-      "summary": "针对特定问题的LLM评估标准。",
-      "ai_analysis": "传统LLM评估忽略问题特性，该方法提出动态评估准则。创新在于自适应指标生成，提高评估准确性。适用于LLM基准测试和模型比较。",
+      "summary": "针对特定问题的LLM评估标准框架。",
+      "ai_analysis": "传统基准忽略问题特性，该方法动态生成评估标准，提高LLM真实性能衡量。核心创新是问题驱动的指标自适应生成。适用于LLM基准测试、模型比较，提升评估可靠性。",
       "category": "LLM与NLP",
       "source_url": "https://huggingface.co/papers/2603.23522",
       "arxiv_url": "https://arxiv.org/abs/2603.23522",
@@ -67,38 +93,25 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-26",
       "impact_level": "中",
-      "id": "7eaf2a301d5f"
+      "id": "88c7f225a4b3"
     },
     {
       "title": "LagerNVS: Latent Geometry for Fully Neural Real-time Novel View Synthesis",
-      "summary": "全神经实时新型视图合成的潜在几何方法。",
-      "ai_analysis": "提升NeRF实时性，通过潜在几何表示加速视图合成。核心创新是端到端神经网络，避免传统几何计算。适用于3D重建、VR/AR和图像生成。",
+      "summary": "基于潜在几何的全神经实时新视角合成。",
+      "ai_analysis": "提升NeRF类方法的实时性，通过潜在空间几何表示加速渲染。解决传统NVS计算密集问题，实现实时应用。适用于3D重建、VR/AR、游戏图形。",
       "category": "3D视觉",
       "source_url": "https://huggingface.co/papers/2603.20176",
       "arxiv_url": "https://arxiv.org/abs/2603.20176",
       "github_url": "",
       "shared_by": "_akhaliq",
       "published_at": "2026-03-26",
-      "impact_level": "高",
-      "id": "280b9d2b2078"
-    },
-    {
-      "title": "Ego2Web: A Web Agent Benchmark Grounded in Egocentric Videos",
-      "summary": "基于第一人称视频的Web代理基准。",
-      "ai_analysis": "桥接现实视频与Web交互，创建真实基准测试代理性能。创新点是egocentric grounding，提升代理泛化。用于AI Agent在Web导航和多模态任务评估。",
-      "category": "AI Agent",
-      "source_url": "https://huggingface.co/papers/2603.22529",
-      "arxiv_url": "https://arxiv.org/abs/2603.22529",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-25",
       "impact_level": "中",
-      "id": "f2e6eab7adc9"
+      "id": "586bb38112f9"
     },
     {
       "title": "Perceptio: Perception Enhanced Vision Language Models via Spatial Token Generation",
       "summary": "通过空间令牌生成增强视觉语言模型的感知能力。",
-      "ai_analysis": "VLM空间感知弱，该方法引入空间令牌提升定位精度。核心是生成式空间表示，融合视觉与语言。适用于多模态学习和机器人视觉。",
+      "ai_analysis": "VLM在空间感知上不足，该方法引入空间令牌生成模块，提升细粒度视觉理解。创新点是动态空间注意力机制。适用于图像描述、视觉问答、多模态检索。",
       "category": "多模态学习",
       "source_url": "https://huggingface.co/papers/2603.18795",
       "arxiv_url": "https://arxiv.org/abs/2603.18795",
@@ -106,27 +119,14 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-24",
       "impact_level": "中",
-      "id": "ceb76e9972dc"
-    },
-    {
-      "title": "OK-Robot: What Really Matters in Integrating Open-Knowledge Models for Robotics",
-      "summary": "集成开放知识模型用于机器人的关键因素研究。",
-      "ai_analysis": "揭示知识注入机器人控制的关键，提出模块化框架。创新在于零样本语言条件拾取放置任务。推动具身智能在家用机器人应用。",
-      "category": "具身智能",
-      "source_url": "https://ok-robot.github.io/",
-      "arxiv_url": "",
-      "github_url": "https://ok-robot.github.io/",
-      "shared_by": "_akhaliq",
-      "published_at": "2024-01-23",
-      "impact_level": "高",
-      "id": "67da6e600075"
+      "id": "a7e4729c51c9"
     },
     {
       "title": "Build a Reasoning Model (From Scratch)",
-      "summary": "Sebastian Raschka的新书，教从零构建推理模型，所有章节早アクセス可用。",
-      "ai_analysis": "填补推理模型从零实现空白，提供代码和理论指导。核心创新是实用教程，包括RL和蒸馏技术。适用于LLM开发者学习高级训练，提升AI基础设施。",
+      "summary": "开源书籍和代码，教你从零构建推理模型。",
+      "ai_analysis": "填补LLM推理模型从头实现的空白，提供完整代码和教程。核心创新是逐步构建推理增强Transformer，支持o1式推理。适用于教育、研究原型开发，推动开源AI基础设施。",
       "category": "AI基础设施",
-      "source_url": "https://www.manning.com/books/build-a-reasoning-model-from-scratch",
+      "source_url": "https://github.com/rasbt/reasoning-from-scratch",
       "arxiv_url": "",
       "github_url": "https://github.com/rasbt/reasoning-from-scratch",
       "shared_by": "rasbt",
@@ -135,95 +135,30 @@
       "id": "9d95578726ba"
     },
     {
-      "title": "Qianfan-OCR: A Unified End-to-End Model for Document Intelligence",
-      "summary": "统一端到端文档智能模型。",
-      "ai_analysis": "解决OCR多任务碎片化，提供端到端文档理解。创新在于多模态融合，提升表格和布局识别。应用于文档数字化和企业AI。",
-      "category": "多模态学习",
-      "source_url": "https://huggingface.co/papers/2603.13398",
-      "arxiv_url": "https://arxiv.org/abs/2603.13398",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-18",
-      "impact_level": "中",
-      "id": "1c62a194a0c2"
-    },
-    {
-      "title": "DVD: Deterministic Video Depth Estimation with Generative Priors",
-      "summary": "使用生成先验的确定性视频深度估计。",
-      "ai_analysis": "提升视频深度一致性，通过生成模型注入先验。核心是确定性推理，避免随机性。用于视频编辑、AR和3D重建。",
-      "category": "计算机视觉",
-      "source_url": "https://huggingface.co/papers/2603.12250",
-      "arxiv_url": "https://arxiv.org/abs/2603.12250",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-13",
-      "impact_level": "中",
-      "id": "7d06651c25ab"
-    },
-    {
-      "title": "IndexCache: Accelerating Sparse Attention via Cross-Layer Index Reuse",
-      "summary": "跨层索引重用加速稀疏注意力。",
-      "ai_analysis": "稀疏注意力计算冗余，该方法重用索引降低开销。创新在于层间缓存机制，提升长序列效率。AI基础设施中LLM加速关键。",
-      "category": "AI基础设施",
-      "source_url": "https://huggingface.co/papers/2603.12201",
-      "arxiv_url": "https://arxiv.org/abs/2603.12201",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-13",
-      "impact_level": "高",
-      "id": "8a822b05f535"
-    },
-    {
-      "title": "FASTER: Rethinking Real-Time Flow VLAs",
-      "summary": "重新思考实时流视觉语言动作模型。",
-      "ai_analysis": "优化实时视频语言代理，通过流建模提升速度。核心创新是高效VLA架构。适用于视频理解和实时Agent。",
-      "category": "多模态学习",
-      "source_url": "https://huggingface.co/papers/2603.19199",
-      "arxiv_url": "https://arxiv.org/abs/2603.19199",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-20",
-      "impact_level": "中",
-      "id": "41b2a9ef4285"
-    },
-    {
-      "title": "WorldCam: Interactive Autoregressive 3D Gaming Worlds with Camera Pose",
-      "summary": "使用相机姿态作为统一几何表示的自回归3D游戏世界。",
-      "ai_analysis": "生成交互3D游戏世界，相机姿态统一表示几何。创新在于自回归生成，支持实时交互。游戏AI和3D视觉生成革命。",
-      "category": "3D视觉",
-      "source_url": "https://huggingface.co/papers/2603.16871",
-      "arxiv_url": "https://arxiv.org/abs/2603.16871",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-18",
-      "impact_level": "高",
-      "id": "ad0fe63d38fc"
-    },
-    {
-      "title": "WildWorld: A Large-Scale Dataset for Dynamic World Modeling",
-      "summary": "大规模动态世界建模数据集，支持动作和显式状态，用于生成ARPG。",
-      "ai_analysis": "提供动作 grounding 数据集，推动世界模型发展。核心是动态状态表示，支持生成式ARPG。具身智能和游戏AI基础。",
+      "title": "OK-Robot: What Really Matters in Integrating Open-Knowledge Models for Robotics",
+      "summary": "开源模块化框架，用于零样本语言条件拾取和放置任务。",
+      "ai_analysis": "整合开域知识模型提升机器人通用性，解决知识-行动差距。创新在于模块化设计，支持任意家居环境零样本操作。适用于家用机器人、具身AI，推动实际部署。",
       "category": "具身智能",
-      "source_url": "https://huggingface.co/papers/2603.23497",
-      "arxiv_url": "https://arxiv.org/abs/2603.23497",
+      "source_url": "https://okrobot.github.io/",
+      "arxiv_url": "",
       "github_url": "",
       "shared_by": "_akhaliq",
-      "published_at": "2026-03-25",
+      "published_at": "2024-01-23",
       "impact_level": "高",
-      "id": "bf59a5853343"
+      "id": "c04328cf3c0d"
     },
     {
       "title": "Let’s Verify Step by Step",
       "summary": "OpenAI过程监督数学推理论文和数据集。",
-      "ai_analysis": "通过过程监督提升数学问题解决，优于结果监督。创新在于逐步奖励机制，促进人类认可的思考链。数学AI和对齐研究里程碑。",
+      "ai_analysis": "通过奖励推理步骤而非最终答案，提升数学问题解决SOTA。创新过程监督对齐人类思维链，改善可解释性和性能。适用于教育AI、复杂推理任务。",
       "category": "LLM与NLP",
-      "source_url": "https://openai.com/research/lets-verify-step-by-step",
+      "source_url": "https://openai.com/index/process-supervision/",
       "arxiv_url": "",
       "github_url": "",
       "shared_by": "_akhaliq",
       "published_at": "2023-05-31",
       "impact_level": "高",
-      "id": "4473ffd9d668"
+      "id": "5d30d2ffb56e"
     }
   ]
 }
