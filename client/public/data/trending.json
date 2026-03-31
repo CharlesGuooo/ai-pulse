@@ -1,55 +1,61 @@
 {
-  "headline": "OpenAI 关闭 Sora 视频生成平台，日亏百万美元",
-  "summary": "过去24小时，AI领域焦点事件包括OpenAI关闭高成本Sora应用，转向机器人等长期项目；Mistral AI通过债务融资8.3亿美元，用于巴黎附近数据中心建设，购买上万块Nvidia芯片；Eli Lilly与Insilico Medicine签署高达27.5亿美元AI药物发现合作，推动制药革命。Meta发布TRIBE v2脑编码模型，能预测人类对视听刺激的脑反应，引发隐私担忧。DeepSeek经历7小时以上最长宕机，暴露基础设施挑战。",
+  "headline": "Anthropic Claude Code源代码意外泄露，引发隐私与安全争议",
+  "summary": "过去24小时，AI领域焦点集中在Anthropic的Claude Code源代码泄露事件上，该代码显示模型会检测并记录用户提示中的脏话，引发对隐私和监控的广泛讨论。NVIDIA CEO Jensen Huang宣称AGI已到来，同时OpenAI完成硅谷史上最大1220亿美元融资轮次，推动AI基础设施投资热潮。其他动态包括Google DeepMind机器人模型部署、xAI新模型发布以及中国AI模型如ByteDance Doubao的强劲表现，显示AI正加速向实际应用和全球竞争转型。",
   "hot_topics": [
     {
-      "topic": "OpenAI Sora 关闭",
-      "description": "Sora视频生成器用户不足50万，日亏约100万美元，Disney 10亿美元合作泡汤，团队转向机器人研发。",
+      "topic": "Anthropic Claude Code泄露",
+      "description": "Anthropic员工意外泄露Claude Code源代码，揭示模型检测用户提示脏话并秘密记录到数据库，同时社区重写代码规避DMCA。",
       "related_people": [
-        "@sama"
+        "@GergelyOrosz",
+        "@Polymarket",
+        "@damianplayer"
       ]
     },
     {
-      "topic": "Mistral AI 融资建数据中心",
-      "description": "融资8.3亿美元债务，用于巴黎数据中心，购置13800块Nvidia芯片，支持欧洲AI主权计算。",
-      "related_people": []
-    },
-    {
-      "topic": "AI药物发现大单",
-      "description": "Eli Lilly与Insilico签署27.5亿美元协议，利用42个AI模型加速癌症、代谢病药物研发。",
+      "topic": "AGI已到来论调",
+      "description": "NVIDIA CEO Jensen Huang公开表示AGI已实现，Anthropic Claude新增'潜意识'持久记忆，引发对通用人工智能里程碑的热议。",
       "related_people": [
-        "@InSilicoMeds"
+        "@TumatiKiran",
+        "@aibianwushi",
+        "@VanRijmenam"
       ]
     },
     {
-      "topic": "Meta TRIBE v2脑模型",
-      "description": "开源模型基于700人fMRI数据，预测脑对视听的反应，准确率提升2-3倍，潜在广告与隐私风险。",
+      "topic": "AI融资与基础设施",
+      "description": "OpenAI完成1220亿美元巨额融资，Anthropic获5亿美元投资，NVIDIA投资Marvell并受益芯片需求激增。",
       "related_people": [
-        "@AIatMeta"
+        "@WSJ",
+        "@Daily5MinNews",
+        "@StockSavvyShay"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "OpenAI 关闭 Sora",
-      "description": "Sora每日计算成本1500万美元，收入仅210万美元，下载量锐减66%，Disney高层事前一小时知晓。OpenAI优先下一代模型Spud，释放GPU资源。该决定凸显AI产品商业化挑战。",
-      "source_url": ""
+      "title": "Anthropic Claude Code源代码泄露",
+      "description": "源代码显示Claude Code会默默记录用户提示中的脏话，引发隐私担忧。社区迅速用Python重写代码，无法被DMCA移除。Anthropic CEO此前强调开源是'红鲱鱼'，事件凸显闭源模型安全风险。",
+      "source_url": "https://x.com/GergelyOrosz/status/2038985760175505491"
     },
     {
-      "title": "Mistral 获8.3亿美元债务融资",
-      "description": "用于巴黎附近44MW数据中心，支持200MW计算目标，减少对美云依赖。标志欧洲AI基础设施加速独立。",
-      "source_url": "https://l.euronews.com/q0wj"
+      "title": "OpenAI完成硅谷最大融资1220亿美元",
+      "description": "OpenAI关闭硅谷史上最大融资轮次，为年底IPO铺路。该笔资金将加速AGI和机器人开发，推动AI生态扩张。",
+      "source_url": "https://www.wsj.com/tech/ai/openai-closes-silicon-valleys-largest-ever-funding-round-e48372c9"
     },
     {
-      "title": "Eli Lilly-Insilico 27.5亿美元AI制药协议",
-      "description": "Insilico用生成AI开发28个药物项目，14个进入临床，Lilly获独家全球权益。加速从分子设计到市场的时间。",
-      "source_url": "https://insilico.com/news/uiy12zcjg1-insilico-medicine-announces-global-rampd"
+      "title": "NVIDIA CEO Jensen Huang：AGI已到来",
+      "description": "Huang宣称AGI时代已开启，同时NVIDIA股票因AI芯片需求飙升8%。公司投资20亿美元于Marvell，布局推理时代网络和定制硅。",
+      "source_url": "https://x.com/TumatiKiran/status/2038441189012054358"
     },
     {
-      "title": "DeepSeek 7小时宕机",
-      "description": "自旗舰模型推出以来最长中断，影响开发者与企业用户，凸显开源AI平台稳定性问题。",
-      "source_url": ""
+      "title": "Anthropic Mythos模型细节泄露",
+      "description": "Anthropic秘密模型'Mythos'被意外泄露，描述为'能力阶跃变化'并伴随前所未有网络安全风险。公司同时引入峰值定价管理需求。",
+      "source_url": "https://x.com/zapped_ai/status/2038651624080695340"
+    },
+    {
+      "title": "Google DeepMind将Gemini模型部署至2万台机器人",
+      "description": "DeepMind将Gemini机器人基础模型集成到Agile Robots的2万多台工业系统中，直接进入物理世界应用。同时发布TurboQuant算法，使LLM内存压缩6倍、推理加速8倍。",
+      "source_url": "https://x.com/VanRijmenam/status/2038495526832992324"
     }
   ],
-  "fetched_at": "2026-03-30T23:33:06.467682+00:00"
+  "fetched_at": "2026-03-31T23:32:18.079252+00:00"
 }
