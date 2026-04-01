@@ -1,61 +1,56 @@
 {
-  "headline": "Anthropic Claude Code源代码意外泄露，引发隐私与安全争议",
-  "summary": "过去24小时，AI领域焦点集中在Anthropic的Claude Code源代码泄露事件上，该代码显示模型会检测并记录用户提示中的脏话，引发对隐私和监控的广泛讨论。NVIDIA CEO Jensen Huang宣称AGI已到来，同时OpenAI完成硅谷史上最大1220亿美元融资轮次，推动AI基础设施投资热潮。其他动态包括Google DeepMind机器人模型部署、xAI新模型发布以及中国AI模型如ByteDance Doubao的强劲表现，显示AI正加速向实际应用和全球竞争转型。",
+  "headline": "Anthropic Claude Code大规模DMCA事件引发开源社区争议",
+  "summary": "过去24小时AI领域焦点在于Anthropic对Claude Code仓库的97个仓库及forks发起DMCA下架请求，引发开发者强烈不满，被指滥用版权打击开源项目。Tesla发布神秘AI5更新，OpenAI强调Codex工具的独特开发重点，推动从聊天向代理转型。同时，Mistral融资8.3亿美元建Nvidia集群，行业基础设施竞争加剧，代理时代与监管担忧并存。",
   "hot_topics": [
     {
-      "topic": "Anthropic Claude Code泄露",
-      "description": "Anthropic员工意外泄露Claude Code源代码，揭示模型检测用户提示脏话并秘密记录到数据库，同时社区重写代码规避DMCA。",
+      "topic": "Claude Code DMCA争议",
+      "description": "Anthropic要求GitHub下架97个Claude Code相关仓库及合法forks，开发者指责其破坏开源生态。",
       "related_people": [
         "@GergelyOrosz",
-        "@Polymarket",
-        "@damianplayer"
+        "@theo",
+        "@trq212",
+        "@bcherny"
       ]
     },
     {
-      "topic": "AGI已到来论调",
-      "description": "NVIDIA CEO Jensen Huang公开表示AGI已实现，Anthropic Claude新增'潜意识'持久记忆，引发对通用人工智能里程碑的热议。",
+      "topic": "AI代理与Codex转型",
+      "description": "OpenAI COO讨论Codex从聊天向代理工具演进，Anthropic推出Claude Code无闪烁模式，支持终端鼠标交互。",
       "related_people": [
-        "@TumatiKiran",
-        "@aibianwushi",
-        "@VanRijmenam"
+        "@OpenAINewsroom",
+        "@jaltma",
+        "@Tesla_AI"
       ]
     },
     {
-      "topic": "AI融资与基础设施",
-      "description": "OpenAI完成1220亿美元巨额融资，Anthropic获5亿美元投资，NVIDIA投资Marvell并受益芯片需求激增。",
+      "topic": "基础设施融资热潮",
+      "description": "Mistral获8.3亿美元债务融资建Nvidia数据中心，Nvidia投资Marvell推进AI工厂连接。",
       "related_people": [
-        "@WSJ",
-        "@Daily5MinNews",
-        "@StockSavvyShay"
+        "@zapped_ai",
+        "@Beth_Kindig"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "Anthropic Claude Code源代码泄露",
-      "description": "源代码显示Claude Code会默默记录用户提示中的脏话，引发隐私担忧。社区迅速用Python重写代码，无法被DMCA移除。Anthropic CEO此前强调开源是'红鲱鱼'，事件凸显闭源模型安全风险。",
-      "source_url": "https://x.com/GergelyOrosz/status/2038985760175505491"
+      "title": "Anthropic Claude Code仓库遭大规模DMCA",
+      "description": "Anthropic要求下架97个仓库及所有forks，甚至包括开源SDK的合法fork，Gergely Orosz等开发者批评此举违法并损害声誉。事件疑似回应Claude Code泄露开源化，可能加速廉价编码代理开发。",
+      "source_url": ""
     },
     {
-      "title": "OpenAI完成硅谷最大融资1220亿美元",
-      "description": "OpenAI关闭硅谷史上最大融资轮次，为年底IPO铺路。该笔资金将加速AGI和机器人开发，推动AI生态扩张。",
-      "source_url": "https://www.wsj.com/tech/ai/openai-closes-silicon-valleys-largest-ever-funding-round-e48372c9"
+      "title": "OpenAI Codex强调独特开发重点",
+      "description": "COO Brad Lightcap称Codex是公司历史上独特努力，推动AI从聊天向代理和企业工具转型。访谈讨论Codex优于ChatGPT在编码场景的应用。",
+      "source_url": ""
     },
     {
-      "title": "NVIDIA CEO Jensen Huang：AGI已到来",
-      "description": "Huang宣称AGI时代已开启，同时NVIDIA股票因AI芯片需求飙升8%。公司投资20亿美元于Marvell，布局推理时代网络和定制硅。",
-      "source_url": "https://x.com/TumatiKiran/status/2038441189012054358"
+      "title": "Tesla发布AI5更新",
+      "description": "Tesla AI账号简短发布'AI5'并附图，引发对新模型或硬件的猜测，可能标志Tesla AI能力重大升级。",
+      "source_url": ""
     },
     {
-      "title": "Anthropic Mythos模型细节泄露",
-      "description": "Anthropic秘密模型'Mythos'被意外泄露，描述为'能力阶跃变化'并伴随前所未有网络安全风险。公司同时引入峰值定价管理需求。",
-      "source_url": "https://x.com/zapped_ai/status/2038651624080695340"
-    },
-    {
-      "title": "Google DeepMind将Gemini模型部署至2万台机器人",
-      "description": "DeepMind将Gemini机器人基础模型集成到Agile Robots的2万多台工业系统中，直接进入物理世界应用。同时发布TurboQuant算法，使LLM内存压缩6倍、推理加速8倍。",
-      "source_url": "https://x.com/VanRijmenam/status/2038495526832992324"
+      "title": "Mistral融资8.3亿美元建主权AI集群",
+      "description": "法国AI初创Mistral获830M美元债务融资，用于本土Nvidia GPU数据中心，推动欧洲主权AI独立。",
+      "source_url": ""
     }
   ],
-  "fetched_at": "2026-03-31T23:32:18.079252+00:00"
+  "fetched_at": "2026-04-01T23:34:22.583075+00:00"
 }
