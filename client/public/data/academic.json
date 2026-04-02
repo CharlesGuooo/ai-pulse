@@ -1,13 +1,39 @@
 {
   "meta": {
-    "fetched_at": "2026-04-01T23:34:22.583075+00:00",
-    "total_projects": 13
+    "fetched_at": "2026-04-02T23:32:59.306100+00:00",
+    "total_projects": 15
   },
   "projects": [
     {
-      "title": "GEMS: Agent-Native Multimodal Generation with Memory and Skills",
-      "summary": "提出了一种代理原生的多模态生成框架，集成了记忆和技能机制，支持多模态内容的生成。",
-      "ai_analysis": "该项目解决了传统多模态模型在代理任务中记忆不足和技能泛化差的问题，通过引入代理级别的记忆模块和技能库，实现更高效的长期任务执行。核心创新在于将生成过程与代理决策紧密结合，支持动态技能调用，提升了在复杂交互场景下的鲁棒性。适用于机器人控制、多媒体内容创作和虚拟助手等领域，具有高扩展性。",
+      "title": "Gemma 4",
+      "summary": "Google的最新开源LLM模型家族，包括31B稠密模型和MoE变体，具有显著性能提升。",
+      "ai_analysis": "Gemma 4解决了开源LLM在性能上落后闭源模型的问题，通过优化训练数据和配方实现巨大跃升，与更大模型如Qwen3.5-397B竞争。核心创新在于保持经典架构（如GQA和混合注意力）的同时提升基准表现，并采用Apache 2.0许可便于本地部署。适用于本地推理、代码生成和多模态任务，具有高性价比。",
+      "category": "LLM与NLP",
+      "source_url": "https://x.com/rasbt/status/2039780905619705902",
+      "arxiv_url": "",
+      "github_url": "",
+      "shared_by": "rasbt",
+      "published_at": "2026-04-02",
+      "impact_level": "高",
+      "id": "e7896f032496"
+    },
+    {
+      "title": "Lingshu-Cell",
+      "summary": "一种用于转录组建模的生成细胞世界模型，旨在创建虚拟细胞。",
+      "ai_analysis": "针对生物信息学中细胞模拟的复杂性，该模型解决转录组数据的生成和预测问题。核心创新是世界模型框架，将细胞动态建模为生成过程，支持虚拟实验。适用于药物发现、个性化医学和AI for Science领域，推动合成生物学发展。",
+      "category": "AI for Science",
+      "source_url": "https://huggingface.co/papers/2603.25240",
+      "arxiv_url": "https://arxiv.org/abs/2603.25240",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-04-01",
+      "impact_level": "中",
+      "id": "acc2833dc95f"
+    },
+    {
+      "title": "GEMS",
+      "summary": "代理原生多模态生成模型，集成记忆和技能机制。",
+      "ai_analysis": "解决多模态代理生成中的连贯性和记忆问题，通过代理原生设计提升生成质量。创新点在于记忆模块和技能库，支持动态任务适应。适用于多模态AI代理、交互式内容创建和虚拟助手。",
       "category": "多模态学习",
       "source_url": "https://huggingface.co/papers/2603.28088",
       "arxiv_url": "https://arxiv.org/abs/2603.28088",
@@ -15,25 +41,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-04-01",
       "impact_level": "中",
-      "id": "3330db16ed5e"
+      "id": "52db6cf5a495"
     },
     {
-      "title": "Lingshu-Cell: A generative cellular world model for transcriptome modeling toward virtual cells",
-      "summary": "开发了一种生成式细胞世界模型，用于转录组建模，推动虚拟细胞研究。",
-      "ai_analysis": "针对生物数据的高维性和复杂动态，该模型构建世界模型模拟细胞行为，解决了传统方法在转录组预测中的准确性不足问题。创新点在于引入生成式框架，实现从转录组数据到虚拟细胞模拟的无缝转换。适用于药物发现、个性化医学和合成生物学，具有变革性潜力。",
-      "category": "AI for Science",
-      "source_url": "https://huggingface.co/papers/2603.25240",
-      "arxiv_url": "https://arxiv.org/abs/2603.25240",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-04-01",
-      "impact_level": "高",
-      "id": "61dd2f0b1300"
-    },
-    {
-      "title": "LongCat-Next: Lexicalizing Modalities as Discrete Tokens",
-      "summary": "将多种模态数据词法化为离散令牌，支持统一的多模态处理。",
-      "ai_analysis": "解决了多模态数据表示不一致的问题，通过离散令牌化统一不同模态的编码空间，提升模型的跨模态泛化能力。核心创新是模态词法化机制，减少了连续表示的计算开销。适用于多模态LLM训练和实时多媒体分析。",
+      "title": "LongCat-Next",
+      "summary": "将模态词汇化为离散令牌的多模态模型。",
+      "ai_analysis": "针对多模态数据处理的连续性问题，将图像/视频等模态转换为离散令牌统一处理。核心创新是词汇化机制，提升长序列建模效率。适用于长上下文多模态理解、跨模态检索和生成。",
       "category": "多模态学习",
       "source_url": "https://huggingface.co/papers/2603.27538",
       "arxiv_url": "https://arxiv.org/abs/2603.27538",
@@ -41,12 +54,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-04-01",
       "impact_level": "中",
-      "id": "bfa635113b67"
+      "id": "a12c88d7fe6d"
     },
     {
-      "title": "FIPO: Eliciting Deep Reasoning with Future-KL Influenced Policy Optimization",
-      "summary": "使用未来KL影响的策略优化，激发深度推理能力。",
-      "ai_analysis": "针对LLM推理浅层的问题，引入未来KL散度指导策略优化，增强长链推理的稳定性。创新在于将KL正则化与未来轨迹预测结合，避免模式崩溃。适用于数学求解、逻辑推理和规划任务。",
+      "title": "FIPO",
+      "summary": "使用未来KL影响策略优化来激发深度推理。",
+      "ai_analysis": "解决RLHF中推理深度不足的问题，通过未来KL引导优化策略生成更长链式思考。创新在于KL正则化提升推理质量而非仅奖励最终答案。适用于数学求解、复杂决策和LLM对齐。",
       "category": "LLM与NLP",
       "source_url": "https://huggingface.co/papers/2603.19835",
       "arxiv_url": "https://arxiv.org/abs/2603.19835",
@@ -54,12 +67,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-04-01",
       "impact_level": "中",
-      "id": "1df6c25b717f"
+      "id": "55d258c30389"
     },
     {
-      "title": "HandX: Scaling Bimanual Motion and Interaction Generation",
-      "summary": "扩展双臂运动和交互生成，支持大规模手部动作模拟。",
-      "ai_analysis": "解决了双臂协调生成中的尺度限制，通过分层生成框架实现精细交互。核心创新是多尺度运动表示，提升了真实性和多样性。适用于虚拟现实、人机交互和机器人操纵。",
+      "title": "HandX",
+      "summary": "扩展双臂运动和交互生成的模型。",
+      "ai_analysis": "针对具身智能中双手操纵的精细建模难题，实现大规模双臂动作生成。核心创新是交互数据扩展和生成框架，支持真实物理模拟。适用于机器人控制、VR/AR交互和数字孪生。",
       "category": "具身智能",
       "source_url": "https://huggingface.co/papers/2603.28766",
       "arxiv_url": "https://arxiv.org/abs/2603.28766",
@@ -67,25 +80,25 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-31",
       "impact_level": "高",
-      "id": "5d1485c29f65"
+      "id": "9eab75c30d75"
     },
     {
-      "title": "DreamLite: A Lightweight On-Device Unified Model for Image Generation and Editing",
+      "title": "DreamLite",
       "summary": "轻量级设备端统一图像生成与编辑模型。",
-      "ai_analysis": "针对移动设备计算资源有限的问题，设计高效统一架构，支持生成和编辑一体化。创新点在于知识蒸馏和量化优化，实现实时性能。适用于手机应用、AR滤镜和内容创作工具。",
+      "ai_analysis": "解决移动设备上图像生成的高计算需求，通过轻量化设计实现生成和编辑统一。创新点在于高效架构，支持实时应用。适用于手机App、AR滤镜和边缘计算。",
       "category": "图像生成",
       "source_url": "https://huggingface.co/papers/2603.28713",
       "arxiv_url": "https://arxiv.org/abs/2603.28713",
       "github_url": "",
       "shared_by": "_akhaliq",
       "published_at": "2026-03-31",
-      "impact_level": "高",
-      "id": "d551311d0cac"
+      "impact_level": "中",
+      "id": "60002b5262d2"
     },
     {
-      "title": "GEditBench v2: A Human-Aligned Benchmark for General Image Editing",
-      "summary": "人类对齐的通用图像编辑基准v2版本。",
-      "ai_analysis": "解决了图像编辑评估主观性强的问题，通过人类偏好数据构建全面基准。创新在于多维度评估框架，包括语义一致性和自然度。推动编辑模型标准化，适用于模型比较和优化。",
+      "title": "GEditBench v2",
+      "summary": "人类对齐的通用图像编辑基准。",
+      "ai_analysis": "提供标准化评估框架，解决图像编辑模型人类偏好不一致问题。创新在于人类标注数据集和多任务评估。适用于模型开发、基准比较和编辑技术进步。",
       "category": "图像生成",
       "source_url": "https://huggingface.co/papers/2603.28547",
       "arxiv_url": "https://arxiv.org/abs/2603.28547",
@@ -93,12 +106,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-31",
       "impact_level": "中",
-      "id": "66b48b3fb087"
+      "id": "7d0fdac6f454"
     },
     {
-      "title": "EpochX: Building the Infrastructure for an Emergent Agent Civilization",
-      "summary": "构建 emergent 代理文明的基础设施。",
-      "ai_analysis": "针对多代理系统自组织问题，提供基础设施支持代理间 emergent 行为。核心创新是分布式模拟框架和激励机制设计。适用于模拟社会、游戏AI和经济建模。",
+      "title": "EpochX",
+      "summary": "构建涌现代理文明的基础设施。",
+      "ai_analysis": "针对AI代理生态系统，创建支持涌现行为的平台。核心创新是基础设施设计，促进代理间交互和进化。适用于多代理模拟、自治系统和AI社会研究。",
       "category": "AI Agent",
       "source_url": "https://huggingface.co/papers/2603.27304",
       "arxiv_url": "https://arxiv.org/abs/2603.27304",
@@ -106,72 +119,85 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-03-31",
       "impact_level": "高",
-      "id": "f1095d90447c"
+      "id": "6bf979e0ade9"
     },
     {
-      "title": "Gen-Searcher: Reinforcing Agentic Search for Image Generation",
-      "summary": "强化代理搜索用于图像生成。",
-      "ai_analysis": "提升图像生成中的搜索效率，通过代理强化学习优化生成路径。创新点是搜索-生成闭环反馈。适用于高分辨率图像合成和个性化设计。",
-      "category": "图像生成",
-      "source_url": "https://huggingface.co/papers/2603.28767",
-      "arxiv_url": "https://arxiv.org/abs/2603.28767",
+      "title": "ClawKeeper",
+      "summary": "为OpenClaw代理提供全面安全保护，通过技能、插件和监视器。",
+      "ai_analysis": "解决AI代理安全漏洞问题，提供多层防护机制。创新在于技能级插件和实时监视，提升代理鲁棒性。适用于部署代理系统、安全审计和企业应用。",
+      "category": "AI Agent",
+      "source_url": "https://huggingface.co/papers/2603.24414",
+      "arxiv_url": "https://arxiv.org/abs/2603.24414",
       "github_url": "",
       "shared_by": "_akhaliq",
-      "published_at": "2026-03-31",
+      "published_at": "2026-04-02",
       "impact_level": "中",
-      "id": "034788c96da8"
+      "id": "ef25ce0580db"
     },
     {
-      "title": "TAPS: Task Aware Proposal Distributions for Speculative Sampling",
-      "summary": "任务感知提案分布的推测采样方法。",
-      "ai_analysis": "优化LLM推测采样的任务适应性，减少无效采样。核心创新是动态提案分布调整，提升解码速度。适用于实时推理和长序列生成。",
-      "category": "AI基础设施",
-      "source_url": "https://huggingface.co/papers/2603.27027",
-      "arxiv_url": "https://arxiv.org/abs/2603.27027",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-03-31",
-      "impact_level": "中",
-      "id": "30a208b73f5d"
-    },
-    {
-      "title": "Let’s Verify Step by Step",
-      "summary": "OpenAI发布的过程监督数学问题求解论文和数据集。",
-      "ai_analysis": "通过过程监督而非结果监督训练，提升数学推理SOTA。创新在于奖励每个正确推理步骤，实现人类认可的思维链。适用于教育AI、科学计算和复杂决策。",
-      "category": "LLM与NLP",
-      "source_url": "https://openai.com/research/lets-verify-step-by-step",
-      "arxiv_url": "",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2023-05-31",
-      "impact_level": "高",
-      "id": "5630a1ec3086"
-    },
-    {
-      "title": "On the Interplay of Pre-Training, Mid-Training, and RL on Reasoning Language Models",
-      "summary": "探讨预训练、中间训练和RL在推理LM上的相互作用。",
-      "ai_analysis": "揭示RL在适度分布偏移数据上最有效，避免过度或不足训练。创新在于量化分布偏移对RL的影响。指导LLM推理优化，适用于模型训练管道设计。",
-      "category": "LLM与NLP",
-      "source_url": "https://arxiv.org/abs/2512.07783",
-      "arxiv_url": "https://arxiv.org/abs/2512.07783",
-      "github_url": "",
-      "shared_by": "rasbt",
-      "published_at": "2026-01-02",
-      "impact_level": "高",
-      "id": "f846dd0e7d47"
-    },
-    {
-      "title": "DeepSeek-OCR",
-      "summary": "DeepSeek的新视觉编码器提升LLM文本压缩效率。",
-      "ai_analysis": "将文本渲染为图像输入视觉编码器，实现10x压缩比优于文本令牌化。创新在于卷积压缩器和MoE解码器，支持长上下文。适用于文档处理、代码分析和高效推理。",
+      "title": "Intern-S1-Pro",
+      "summary": "万亿规模科学多模态基础模型。",
+      "ai_analysis": "针对科学数据多模态融合，训练超大规模模型提升跨领域理解。核心创新是万亿token训练，支持图像-文本科学推理。适用于科研加速、数据分析和AI for Science。",
       "category": "多模态学习",
-      "source_url": "",
-      "arxiv_url": "",
+      "source_url": "https://huggingface.co/papers/2603.25040",
+      "arxiv_url": "https://arxiv.org/abs/2603.25040",
       "github_url": "",
-      "shared_by": "rasbt",
-      "published_at": "2025-10-21",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-29",
       "impact_level": "高",
-      "id": "9e23eaa25fb6"
+      "id": "3683f40e89f0"
+    },
+    {
+      "title": "PackForcing",
+      "summary": "短视频训练足以实现长视频采样和长上下文推理。",
+      "ai_analysis": "解决视频生成长序列计算开销，通过打包强制提升效率。创新点是短样本训练长输出机制。适用于视频生成、长视频编辑和媒体生产。",
+      "category": "视频生成",
+      "source_url": "https://huggingface.co/papers/2603.25730",
+      "arxiv_url": "https://arxiv.org/abs/2603.25730",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-03-30",
+      "impact_level": "中",
+      "id": "15ccd3be8df0"
+    },
+    {
+      "title": "Do Phone-Use Agents Respect Your Privacy?",
+      "summary": "评估手机使用代理隐私尊重程度的论文。",
+      "ai_analysis": "探讨代理在手机环境中的隐私风险，提供评估框架。创新在于实证分析和防护建议。适用于移动AI开发、隐私合规和用户中心设计。",
+      "category": "AI Agent",
+      "source_url": "https://huggingface.co/papers/2604.00986",
+      "arxiv_url": "https://arxiv.org/abs/2604.00986",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-04-02",
+      "impact_level": "中",
+      "id": "10668a2c6f61"
+    },
+    {
+      "title": "Qwen3.5 from-scratch reimplementation",
+      "summary": "Sebastian Raschka的教育性Qwen3.5小型LLM从零实现。",
+      "ai_analysis": "便于设备端实验的最佳小型LLM，提供完整代码重现。核心创新在于简化实现突出关键组件。适用于教育、原型开发和本地LLM研究。",
+      "category": "LLM与NLP",
+      "source_url": "https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/16_qwen3.5",
+      "arxiv_url": "",
+      "github_url": "https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/16_qwen3.5",
+      "shared_by": "rasbt",
+      "published_at": "2026-03-03",
+      "impact_level": "中",
+      "id": "98a7c8b71af5"
+    },
+    {
+      "title": "Build A Reasoning Model (From Scratch)",
+      "summary": "Sebastian Raschka的新书，聚焦推理模型从零构建。",
+      "ai_analysis": "填补LLM推理技术从预训练到高级推理的空白，包括RL和蒸馏。创新在于代码驱动教程，支持独立阅读。适用于LLM开发者、研究者和推理优化。",
+      "category": "LLM与NLP",
+      "source_url": "https://github.com/rasbt/reasoning-from-scratch",
+      "arxiv_url": "",
+      "github_url": "https://github.com/rasbt/reasoning-from-scratch",
+      "shared_by": "rasbt",
+      "published_at": "2026-03-29",
+      "impact_level": "高",
+      "id": "b1788e60a8e4"
     }
   ]
 }
