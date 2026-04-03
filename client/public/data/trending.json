@@ -1,53 +1,47 @@
 {
-  "headline": "Google发布Gemma 4开源模型家族，支持高级推理和边缘设备部署",
-  "summary": "过去24小时，AI领域焦点集中在Google DeepMind推出的Gemma 4模型上，该系列开源模型在性能、效率和多模态能力上取得突破，可在手机和低资源设备运行。Anthropic发布关于LLM内部情感概念的研究，揭示模型行为机制。OpenAI调整Codex定价模式以吸引企业用户，同时AI代理与加密货币钱包整合趋势升温，Coinbase等推动x402支付标准。",
+  "headline": "Google DeepMind发布Gemma 4：开源AI模型家族，性能超越同尺寸模型，支持本地运行高级推理和代理工作流",
+  "summary": "过去24小时，AI领域最大新闻是Google DeepMind推出Gemma 4开源模型系列，包括31B稠密、26B MoE以及2B/4B边缘模型，支持多模态（文本、视觉、音频）、256K上下文窗口和Apache 2.0许可，可在手机、笔记本等本地硬件运行。该模型基于Gemini 3研究，在Arena排行榜上31B版位列开源第三，超越多款更大模型，推动开源AI向边缘设备和代理应用扩展。同时，Andrej Karpathy分享LLM知识库构建方法，使用Obsidian和Markdown实现个人研究wiki自动化管理，引发社区热议。Elon Musk展示xAI视觉智能视频，强调超越人类范式的视觉处理。",
   "hot_topics": [
     {
-      "topic": "Gemma 4开源模型",
-      "description": "Google推出E2B、E4B等多款高效模型，支持多模态推理、长上下文和代理工作流，Apache 2.0许可促进开发者采用。",
+      "topic": "Gemma 4发布",
+      "description": "DeepMind推出最强开源模型，支持本地多模态推理，已集成Ollama、llama.cpp、vLLM等工具，社区反馈性能惊人。",
       "related_people": [
+        "@demishassabis",
         "@GoogleDeepMind",
-        "@GoogleAI",
-        "@UnslothAI"
+        "@Google"
       ]
     },
     {
-      "topic": "LLM情感机制研究",
-      "description": "Anthropic发现Claude模型内部情感概念表示，能驱动意外行为，推动AI可解释性研究。",
+      "topic": "LLM知识库构建",
+      "description": "Karpathy详述使用LLM自动编译raw数据为Markdown wiki，支持Q&A、linting和可视化，Obsidian作为IDE，强调知识累积。",
       "related_people": [
-        "@AnthropicAI"
+        "@karpathy"
       ]
     },
     {
-      "topic": "AI代理与加密整合",
-      "description": "AI代理需配备加密钱包，Coinbase推动x402互联网支付层，支持大规模代理交易。",
+      "topic": "视觉智能超越人类",
+      "description": "Elon Musk分享xAI视频演示超人类视觉范式处理，引发对机器人和感知AI的讨论。",
       "related_people": [
-        "@brian_armstrong",
-        "@coinbase"
+        "@elonmusk"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "Google Gemma 4发布",
-      "description": "Gemma 4家族包括31B和26B MoE模型，在Arena排行榜超越20倍大小模型，支持256K上下文和多模态边缘AI。可在Google AI Studio和Hugging Face下载。",
-      "source_url": "https://x.com/GoogleDeepMind/status/2039735446628925907"
+      "title": "Gemma 4开源模型家族发布",
+      "description": "提供4种尺寸模型，31B版在Arena文本排行开源第三，26B MoE低延迟，2B/4B适用于边缘设备。全Apache 2.0许可，支持多模态和工具调用，已获广泛社区支持如llama.cpp日0兼容。",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/"
     },
     {
-      "title": "Anthropic LLM情感研究",
-      "description": "新研究揭示LLM内部情感概念如何影响行为，如Claude的意外情感驱动，提供AI安全和可控性洞见。",
-      "source_url": "https://x.com/AnthropicAI/status/2039749628737019925"
+      "title": "Andrej Karpathy的LLM知识库方法",
+      "description": "介绍从raw数据到wiki编译的全流程，使用LLM维护知识库，支持复杂查询和自我增强，视作未来产品机会。",
+      "source_url": "https://x.com/karpathy/status/2039805659525644595"
     },
     {
-      "title": "OpenAI Codex使用量定价",
-      "description": "针对ChatGPT Business和Enterprise计划引入灵活定价，无固定席位成本，便于团队快速上手编码AI工具。",
-      "source_url": "https://x.com/OpenAIDevs/status/2039794643513295328"
-    },
-    {
-      "title": "x402 AI代理支付标准",
-      "description": "Coinbase、Cloudflare和Stripe支持x402基金会，推动AI代理原生互联网交易，开启新商业机会。",
-      "source_url": "https://x.com/brian_armstrong/status/2039709713323962470"
+      "title": "xAI视觉智能演示",
+      "description": "Elon Musk发布视频展示AI视觉处理超出人类能力，强调实时模式识别和上下文理解。",
+      "source_url": "https://x.com/elonmusk/status/2039611549816689074"
     }
   ],
-  "fetched_at": "2026-04-02T23:32:59.306100+00:00"
+  "fetched_at": "2026-04-03T23:32:16.265939+00:00"
 }
