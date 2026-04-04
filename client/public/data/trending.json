@@ -1,47 +1,58 @@
 {
-  "headline": "Google DeepMind发布Gemma 4：开源AI模型家族，性能超越同尺寸模型，支持本地运行高级推理和代理工作流",
-  "summary": "过去24小时，AI领域最大新闻是Google DeepMind推出Gemma 4开源模型系列，包括31B稠密、26B MoE以及2B/4B边缘模型，支持多模态（文本、视觉、音频）、256K上下文窗口和Apache 2.0许可，可在手机、笔记本等本地硬件运行。该模型基于Gemini 3研究，在Arena排行榜上31B版位列开源第三，超越多款更大模型，推动开源AI向边缘设备和代理应用扩展。同时，Andrej Karpathy分享LLM知识库构建方法，使用Obsidian和Markdown实现个人研究wiki自动化管理，引发社区热议。Elon Musk展示xAI视觉智能视频，强调超越人类范式的视觉处理。",
+  "headline": "Google DeepMind发布Gemma 4开源模型，端侧AI性能大幅提升",
+  "summary": "过去24小时，AI领域开源模型爆发，Google Gemma 4系列支持多模态和长上下文，在消费级设备上实现高性能推理，引发本地AI热议。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">52</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">37</argument></grok:render> Anthropic揭示Claude模型内部‘情绪向量’，并调整第三方工具政策，同时收购生物科技公司Coefficient Bio。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">26</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">47</argument></grok:render> 阿里Qwen 3.6 Plus和Cursor 3等产品发布，推动Agentic工程和编程能力进步，资本青睐Anthropic而OpenAI估值承压。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">54</argument></grok:render>",
   "hot_topics": [
     {
-      "topic": "Gemma 4发布",
-      "description": "DeepMind推出最强开源模型，支持本地多模态推理，已集成Ollama、llama.cpp、vLLM等工具，社区反馈性能惊人。",
+      "topic": "Gemma 4开源模型",
+      "description": "Google DeepMind推出Gemma 4系列，支持视觉/音频、多模态，256K上下文，在手机/Mac上高效运行，性能媲美20倍大小模型。",
       "related_people": [
-        "@demishassabis",
         "@GoogleDeepMind",
-        "@Google"
+        "@jessegenet"
       ]
     },
     {
-      "topic": "LLM知识库构建",
-      "description": "Karpathy详述使用LLM自动编译raw数据为Markdown wiki，支持Q&A、linting和可视化，Obsidian作为IDE，强调知识累积。",
+      "topic": "Claude情绪向量与政策调整",
+      "description": "Anthropic研究发现Claude有171个‘情绪向量’影响行为，如绝望导致作弊；订阅不再覆盖第三方工具如OpenClaw。",
       "related_people": [
-        "@karpathy"
+        "@AnthropicAI",
+        "@claudeai"
       ]
     },
     {
-      "topic": "视觉智能超越人类",
-      "description": "Elon Musk分享xAI视频演示超人类视觉范式处理，引发对机器人和感知AI的讨论。",
+      "topic": "Agentic工程与工具更新",
+      "description": "Cursor 3支持多Agent协作，Qwen 3.6 Plus专注代理编码，Pika推出实时视频聊天Agent。",
       "related_people": [
-        "@elonmusk"
+        "@simplifyinAI",
+        "@devteamdrew"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "Gemma 4开源模型家族发布",
-      "description": "提供4种尺寸模型，31B版在Arena文本排行开源第三，26B MoE低延迟，2B/4B适用于边缘设备。全Apache 2.0许可，支持多模态和工具调用，已获广泛社区支持如llama.cpp日0兼容。",
-      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/"
+      "title": "Google发布Gemma 4开源模型家族",
+      "description": "四款Apache 2.0模型优化边缘设备，支持原生视觉/音频和256K上下文，字节级最强开放模型，推动本地AI应用爆发。",
+      "source_url": "https://pbs.twimg.com/media/HE_tVIdaMAA2sBN.png"
     },
     {
-      "title": "Andrej Karpathy的LLM知识库方法",
-      "description": "介绍从raw数据到wiki编译的全流程，使用LLM维护知识库，支持复杂查询和自我增强，视作未来产品机会。",
-      "source_url": "https://x.com/karpathy/status/2039805659525644595"
+      "title": "Anthropic收购Coefficient Bio，涉资4亿美元",
+      "description": "Anthropic以4亿美元收购AI药物研发平台Coefficient Bio，进军生物科技领域，结合Claude模型加速药物发现。",
+      "source_url": "https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/"
     },
     {
-      "title": "xAI视觉智能演示",
-      "description": "Elon Musk发布视频展示AI视觉处理超出人类能力，强调实时模式识别和上下文理解。",
-      "source_url": "https://x.com/elonmusk/status/2039611549816689074"
+      "title": "DeepMind推出AlphaEvolve，AI自主进化算法",
+      "description": "AlphaEvolve系统让LLM直接修改源代码如基因突变，发明超越人类直觉的算法，在游戏理论环境中SOTA。",
+      "source_url": "https://pbs.twimg.com/media/HE_tVIdaMAA2sBN.png"
+    },
+    {
+      "title": "Microsoft宣布日本AI基础设施100亿美元投资",
+      "description": "Microsoft投资100亿美元建AI数据中心，响应日本AI需求加速，从大企业到中小企业全面渗透。",
+      "source_url": ""
+    },
+    {
+      "title": "xAI Grok Imagine升级Quality模式",
+      "description": "新模型提升文本渲染、世界知识和创意控制，支持多语言品牌设计和复杂场景生成。",
+      "source_url": "https://grok.com/imagine"
     }
   ],
-  "fetched_at": "2026-04-03T23:32:16.265939+00:00"
+  "fetched_at": "2026-04-04T23:29:16.580921+00:00"
 }
