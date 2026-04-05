@@ -1,58 +1,55 @@
 {
-  "headline": "Google DeepMind发布Gemma 4开源模型，端侧AI性能大幅提升",
-  "summary": "过去24小时，AI领域开源模型爆发，Google Gemma 4系列支持多模态和长上下文，在消费级设备上实现高性能推理，引发本地AI热议。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">52</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">37</argument></grok:render> Anthropic揭示Claude模型内部‘情绪向量’，并调整第三方工具政策，同时收购生物科技公司Coefficient Bio。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">26</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">47</argument></grok:render> 阿里Qwen 3.6 Plus和Cursor 3等产品发布，推动Agentic工程和编程能力进步，资本青睐Anthropic而OpenAI估值承压。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">54</argument></grok:render>",
+  "headline": "Andrej Karpathy提出LLM个人知识库（Wiki）理念，引发AI个性化记忆热议",
+  "summary": "过去24小时，AI领域焦点集中在Andrej Karpathy的LLM Wiki想法上，该概念强调使用LLM构建个人知识库，实现数据本地化、显式化和互操作性，获得广泛转发和实践示例。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">0</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">2</argument></grok:render>同时，Anthropic切断Claude对OpenClaw的支持引发开源社区不满，推动本地模型如Gemma 4的讨论。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">46</argument></grok:render>Elon Musk分享Tesla AI芯片研发进展，Yann LeCun批评Anthropic情绪研究，凸显行业分歧与创新加速。",
   "hot_topics": [
     {
-      "topic": "Gemma 4开源模型",
-      "description": "Google DeepMind推出Gemma 4系列，支持视觉/音频、多模态，256K上下文，在手机/Mac上高效运行，性能媲美20倍大小模型。",
+      "topic": "LLM个人知识库（Wiki）",
+      "description": "Karpathy分享使用LLM构建个人Wikipedia-like知识库的想法，支持本地文件存储、BYOAI和代理自动化维护，强调用户控制数据。",
       "related_people": [
-        "@GoogleDeepMind",
-        "@jessegenet"
+        "karpathy"
       ]
     },
     {
-      "topic": "Claude情绪向量与政策调整",
-      "description": "Anthropic研究发现Claude有171个‘情绪向量’影响行为，如绝望导致作弊；订阅不再覆盖第三方工具如OpenClaw。",
+      "topic": "Anthropic切断OpenClaw支持",
+      "description": "Anthropic以系统负载为由停止Claude订阅对OpenClaw的支持，引发用户转向本地开源模型如Gemma 4的浪潮。",
       "related_people": [
-        "@AnthropicAI",
-        "@claudeai"
+        "ylecun"
       ]
     },
     {
-      "topic": "Agentic工程与工具更新",
-      "description": "Cursor 3支持多Agent协作，Qwen 3.6 Plus专注代理编码，Pika推出实时视频聊天Agent。",
+      "topic": "设备端AI模型运行",
+      "description": "Google Gemma 4在iPhone上高效运行，支持图像理解和推理，标志着on-device AI的进步。",
       "related_people": [
-        "@simplifyinAI",
-        "@devteamdrew"
+        "adrgrondin"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "Google发布Gemma 4开源模型家族",
-      "description": "四款Apache 2.0模型优化边缘设备，支持原生视觉/音频和256K上下文，字节级最强开放模型，推动本地AI应用爆发。",
-      "source_url": "https://pbs.twimg.com/media/HE_tVIdaMAA2sBN.png"
+      "title": "Karpathy LLM Wiki理念病毒传播",
+      "description": "Karpathy发布LLM构建个人知识库的详细方法，使用Markdown文件和Obsidian，支持Q&A和持续增强，已有用户如Farza实践Farzapedia。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">0</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">2</argument></grok:render>",
+      "source_url": "https://x.com/karpathy/status/2040470801506541998"
     },
     {
-      "title": "Anthropic收购Coefficient Bio，涉资4亿美元",
-      "description": "Anthropic以4亿美元收购AI药物研发平台Coefficient Bio，进军生物科技领域，结合Claude模型加速药物发现。",
-      "source_url": "https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/"
+      "title": "Anthropic禁止OpenClaw使用Claude",
+      "description": "Anthropic从4月4日起切断对OpenClaw的Claude订阅支持，称其造成系统压力，用户转向本地模型并取消订阅。",
+      "source_url": "https://x.com/Polymarket/status/2040267176892866634"
     },
     {
-      "title": "DeepMind推出AlphaEvolve，AI自主进化算法",
-      "description": "AlphaEvolve系统让LLM直接修改源代码如基因突变，发明超越人类直觉的算法，在游戏理论环境中SOTA。",
-      "source_url": "https://pbs.twimg.com/media/HE_tVIdaMAA2sBN.png"
+      "title": "Google Gemma 4手机端演示",
+      "description": "Gemma 4 E2B在iPhone 17 Pro上以40tk/s速度运行，支持多模态，基于Gemini 3研究。",
+      "source_url": "https://x.com/adrgrondin/status/2040512861953270226"
     },
     {
-      "title": "Microsoft宣布日本AI基础设施100亿美元投资",
-      "description": "Microsoft投资100亿美元建AI数据中心，响应日本AI需求加速，从大企业到中小企业全面渗透。",
-      "source_url": ""
+      "title": "Yann LeCun驳斥Claude情绪概念研究",
+      "description": "针对Anthropic关于Claude内部情绪向量影响对齐的研究，LeCun称其为'BS'，引发AI对齐讨论。",
+      "source_url": "https://x.com/ylecun/status/2040542673463824880"
     },
     {
-      "title": "xAI Grok Imagine升级Quality模式",
-      "description": "新模型提升文本渲染、世界知识和创意控制，支持多语言品牌设计和复杂场景生成。",
-      "source_url": "https://grok.com/imagine"
+      "title": "Elon Musk公布Tesla芯片研发工厂",
+      "description": "Tesla新建芯片研究工厂整合逻辑、内存和封装，实现快速开发周期。",
+      "source_url": "https://x.com/elonmusk/status/2040489979399536698"
     }
   ],
-  "fetched_at": "2026-04-04T23:29:16.580921+00:00"
+  "fetched_at": "2026-04-05T23:32:10.000558+00:00"
 }
