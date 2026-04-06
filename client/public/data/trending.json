@@ -1,55 +1,53 @@
 {
-  "headline": "Andrej Karpathy提出LLM个人知识库（Wiki）理念，引发AI个性化记忆热议",
-  "summary": "过去24小时，AI领域焦点集中在Andrej Karpathy的LLM Wiki想法上，该概念强调使用LLM构建个人知识库，实现数据本地化、显式化和互操作性，获得广泛转发和实践示例。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">0</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">2</argument></grok:render>同时，Anthropic切断Claude对OpenClaw的支持引发开源社区不满，推动本地模型如Gemma 4的讨论。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">46</argument></grok:render>Elon Musk分享Tesla AI芯片研发进展，Yann LeCun批评Anthropic情绪研究，凸显行业分歧与创新加速。",
+  "headline": "Anthropic与Google和Broadcom签署协议，获多吉瓦级TPU算力支持Claude前沿模型",
+  "summary": "过去24小时AI领域焦点在于算力竞赛加剧，Anthropic宣布巨额TPU产能协议，标志着AI训练基础设施进入新阶段。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">31</argument></grok:render> 上海交大ASI-Evolve系统实现AI自主设计更好AI架构，超越人类设计，引发递归自进化讨论。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render> 同时，Sam Altman警告AI或引发今年世界级网络攻击，Gemma 4模型登陆iOS设备，凸显开源与应用落地加速。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">35</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">36</argument></grok:render>",
   "hot_topics": [
     {
-      "topic": "LLM个人知识库（Wiki）",
-      "description": "Karpathy分享使用LLM构建个人Wikipedia-like知识库的想法，支持本地文件存储、BYOAI和代理自动化维护，强调用户控制数据。",
+      "topic": "AI自进化与自主研究",
+      "description": "ASI-Evolve系统自主生成105种优于人类架构，覆盖数据、算法和架构三大领域，并在生物医学应用中验证效果，标志AI研究闭环形成。",
       "related_people": [
-        "karpathy"
+        "@heynavtoor"
       ]
     },
     {
-      "topic": "Anthropic切断OpenClaw支持",
-      "description": "Anthropic以系统负载为由停止Claude订阅对OpenClaw的支持，引发用户转向本地开源模型如Gemma 4的浪潮。",
+      "topic": "算力基础设施竞赛",
+      "description": "Anthropic获Google TPU支持，Elon Musk推空间AI计算，Epoch AI发布芯片所有者分析，凸显地球算力瓶颈与太空/开源替代趋势。",
       "related_people": [
-        "ylecun"
+        "@AnthropicAI",
+        "@teslaownersSV",
+        "@EpochAIResearch"
       ]
     },
     {
-      "topic": "设备端AI模型运行",
-      "description": "Google Gemma 4在iPhone上高效运行，支持图像理解和推理，标志着on-device AI的进步。",
+      "topic": "AI安全与风险警示",
+      "description": "Sam Altman警告AI可能引发今年‘世界震动’网络攻击，Legion Health获批AI开精神药，引发伦理与监管讨论。",
       "related_people": [
-        "adrgrondin"
+        "@Polymarket",
+        "@sama"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "Karpathy LLM Wiki理念病毒传播",
-      "description": "Karpathy发布LLM构建个人知识库的详细方法，使用Markdown文件和Obsidian，支持Q&A和持续增强，已有用户如Farza实践Farzapedia。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">0</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">2</argument></grok:render>",
-      "source_url": "https://x.com/karpathy/status/2040470801506541998"
+      "title": "Anthropic签署多吉瓦TPU协议",
+      "description": "Anthropic与Google和Broadcom合作，从2027年起获下一代TPU产能，用于训练和部署Claude前沿模型。此举强化Anthropic在AI竞赛中的算力优势。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">31</argument></grok:render>",
+      "source_url": "https://x.com/AnthropicAI/status/2041275561704931636"
     },
     {
-      "title": "Anthropic禁止OpenClaw使用Claude",
-      "description": "Anthropic从4月4日起切断对OpenClaw的Claude订阅支持，称其造成系统压力，用户转向本地模型并取消订阅。",
-      "source_url": "https://x.com/Polymarket/status/2040267176892866634"
+      "title": "ASI-Evolve：AI设计更好AI",
+      "description": "上海交大研究发布ASI-Evolve，AI自主完成研究循环，生成优于人类模型的105种架构，并在MMLU基准提升18点以上。论文开源，开启AI加速AI时代。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render>",
+      "source_url": "https://x.com/heynavtoor/status/2040881679020220791"
     },
     {
-      "title": "Google Gemma 4手机端演示",
-      "description": "Gemma 4 E2B在iPhone 17 Pro上以40tk/s速度运行，支持多模态，基于Gemini 3研究。",
-      "source_url": "https://x.com/adrgrondin/status/2040512861953270226"
+      "title": "Gemma 4登陆iPhone/iPad",
+      "description": "Google最新开源模型Gemma 4支持推理和图像理解，现已在支持的iOS设备上可用，推动移动端AI应用普及。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">36</argument></grok:render>",
+      "source_url": "https://x.com/LocallyAIApp/status/2041199380540092828"
     },
     {
-      "title": "Yann LeCun驳斥Claude情绪概念研究",
-      "description": "针对Anthropic关于Claude内部情绪向量影响对齐的研究，LeCun称其为'BS'，引发AI对齐讨论。",
-      "source_url": "https://x.com/ylecun/status/2040542673463824880"
-    },
-    {
-      "title": "Elon Musk公布Tesla芯片研发工厂",
-      "description": "Tesla新建芯片研究工厂整合逻辑、内存和封装，实现快速开发周期。",
-      "source_url": "https://x.com/elonmusk/status/2040489979399536698"
+      "title": "Sam Altman警告AI网络攻击风险",
+      "description": "OpenAI CEO Sam Altman称AI可能在本年度引发‘世界震动’级网络攻击，强调安全挑战。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">35</argument></grok:render>",
+      "source_url": "https://x.com/Polymarket/status/2041150343170441403"
     }
   ],
-  "fetched_at": "2026-04-05T23:32:10.000558+00:00"
+  "fetched_at": "2026-04-06T23:34:06.330215+00:00"
 }
