@@ -1,26 +1,65 @@
 {
   "meta": {
-    "fetched_at": "2026-04-06T23:34:06.330215+00:00",
-    "total_projects": 19
+    "fetched_at": "2026-04-07T23:35:30.276537+00:00",
+    "total_projects": 13
   },
   "projects": [
     {
+      "title": "GLM-5.1",
+      "summary": "开源模型GLM-5.1在Hugging Face上发布，在SWE-Bench Pro、Terminal-Bench和NL2Repo基准上位居开源第一、全球第三。专为长时序任务设计，可自主运行8小时，通过数千次迭代优化策略。",
+      "ai_analysis": "该模型解决了长时序任务中AI代理持久性和策略优化的难题，核心创新在于集成反射机制和长时运行能力，避免重复错误并持续改进。相比传统模型，它在软件工程和终端操作等复杂场景中表现出色，推动AI从单次推理向自主代理演进。应用场景包括自动化代码开发、长期模拟和企业级任务自动化，具有高实用价值。",
+      "category": "AI Agent",
+      "source_url": "https://huggingface.co/zai-org/GLM-5.1",
+      "arxiv_url": "",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-04-07",
+      "impact_level": "高",
+      "id": "dffedcfbebd3"
+    },
+    {
+      "title": "MinerU2.5-Pro",
+      "summary": "MinerU2.5-Pro推动数据中心文档解析的极限，在大规模场景下实现高效文档处理。",
+      "ai_analysis": "针对文档解析中的规模化和准确性问题，该论文提出数据中心方法，核心创新是通过高级解析技术处理复杂布局和多模态内容。解决了传统OCR在噪声文档上的局限，提升了工业级应用效率。适用于金融报告、法律文件和科研文献数字化等领域。",
+      "category": "多模态学习",
+      "source_url": "https://huggingface.co/papers/2604.04771",
+      "arxiv_url": "https://arxiv.org/abs/2604.04771",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-04-07",
+      "impact_level": "中",
+      "id": "9e4de0dc64dc"
+    },
+    {
+      "title": "OpenWorldLib",
+      "summary": "OpenWorldLib提供先进世界模型的统一代码库和定义，支持多种模型家族的集成。",
+      "ai_analysis": "世界模型在具身智能和模拟中面临碎片化问题，该库统一了定义和代码基，核心创新在于模块化框架，便于评估和复现。促进了从研究到基础设施的转变，适用于机器人模拟、游戏AI和虚拟环境构建。",
+      "category": "具身智能",
+      "source_url": "https://huggingface.co/papers/2604.04707",
+      "arxiv_url": "https://arxiv.org/abs/2604.04707",
+      "github_url": "",
+      "shared_by": "_akhaliq",
+      "published_at": "2026-04-07",
+      "impact_level": "高",
+      "id": "0d4ee4bba594"
+    },
+    {
       "title": "Test-Time Scaling Makes Overtraining Compute-Optimal",
-      "summary": "该论文探讨了测试时缩放在过训练场景下的计算优化效果。",
-      "ai_analysis": "论文解决过训练模型在测试阶段的性能瓶颈问题，通过测试时缩放方法实现计算效率最大化。核心创新在于证明过训练结合测试时扩展能超越传统预训练范式，提升模型泛化能力。适用于大规模LLM训练场景，可显著降低部署成本。",
-      "category": "LLM与NLP",
+      "summary": "测试时扩展使过度训练在计算上最优，重新定义训练-推理计算分配。",
+      "ai_analysis": "传统Chinchilla定律忽略推理计算，该文证明过度训练小模型并多次推理采样可匹敌前沿大模型，核心创新是测试时缩放范式。解决了计算资源分配难题，推动行业从巨型训练转向推理优化。应用包括边缘设备部署和成本敏感场景。",
+      "category": "AI基础设施",
       "source_url": "https://huggingface.co/papers/2604.01411",
       "arxiv_url": "https://arxiv.org/abs/2604.01411",
       "github_url": "",
       "shared_by": "_akhaliq",
       "published_at": "2026-04-06",
-      "impact_level": "中",
-      "id": "20b954e6651e"
+      "impact_level": "高",
+      "id": "9e79eb3d88eb"
     },
     {
       "title": "Token Warping Helps MLLMs Look from Nearby Viewpoints",
-      "summary": "提出Token Warping技术提升多模态大模型对附近视点的视觉处理能力。",
-      "ai_analysis": "针对多模态学习中视点变化导致的性能下降问题，引入Token Warping机制动态调整token表示。创新点在于无需额外训练数据即可实现视点自适应，提升MLLM在动态环境中的鲁棒性。适用于机器人视觉和AR应用。",
+      "summary": "令牌扭曲技术帮助多模态大模型从附近视点观察，提升空间感知。",
+      "ai_analysis": "MLLM在多视点图像处理中视点不一致问题突出，核心创新是token warping机制，模拟连续视点变换。提高了3D重建和导航准确性，适用于AR/VR和机器人视觉。",
       "category": "多模态学习",
       "source_url": "https://huggingface.co/papers/2604.02870",
       "arxiv_url": "https://arxiv.org/abs/2604.02870",
@@ -28,12 +67,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-04-06",
       "impact_level": "中",
-      "id": "162d96eb3f02"
+      "id": "0d1bd786f19d"
     },
     {
-      "title": "Paper Reconstruction Evaluation: Evaluating Presentation and Hallucination in AI-written Papers",
-      "summary": "评估AI生成论文的呈现质量和幻觉问题的新基准。",
-      "ai_analysis": "解决AI写作工具在学术论文生成中的幻觉和结构问题，提供重建评估框架。核心创新是量化呈现度和幻觉度的新指标，帮助优化LLM在科研写作的应用。适用于AI辅助科研工具开发。",
+      "title": "Paper Reconstruction Evaluation",
+      "summary": "评估AI生成论文的呈现和幻觉，通过重建框架量化语义漂移。",
+      "ai_analysis": "AI写作论文易幻觉，该文提出重建评估框架，核心创新是语义漂移度量，揭示生成质量瓶颈。推动AI辅助科研的可信度提升，适用于学术写作工具验证。",
       "category": "LLM与NLP",
       "source_url": "https://huggingface.co/papers/2604.01128",
       "arxiv_url": "https://arxiv.org/abs/2604.01128",
@@ -41,25 +80,25 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-04-06",
       "impact_level": "中",
-      "id": "87c1945cbb8a"
+      "id": "fc14a19dc338"
     },
     {
       "title": "Self-Distilled RLVR",
-      "summary": "自蒸馏强化学习视觉表示方法。",
-      "ai_analysis": "针对视觉表示学习中的数据效率问题，提出自蒸馏RLVR框架，通过强化学习迭代优化表示。创新在于无需外部监督信号的自举机制，提升小样本学习性能。适用于计算机视觉下游任务。",
+      "summary": "自蒸馏强化学习视觉表示，提升视觉任务性能。",
+      "ai_analysis": "视觉表示学习需高效强化，该方法自蒸馏结合RL，核心创新是无外部监督的迭代优化。解决了数据稀缺问题，适用于图像分类和检测。",
       "category": "计算机视觉",
       "source_url": "https://huggingface.co/papers/2604.03128",
       "arxiv_url": "https://arxiv.org/abs/2604.03128",
       "github_url": "",
       "shared_by": "_akhaliq",
       "published_at": "2026-04-06",
-      "impact_level": "低",
-      "id": "774f319db5ee"
+      "impact_level": "中",
+      "id": "d18df77d9c9c"
     },
     {
       "title": "Falcon Perception",
-      "summary": "Falcon感知模型，提升视觉感知能力。",
-      "ai_analysis": "解决传统感知模型在复杂场景下的局限，Falcon通过新型架构实现高效感知。核心创新是融合多模态信号的动态融合模块，提高实时性。适用于自动驾驶和监控系统。",
+      "summary": "Falcon感知模型，聚焦高效视觉感知。",
+      "ai_analysis": "感知模型需平衡速度与准确，该文优化Falcon架构，核心创新在轻量Transformer变体。适用于实时无人机和自动驾驶。",
       "category": "计算机视觉",
       "source_url": "https://huggingface.co/papers/2603.27365",
       "arxiv_url": "https://arxiv.org/abs/2603.27365",
@@ -67,12 +106,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-04-06",
       "impact_level": "中",
-      "id": "d4b841846dde"
+      "id": "4ae97130574c"
     },
     {
       "title": "A Simple Baseline for Streaming Video Understanding",
-      "summary": "流式视频理解的简单基线模型。",
-      "ai_analysis": "针对实时视频处理延迟问题，提供高效基线无需复杂架构即可实现高精度理解。创新点在于轻量级token流处理，降低计算开销。适用于视频监控和直播分析。",
+      "summary": "流式视频理解的简单基线，提升实时处理。",
+      "ai_analysis": "视频理解延迟高，该基线简化架构，核心创新在增量处理机制。解决了流媒体应用痛点，适用于监控和直播分析。",
       "category": "视频生成",
       "source_url": "https://huggingface.co/papers/2604.02317",
       "arxiv_url": "https://arxiv.org/abs/2604.02317",
@@ -80,12 +119,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-04-06",
       "impact_level": "中",
-      "id": "844a3adf8d8e"
+      "id": "a898526bf4fb"
     },
     {
-      "title": "Agentic-MME: What Agentic Capability Really Brings to Multimodal Intelligence?",
-      "summary": "评估代理能力对多模态智能的贡献。",
-      "ai_analysis": "探讨AI Agent在多模态任务中的作用，提供MME基准量化代理提升。核心创新是分解代理组件的影响，揭示规划和工具使用关键性。适用于多模态Agent开发。",
+      "title": "Agentic-MME",
+      "summary": "Agentic-MME基准评估代理能力对多模态智能的贡献。",
+      "ai_analysis": "多模态中代理作用不明，该基准显示代理提升复杂视觉推理20%，核心创新在迭代精炼机制。推动多模态代理标准化，适用于智能助手和机器人。",
       "category": "AI Agent",
       "source_url": "https://huggingface.co/papers/2604.03016",
       "arxiv_url": "https://arxiv.org/abs/2604.03016",
@@ -93,90 +132,12 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-04-06",
       "impact_level": "高",
-      "id": "8c43229ccfb3"
+      "id": "c999321f4c08"
     },
     {
-      "title": "Signals: Trajectory Sampling and Triage for Agentic Interactions",
-      "summary": "代理交互中的轨迹采样和分诊方法。",
-      "ai_analysis": "解决Agent长轨迹交互的效率问题，通过信号采样优化决策路径。创新在于自适应分诊机制，减少无效探索。适用于复杂环境下的具身Agent。",
-      "category": "AI Agent",
-      "source_url": "https://huggingface.co/papers/2604.00356",
-      "arxiv_url": "https://arxiv.org/abs/2604.00356",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-04-06",
-      "impact_level": "中",
-      "id": "3858d9ef9277"
-    },
-    {
-      "title": "SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization",
-      "summary": "上下文代理强化学习用于技能内化。",
-      "ai_analysis": "针对Agent技能学习慢的问题，提出In-Context RL框架实现快速内化。核心创新是零样本技能转移，提升泛化。适用于机器人学习和游戏AI。",
-      "category": "AI Agent",
-      "source_url": "https://huggingface.co/papers/2604.02268",
-      "arxiv_url": "https://arxiv.org/abs/2604.02268",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-04-03",
-      "impact_level": "高",
-      "id": "d6765b1a5889"
-    },
-    {
-      "title": "Generative World Renderer",
-      "summary": "生成式世界渲染器。",
-      "ai_analysis": "解决3D世界模拟的真实性问题，通过生成模型渲染动态环境。创新点在于端到端可微分渲染，支持物理一致性。适用于虚拟现实和模拟训练。",
-      "category": "3D视觉",
-      "source_url": "https://huggingface.co/papers/2604.02329",
-      "arxiv_url": "https://arxiv.org/abs/2604.02329",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-04-03",
-      "impact_level": "高",
-      "id": "5eddab13432a"
-    },
-    {
-      "title": "The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook",
-      "summary": "潜在空间的基础、演化、机制、能力和展望。",
-      "ai_analysis": "全面审视潜在空间在AI模型中的作用和发展趋势。核心创新是多维度分析框架，预测未来演化方向。适用于模型设计和优化。",
-      "category": "AI基础设施",
-      "source_url": "https://huggingface.co/papers/2604.02029",
-      "arxiv_url": "https://arxiv.org/abs/2604.02029",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2026-04-03",
-      "impact_level": "中",
-      "id": "301b1a5a85db"
-    },
-    {
-      "title": "OK-Robot: What Really Matters in Integrating Open-Knowledge Models for Robotics",
-      "summary": "开源知识模型在机器人集成中的关键因素。",
-      "ai_analysis": "探讨知识模型提升机器人零样本任务性能的关键。创新在于模块化框架，支持语言条件拾取放置。适用于家用机器人。",
-      "category": "具身智能",
-      "source_url": "https://okrobot.github.io",
-      "arxiv_url": "",
-      "github_url": "https://okrobot.github.io",
-      "shared_by": "_akhaliq",
-      "published_at": "2024-01-23",
-      "impact_level": "高",
-      "id": "9c594c4b2428"
-    },
-    {
-      "title": "Let’s Verify Step by Step",
-      "summary": "OpenAI过程监督数学问题求解模型和数据集。",
-      "ai_analysis": "通过奖励每个推理步骤而非最终答案，实现数学SOTA。创新在于过程监督提升对齐性和性能。适用于教育和自动化证明。",
-      "category": "LLM与NLP",
-      "source_url": "https://openai.com/research/lets-verify-step-by-step",
-      "arxiv_url": "https://arxiv.org/abs/2212.10003",
-      "github_url": "",
-      "shared_by": "_akhaliq",
-      "published_at": "2023-05-31",
-      "impact_level": "高",
-      "id": "2f436887faa9"
-    },
-    {
-      "title": "Lingshu-Cell: A generative cellular world model for transcriptome modeling toward virtual cells",
-      "summary": "生成式细胞世界模型用于转录组模拟。",
-      "ai_analysis": "构建虚拟细胞通过转录组建模，推动AI for Science。创新在于世界模型模拟细胞动态。适用于药物发现和生物模拟。",
+      "title": "Lingshu-Cell",
+      "summary": "Lingshu-Cell：用于转录组建模的生成细胞世界模型，向虚拟细胞迈进。",
+      "ai_analysis": "生物模拟需精确细胞模型，该文引入生成世界模型，核心创新在转录组动态预测。加速AI for Science在药物发现的应用。",
       "category": "AI for Science",
       "source_url": "https://huggingface.co/papers/2603.25240",
       "arxiv_url": "https://arxiv.org/abs/2603.25240",
@@ -184,72 +145,33 @@
       "shared_by": "_akhaliq",
       "published_at": "2026-04-01",
       "impact_level": "高",
-      "id": "a0e244aeed00"
+      "id": "dfe7e749ecb1"
     },
     {
-      "title": "GPT4All: An Ecosystem of Open Source Compressed Language Models",
-      "summary": "开源压缩语言模型生态系统。",
-      "ai_analysis": "民主化LLM访问，通过压缩模型实现本地运行。创新在于生态构建和性能优化。适用于边缘设备部署。",
-      "category": "LLM与NLP",
-      "source_url": "https://gpt4all.io",
-      "arxiv_url": "",
-      "github_url": "https://github.com/nomic-ai/gpt4all",
-      "shared_by": "_akhaliq",
-      "published_at": "2023-11-10",
-      "impact_level": "高",
-      "id": "48f6bfc22560"
-    },
-    {
-      "title": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
-      "summary": "Sakana AI的全自动科学发现代理。",
-      "ai_analysis": "实现从idea生成到论文撰写的端到端科研自动化。创新在于迭代开放式发现框架，每篇论文成本<15美元。适用于机器学习子领域研究加速。",
-      "category": "AI Agent",
-      "source_url": "https://sakana.ai/ai-scientist",
+      "title": "OK-Robot",
+      "summary": "NYU和Meta的OK-Robot：集成开放知识模型用于机器人学的关键因素，开源模块化框架支持零样本语言条件拾取和放置任务。",
+      "ai_analysis": "机器人学知识集成碎片化，该框架统一开放模型，核心创新在零样本家居任务。推动具身智能从实验室到家庭。",
+      "category": "具身智能",
+      "source_url": "https://ok-robot.github.io/",
       "arxiv_url": "",
       "github_url": "",
       "shared_by": "_akhaliq",
-      "published_at": "2024-08-13",
+      "published_at": "2024-01-23",
       "impact_level": "高",
-      "id": "11fef16d6628"
+      "id": "7504de20f604"
     },
     {
-      "title": "OLMo 3 (32B)",
-      "summary": "Allen AI开源32B语言模型。",
-      "ai_analysis": "完全开源LLM，支持从头训练重现。创新在于透明训练堆栈，推动开源生态。适用于研究和微调。",
+      "title": "Let’s Verify Step by Step",
+      "summary": "OpenAI发布论文+数据集，使用过程监督奖励每个正确推理步骤，实现数学问题解决SOTA。",
+      "ai_analysis": "结果监督忽略中间步骤，该方法过程监督提升性能并改善对齐，核心创新在人类认可的思维链训练。适用于数学AI和复杂推理。",
       "category": "LLM与NLP",
-      "source_url": "",
-      "arxiv_url": "",
-      "github_url": "https://allenai.org/olmo",
-      "shared_by": "rasbt",
-      "published_at": "2026-04-05",
-      "impact_level": "高",
-      "id": "f9d9ab5b07ac"
-    },
-    {
-      "title": "SmolLM3 (3B)",
-      "summary": "Hugging Face小规模高效LLM。",
-      "ai_analysis": "3B参数模型实现高性能推理。创新在于蒸馏和优化技术，适合本地部署。适用于移动AI应用。",
-      "category": "LLM与NLP",
-      "source_url": "",
-      "arxiv_url": "",
-      "github_url": "https://huggingface.co/HuggingFaceTB/SmolLM3",
-      "shared_by": "rasbt",
-      "published_at": "2026-04-05",
-      "impact_level": "中",
-      "id": "39bd49ec75aa"
-    },
-    {
-      "title": "Gemma 4 (31B)",
-      "summary": "Google Gemma 4系列开源模型。",
-      "ai_analysis": "31B模型在基准上媲美更大模型，通过训练配方提升。创新在于混合注意力机制和开放许可。适用于本地和生产部署。",
-      "category": "LLM与NLP",
-      "source_url": "",
+      "source_url": "https://openai.com/research/lets-verify-step-by-step",
       "arxiv_url": "",
       "github_url": "",
-      "shared_by": "rasbt",
-      "published_at": "2026-04-02",
+      "shared_by": "_akhaliq",
+      "published_at": "2023-05-31",
       "impact_level": "高",
-      "id": "80bdfb90f0c9"
+      "id": "2f436887faa9"
     }
   ]
 }

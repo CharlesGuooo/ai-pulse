@@ -1,53 +1,49 @@
 {
-  "headline": "Anthropic与Google和Broadcom签署协议，获多吉瓦级TPU算力支持Claude前沿模型",
-  "summary": "过去24小时AI领域焦点在于算力竞赛加剧，Anthropic宣布巨额TPU产能协议，标志着AI训练基础设施进入新阶段。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">31</argument></grok:render> 上海交大ASI-Evolve系统实现AI自主设计更好AI架构，超越人类设计，引发递归自进化讨论。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render> 同时，Sam Altman警告AI或引发今年世界级网络攻击，Gemma 4模型登陆iOS设备，凸显开源与应用落地加速。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">35</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">36</argument></grok:render>",
+  "headline": "纽约客杂志爆料：OpenAI前高管Ilya Sutskever和Dario Amodei秘密备忘录指控Sam Altman反复撒谎，可能终结其职业生涯",
+  "summary": "过去24小时，AI领域焦点集中在OpenAI内部丑闻上，Ronan Farrow在纽约客发布的长文揭示了Ilya Sutskever的70页备忘录和Dario Amodei的200页笔记，详细记录Sam Altman的'撒谎'模式和'反社会'行为。Anthropic投资者对CEO Dario Amodei的情绪不稳表达担忧，称其无法控制情绪，涉及数十亿美元风险。行业讨论Elon Musk、Sam Altman等领导者年龄与AI真实性辨识问题，同时OpenAI安全承诺落空引发广泛质疑。",
   "hot_topics": [
     {
-      "topic": "AI自进化与自主研究",
-      "description": "ASI-Evolve系统自主生成105种优于人类架构，覆盖数据、算法和架构三大领域，并在生物医学应用中验证效果，标志AI研究闭环形成。",
+      "topic": "Sam Altman诚信危机",
+      "description": "纽约客文章曝光OpenAI创始人Sam Altman被前高管指控反复撒谎、操纵董事会，引发' sociopath'争议，可能重创其领导地位。",
       "related_people": [
-        "@heynavtoor"
+        "@sama",
+        "@RonanFarrow"
       ]
     },
     {
-      "topic": "算力基础设施竞赛",
-      "description": "Anthropic获Google TPU支持，Elon Musk推空间AI计算，Epoch AI发布芯片所有者分析，凸显地球算力瓶颈与太空/开源替代趋势。",
+      "topic": "Dario Amodei领导力质疑",
+      "description": "Anthropic投资者担忧CEO Dario Amodei情绪化管理，纽约邮报报道称其攻击特朗普和Sam Altman，影响公司数十亿投资。",
       "related_people": [
-        "@AnthropicAI",
-        "@teslaownersSV",
-        "@EpochAIResearch"
+        "@darioamodei",
+        "@nypost"
       ]
     },
     {
-      "topic": "AI安全与风险警示",
-      "description": "Sam Altman警告AI可能引发今年‘世界震动’网络攻击，Legion Health获批AI开精神药，引发伦理与监管讨论。",
+      "topic": "AI领导者世代与真实性",
+      "description": "讨论婴儿潮一代难以辨别生成AI，列举年轻AI领袖如Sam Altman(40岁)、Dario Amodei(43岁)等主导领域。",
       "related_people": [
-        "@Polymarket",
-        "@sama"
+        "@elonmusk",
+        "@sama",
+        "@darioamodei"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "Anthropic签署多吉瓦TPU协议",
-      "description": "Anthropic与Google和Broadcom合作，从2027年起获下一代TPU产能，用于训练和部署Claude前沿模型。此举强化Anthropic在AI竞赛中的算力优势。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">31</argument></grok:render>",
-      "source_url": "https://x.com/AnthropicAI/status/2041275561704931636"
+      "title": "Ronan Farrow纽约客长文曝光OpenAI内部70页+200页秘密文件",
+      "description": "Ilya Sutskever编译Slack和HR证据，指Sam Altman' Lying'模式；Dario Amodei笔记称其' bullshit'。董事会曾试图解雇，称其' unconstrained by truth'。引发硅谷文件流传和公众热议。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">5</argument></grok:render><grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">9</argument></grok:render>",
+      "source_url": "https://www.newyorker.com (via @RonanFarrow post)"
     },
     {
-      "title": "ASI-Evolve：AI设计更好AI",
-      "description": "上海交大研究发布ASI-Evolve，AI自主完成研究循环，生成优于人类模型的105种架构，并在MMLU基准提升18点以上。论文开源，开启AI加速AI时代。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">3</argument></grok:render>",
-      "source_url": "https://x.com/heynavtoor/status/2040881679020220791"
+      "title": "Anthropic投资者对Dario Amodei不满",
+      "description": "纽约邮报报道投资者称Amodei' cannot control his emotions'，上月攻击特朗普和Altman。Anthropic Claude聊天机器人公司面临数十亿风险。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">7</argument></grok:render>",
+      "source_url": "https://nypost.com/2026/04/06/business/anthropic-backers-fret-over-ai-giants-volatile-ceo-dario-amodei-as-billions-hang-in-the-balance/"
     },
     {
-      "title": "Gemma 4登陆iPhone/iPad",
-      "description": "Google最新开源模型Gemma 4支持推理和图像理解，现已在支持的iOS设备上可用，推动移动端AI应用普及。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">36</argument></grok:render>",
-      "source_url": "https://x.com/LocallyAIApp/status/2041199380540092828"
-    },
-    {
-      "title": "Sam Altman警告AI网络攻击风险",
-      "description": "OpenAI CEO Sam Altman称AI可能在本年度引发‘世界震动’级网络攻击，强调安全挑战。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">35</argument></grok:render>",
-      "source_url": "https://x.com/Polymarket/status/2041150343170441403"
+      "title": "Evan Luthra总结Altman争议视频爆火",
+      "description": "视频获3000+点赞，详述Altman从Loopt到OpenAI的诚信问题、董事会清洗、安全团队解散等，呼吁警惕其对AI未来的控制。<grok:render type=\"render_inline_citation\"><argument name=\"citation_id\">9</argument></grok:render>",
+      "source_url": "https://x.com/EvanLuthra/status/2041256427411607974"
     }
   ],
-  "fetched_at": "2026-04-06T23:34:06.330215+00:00"
+  "fetched_at": "2026-04-07T23:35:30.276537+00:00"
 }
