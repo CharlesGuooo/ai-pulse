@@ -1,53 +1,46 @@
 {
-  "headline": "New Yorker爆料OpenAI内幕：Sam Altman被指欺骗与安全失责，Anthropic营收超OpenAI",
-  "summary": "过去24小时，AI领域焦点集中在OpenAI的领导危机上，New Yorker长篇调查揭露Sam Altman通过内部备忘录和笔记被前高管指责欺骗与忽略安全承诺，导致Ilya Sutskever和Dario Amodei等人才离去。Anthropic不仅营收超越OpenAI，还发布危险模型Mythos拒绝公开发布，凸显竞争加剧。同时，DeepMind CEO Demis Hassabis强调AI将彻底重塑医学，从药物设计到审批流程。Elon Musk等关键人物评论Altman不适合掌管超级智能。",
+  "headline": "Anthropic Claude Mythos模型过于强大引发安全担忧，暂缓公开发布",
+  "summary": "过去24小时，AI领域焦点集中在Anthropic的Claude Mythos模型上，该模型在网络安全测试中发现多个零日漏洞，但因风险过高而限制访问，引发软件股暴跌和就业冲击讨论。Runway推出Seedance 2.0视频生成工具，极大降低视频制作门槛，获广泛关注。Sam Altman宣布OpenAI推出ChatGPT Pro高端订阅，同时Dario Amodei警告AI将取代50%入门级白领岗位，凸显AI加速发展的双刃剑效应。",
   "hot_topics": [
     {
-      "topic": "Sam Altman领导危机",
-      "description": "New Yorker调查基于Ilya Sutskever备忘录和Dario Amodei笔记，描绘Altman为迎合型领导者，多次违背安全承诺，企业使命商业化。",
+      "topic": "Claude Mythos安全争议",
+      "description": "Anthropic CEO Dario Amodei称Mythos模型太危险暂不公开发布，已发现多个软件漏洞，引发'SaaS-pocalypse'恐慌和股市波动。",
       "related_people": [
-        "@sama",
-        "@ilyasut",
-        "@darioamodei",
-        "@elonmusk"
+        "@DarioAmodei"
       ]
     },
     {
-      "topic": "Anthropic领先OpenAI",
-      "description": "Anthropic营收达300亿美元年化率超OpenAI，并推出高危模型Mythos（漏洞利用成功率83%），拒绝公开释放。",
+      "topic": "Seedance 2.0视频生成革命",
+      "description": "Runway与Higgsfield合作推出Seedance 2.0，支持从提示快速生成高质量视频，颠覆传统影视制作流程。",
       "related_people": [
-        "@darioamodei"
+        "@runwayml"
       ]
     },
     {
-      "topic": "AI重塑医学",
-      "description": "DeepMind CEO称AI不止加速药物设计，还将改变测试与审批范式。",
+      "topic": "AI就业冲击警告",
+      "description": "Dario Amodei和Sam Altman等领袖强调AI将导致白领失业率飙升至10-20%，但同时推动工具开发。",
       "related_people": [
-        "@demishassabis"
+        "@DarioAmodei",
+        "@sama"
       ]
     }
   ],
   "key_developments": [
     {
-      "title": "New Yorker发布OpenAI深度调查",
-      "description": "基于百余访谈及200多页内部文件，揭露Sam Altman治理框架形同虚设，前员工称其'持续说谎'，OpenAI在存在安全上获F级。调查日与Altman超级智能宣言重合，引发讽刺。",
-      "source_url": "https://www.newyorker.com/"
+      "title": "Anthropic限制Claude Mythos访问",
+      "description": "Anthropic宣布Claude Mythos预览版过于强大，能自主发现零日漏洞，但风险高仅限专家使用，导致Cloudflare等软件股下跌13%。Dario Amodei警告其可能引发不可预见武器化风险。",
+      "source_url": "https://fortune.com/2026/04/10/anthropic-too-dangerous-to-release-ai-model-means-for-its-upcoming-ipo/"
     },
     {
-      "title": "Anthropic宣布Mythos模型",
-      "description": "新模型首试漏洞利用成功率83%，因危险性拒绝公开发布。同时Anthropic营收超OpenAI。",
-      "source_url": ""
+      "title": "Runway Seedance 2.0全球上线",
+      "description": "Seedance 2.0现已在Runway付费计划中可用，支持图像、视频、音频提示生成电影级内容，新用户享折扣，大幅降低VFX和动画制作成本。",
+      "source_url": "https://x.com/runwayml/status/2042336701557703020"
     },
     {
-      "title": "伊朗威胁OpenAI Stargate数据中心",
-      "description": "伊朗扬言'彻底消灭'OpenAI在阿布扎比的300亿美元数据中心项目，加剧地缘政治风险。",
-      "source_url": ""
-    },
-    {
-      "title": "Intel加入Musk Terafab AI芯片项目",
-      "description": "支持人形机器人与数据中心目标，推动硬件创新。",
-      "source_url": ""
+      "title": "OpenAI推出ChatGPT Pro $100订阅",
+      "description": "Sam Altman宣布因Codex受欢迎推出ChatGPT Pro高端 tier，同时Dario Amodei预测AI将在6-12月内完成端到端软件开发。",
+      "source_url": "https://x.com/sama/status/2042342572958630332"
     }
   ],
-  "fetched_at": "2026-04-09T23:36:14.667273+00:00"
+  "fetched_at": "2026-04-10T23:33:33.129505+00:00"
 }
