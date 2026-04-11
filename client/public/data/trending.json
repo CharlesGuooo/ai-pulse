@@ -1,46 +1,7 @@
 {
-  "headline": "Anthropic Claude Mythos模型过于强大引发安全担忧，暂缓公开发布",
-  "summary": "过去24小时，AI领域焦点集中在Anthropic的Claude Mythos模型上，该模型在网络安全测试中发现多个零日漏洞，但因风险过高而限制访问，引发软件股暴跌和就业冲击讨论。Runway推出Seedance 2.0视频生成工具，极大降低视频制作门槛，获广泛关注。Sam Altman宣布OpenAI推出ChatGPT Pro高端订阅，同时Dario Amodei警告AI将取代50%入门级白领岗位，凸显AI加速发展的双刃剑效应。",
-  "hot_topics": [
-    {
-      "topic": "Claude Mythos安全争议",
-      "description": "Anthropic CEO Dario Amodei称Mythos模型太危险暂不公开发布，已发现多个软件漏洞，引发'SaaS-pocalypse'恐慌和股市波动。",
-      "related_people": [
-        "@DarioAmodei"
-      ]
-    },
-    {
-      "topic": "Seedance 2.0视频生成革命",
-      "description": "Runway与Higgsfield合作推出Seedance 2.0，支持从提示快速生成高质量视频，颠覆传统影视制作流程。",
-      "related_people": [
-        "@runwayml"
-      ]
-    },
-    {
-      "topic": "AI就业冲击警告",
-      "description": "Dario Amodei和Sam Altman等领袖强调AI将导致白领失业率飙升至10-20%，但同时推动工具开发。",
-      "related_people": [
-        "@DarioAmodei",
-        "@sama"
-      ]
-    }
-  ],
-  "key_developments": [
-    {
-      "title": "Anthropic限制Claude Mythos访问",
-      "description": "Anthropic宣布Claude Mythos预览版过于强大，能自主发现零日漏洞，但风险高仅限专家使用，导致Cloudflare等软件股下跌13%。Dario Amodei警告其可能引发不可预见武器化风险。",
-      "source_url": "https://fortune.com/2026/04/10/anthropic-too-dangerous-to-release-ai-model-means-for-its-upcoming-ipo/"
-    },
-    {
-      "title": "Runway Seedance 2.0全球上线",
-      "description": "Seedance 2.0现已在Runway付费计划中可用，支持图像、视频、音频提示生成电影级内容，新用户享折扣，大幅降低VFX和动画制作成本。",
-      "source_url": "https://x.com/runwayml/status/2042336701557703020"
-    },
-    {
-      "title": "OpenAI推出ChatGPT Pro $100订阅",
-      "description": "Sam Altman宣布因Codex受欢迎推出ChatGPT Pro高端 tier，同时Dario Amodei预测AI将在6-12月内完成端到端软件开发。",
-      "source_url": "https://x.com/sama/status/2042342572958630332"
-    }
-  ],
-  "fetched_at": "2026-04-10T23:33:33.129505+00:00"
+  "headline": "AI领域持续快速发展",
+  "summary": "暂无最新动态摘要",
+  "hot_topics": [],
+  "key_developments": [],
+  "fetched_at": "2026-04-11T23:31:50.925588+00:00"
 }
